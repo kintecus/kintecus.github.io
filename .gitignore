@@ -1,0 +1,130 @@
+# Hugo Build Output
+public/
+
+# Hugo Cache
+.cache/
+
+# Hugo Project Temporary Files
+.hugo/
+
+# Hugo Development Server State
+.hugo_state/
+
+# Browser Caching
+.htcache/
+
+# IDE Configuration
+*.swp
+*.swo
+*.tmp
+*.bak
+*~
+
+# macOS specific
+._*
+
+# Editor Config
+.editorconfig
+
+# IDE Configuration
+.idea/
+
+# VS Code Configuration
+.vscode/
+
+# JetBrains IDE Configuration
+.idea/
+*.iml
+
+# Vim Configuration
+.vim/
+.vimrc
+
+# Sublime Text Configuration
+*.sublime-workspace
+*.sublime-project
+
+# Atom Configuration
+.atom/
+
+# Git Configuration
+.git/
+
+# Private Configuration
+config.local.toml
+config.local.yaml
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+
+# Backup files
+*.bak
+
+# Compiled files
+*.class
+*.pyc
+*.o
+
+# System files
+.DS_Store
+
+# Editor specific files
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# Backup files
+~*
+
+# Local configuration
+*.local.toml
+*.local.yaml
+
+# Build output
+/public
+/public/
+
+# Hugo cache and state
+.cache
+.cache/
+.hugo_state
+
+# Temporary files
+.tmp*
+*.tmp
+
+# Editor files
+*.swp
+*.swo
+*.tmp
+*.bak
+
+# macOS specific
+._*
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Build tool files
+.gradle/
+.mvn/
+
+# Log files
+*.log
+
+# Test files
+*_test.go
+*_test.js
+
+# Docker files
+Dockerfile*
