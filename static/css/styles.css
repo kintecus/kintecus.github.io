@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+.content-wrapper {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff00ff, #560acf, #ff00ff, #e1bf2c);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradient 15s ease infinite;
+    margin-bottom: 0.5rem;
+    transform: rotate(-0.005turn);
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+p {
+    font-size: 1rem;
+    color: #444;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+h2 {
+    font-size: 1.25rem;
+    color: #666;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.social-links { 
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.social-links a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+.social-links a:hover {
+    color: #0077b5; /* LinkedIn blue */
+}
+.social-links a:nth-child(2):hover {
+    color: #7e7e7e; /* Github*/
+}
+.social-links a:nth-child(3):hover {
+    color: #1DA1F2; /* Twitter blue */
+}
+.social-links a:nth-child(4):hover {
+    color: #E4405F; /* Instagram pink */
+}
+.social-links a:nth-child(5):hover {
+    color: #7e7e7e; 
+}
+.social-links a:nth-child(6):hover {
+    color: orangered;
+}
+.social-links a:nth-child(7):hover {
+    color: red;
+}
+@media (max-width: 480px) {
+    body { padding: 15px; }
+    .content-wrapper { padding: 15px; }
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.1rem; }
+    p { font-size: 0.9rem; }
+    .social-links a { font-size: 1.5rem; }
+}
