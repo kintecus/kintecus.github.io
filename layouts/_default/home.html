@@ -1,24 +1,18 @@
 {{ define "main" }}
   <main aria-role="main">
-    <header class="home-page-header">
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.subtitle }}
-        <span class="subtitle">{{ . }}</span>
-      {{ end }}
-    </header>
     <div class="home-page-content">
         <h1>UNDER CONSTRUCTION</h1>
       <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
       {{ .Content }}
     </div>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/ostapsenyuk/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/kintecus" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-      <a href="https://x.com/kintecus" target="_blank" aria-label="X (Twitter)"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://www.instagram.com/kintecus/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://unsplash.com/@kintecus/" target="_blank" aria-label="Unsplash"><i class="fa-brands fa-unsplash"></i></a>
-      <a href="https://soundcloud.com/kintecus" target="_blank" aria-label="Soundcloud"><i class="fa-brands fa-soundcloud"></i></a>
-      <a href="https://www.youtube.com/@OstapSenyuk" target="_blank" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.linkedin.com/in/ostapsenyuk/" target="_blank" aria-label="LinkedIn" class="social-link-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/kintecus" target="_blank" aria-label="GitHub" class="social-link-github"><i class="fa-brands fa-github"></i></a>
+      <a href="https://x.com/kintecus" target="_blank" aria-label="X (Twitter)" class="social-link-twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/kintecus/" target="_blank" aria-label="Instagram" class="social-link-instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://unsplash.com/@kintecus/" target="_blank" aria-label="Unsplash" class="social-link-unsplash"><i class="fa-brands fa-unsplash"></i></a>
+      <a href="https://soundcloud.com/kintecus" target="_blank" aria-label="Soundcloud" class="social-link-soundcloud"><i class="fa-brands fa-soundcloud"></i></a>
+      <a href="https://www.youtube.com/@OstapSenyuk" target="_blank" aria-label="Youtube" class="social-link-youtube"><i class="fa-brands fa-youtube"></i></a>
   </div>
   </main>
 {{ end }}

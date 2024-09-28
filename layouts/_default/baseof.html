@@ -5,17 +5,17 @@
     <title>{{ block "title" . }}
       {{ .Site.Title }}
     {{ end }}</title>
-    <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/styles.css" type="text/css"/>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
   </head>
   <body>
-    <!-- Code that all your templates share, like a header -->
-    {{ block "main" . }}
-      <!-- The part of the page that begins to differ between templates -->
-    {{ end }}
+    {{ partial "header.html" . }}
+    <main>
+      {{ block "main" . }}
+      {{ end }}
+    </main>
     {{ block "footer" . }}
     <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
     {{ end }}

@@ -1,6 +1,7 @@
 +++
 title = 'Hello World'
-date = 2024-09-26T21:23:03+02:00
-draft = false
+date = 2024-09-17T07:09:15+02:00
+draft = true
 +++
-Hello
+
+Hi, this is my site.

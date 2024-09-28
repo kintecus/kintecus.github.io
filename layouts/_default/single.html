@@ -1,8 +1,21 @@
 {{ define "title" }}
-  <!-- This will override the default value set in baseof.html; i.e., "{{ .Site.Title }}" in the original example-->
   {{ .Title }} &ndash; {{ .Site.Title }}
 {{ end }}
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <div class="content-wrapper">
+    <article>
+      <header>
+        <h1>{{ .Title }}</h1>
+        {{ with .Date }}
+          {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+          {{ $dateHuman := . | time.Format ":date_long" }}
+          <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        {{ end }}
+        <h2>{{ .Description }}</h2>
+      </header>
+      <main>
+        {{ .Content }}
+      </main>
+    </article>
+  </div>
 {{ end }}
