@@ -4,7 +4,7 @@ date = 2024-09-25T09:31:41+02:00
 draft = false
 tags = ['reading']
 +++
-å
+
 As I approach my 39th year, I find myself pondering the age-old question that has haunted me throughout my adult life: Who am I? It's a question that has led me down various paths of self-discovery, from my career as a senior technical product manager to my latest venture into the world of personal websites and static site generators.
 
 Three words have consistently defined me over the years: curious, generalist, and dabbler. These traits have shaped my journey through the tech industry, where I've accumulated over 15 years of experience in ad tech, e-commerce, and multimedia, working on both B2B and B2C projects. Yet, as I search for my next professional challenge, I find myself caught in a familiar pattern of creative procrastination.
@@ -15,7 +15,7 @@ As I build my digital presence, I've been reflecting on the books that have shap
 
 ## Grappling with Existence and Meaning
 
-Albert Camus's "The Stranger" has always resonated with me, perhaps because I've often felt like an outsider in my professional life. As a generalist in a world of specialists, I've sometimes struggled with feelings of detachment similar to those experienced by Meursault. His observation that "Really, nothing in my life had changed" after his mother's death strikes a chord with my own experiences of major life events that somehow failed to fundamentally alter my perception of the world.
+Albert Camus's **"The Stranger"** has always resonated with me, perhaps because I've often felt like an outsider in my professional life. As a generalist in a world of specialists, I've sometimes struggled with feelings of detachment similar to those experienced by Meursault. His observation that "Really, nothing in my life had changed" after his mother's death strikes a chord with my own experiences of major life events that somehow failed to fundamentally alter my perception of the world.
 
 This sense of detachment extends to my career as well. Like Frederic Henry in Hemingway's "A Farewell to Arms," I've often found myself seeking meaning amidst the chaos of the tech industry. The constant evolution of technology and business models can sometimes feel as arbitrary and senseless as the war Henry experiences. Yet, like Henry, I continue to search for purpose and connection in my work and personal life.
 
@@ -37,4 +37,4 @@ Mark Manson's "The Subtle Art of Not Giving a F*ck" has been a refreshing counte
 
 This journey of self-discovery aligns closely with the insights offered in "Finding Meaning in the Second Half of Life." As I approach 40, I'm becoming more comfortable with the idea of ongoing individuation and the need to confront my own "expensive ghosts." Building my personal website has become more than just a creative outlet – it's a step towards aligning with my authentic self and challenging societal expectations of what a "successful" career should look like.
 
-In conclusion, as I continue to grapple with the question of who I am, I find solace and inspiration in the diverse perspectives offered by literature, philosophy, and even the process of building my own digital space. These explorations remind me that the search for meaning and identity is an ongoing journey, one that's shaped by our experiences, our connections, and our willingness to embrace the complexities of the human experience. As I look towards my next professional challenge, I carry with me the insights gained from these literary companions, ready to face the uncertainties and opportunities that lie ahead.
+**In conclusion,** as I continue to grapple with the question of who I am, I find solace and inspiration in the diverse perspectives offered by literature, philosophy, and even the process of building my own digital space. These explorations remind me that the search for meaning and identity is an ongoing journey, one that's shaped by our experiences, our connections, and our willingness to embrace the complexities of the human experience. As I look towards my next professional challenge, I carry with me the insights gained from these literary companions, ready to face the uncertainties and opportunities that lie ahead.
