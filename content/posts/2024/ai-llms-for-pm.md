@@ -1,7 +1,7 @@
 +++
 title = 'LLMs for PMs'
 date = 2024-09-28T18:30:08+02:00
-draft = false
+draft = true
 description = "As an individual contributor product manager, you can improve the value you bring to the company/team by 80%, if you use LLMs in a smart way."
 +++
 
