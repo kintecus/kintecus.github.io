@@ -1,6 +1,6 @@
 +++
 title = 'Amazon Working Backwards'
-date = 2024-09-24T19:52:20+02:00
+date = 2024-09-23T19:52:20+02:00
 draft = false
 +++
 

@@ -14,5 +14,18 @@
       <a href="https://soundcloud.com/kintecus" target="_blank" aria-label="Soundcloud" class="social-link-soundcloud"><i class="fa-brands fa-soundcloud"></i></a>
       <a href="https://www.youtube.com/@OstapSenyuk" target="_blank" aria-label="Youtube" class="social-link-youtube"><i class="fa-brands fa-youtube"></i></a>
   </div>
+  <div class="latest-posts">
+    <h2>Latest Blog Posts</h2>
+    {{ $pages := where .Site.RegularPages "Type" "posts" }}
+    {{ range first 4 $pages.ByDate.Reverse }}
+      <article>
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        </div>
+        <a href="{{ .RelPermalink }}" class="read-more">Go deeper ({{ .ReadingTime }} min. read)</a>
+      </article>
+    {{ end }}
+  </div>
   </main>
 {{ end }}

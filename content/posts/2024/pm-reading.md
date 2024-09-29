@@ -1,5 +1,5 @@
 +++
-title = 'Finding Humanity in a Complex World: Reflections on Fiction, Philosophy, and the Human Experience'
+title = 'Finding Humanity in a Complex World'
 date = 2024-09-25T09:31:41+02:00
 draft = false
 tags = ['reading']

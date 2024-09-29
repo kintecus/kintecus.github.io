@@ -1,5 +1,5 @@
 +++
-title = "Finding the Perfect Fit: A Senior/Principal Product Manager's Journey"
+title = "Candidate market fit"
 date = 2024-09-26T14:50:10+02:00
 draft = false
 +++
