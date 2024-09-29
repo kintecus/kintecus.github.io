@@ -1,7 +1,7 @@
 +++
 title = 'Finding Humanity in a Complex World'
 date = 2024-09-25T09:31:41+02:00
-draft = false
+draft = true
 tags = ['reading']
 +++
 

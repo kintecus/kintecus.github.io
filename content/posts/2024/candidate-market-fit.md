@@ -1,7 +1,7 @@
 +++
 title = "Candidate market fit"
 date = 2024-09-26T14:50:10+02:00
-draft = false
+draft = true
 +++
 
 As a seasoned Product leader with 15+ years in ad tech, e-commerce, and multimedia, I'm energized to jump back into the market after a refreshing sabbatical! I've used this time to reflect on my career goals and aspirations, and I'm excited about the possibilities ahead. 

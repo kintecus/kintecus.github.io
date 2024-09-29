@@ -5,4 +5,4 @@ draft = false
 layout = 'about'
 +++
 
-Couple words about me
+Couple words about me: TBA

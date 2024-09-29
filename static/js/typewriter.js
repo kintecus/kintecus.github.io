@@ -1,4 +1,4 @@
-const words = ['Father', 'Product Manager', 'Procrastinator', 'Photographer', 'Musician'];
+const words = ['Father', 'Product Manager', 'Procrastinator', 'Photographer', 'Musician', 'Chef', 'Snowboarder', 'Lover'];
         const typewriterElement = document.getElementById('typewriter');
         let wordIndex = 0;
         let charIndex = 0;

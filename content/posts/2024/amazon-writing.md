@@ -1,7 +1,7 @@
 +++
 title = 'Amazon Writing'
 date = 2024-09-24T19:51:13+02:00
-draft = false
+draft = true
 tags = ['amazon']
 +++
 
