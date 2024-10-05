@@ -10,7 +10,7 @@ Finally in the recent days, I’ve just set off and started playing with it. Bou
 
 What’s also different this time, is the fact that now I have some answers (not ideal, but good enough) to the existential questions above.
 
-I'll cover ****why**** in this post:
+I'll cover **why** in this post:
 
 1. I want to have a personal space online, that is protected from whims of platforms
 2. I want to use it as a tool to craft the narrative about myself
