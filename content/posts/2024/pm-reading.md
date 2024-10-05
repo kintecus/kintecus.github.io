@@ -9,7 +9,7 @@ As I approach my 39th year, I find myself pondering the age-old question that ha
 
 Three words have consistently defined me over the years: curious, generalist, and dabbler. These traits have shaped my journey through the tech industry, where I've accumulated over 15 years of experience in ad tech, e-commerce, and multimedia, working on both B2B and B2C projects. Yet, as I search for my next professional challenge, I find myself caught in a familiar pattern of creative procrastination.
 
-This time, it's manifested in the creation of my first personal website (https://ostaps.net). What started as a simple desire to take control of my online presence has spiraled into a deep dive into the world of static site generators and minimalist web design. It's a rabbit hole I'm all too happy to explore, perhaps as a way to delay the more daunting task of defining my professional future.
+This time, it's manifested in the creation of [my first personal website](https://ostaps.net). What started as a simple desire to take control of my online presence has spiraled into a deep dive into the world of static site generators and minimalist web design. It's a rabbit hole I'm all too happy to explore, perhaps as a way to delay the more daunting task of defining my professional future.
 
 As I build my digital presence, I've been reflecting on the books that have shaped my understanding of the world and my place in it. From existentialist classics to modern self-help guides, these works have offered glimpses into the complexities of human nature and the ongoing search for meaning in a world often characterized by uncertainty and change.
 
