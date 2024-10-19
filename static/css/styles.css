@@ -55,7 +55,7 @@ h2 {
 p {
   font-size: 1rem;
   color: #444;
-  max-width: 600px;
+  max-width: 800px;
   line-height: 1.6;
 }
 
@@ -183,7 +183,7 @@ article li {
 
 /* Media Queries */
 @media (max-width: 480px) {
-  body, .content-wrapper, article { padding: 10px; }
+  body, .content-wrapper, article { padding: 6px; }
   h1 { font-size: 2rem; }
   h2 { font-size: 1rem; }
   p { font-size: 0.9rem; }

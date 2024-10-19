@@ -4,7 +4,7 @@ date = 2024-10-17T09:45:24+02:00
 draft = false
 +++
 
-## How I'm Unlocking and Saving Insights with Apple Podcasts and Google's NotebookLM
+### A way to "listen" to podcasts with NotebookLM
 
 I've been a podcast junkie for years, my Podcasts library includes over 70 shows since getting hooked on podcasts back in 2016. Edutainment has always been my sweet spot – stories that inform and entertain me at the same time. My journey began with [99 percent invisible](https://99percentinvisible.org), which was introduced to me by a fellow product manager at work. I was captivated by the storytelling, information, and production quality. At this point the topics of the shows I'm listening to span from product management, business, and AI to psychology, world news, and arts. In future, I'll add a section to this site with the podcasts I love and recommend.
 
@@ -26,7 +26,7 @@ Select all the transcript text by highlighting it with a cursor. Right-click and
 
 ![Step 2 - Show in Finder](/posts/2024/podcasts-step-2.png "Step 2 - Show in Finder")
 
-**Voilà!** A new Finder window opens, revealing a text file named 'transcript.txt' containing the full transcript.
+**Voilà!** A new Finder window opens, revealing a text file named 'text.txt' containing the full transcript.
 
 ![Text File in Finder](/posts/2024/podcasts-step-3.png "Text File in Finder")
 
