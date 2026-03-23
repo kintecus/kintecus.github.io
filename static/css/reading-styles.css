@@ -1,11 +1,6 @@
-/* Reading page styles */
-
-.reading-page h1 {
-  text-align: left;
-}
+/* Reading list page */
 
 .reading-page h2 {
-  text-align: left;
   font-size: 1.1rem;
   color: var(--secondary-color);
   margin: 2rem 0 1rem;
@@ -13,13 +8,13 @@
 }
 
 .currently-reading {
-  border-left: 3px solid #ff00ff;
+  border-left: 3px solid var(--accent-color);
   padding-left: 1rem;
   margin-bottom: 2rem;
 }
 
 .currently-reading h2 {
-  color: #ff00ff;
+  color: var(--accent-color);
   margin-top: 0;
 }
 
@@ -28,7 +23,7 @@
   justify-content: space-between;
   align-items: baseline;
   padding: 0.6rem 0;
-  border-bottom: 1px solid #e9ecef;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .book-entry:last-child {
@@ -40,25 +35,11 @@
   flex-direction: column;
   gap: 0.2rem;
   min-width: 0;
-  padding: 0;
-  margin: 0;
-}
-
-.book-info > * {
-  padding: 0;
-  margin: 0;
-  text-align: left;
 }
 
 .book-title {
-  color: var(--primary-color);
-  text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
-}
-
-.book-title:hover {
-  text-decoration: underline;
 }
 
 .book-author {
@@ -107,15 +88,10 @@
 
 /* Single book page */
 
-.reading-single h1 {
-  text-align: left;
-}
-
 .book-author-detail {
   font-size: 1.1rem;
   color: var(--secondary-color);
-  text-align: left;
-  margin-top: -1.5rem;
+  margin-top: -0.5rem;
 }
 
 .book-detail-meta {
@@ -132,7 +108,7 @@
 .book-dates td {
   padding: 0.3rem 1rem 0.3rem 0;
   font-size: 0.9rem;
-  color: #444;
+  color: var(--text-color);
 }
 
 .book-dates td:first-child {
@@ -143,11 +119,7 @@
 .book-notes {
   margin-top: 2rem;
   padding-top: 1rem;
-  border-top: 1px solid #e9ecef;
-}
-
-.book-notes h2 {
-  text-align: left;
+  border-top: 1px solid var(--border-color);
 }
 
 .back-link {
@@ -156,11 +128,6 @@
 
 .back-link a {
   color: var(--secondary-color);
-  text-decoration: none;
-}
-
-.back-link a:hover {
-  text-decoration: underline;
 }
 
 /* Responsive */

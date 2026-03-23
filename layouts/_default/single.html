@@ -1,21 +1,15 @@
-{{ define "title" }}
-  {{ .Title }} &vert; {{ .Site.Title }}
-{{ end }}
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
 {{ define "main" }}
   <div class="content-wrapper">
     <article>
-      <header>
-        <h1>{{ .Title }}</h1>
-        {{ with .Date }}
-          {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
-          {{ $dateHuman := . | time.Format ":date_long" }}
-          <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-        {{ end }}
-        <h2>{{ .Description }}</h2>
-      </header>
-      <main>
-        {{ .Content }}
-      </main>
+      <h1>{{ .Title }}</h1>
+      {{ with .Date }}
+        <time datetime="{{ . | time.Format "2006-01-02T15:04:05-07:00" }}">{{ . | time.Format ":date_long" }}</time>
+      {{ end }}
+      {{ with .Description }}
+        <p class="post-description">{{ . }}</p>
+      {{ end }}
+      {{ .Content }}
     </article>
   </div>
 {{ end }}

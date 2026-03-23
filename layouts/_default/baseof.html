@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>{{ block "title" . }}
-      {{ .Site.Title }}
-    {{ end }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <link rel="stylesheet" href="/css/styles.css" type="text/css"/>
     <link rel="stylesheet" href="/css/about-styles.css" type="text/css"/>
     <link rel="stylesheet" href="/css/reading-styles.css" type="text/css"/>
@@ -16,12 +14,9 @@
   <body>
     {{ partial "header.html" . }}
     <main>
-      {{ block "main" . }}
-      {{ end }}
+      {{ block "main" . }}{{ end }}
     </main>
-    {{ block "footer" . }}
-    <!-- More shared code, perhaps a footer but that can be overridden if need be in  -->
-    {{ end }}
+    {{ block "footer" . }}{{ end }}
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>
