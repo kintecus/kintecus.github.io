@@ -1,0 +1,52 @@
+{{ define "title" }}
+  {{ .Title }} | {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+  <div class="content-wrapper reading-single">
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.author }}
+        <p class="book-author-detail">by {{ . }}</p>
+      {{ end }}
+
+      <div class="book-detail-meta">
+        {{ if .Params.fiction }}
+          <span class="book-tag book-tag--fiction">Fiction</span>
+        {{ else }}
+          <span class="book-tag book-tag--nonfiction">Non-fiction</span>
+        {{ end }}
+        {{ if not .Params.date_finished }}
+          <span class="book-tag book-tag--reading">Currently reading</span>
+        {{ end }}
+      </div>
+
+      <table class="book-dates">
+        <tr>
+          <td>Started</td>
+          <td>{{ .Params.date_started | time.Format "January 2, 2006" }}</td>
+        </tr>
+        {{ with .Params.date_finished }}
+          <tr>
+            <td>Finished</td>
+            <td>{{ . | time.Format "January 2, 2006" }}</td>
+          </tr>
+        {{ end }}
+        {{ with .Params.reading_time }}
+          <tr>
+            <td>Reading time</td>
+            <td>{{ . }}</td>
+          </tr>
+        {{ end }}
+      </table>
+
+      {{ with .Content }}
+        <div class="book-notes">
+          <h2>Notes</h2>
+          {{ . }}
+        </div>
+      {{ end }}
+
+      <p class="back-link"><a href="/reading/">&larr; Back to reading list</a></p>
+    </article>
+  </div>
+{{ end }}

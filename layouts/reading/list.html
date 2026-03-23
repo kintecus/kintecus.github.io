@@ -1,0 +1,59 @@
+{{ define "title" }}
+  Reading | {{ .Site.Title }}
+{{ end }}
+{{ define "main" }}
+  <div class="content-wrapper reading-page">
+    <h1>Reading</h1>
+
+    {{ $reading := where .Pages ".Params.date_finished" "eq" nil }}
+    {{ with $reading }}
+      <section class="currently-reading">
+        <h2>Currently reading</h2>
+        {{ range (.ByDate.Reverse) }}
+          <div class="book-entry book-entry--current">
+            <div class="book-info">
+              <a class="book-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.author }}
+                <span class="book-author">{{ . }}</span>
+              {{ end }}
+            </div>
+            <div class="book-meta">
+              {{ if .Params.fiction }}
+                <span class="book-tag book-tag--fiction">Fiction</span>
+              {{ else }}
+                <span class="book-tag book-tag--nonfiction">Non-fiction</span>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </section>
+    {{ end }}
+
+    {{ $completed := where .Pages ".Params.date_finished" "ne" nil }}
+    {{ range ($completed.ByDate.Reverse).GroupByDate "2006" }}
+      <section class="reading-year">
+        <h2>{{ .Key }}</h2>
+        {{ range .Pages }}
+          <div class="book-entry">
+            <div class="book-info">
+              <a class="book-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.author }}
+                <span class="book-author">{{ . }}</span>
+              {{ end }}
+            </div>
+            <div class="book-meta">
+              {{ if .Params.fiction }}
+                <span class="book-tag book-tag--fiction">Fiction</span>
+              {{ else }}
+                <span class="book-tag book-tag--nonfiction">Non-fiction</span>
+              {{ end }}
+              <span class="book-date">
+                {{ .Params.date_started | time.Format "Jan 2006" }}{{ with .Params.date_finished }} – {{ . | time.Format "Jan 2006" }}{{ end }}
+              </span>
+            </div>
+          </div>
+        {{ end }}
+      </section>
+    {{ end }}
+  </div>
+{{ end }}

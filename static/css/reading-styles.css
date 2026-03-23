@@ -1,0 +1,167 @@
+/* Reading page styles */
+
+.reading-page h1 {
+  text-align: left;
+}
+
+.reading-page h2 {
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin: 2rem 0 1rem;
+  text-transform: uppercase;
+}
+
+.currently-reading {
+  border-left: 3px solid #ff00ff;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.currently-reading h2 {
+  color: #ff00ff;
+  margin-top: 0;
+}
+
+.book-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.book-entry:last-child {
+  border-bottom: none;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.book-title {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.book-title:hover {
+  text-decoration: underline;
+}
+
+.book-author {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+}
+
+.book-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.book-tag {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.book-tag--fiction {
+  background-color: #f0e6ff;
+  color: #560acf;
+}
+
+.book-tag--nonfiction {
+  background-color: #e6f4ea;
+  color: #1a7a3a;
+}
+
+.book-tag--reading {
+  background-color: #fff3e0;
+  color: #e65100;
+}
+
+.book-date {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+  white-space: nowrap;
+}
+
+/* Single book page */
+
+.reading-single h1 {
+  text-align: left;
+}
+
+.book-author-detail {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  text-align: left;
+  margin-top: -1.5rem;
+}
+
+.book-detail-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.book-dates {
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.book-dates td {
+  padding: 0.3rem 1rem 0.3rem 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.book-dates td:first-child {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.book-notes {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.book-notes h2 {
+  text-align: left;
+}
+
+.back-link {
+  margin-top: 2rem;
+}
+
+.back-link a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .book-entry {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .book-meta {
+    margin-left: 0;
+  }
+}
