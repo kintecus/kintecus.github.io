@@ -1,5 +1,5 @@
 +++
-title = 'It didn’t start with you'
+title = "It Didn’t Start with You"
 date = 2024-08-02
 draft = false
 

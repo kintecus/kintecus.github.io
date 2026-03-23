@@ -1,5 +1,5 @@
 +++
-title = 'Thinking, fast and slow'
+title = 'Thinking, Fast and Slow'
 date = 2025-11-30
 draft = false
 

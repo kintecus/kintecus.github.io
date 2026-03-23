@@ -1,5 +1,5 @@
 +++
-title = 'The Three-Body Problem - Death’s End (book 3)'
+title = "Death’s End"
 date = 2024-01-20
 draft = false
 

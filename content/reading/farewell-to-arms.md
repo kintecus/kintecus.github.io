@@ -1,5 +1,5 @@
 +++
-title = 'Farewell to Arms'
+title = 'A Farewell to Arms'
 date = 2024-02-10
 draft = false
 

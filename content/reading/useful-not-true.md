@@ -1,5 +1,5 @@
 +++
-title = 'Useful, not true'
+title = 'Useful Not True'
 date = 2025-10-18
 draft = false
 

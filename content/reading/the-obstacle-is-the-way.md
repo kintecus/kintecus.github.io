@@ -1,5 +1,5 @@
 +++
-title = 'The Obstacle is the Way'
+title = 'The Obstacle Is the Way'
 date = 2024-02-20
 draft = false
 

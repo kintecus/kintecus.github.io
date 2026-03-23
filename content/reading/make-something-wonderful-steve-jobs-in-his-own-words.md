@@ -4,7 +4,7 @@ date = 2024-01-31
 draft = false
 
 [params]
-  author = 'Laurene Powel Jobs'
+  author = 'Laurene Powell Jobs'
   date_started = 2024-01-31
   date_finished = 2024-02-10
   reading_time = '10d'

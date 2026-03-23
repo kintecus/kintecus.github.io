@@ -80,10 +80,26 @@
   color: #e65100;
 }
 
+.book-tag--toread {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
 .book-date {
   font-size: 0.8rem;
   color: var(--secondary-color);
   white-space: nowrap;
+}
+
+.to-read {
+  margin-top: 2rem;
+  border-left: 3px solid var(--border-color);
+  padding-left: 1rem;
+}
+
+.to-read h2 {
+  color: var(--secondary-color);
+  margin-top: 0;
 }
 
 /* Single book page */

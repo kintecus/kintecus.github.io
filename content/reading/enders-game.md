@@ -1,5 +1,5 @@
 +++
-title = 'Ender’s game'
+title = "Ender’s Game"
 date = 2026-01-07
 draft = false
 

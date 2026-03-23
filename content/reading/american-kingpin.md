@@ -1,5 +1,5 @@
 +++
-title = 'American kingpin'
+title = 'American Kingpin'
 date = 2025-11-19
 draft = false
 

@@ -1,11 +1,9 @@
-{{ define "title" }}
-  Reading | {{ .Site.Title }}
-{{ end }}
+{{ define "title" }}Reading | {{ .Site.Title }}{{ end }}
 {{ define "main" }}
   <div class="content-wrapper reading-page">
     <h1>Reading</h1>
 
-    {{ $reading := where .Pages ".Params.date_finished" "eq" nil }}
+    {{ $reading := where (where .Pages ".Params.date_started" "ne" nil) ".Params.date_finished" "eq" nil }}
     {{ with $reading }}
       <section class="currently-reading">
         <h2>Currently reading</h2>
@@ -50,6 +48,30 @@
               <span class="book-date">
                 {{ .Params.date_started | time.Format "Jan 2006" }}{{ with .Params.date_finished }} – {{ . | time.Format "Jan 2006" }}{{ end }}
               </span>
+            </div>
+          </div>
+        {{ end }}
+      </section>
+    {{ end }}
+
+    {{ $toread := where .Pages ".Params.status" "eq" "to-read" }}
+    {{ with $toread }}
+      <section class="to-read">
+        <h2>To read</h2>
+        {{ range . }}
+          <div class="book-entry">
+            <div class="book-info">
+              <a class="book-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              {{ with .Params.author }}
+                <span class="book-author">{{ . }}</span>
+              {{ end }}
+            </div>
+            <div class="book-meta">
+              {{ if .Params.fiction }}
+                <span class="book-tag book-tag--fiction">Fiction</span>
+              {{ else }}
+                <span class="book-tag book-tag--nonfiction">Non-fiction</span>
+              {{ end }}
             </div>
           </div>
         {{ end }}
