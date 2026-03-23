@@ -1,11 +1,11 @@
 +++
 title = 'The Design of Everyday Things'
-date = 2023-01-01
+date = 2017-02-13
 draft = false
 
 [params]
   author = 'Don Norman'
-  date_started = 2023-01-01
-  date_finished = 2023-01-01
+  date_started = 2017-02-13
+  date_finished = 2017-02-13
   fiction = false
 +++

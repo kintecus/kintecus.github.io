@@ -1,3 +1,6 @@
 baseURL = 'https://ostaps.net'
 languageCode = 'en-us'
 title = 'Who am I?'
+
+[markup.goldmark.renderer]
+  unsafe = true

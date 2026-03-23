@@ -1,11 +1,11 @@
 +++
 title = 'How to Take Smart Notes'
-date = 2023-01-01
+date = 2022-08-06
 draft = false
 
 [params]
   author = 'Sönke Ahrens'
-  date_started = 2023-01-01
-  date_finished = 2023-01-01
+  date_started = 2022-08-06
+  date_finished = 2022-08-06
   fiction = false
 +++

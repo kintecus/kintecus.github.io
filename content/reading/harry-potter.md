@@ -1,11 +1,11 @@
 +++
 title = 'Harry Potter'
-date = 2023-01-01
+date = 2017-03-22
 draft = false
 
 [params]
   author = 'J.K. Rowling'
-  date_started = 2023-01-01
-  date_finished = 2023-01-01
+  date_started = 2017-03-22
+  date_finished = 2017-03-22
   fiction = true
 +++

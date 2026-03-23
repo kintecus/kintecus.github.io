@@ -1,11 +1,11 @@
 +++
 title = 'Your Own Coach'
-date = 2023-01-01
+date = 2025-10-20
 draft = false
 
 [params]
   author = 'Olyana Pochtarenko'
-  date_started = 2023-01-01
-  date_finished = 2023-01-01
+  date_started = 2025-10-20
+  date_finished = 2025-10-20
   fiction = false
 +++
