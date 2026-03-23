@@ -281,10 +281,31 @@ article li {
 }
 
 /* Responsive */
-@media (max-width: 480px) {
-  body, .content-wrapper, article { padding: 6px; }
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1rem; }
+main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+  .content-wrapper, article { padding: 12px; }
+
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.2rem; }
   p { font-size: 0.9rem; }
+
+  .home-page-content h1 { font-size: 2rem; }
+
+  nav ul {
+    gap: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0.25rem 0.5rem;
+  }
+
   .social-links a { font-size: 1.2rem; }
+  .social-links { gap: 1rem; flex-wrap: wrap; }
 }

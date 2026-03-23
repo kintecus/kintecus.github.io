@@ -162,7 +162,7 @@
 }
 
 /* Responsive */
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .book-entry {
     flex-direction: column;
     gap: 0.3rem;
@@ -170,5 +170,10 @@
 
   .book-meta {
     margin-left: 0;
+  }
+
+  .book-highlights blockquote {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.85rem;
   }
 }
