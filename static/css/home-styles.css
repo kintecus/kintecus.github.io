@@ -1,0 +1,203 @@
+/* Homepage - Brutalist monospace aesthetic */
+
+/* Override body background when homepage is active */
+body:has(.home) {
+  background-color: #ededed;
+}
+
+/* Split nav on homepage: Home left, rest right */
+body:has(.home) header {
+  background: transparent;
+  padding: 1.2rem 2.5rem;
+  margin-bottom: 0;
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+}
+
+body:has(.home) nav ul {
+  justify-content: flex-end;
+}
+
+body:has(.home) nav ul li {
+  margin: 0 0 0 1.8rem;
+}
+
+body:has(.home) nav ul li.nav-home {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+body:has(.home) nav ul li a {
+  color: #111;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-transform: none;
+}
+
+body:has(.home) nav ul li a:hover {
+  color: #0000ee;
+}
+
+.home {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 40px 40px;
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #111;
+}
+
+.home a {
+  color: #0000ee;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.home a:hover {
+  color: #0000aa;
+}
+
+/* Greeting */
+.home-greeting {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin: 0 0 2.5rem;
+  color: #111;
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  animation: none;
+  transform: none;
+}
+
+/* Three-column info grid */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.home-col h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 0 0 0.5rem;
+  color: #111;
+  text-transform: none;
+}
+
+.home-col ul {
+  list-style: none;
+  padding: 0 0 0 0.75rem;
+  margin: 0;
+}
+
+.home-col ul li {
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+/* Bottom section: Latest + Links side by side */
+.home-bottom {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Latest section - blue inverted block */
+.home-latest {
+  background-color: #0037ff;
+  color: #fff;
+  padding: 1.2rem 1.4rem;
+}
+
+.home-latest h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 0 0 0.8rem;
+  color: #fff;
+  text-transform: none;
+}
+
+.home-latest-item {
+  margin-bottom: 0.8rem;
+}
+
+.home-latest-item:last-child {
+  margin-bottom: 0;
+}
+
+.home-latest-item a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.home-latest-item a:hover {
+  color: #ccdaff;
+}
+
+.home-latest-meta {
+  padding-left: 0.75rem;
+  font-style: italic;
+  font-size: 0.82rem;
+  color: #b8caff;
+  margin-top: 0.15rem;
+}
+
+/* Links section */
+.home-links h2 {
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 0 0 0.5rem;
+  color: #111;
+  text-transform: none;
+}
+
+.home-links ul {
+  list-style: none;
+  padding: 0 0 0 0.75rem;
+  margin: 0;
+}
+
+.home-links ul li {
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+.home-footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.8rem;
+  padding-top: 2rem;
+  border-top: none;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .home {
+    padding: 30px 16px 24px;
+  }
+
+  .home-greeting {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .home-bottom {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

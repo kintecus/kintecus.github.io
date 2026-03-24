@@ -1,28 +1,80 @@
+{{ define "title" }}Ostap Senyuk{{ end }}
 {{ define "main" }}
-  <div class="content-wrapper home-page-content">
-    <h1>UNDER CONSTRUCTION</h1>
-    {{ .Content }}
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/ostapsenyuk/" target="_blank" aria-label="LinkedIn" class="social-link-linkedin"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/kintecus" target="_blank" aria-label="GitHub" class="social-link-github"><i class="fa-brands fa-github"></i></a>
-      <a href="https://x.com/kintecus" target="_blank" aria-label="X (Twitter)" class="social-link-twitter"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://www.instagram.com/kintecus/" target="_blank" aria-label="Instagram" class="social-link-instagram"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://unsplash.com/@kintecus/" target="_blank" aria-label="Unsplash" class="social-link-unsplash"><i class="fa-brands fa-unsplash"></i></a>
-      <a href="https://soundcloud.com/kintecus" target="_blank" aria-label="Soundcloud" class="social-link-soundcloud"><i class="fa-brands fa-soundcloud"></i></a>
-      <a href="https://www.youtube.com/@OstapSenyuk" target="_blank" aria-label="Youtube" class="social-link-youtube"><i class="fa-brands fa-youtube"></i></a>
+  <div class="home">
+    <h1 class="home-greeting">HI, I'M OSTAP</h1>
+
+    <div class="home-grid">
+      <div class="home-col">
+        <h2>About:</h2>
+        <ul>
+          <li>Hubby, father of three</li>
+          <li>(?) Product manager</li>
+          <li>Curious about stuff</li>
+          <li>Dabbler</li>
+          <li>Photographer</li>
+          <li>Music producer</li>
+          <li>Krakow, PL</li>
+        </ul>
+      </div>
+      <div class="home-col">
+        <h2>CV:</h2>
+        <ul>
+          <li>Sabbatical - 23/now</li>
+          <li>Voicemod - 22/23</li>
+          <li>Amazon - 19/22</li>
+          <li>Sizmek - 15/19</li>
+          <li>Strikead - 13/15</li>
+          <li>kasta.ua - 11/13</li>
+          <li>positivepics - 06/13</li>
+        </ul>
+      </div>
+      <div class="home-col">
+        <h2>Now:</h2>
+        <ul>
+          <li><em><a href="https://www.linkedin.com/in/ostapsenyuk/" target="_blank">Looking for income</a></em></li>
+          <li>Full-time dad</li>
+          <li>Playing with AI</li>
+          <li>Building this site</li>
+        </ul>
+      </div>
     </div>
-    <div class="latest-posts">
-      <h2>Latest Blog Posts</h2>
-      {{ $pages := where .Site.RegularPages "Type" "posts" }}
-      {{ range first 4 $pages.ByDate.Reverse }}
-        <article>
-          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-          <div class="post-meta">
-            <time datetime="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
+
+    <div class="home-bottom">
+      <div class="home-latest">
+        <h2>Latest:</h2>
+        {{ $posts := where .Site.RegularPages "Type" "posts" }}
+        {{ range first 2 $posts.ByDate.Reverse }}
+          <div class="home-latest-item">
+            <a href="{{ .RelPermalink }}">{{ .Date.Format "2006-01-02" }} - {{ .Title }}</a>
+            <div class="home-latest-meta">#blog {{ with .Params.tags }}{{ range . }}#{{ . }} {{ end }}{{ end }}({{ .ReadingTime }} min. read)</div>
           </div>
-          <a href="{{ .RelPermalink }}" class="read-more">Go deeper ({{ .ReadingTime }} min. read)</a>
-        </article>
-      {{ end }}
+        {{ end }}
+        {{ $books := where (where .Site.RegularPages "Type" "reading") ".Params.date_finished" "ne" nil }}
+        {{ with (first 1 $books.ByDate.Reverse) }}
+          {{ range . }}
+            <div class="home-latest-item">
+              <a href="{{ .RelPermalink }}">{{ .Params.date_finished | time.Format "2006-01-02" }} - {{ .Title }}{{ with .Params.author }} by {{ . }}{{ end }}</a>
+              <div class="home-latest-meta">#book {{ if .Params.fiction }}#fiction{{ else }}#nonfiction{{ end }}</div>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+
+      <div class="home-links">
+        <h2>Links:</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/ostapsenyuk/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://unsplash.com/@kintecus" target="_blank">Unsplash</a></li>
+          <li><a href="https://soundcloud.com/kintecus" target="_blank">Soundcloud</a></li>
+          <li><a href="https://www.instagram.com/kintecus/" target="_blank">Instagram</a></li>
+          <li><a href="https://github.com/kintecus" target="_blank">GitHub</a></li>
+          <li><a href="https://www.youtube.com/@OstapSenyuk" target="_blank">YouTube</a></li>
+        </ul>
+      </div>
     </div>
+
+    <footer class="home-footer">
+      (C) Ostap Senyuk, 2024
+    </footer>
   </div>
 {{ end }}
