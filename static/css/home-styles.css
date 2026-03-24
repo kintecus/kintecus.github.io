@@ -148,15 +148,6 @@ body:has(.home) header {
   font-size: 0.9rem;
 }
 
-/* Footer */
-.home-footer {
-  text-align: center;
-  color: #888;
-  font-size: 0.8rem;
-  margin-top: auto;
-  padding-top: 2rem;
-}
-
 /* Responsive */
 @media (max-width: 600px) {
   .home {
