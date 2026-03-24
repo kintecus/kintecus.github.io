@@ -85,9 +85,8 @@ img {
 header {
   width: 100%;
   background-color: var(--surface-color);
-  padding: 1rem 0;
+  padding: 1.2rem 2.5rem;
   margin-bottom: 2rem;
-  text-transform: uppercase;
 }
 
 nav ul {
@@ -95,22 +94,28 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin: 0 0 0 1.8rem;
+}
+
+nav ul li.nav-home {
+  margin-right: auto;
+  margin-left: 0;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: var(--primary-color);
-  font-weight: bold;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-transform: none;
 }
 
 nav ul li a:hover {
   color: var(--link-color);
-  text-decoration: none;
 }
 
 /* Posts list page */

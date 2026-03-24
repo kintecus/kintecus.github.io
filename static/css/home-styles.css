@@ -5,37 +5,11 @@ body:has(.home) {
   background-color: #ededed;
 }
 
-/* Split nav on homepage: Home left, rest right */
+/* Homepage nav overrides */
 body:has(.home) header {
   background: transparent;
-  padding: 1.2rem 2.5rem;
   margin-bottom: 0;
   font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
-}
-
-body:has(.home) nav ul {
-  justify-content: flex-end;
-}
-
-body:has(.home) nav ul li {
-  margin: 0 0 0 1.8rem;
-}
-
-body:has(.home) nav ul li.nav-home {
-  margin-right: auto;
-  margin-left: 0;
-}
-
-body:has(.home) nav ul li a {
-  color: #111;
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-transform: none;
-}
-
-body:has(.home) nav ul li a:hover {
-  color: #0000ee;
 }
 
 .home {
