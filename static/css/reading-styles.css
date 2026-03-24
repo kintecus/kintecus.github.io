@@ -58,30 +58,33 @@
 
 .book-tag {
   font-size: 0.7rem;
-  padding: 0.15rem 0.5rem;
-  border-radius: 3px;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid;
+  border-radius: 0;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   white-space: nowrap;
+  background: transparent;
+  letter-spacing: 0.03em;
 }
 
 .book-tag--fiction {
-  background-color: var(--tag-fiction-bg);
+  border-color: var(--tag-fiction-border);
   color: var(--tag-fiction-color);
 }
 
 .book-tag--nonfiction {
-  background-color: var(--tag-nonfiction-bg);
+  border-color: var(--tag-nonfiction-border);
   color: var(--tag-nonfiction-color);
 }
 
 .book-tag--reading {
-  background-color: var(--tag-reading-bg);
+  border-color: var(--tag-reading-border);
   color: var(--tag-reading-color);
 }
 
 .book-tag--toread {
-  background-color: var(--tag-toread-bg);
+  border-color: var(--tag-toread-border);
   color: var(--tag-toread-color);
 }
 

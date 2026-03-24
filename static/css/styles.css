@@ -11,16 +11,16 @@
   --link-color: #0037ff;
   --link-hover: #0024b3;
   --accent-color: #0037ff;
-  --tag-fiction-bg: #f0e6ff;
-  --tag-fiction-color: #560acf;
-  --tag-nonfiction-bg: #e6f4ea;
-  --tag-nonfiction-color: #1a7a3a;
-  --tag-reading-bg: #fff3e0;
-  --tag-reading-color: #e65100;
-  --tag-toread-bg: #e3f2fd;
-  --tag-toread-color: #1565c0;
-  --highlight-border: #560acf;
-  --highlight-bg: #faf8ff;
+  --tag-fiction-border: #888;
+  --tag-fiction-color: #555;
+  --tag-nonfiction-border: #888;
+  --tag-nonfiction-color: #555;
+  --tag-reading-border: var(--accent-color);
+  --tag-reading-color: var(--accent-color);
+  --tag-toread-border: var(--accent-color);
+  --tag-toread-color: var(--accent-color);
+  --highlight-border: var(--accent-color);
+  --highlight-bg: #e4e4e4;
 }
 
 /* Reset and Base Styles */
