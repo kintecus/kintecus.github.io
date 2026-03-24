@@ -52,13 +52,13 @@ body:has(.home) nav ul li a:hover {
 }
 
 .home a {
-  color: #0000ee;
+  color: #0037ff;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
 .home a:hover {
-  color: #0000aa;
+  color: #0024b3;
 }
 
 /* Greeting */

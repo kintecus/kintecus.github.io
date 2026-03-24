@@ -8,7 +8,8 @@
   --border-color: #e9ecef;
   --max-content-width: 800px;
   --font-family: Verdana, sans-serif;
-  --accent-color: #0000ee;
+  --link-color: #0037ff;
+  --accent-color: #0037ff;
 }
 
 /* Reset and Base Styles */
@@ -57,7 +58,7 @@ p {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--link-color);
   text-decoration: none;
 }
 
@@ -108,7 +109,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--accent-color);
+  color: var(--link-color);
   text-decoration: none;
 }
 
