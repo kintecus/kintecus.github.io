@@ -46,6 +46,9 @@ body:has(.home) nav ul li a:hover {
   font-size: 0.95rem;
   line-height: 1.55;
   color: #111;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
 }
 
 .home a {
@@ -176,8 +179,8 @@ body:has(.home) nav ul li a:hover {
   text-align: center;
   color: #888;
   font-size: 0.8rem;
+  margin-top: auto;
   padding-top: 2rem;
-  border-top: none;
 }
 
 /* Responsive */
