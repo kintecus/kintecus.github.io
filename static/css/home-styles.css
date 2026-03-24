@@ -1,53 +1,20 @@
-/* Homepage - Brutalist monospace aesthetic */
-
-/* Override body background when homepage is active */
-body:has(.home) {
-  background-color: #ededed;
-}
-
-/* Homepage nav overrides */
-body:has(.home) header {
-  background: transparent;
-  margin-bottom: 0;
-  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
-}
+/* Homepage layout */
 
 .home {
   max-width: 960px;
   margin: 0 auto;
   padding: 60px 40px 40px;
-  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
-  font-size: 0.95rem;
-  line-height: 1.55;
-  color: #111;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 80px);
-}
-
-.home a {
-  color: #0037ff;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
-
-.home a:hover {
-  color: #0024b3;
 }
 
 /* Greeting */
 .home-greeting {
   text-align: center;
   font-size: 2.2rem;
-  font-weight: 900;
   letter-spacing: -0.02em;
   margin: 0 0 2.5rem;
-  color: #111;
-  background: none;
-  -webkit-background-clip: unset;
-  background-clip: unset;
-  animation: none;
-  transform: none;
 }
 
 /* Three-column info grid */
@@ -60,10 +27,7 @@ body:has(.home) header {
 
 .home-col h2 {
   font-size: 1rem;
-  font-weight: 900;
   margin: 0 0 0.5rem;
-  color: #111;
-  text-transform: none;
 }
 
 .home-col ul {
@@ -87,17 +51,15 @@ body:has(.home) header {
 
 /* Latest section - blue inverted block */
 .home-latest {
-  background-color: #0037ff;
+  background-color: var(--accent-color);
   color: #fff;
   padding: 1.2rem 1.4rem;
 }
 
 .home-latest h2 {
   font-size: 1rem;
-  font-weight: 900;
   margin: 0 0 0.8rem;
   color: #fff;
-  text-transform: none;
 }
 
 .home-latest-item {
@@ -112,8 +74,6 @@ body:has(.home) header {
   color: #fff;
   font-weight: 700;
   font-size: 0.92rem;
-  text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
 .home-latest-item a:hover {
@@ -131,10 +91,7 @@ body:has(.home) header {
 /* Links section */
 .home-links h2 {
   font-size: 1rem;
-  font-weight: 900;
   margin: 0 0 0.5rem;
-  color: #111;
-  text-transform: none;
 }
 
 .home-links ul {

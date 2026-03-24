@@ -1,14 +1,15 @@
 /* CSS Variables */
 :root {
-  --primary-color: #333;
-  --secondary-color: #666;
-  --text-color: #444;
-  --background-color: #ffffff;
-  --surface-color: #f8f9fa;
-  --border-color: #e9ecef;
+  --primary-color: #111;
+  --secondary-color: #555;
+  --text-color: #333;
+  --background-color: #ededed;
+  --surface-color: transparent;
+  --border-color: #ccc;
   --max-content-width: 800px;
-  --font-family: Verdana, sans-serif;
+  --font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
   --link-color: #0037ff;
+  --link-hover: #0024b3;
   --accent-color: #0037ff;
   --tag-fiction-bg: #f0e6ff;
   --tag-fiction-color: #560acf;
@@ -32,7 +33,10 @@ body, html {
   width: 100%;
   overflow-x: hidden;
   font-family: var(--font-family);
+  font-size: 0.95rem;
+  line-height: 1.55;
   background-color: var(--background-color);
+  color: var(--primary-color);
 }
 
 body {
@@ -42,26 +46,28 @@ body {
   min-height: 100vh;
 }
 
-/* Typography — left-aligned defaults */
+/* Typography */
 h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 900;
   margin: 0 0 0.5rem;
   color: var(--primary-color);
 }
 
 h2 {
-  font-size: 1.8rem;
-  margin: 2rem 0 1rem;
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin: 2rem 0 0.5rem;
   color: var(--primary-color);
 }
 
 h3 {
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--text-color);
   line-height: 1.6;
   margin: 0 0 1rem;
@@ -69,11 +75,12 @@ p {
 
 a {
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: var(--link-hover);
 }
 
 img {
@@ -87,7 +94,7 @@ img {
 .content-wrapper {
   width: 100%;
   max-width: var(--max-content-width);
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   padding: 20px;
 }
 
@@ -96,7 +103,7 @@ header {
   width: 100%;
   background-color: var(--surface-color);
   padding: 1.2rem 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 }
 
 nav ul {
@@ -121,7 +128,6 @@ nav ul li a {
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
-  text-transform: none;
 }
 
 nav ul li a:hover {
@@ -141,7 +147,7 @@ nav ul li a:hover {
 }
 
 .post-description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--secondary-color);
   margin-bottom: 1.5rem;
 }
@@ -200,9 +206,8 @@ main {
 @media (max-width: 600px) {
   .content-wrapper, article { padding: 12px; }
 
-  h1 { font-size: 1.8rem; }
-  h2 { font-size: 1.2rem; }
-  p { font-size: 0.9rem; }
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.1rem; }
 
   nav ul {
     gap: 0;
@@ -212,5 +217,9 @@ main {
 
   nav ul li {
     margin: 0.25rem 0.5rem;
+  }
+
+  header {
+    padding: 1rem 1rem;
   }
 }
