@@ -77,8 +77,8 @@ img {
 .content-wrapper {
   width: 100%;
   max-width: var(--max-content-width);
+  margin: 40px auto 0;
   padding: 20px;
-  margin-top: 40px;
 }
 
 /* Header and Navigation */
