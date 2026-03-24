@@ -1,9 +1,9 @@
-+++
-title = 'Never Split the Difference'
-draft = false
+---
+title: "Never Split the Difference"
+draft: false
 
-[params]
-  author = 'Chris Voss'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Chris Voss"
+  fiction: false
+  status: "to-read"
+---

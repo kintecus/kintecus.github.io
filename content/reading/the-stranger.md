@@ -1,15 +1,15 @@
-+++
-title = 'The Stranger'
-date = 2024-08-27
-draft = false
+---
+title: "The Stranger"
+date: 2024-08-27
+draft: false
 
-[params]
-  author = 'Albert Camus'
-  date_started = 2024-08-27
-  date_finished = 2024-09-01
-  reading_time = '5d'
-  fiction = true
-+++
+params:
+  author: "Albert Camus"
+  date_started: 2024-08-27
+  date_finished: 2024-09-01
+  reading_time: "5d"
+  fiction: true
+---
 
 > Every time there’s a death here, they’re in a nervous state for two or three days. Which means, of course, extra work and worry for our staff.”
 

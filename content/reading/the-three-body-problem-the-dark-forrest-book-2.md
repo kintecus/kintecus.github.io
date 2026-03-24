@@ -1,15 +1,15 @@
-+++
-title = 'The Dark Forest'
-date = 2023-12-30
-draft = false
+---
+title: "The Dark Forest"
+date: 2023-12-30
+draft: false
 
-[params]
-  author = 'Liu Cixin'
-  date_started = 2023-12-30
-  date_finished = 2024-01-11
-  reading_time = '10d'
-  fiction = true
-+++
+params:
+  author: "Liu Cixin"
+  date_started: 2023-12-30
+  date_finished: 2024-01-11
+  reading_time: "10d"
+  fiction: true
+---
 
 > “Dig deep tunnels, keep vast stores of grain, don’t seek hegemony.”*7
 

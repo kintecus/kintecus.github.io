@@ -1,14 +1,14 @@
-+++
-title = 'Hyperion'
-date = 2023-06-14
-draft = false
+---
+title: "Hyperion"
+date: 2023-06-14
+draft: false
 
-[params]
-  author = 'Dan Simmons'
-  date_started = 2023-06-14
-  date_finished = 2023-07-24
-  fiction = true
-+++
+params:
+  author: "Dan Simmons"
+  date_started: 2023-06-14
+  date_finished: 2023-07-24
+  fiction: true
+---
 
 > The Consul thought about the sharp pleasure of the hunt and the equally sharp solace of solitude: solitude he had earned through the pain and nightmare he had already suffered on Hyperion.
 

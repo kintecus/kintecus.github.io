@@ -1,9 +1,9 @@
-+++
-title = 'I Contain Multitudes'
-draft = false
+---
+title: "I Contain Multitudes"
+draft: false
 
-[params]
-  author = 'Ed Yong'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Ed Yong"
+  fiction: false
+  status: "to-read"
+---

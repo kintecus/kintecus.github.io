@@ -1,15 +1,15 @@
-+++
-title = 'The Goal'
-date = 2025-07-06
-draft = false
+---
+title: "The Goal"
+date: 2025-07-06
+draft: false
 
-[params]
-  author = 'Eliyahu M. Goldratt'
-  date_started = 2025-07-06
-  date_finished = 2025-07-22
-  reading_time = '16d'
-  fiction = true
-+++
+params:
+  author: "Eliyahu M. Goldratt"
+  date_started: 2025-07-06
+  date_finished: 2025-07-22
+  reading_time: "16d"
+  fiction: true
+---
 
 > I dared to interweave into the book a family life struggle, which I assume is quite familiar to any manager who is to some extent obsessed with his work. This was not done just to make the book more popular, but to highlight the fact that we tend to disqualify many phenomena of nature as irrelevent as far as science is concerned.
 

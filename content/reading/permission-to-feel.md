@@ -1,15 +1,15 @@
-+++
-title = 'Permission to Feel'
-date = 2024-04-09
-draft = false
+---
+title: "Permission to Feel"
+date: 2024-04-09
+draft: false
 
-[params]
-  author = 'Marc Brackett'
-  date_started = 2024-04-09
-  date_finished = 2024-07-26
-  reading_time = '30d'
-  fiction = false
-+++
+params:
+  author: "Marc Brackett"
+  date_started: 2024-04-09
+  date_finished: 2024-07-26
+  reading_time: "30d"
+  fiction: false
+---
 
 > And then a miracle took place. Its name was Marvin. Uncle Marvin, actually.
 

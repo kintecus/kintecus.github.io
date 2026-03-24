@@ -1,9 +1,9 @@
-+++
-title = 'On Writing Well'
-draft = false
+---
+title: "On Writing Well"
+draft: false
 
-[params]
-  author = 'William Zinsser'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "William Zinsser"
+  fiction: false
+  status: "to-read"
+---

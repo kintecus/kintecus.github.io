@@ -1,9 +1,9 @@
-+++
-title = 'The Paradox of Choice'
-draft = false
+---
+title: "The Paradox of Choice"
+draft: false
 
-[params]
-  author = 'Barry Schwartz'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Barry Schwartz"
+  fiction: false
+  status: "to-read"
+---

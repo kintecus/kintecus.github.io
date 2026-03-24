@@ -1,13 +1,13 @@
-+++
-title = 'How to Stop Worrying and Start Living'
-date = 2024-10-03
-draft = false
+---
+title: "How to Stop Worrying and Start Living"
+date: 2024-10-03
+draft: false
 
-[params]
-  author = 'Dale Carnegie'
-  date_started = 2024-10-03
-  fiction = false
-+++
+params:
+  author: "Dale Carnegie"
+  date_started: 2024-10-03
+  fiction: false
+---
 
 > The load of tomorrow, added to that of yesterday, carried today, makes the strongest falter. Shut off the future as tightly as the past.
 

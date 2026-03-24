@@ -1,15 +1,15 @@
-+++
-title = 'The Obstacle Is the Way'
-date = 2024-03-02
-draft = false
+---
+title: "The Obstacle Is the Way"
+date: 2024-03-02
+draft: false
 
-[params]
-  author = 'Ryan Holiday'
-  date_started = 2024-03-02
-  date_finished = 2024-03-22
-  reading_time = '12d'
-  fiction = false
-+++
+params:
+  author: "Ryan Holiday"
+  date_started: 2024-03-02
+  date_finished: 2024-03-22
+  reading_time: "12d"
+  fiction: false
+---
 
 > This insight lives on today in Warren Buffet’s famous adage to “be fearful when others are greedy and greedy when others are fearful.”
 

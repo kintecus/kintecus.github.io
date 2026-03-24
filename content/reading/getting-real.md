@@ -1,14 +1,14 @@
-+++
-title = 'Getting Real'
-date = 2024-12-08
-draft = false
+---
+title: "Getting Real"
+date: 2024-12-08
+draft: false
 
-[params]
-  author = 'Basecamp'
-  date_started = 2024-12-08
-  date_finished = 2025-01-04
-  fiction = false
-+++
+params:
+  author: "Basecamp"
+  date_started: 2024-12-08
+  date_finished: 2025-01-04
+  fiction: false
+---
 
 > There’s plenty of time to be a perfectionist. Just do it later.
 

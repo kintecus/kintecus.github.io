@@ -1,9 +1,9 @@
-+++
-title = 'Becoming Cliterate'
-draft = false
+---
+title: "Becoming Cliterate"
+draft: false
 
-[params]
-  author = 'Laurie Mintz'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Laurie Mintz"
+  fiction: false
+  status: "to-read"
+---

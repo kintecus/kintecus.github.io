@@ -1,9 +1,9 @@
-+++
-title = 'Empowered'
-draft = false
+---
+title: "Empowered"
+draft: false
 
-[params]
-  author = 'Marty Cagan'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Marty Cagan"
+  fiction: false
+  status: "to-read"
+---

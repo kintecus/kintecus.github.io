@@ -1,9 +1,9 @@
-+++
-title = 'Amazon Writing'
-date = 2024-09-24T19:51:13+02:00
-draft = true
-tags = ['amazon']
-+++
+---
+title: "Amazon Writing"
+date: 2024-09-24T19:51:13+02:00
+draft: true
+tags: ['amazon']
+---
 
 In my [previous post](../amazon-working-backwards), I discussed Amazon's "Working Backwards" methodology, a customer-centric approach that permeates everything Amazon does. But there's another key element of the Amazon Way that's essential for the Working Backwards methodology to succeed: Amazon Writing. This isn't about literary flair, but rather a relentless focus on clear, concise, and persuasive writing that prioritizes the reader above all else.
 You see, at Amazon, writing is more than just a means of communication; it's a powerful tool for driving decision-making and achieving alignment. Think of it as the backbone of the Working Backwards process. A poorly written document can derail even the most innovative idea, while a well-crafted one can rally support and propel a product from concept to launch.

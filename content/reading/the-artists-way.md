@@ -1,9 +1,9 @@
-+++
-title = "The Artist's Way"
-draft = false
+---
+title: "The Artist's Way"
+draft: false
 
-[params]
-  author = 'Julia Cameron'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Julia Cameron"
+  fiction: false
+  status: "to-read"
+---

@@ -1,9 +1,9 @@
-+++
-title = 'Remote'
-draft = false
+---
+title: "Remote"
+draft: false
 
-[params]
-  author = 'Jason Fried & David Heinemeier Hansson'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Jason Fried & David Heinemeier Hansson"
+  fiction: false
+  status: "to-read"
+---

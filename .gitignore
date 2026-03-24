@@ -1,6 +1,9 @@
 # Hugo Build Output
 public/
 
+# Obsidian
+.obsidian/
+
 # Hugo Cache
 .cache/
 

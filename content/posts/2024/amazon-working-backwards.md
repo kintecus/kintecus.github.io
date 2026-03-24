@@ -1,8 +1,8 @@
-+++
-title = 'Amazon Working Backwards'
-date = 2024-09-23T19:52:20+02:00
-draft = true
-+++
+---
+title: "Amazon Working Backwards"
+date: 2024-09-23T19:52:20+02:00
+draft: true
+---
 
 > Amazon is known for being customer-obsessed, and I've seen firsthand how this plays out in their unique approach to product development. It's all centered around a method called "Working Backwards," and it's a core part of Amazon's culture and product management strategy.
 

@@ -1,15 +1,15 @@
-+++
-title = 'A Farewell to Arms'
-date = 2024-02-21
-draft = false
+---
+title: "A Farewell to Arms"
+date: 2024-02-21
+draft: false
 
-[params]
-  author = 'Ernest Hemingway'
-  date_started = 2024-02-21
-  date_finished = 2024-02-27
-  reading_time = '10d'
-  fiction = true
-+++
+params:
+  author: "Ernest Hemingway"
+  date_started: 2024-02-21
+  date_finished: 2024-02-27
+  reading_time: "10d"
+  fiction: true
+---
 
 > “Can I have wine with the meals?” I asked her. “Only if the doctor prescribes it.”
 

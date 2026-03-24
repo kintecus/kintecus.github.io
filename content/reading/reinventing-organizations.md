@@ -1,9 +1,9 @@
-+++
-title = 'Reinventing Organizations'
-draft = false
+---
+title: "Reinventing Organizations"
+draft: false
 
-[params]
-  author = 'Frederic Laloux'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Frederic Laloux"
+  fiction: false
+  status: "to-read"
+---

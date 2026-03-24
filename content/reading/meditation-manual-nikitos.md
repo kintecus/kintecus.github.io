@@ -1,14 +1,14 @@
-+++
-title = 'Meditation manual (Nikitos)'
-date = 2024-08-13
-draft = false
+---
+title: "Meditation manual (Nikitos)"
+date: 2024-08-13
+draft: false
 
-[params]
-  date_started = 2024-08-13
-  date_finished = 2024-08-26
-  reading_time = '13d'
-  fiction = false
-+++
+params:
+  date_started: 2024-08-13
+  date_finished: 2024-08-26
+  reading_time: "13d"
+  fiction: false
+---
 
 > Bonds Putto give dhanam pade bhariya hatthe. A child is like a bond around the neck. Wealth is like a bond around the feet. A spouse is like a bond around the wrists
 

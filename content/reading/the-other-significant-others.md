@@ -1,9 +1,9 @@
-+++
-title = 'The Other Significant Others'
-draft = false
+---
+title: "The Other Significant Others"
+draft: false
 
-[params]
-  author = 'Rhaina Cohen'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Rhaina Cohen"
+  fiction: false
+  status: "to-read"
+---

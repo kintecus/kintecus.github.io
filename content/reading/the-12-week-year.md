@@ -1,14 +1,14 @@
-+++
-title = 'The 12 Week Year'
-date = 2023-05-28
-draft = false
+---
+title: "The 12 Week Year"
+date: 2023-05-28
+draft: false
 
-[params]
-  author = 'Brian P. Moran'
-  date_started = 2023-05-28
-  date_finished = 2023-06-12
-  fiction = false
-+++
+params:
+  author: "Brian P. Moran"
+  date_started: 2023-05-28
+  date_finished: 2023-06-12
+  fiction: false
+---
 
 > The fact is every week counts! Every day counts! Every moment counts! We need to be conscious of the reality that execution happens daily and weekly, not monthly or quarterly. Annualized thinking and planning
 

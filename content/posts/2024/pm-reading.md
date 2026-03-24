@@ -1,9 +1,9 @@
-+++
-title = 'Finding Humanity in a Complex World'
-date = 2024-09-25T09:31:41+02:00
-draft = true
-tags = ['reading']
-+++
+---
+title: "Finding Humanity in a Complex World"
+date: 2024-09-25T09:31:41+02:00
+draft: true
+tags: ['reading']
+---
 
 As I approach my 39th year, I find myself pondering the age-old question that has haunted me throughout my adult life: Who am I? It's a question that has led me down various paths of self-discovery, from my career as a senior technical product manager to my latest venture into the world of personal websites and static site generators.
 

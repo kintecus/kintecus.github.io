@@ -1,9 +1,9 @@
-+++
-title = 'Optimal Illusions'
-draft = false
+---
+title: "Optimal Illusions"
+draft: false
 
-[params]
-  author = 'Coco Krumme'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Coco Krumme"
+  fiction: false
+  status: "to-read"
+---

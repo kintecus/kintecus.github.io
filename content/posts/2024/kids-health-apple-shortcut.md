@@ -1,9 +1,9 @@
-+++
-title = 'Kids Health Apple Shortcut'
-date = 2024-09-25T07:08:02+02:00
-draft = true
-tags = ['parenting', 'automation']
-+++
+---
+title: "Kids Health Apple Shortcut"
+date: 2024-09-25T07:08:02+02:00
+draft: true
+tags: ['parenting', 'automation']
+---
 
 As a father of three, my mind is constanaly loaded with a lot of things. In addition, I'm being constatntly distructed by their requests. So any way to offload important things from my brain to some external storage helps a lot.
 

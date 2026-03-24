@@ -1,10 +1,10 @@
-+++
-title = "Candidate market fit"
-date = 2024-09-26T14:50:10+02:00
-draft = true
-+++
+---
+title: "Candidate market fit"
+date: 2024-09-26T14:50:10+02:00
+draft: true
+---
 
-As a seasoned Product leader with 15+ years in ad tech, e-commerce, and multimedia, I'm energized to jump back into the market after a refreshing sabbatical! I've used this time to reflect on my career goals and aspirations, and I'm excited about the possibilities ahead. 
+As a seasoned Product leader with 15+ years in ad tech, e-commerce, and multimedia, I'm energized to jump back into the market after a refreshing sabbatical! I've used this time to reflect on my career goals and aspirations, and I'm excited about the possibilities ahead.
 
 **My focus?** Securing a *Senior or Principal Product Manager role as an individual contributor*, where I can leverage my expertise to drive tangible impact on data-driven products while maintaining a healthy work-life balance.
 

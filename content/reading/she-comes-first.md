@@ -1,9 +1,9 @@
-+++
-title = 'She Comes First'
-draft = false
+---
+title: "She Comes First"
+draft: false
 
-[params]
-  author = 'Ian Kerner'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Ian Kerner"
+  fiction: false
+  status: "to-read"
+---

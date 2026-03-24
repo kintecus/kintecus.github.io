@@ -1,13 +1,13 @@
-+++
-title = 'Thinking, Fast and Slow'
-date = 2025-11-29
-draft = false
+---
+title: "Thinking, Fast and Slow"
+date: 2025-11-29
+draft: false
 
-[params]
-  author = 'Daniel Kahneman'
-  date_started = 2025-11-29
-  fiction = false
-+++
+params:
+  author: "Daniel Kahneman"
+  date_started: 2025-11-29
+  fiction: false
+---
 
 > People tend to assess the relative importance of issues by the ease with which they are retrieved from memory—and this is largely determined by the extent of coverage in the media.
 

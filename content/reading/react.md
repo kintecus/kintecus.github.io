@@ -1,9 +1,9 @@
-+++
-title = 'The Road to React'
-draft = false
+---
+title: "The Road to React"
+draft: false
 
-[params]
-  author = 'Robin Wieruch'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Robin Wieruch"
+  fiction: false
+  status: "to-read"
+---

@@ -1,15 +1,15 @@
-+++
-title = 'The Plague'
-date = 2024-09-02
-draft = false
+---
+title: "The Plague"
+date: 2024-09-02
+draft: false
 
-[params]
-  author = 'Albert Camus'
-  date_started = 2024-09-02
-  date_finished = 2024-09-20
-  reading_time = '18d'
-  fiction = true
-+++
+params:
+  author: "Albert Camus"
+  date_started: 2024-09-02
+  date_finished: 2024-09-20
+  reading_time: "18d"
+  fiction: true
+---
 
 > by seeming restful and, after a while, you go complacently to sleep there.
 

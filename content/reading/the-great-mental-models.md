@@ -1,9 +1,9 @@
-+++
-title = 'The Great Mental Models'
-draft = false
+---
+title: "The Great Mental Models"
+draft: false
 
-[params]
-  author = 'Shane Parrish'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Shane Parrish"
+  fiction: false
+  status: "to-read"
+---

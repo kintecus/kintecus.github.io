@@ -1,8 +1,8 @@
-+++
-title = 'Podcasts + Notebooklm'
-date = 2024-10-17T09:45:24+02:00
-draft = false
-+++
+---
+title: "Podcasts + Notebooklm"
+date: 2024-10-17T09:45:24+02:00
+draft: false
+---
 
 ### A way to "listen" to podcasts with NotebookLM
 

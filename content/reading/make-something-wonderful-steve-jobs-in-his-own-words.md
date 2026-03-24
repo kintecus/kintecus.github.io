@@ -1,15 +1,15 @@
-+++
-title = 'Make Something Wonderful: Steve Jobs in his own words'
-date = 2024-02-14
-draft = false
+---
+title: "Make Something Wonderful: Steve Jobs in his own words"
+date: 2024-02-14
+draft: false
 
-[params]
-  author = 'Laurene Powell Jobs'
-  date_started = 2024-02-14
-  date_finished = 2024-02-18
-  reading_time = '10d'
-  fiction = false
-+++
+params:
+  author: "Laurene Powell Jobs"
+  date_started: 2024-02-14
+  date_finished: 2024-02-18
+  reading_time: "10d"
+  fiction: false
+---
 
 > Steve Jobs: You’d better have great people, or you won’t get your product to market as fast as possible. Or you might get a product to market really fast, but it will be really clunky and nobody will buy it. There are no shortcuts around quality, and quality starts with people. Maybe shortcuts exist, but I’m not smart enough to have ever found any.
 

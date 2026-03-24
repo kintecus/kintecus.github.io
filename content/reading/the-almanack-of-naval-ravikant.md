@@ -1,9 +1,9 @@
-+++
-title = 'The Almanack of Naval Ravikant'
-draft = false
+---
+title: "The Almanack of Naval Ravikant"
+draft: false
 
-[params]
-  author = 'Eric Jorgenson'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Eric Jorgenson"
+  fiction: false
+  status: "to-read"
+---

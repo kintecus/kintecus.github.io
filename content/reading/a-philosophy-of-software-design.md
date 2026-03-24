@@ -1,13 +1,13 @@
-+++
-title = 'A Philosophy of Software Design'
-date = 2026-03-02
-draft = false
+---
+title: "A Philosophy of Software Design"
+date: 2026-03-02
+draft: false
 
-[params]
-  author = 'John K. Ousterhout'
-  date_started = 2026-03-02
-  fiction = false
-+++
+params:
+  author: "John K. Ousterhout"
+  date_started: 2026-03-02
+  fiction: false
+---
 
 > One of the most important techniques for managing software complexity is to design systems so that developers only need to face a small fraction of the overall complexity at any given time. This approach is called modular design, and this chapter presents its basic principles.
 

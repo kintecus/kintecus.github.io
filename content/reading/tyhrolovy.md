@@ -1,15 +1,15 @@
-+++
-title = 'Тигролови'
-date = 2024-11-19
-draft = false
+---
+title: "Тигролови"
+date: 2024-11-19
+draft: false
 
-[params]
-  author = 'Іван Багряний'
-  date_started = 2024-11-19
-  date_finished = 2024-11-27
-  reading_time = '9d'
-  fiction = true
-+++
+params:
+  author: "Іван Багряний"
+  date_started: 2024-11-19
+  date_finished: 2024-11-27
+  reading_time: "9d"
+  fiction: true
+---
 
 > А першим був — бунтар і «ізмєннік» — «малоросійський» гетьман на ймення Дем’ян Многогрішний.
 

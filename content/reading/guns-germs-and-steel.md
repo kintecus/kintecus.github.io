@@ -1,9 +1,9 @@
-+++
-title = 'Guns, Germs, and Steel'
-draft = false
+---
+title: "Guns, Germs, and Steel"
+draft: false
 
-[params]
-  author = 'Jared Diamond'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Jared Diamond"
+  fiction: false
+  status: "to-read"
+---

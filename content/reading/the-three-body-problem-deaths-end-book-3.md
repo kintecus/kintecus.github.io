@@ -1,15 +1,15 @@
-+++
-title = "Death’s End"
-date = 2024-01-14
-draft = false
+---
+title: "Death’s End"
+date: 2024-01-14
+draft: false
 
-[params]
-  author = 'Liu Cixin'
-  date_started = 2024-01-14
-  date_finished = 2024-01-25
-  reading_time = '11d'
-  fiction = true
-+++
+params:
+  author: "Liu Cixin"
+  date_started: 2024-01-14
+  date_finished: 2024-01-25
+  reading_time: "11d"
+  fiction: true
+---
 
 > If one surveyed people about visions of the future, they might give different answers for how things would be in ten years, but few would doubt that in another hundred years, humanity would be living in paradise. It was easy to believe such a thing: They could just compare their own lives with the lives of their ancestors a hundred years earlier!
 

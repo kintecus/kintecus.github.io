@@ -1,9 +1,9 @@
-+++
-title = 'To Kill a Mockingbird'
-draft = false
+---
+title: "To Kill a Mockingbird"
+draft: false
 
-[params]
-  author = 'Harper Lee'
-  fiction = true
-  status = 'to-read'
-+++
+params:
+  author: "Harper Lee"
+  fiction: true
+  status: "to-read"
+---

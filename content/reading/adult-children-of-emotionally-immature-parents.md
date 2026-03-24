@@ -1,14 +1,14 @@
-+++
-title = 'Adult Children of Emotionally Immature Parents'
-date = 2023-03-27
-draft = false
+---
+title: "Adult Children of Emotionally Immature Parents"
+date: 2023-03-27
+draft: false
 
-[params]
-  author = 'Lindsay C. Gibson'
-  date_started = 2023-03-27
-  date_finished = 2023-04-23
-  fiction = false
-+++
+params:
+  author: "Lindsay C. Gibson"
+  date_started: 2023-03-27
+  date_finished: 2023-04-23
+  fiction: false
+---
 
 > Milder or quieter externalizers can look like internalizers because they’re so nonconfrontational, but they can be identified by their belief that others should change.
 

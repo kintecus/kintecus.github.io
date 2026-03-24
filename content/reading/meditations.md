@@ -1,13 +1,13 @@
-+++
-title = 'Meditations'
-date = 2024-03-27
-draft = false
+---
+title: "Meditations"
+date: 2024-03-27
+draft: false
 
-[params]
-  author = 'Marcus Aurelius'
-  date_started = 2024-03-27
-  fiction = false
-+++
+params:
+  author: "Marcus Aurelius"
+  date_started: 2024-03-27
+  fiction: false
+---
 
 > Of the doctrines central to the Stoic worldview, perhaps the most important is the unwavering conviction that the world is organized in a rational and coherent way.
 

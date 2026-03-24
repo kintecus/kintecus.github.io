@@ -66,23 +66,23 @@
 }
 
 .book-tag--fiction {
-  background-color: #f0e6ff;
-  color: #560acf;
+  background-color: var(--tag-fiction-bg);
+  color: var(--tag-fiction-color);
 }
 
 .book-tag--nonfiction {
-  background-color: #e6f4ea;
-  color: #1a7a3a;
+  background-color: var(--tag-nonfiction-bg);
+  color: var(--tag-nonfiction-color);
 }
 
 .book-tag--reading {
-  background-color: #fff3e0;
-  color: #e65100;
+  background-color: var(--tag-reading-bg);
+  color: var(--tag-reading-color);
 }
 
 .book-tag--toread {
-  background-color: #e3f2fd;
-  color: #1565c0;
+  background-color: var(--tag-toread-bg);
+  color: var(--tag-toread-color);
 }
 
 .book-date {
@@ -141,8 +141,8 @@
 .book-highlights blockquote {
   margin: 0 0 1rem 0;
   padding: 0.8rem 1rem;
-  border-left: 3px solid #560acf;
-  background-color: #faf8ff;
+  border-left: 3px solid var(--highlight-border);
+  background-color: var(--highlight-bg);
   border-radius: 0 4px 4px 0;
   font-size: 0.92rem;
   line-height: 1.65;

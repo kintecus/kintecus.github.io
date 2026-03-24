@@ -1,12 +1,12 @@
-+++
-title = 'Several Short Sentences About Writing'
-draft = false
+---
+title: "Several Short Sentences About Writing"
+draft: false
 
-[params]
-  date_started = 2025-04-22
-  author = 'Verlyn Klinkenborg'
-  fiction = false
-+++
+params:
+  date_started: 2025-04-22
+  author: "Verlyn Klinkenborg"
+  fiction: false
+---
 
 > Everything in this book is meant to be tested all over again, by you. You decide what works for you.
 

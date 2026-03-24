@@ -1,6 +1,11 @@
 baseURL = 'https://ostaps.net'
 languageCode = 'en-us'
-title = 'Who am I?'
+title = 'Ostap Senyuk'
+copyright = '2026 Ostap Senyuk'
+
+[params]
+  author = 'Ostap Senyuk'
+  description = 'Personal site of Ostap Senyuk'
 
 [markup.goldmark.renderer]
   unsafe = true

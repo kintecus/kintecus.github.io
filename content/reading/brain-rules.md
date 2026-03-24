@@ -1,9 +1,9 @@
-+++
-title = 'Brain Rules'
-draft = false
+---
+title: "Brain Rules"
+draft: false
 
-[params]
-  author = 'John Medina'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "John Medina"
+  fiction: false
+  status: "to-read"
+---

@@ -1,9 +1,9 @@
-+++
-title = 'The Peripheral'
-draft = false
+---
+title: "The Peripheral"
+draft: false
 
-[params]
-  author = 'William Gibson'
-  fiction = true
-  status = 'to-read'
-+++
+params:
+  author: "William Gibson"
+  fiction: true
+  status: "to-read"
+---

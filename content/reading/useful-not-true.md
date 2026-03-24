@@ -1,15 +1,15 @@
-+++
-title = 'Useful Not True'
-date = 2025-10-10
-draft = false
+---
+title: "Useful Not True"
+date: 2025-10-10
+draft: false
 
-[params]
-  author = 'Derek Sivers'
-  date_started = 2025-10-10
-  date_finished = 2025-10-21
-  reading_time = '3d'
-  fiction = false
-+++
+params:
+  author: "Derek Sivers"
+  date_started: 2025-10-10
+  date_finished: 2025-10-21
+  reading_time: "3d"
+  fiction: false
+---
 
 > Every statement everyone says could be prefaced with a disclaimer: “From my limited point of view, based only on what I’ve experienced…” But they don’t need to say that.
 

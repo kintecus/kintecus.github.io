@@ -10,6 +10,16 @@
   --font-family: Verdana, sans-serif;
   --link-color: #0037ff;
   --accent-color: #0037ff;
+  --tag-fiction-bg: #f0e6ff;
+  --tag-fiction-color: #560acf;
+  --tag-nonfiction-bg: #e6f4ea;
+  --tag-nonfiction-color: #1a7a3a;
+  --tag-reading-bg: #fff3e0;
+  --tag-reading-color: #e65100;
+  --tag-toread-bg: #e3f2fd;
+  --tag-toread-color: #1565c0;
+  --highlight-border: #560acf;
+  --highlight-bg: #faf8ff;
 }
 
 /* Reset and Base Styles */

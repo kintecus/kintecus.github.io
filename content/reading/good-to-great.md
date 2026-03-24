@@ -1,9 +1,9 @@
-+++
-title = 'Good to Great'
-draft = false
+---
+title: "Good to Great"
+draft: false
 
-[params]
-  author = 'Jim Collins'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Jim Collins"
+  fiction: false
+  status: "to-read"
+---

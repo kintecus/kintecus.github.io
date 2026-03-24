@@ -1,7 +1,8 @@
-+++
-title = 'Colophon'
-draft = false
-+++
+---
+title: "Colophon"
+draft: false
+layout: "page"
+---
 
 This site is built with [Hugo](https://gohugo.io/) and hosted on [GitHub Pages](https://pages.github.com/).
 

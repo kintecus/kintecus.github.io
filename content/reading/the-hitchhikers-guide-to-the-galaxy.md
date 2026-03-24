@@ -1,9 +1,9 @@
-+++
-title = "The Hitchhiker's Guide to the Galaxy"
-draft = false
+---
+title: "The Hitchhiker's Guide to the Galaxy"
+draft: false
 
-[params]
-  author = 'Douglas Adams'
-  fiction = true
-  status = 'to-read'
-+++
+params:
+  author: "Douglas Adams"
+  fiction: true
+  status: "to-read"
+---

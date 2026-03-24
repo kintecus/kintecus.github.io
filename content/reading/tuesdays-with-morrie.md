@@ -1,15 +1,15 @@
-+++
-title = 'Tuesdays with Morrie'
-date = 2024-06-16
-draft = false
+---
+title: "Tuesdays with Morrie"
+date: 2024-06-16
+draft: false
 
-[params]
-  author = 'Mitch Albom'
-  date_started = 2024-06-16
-  date_finished = 2024-06-27
-  reading_time = '12d'
-  fiction = false
-+++
+params:
+  author: "Mitch Albom"
+  date_started: 2024-06-16
+  date_finished: 2024-06-27
+  reading_time: "12d"
+  fiction: false
+---
 
 > The tension of opposites? “Life is a series of pulls back and forth. You want to do one thing, but you are bound to do something else. Something hurts you, yet you know it shouldn’t. You take certain things for granted, even when you know you should never take anything for granted. “A tension of opposites, like a pull on a rubber band. And most of us live somewhere in the middle.” Sounds like a wrestling match, I say. “A wrestling match.” He laughs. “Yes, you could describe life that way. ” So which side wins, I ask? “Which side wins?” He smiles at me, the crinkled eyes, the crooked teeth. “Love wins. Love always wins.”
 

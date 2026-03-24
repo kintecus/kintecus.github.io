@@ -1,15 +1,15 @@
-+++
-title = 'The Three-Body Problem (book 1)'
-date = 2023-12-22
-draft = false
+---
+title: "The Three-Body Problem (book 1)"
+date: 2023-12-22
+draft: false
 
-[params]
-  author = 'Liu Cixin'
-  date_started = 2023-12-22
-  date_finished = 2023-12-28
-  reading_time = '9d'
-  fiction = true
-+++
+params:
+  author: "Liu Cixin"
+  date_started: 2023-12-22
+  date_finished: 2023-12-28
+  reading_time: "9d"
+  fiction: true
+---
 
 > “So complicated!” His wife, a doctor, couldn’t understand why anyone would use such expensive but outdated equipment when ten- or even twenty-megapixel digital cameras were common. And he even used black-and-white film.
 

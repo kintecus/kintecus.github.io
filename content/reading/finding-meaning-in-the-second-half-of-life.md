@@ -1,14 +1,14 @@
-+++
-title = 'Finding Meaning in the Second Half of Life'
-date = 2023-07-31
-draft = false
+---
+title: "Finding Meaning in the Second Half of Life"
+date: 2023-07-31
+draft: false
 
-[params]
-  author = 'James Hollis'
-  date_started = 2023-07-31
-  date_finished = 2024-02-28
-  fiction = false
-+++
+params:
+  author: "James Hollis"
+  date_started: 2023-07-31
+  date_finished: 2024-02-28
+  fiction: false
+---
 
 > Why, even when things are going well, do things feel not quite right?
 

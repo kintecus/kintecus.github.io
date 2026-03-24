@@ -1,15 +1,15 @@
-+++
-title = "Poor Charlie's Almanack"
-date = 2025-09-08
-draft = false
+---
+title: "Poor Charlie's Almanack"
+date: 2025-09-08
+draft: false
 
-[params]
-  author = 'Charles T. Munger'
-  date_started = 2025-09-08
-  date_finished = 2025-11-19
-  reading_time = '73d'
-  fiction = false
-+++
+params:
+  author: "Charles T. Munger"
+  date_started: 2025-09-08
+  date_finished: 2025-11-19
+  reading_time: "73d"
+  fiction: false
+---
 
 > “Charlie, when you borrow a man’s car, you always return it with a full tank of
 

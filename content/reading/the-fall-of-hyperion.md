@@ -1,14 +1,14 @@
-+++
-title = 'The Fall of Hyperion'
-date = 2023-07-25
-draft = false
+---
+title: "The Fall of Hyperion"
+date: 2023-07-25
+draft: false
 
-[params]
-  author = 'Dan Simmons'
-  date_started = 2023-07-25
-  date_finished = 2023-09-03
-  fiction = true
-+++
+params:
+  author: "Dan Simmons"
+  date_started: 2023-07-25
+  date_finished: 2023-09-03
+  fiction: true
+---
 
 > He was a molar grinder and a cheek-muscle flexer.
 

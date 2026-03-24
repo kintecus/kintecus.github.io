@@ -1,15 +1,15 @@
-+++
-title = 'Hatching Twitter'
-date = 2025-04-22
-draft = false
+---
+title: "Hatching Twitter"
+date: 2025-04-22
+draft: false
 
-[params]
-  author = 'Nick Bilton'
-  date_started = 2025-04-22
-  date_finished = 2025-06-01
-  reading_time = '40d'
-  fiction = false
-+++
+params:
+  author: "Nick Bilton"
+  date_started: 2025-04-22
+  date_finished: 2025-06-01
+  reading_time: "40d"
+  fiction: false
+---
 
 > Jack had been the first CEO of Twitter and another cofounder. He had been pushed out of the company by Ev in a similar power struggle in 2008.
 

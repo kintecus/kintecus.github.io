@@ -1,9 +1,9 @@
-+++
-title = 'Listen'
-draft = false
+---
+title: "Listen"
+draft: false
 
-[params]
-  author = 'Kathryn Mannix'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Kathryn Mannix"
+  fiction: false
+  status: "to-read"
+---

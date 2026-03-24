@@ -1,9 +1,9 @@
-+++
-title = 'Designing Your Life'
-draft = false
+---
+title: "Designing Your Life"
+draft: false
 
-[params]
-  author = 'Bill Burnett & Dave Evans'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Bill Burnett & Dave Evans"
+  fiction: false
+  status: "to-read"
+---

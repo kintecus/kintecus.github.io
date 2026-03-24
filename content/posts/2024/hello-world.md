@@ -1,8 +1,8 @@
-+++
-title = 'Hello World'
-date = 2024-09-17T07:09:15+02:00
-draft = false
-+++
+---
+title: "Hello World"
+date: 2024-09-17T07:09:15+02:00
+draft: false
+---
 
 It took me only gazillion years to finally start building myself a personal site with a blog. I’ve had this idea for years, but somehow never got to kicking it off. Probably because of two things: 1) not having a good answer to the question of questions - **why?**, 2) thinking about **who** will read it, and do I even have **what** to share with them.
 

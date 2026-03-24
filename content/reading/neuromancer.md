@@ -1,14 +1,14 @@
-+++
-title = 'Neuromancer'
-date = 2023-11-18
-draft = false
+---
+title: "Neuromancer"
+date: 2023-11-18
+draft: false
 
-[params]
-  author = 'William Gibson'
-  date_started = 2023-11-18
-  date_finished = 2023-12-15
-  fiction = true
-+++
+params:
+  author: "William Gibson"
+  date_started: 2023-11-18
+  date_finished: 2023-12-15
+  fiction: true
+---
 
 > He wondered briefly what it would be like, working all your life for one zaibatsu. Company housing, company hymn, company funeral.
 

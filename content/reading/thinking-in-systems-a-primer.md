@@ -1,15 +1,15 @@
-+++
-title = 'Thinking in Systems: A Primer'
-date = 2025-03-05
-draft = false
+---
+title: "Thinking in Systems: A Primer"
+date: 2025-03-05
+draft: false
 
-[params]
-  author = 'Donella Meadows'
-  date_started = 2025-03-05
-  date_finished = 2025-07-06
-  reading_time = '119d'
-  fiction = false
-+++
+params:
+  author: "Donella Meadows"
+  date_started: 2025-03-05
+  date_finished: 2025-07-06
+  reading_time: "119d"
+  fiction: false
+---
 
 > Strange bedfellows, but systems thinking transcends disciplines and cultures and, when it is done right, it overarches history as well.
 

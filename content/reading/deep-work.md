@@ -1,13 +1,13 @@
-+++
-title = 'Deep Work'
-date = 2025-07-23
-draft = false
+---
+title: "Deep Work"
+date: 2025-07-23
+draft: false
 
-[params]
-  author = 'Cal Newport'
-  date_started = 2025-07-23
-  fiction = false
-+++
+params:
+  author: "Cal Newport"
+  date_started: 2025-07-23
+  fiction: false
+---
 
 > Deep Work: Professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit. These efforts create new value, improve your skill, and are hard to replicate.
 

@@ -1,9 +1,9 @@
-+++
-title = 'The Chicago Manual of Style Made Easy'
-draft = false
+---
+title: "The Chicago Manual of Style Made Easy"
+draft: false
 
-[params]
-  author = 'Bob Baehr'
-  fiction = false
-  status = 'to-read'
-+++
+params:
+  author: "Bob Baehr"
+  fiction: false
+  status: "to-read"
+---
