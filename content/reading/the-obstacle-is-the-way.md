@@ -7,7 +7,6 @@ params:
   author: "Ryan Holiday"
   date_started: 2024-03-02
   date_finished: 2024-03-22
-  reading_time: "12d"
   fiction: false
 ---
 

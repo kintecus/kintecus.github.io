@@ -7,7 +7,6 @@ params:
   author: "Laurene Powell Jobs"
   date_started: 2024-02-14
   date_finished: 2024-02-18
-  reading_time: "10d"
   fiction: false
 ---
 

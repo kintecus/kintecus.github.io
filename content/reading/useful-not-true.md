@@ -7,7 +7,6 @@ params:
   author: "Derek Sivers"
   date_started: 2025-10-10
   date_finished: 2025-10-21
-  reading_time: "3d"
   fiction: false
 ---
 

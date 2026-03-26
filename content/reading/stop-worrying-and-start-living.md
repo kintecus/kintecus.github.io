@@ -6,6 +6,7 @@ draft: false
 params:
   author: "Dale Carnegie"
   date_started: 2024-10-03
+  date_finished: 2024-11-05
   fiction: false
 ---
 

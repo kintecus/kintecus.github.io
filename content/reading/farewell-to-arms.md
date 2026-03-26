@@ -7,7 +7,6 @@ params:
   author: "Ernest Hemingway"
   date_started: 2024-02-21
   date_finished: 2024-02-27
-  reading_time: "10d"
   fiction: true
 ---
 

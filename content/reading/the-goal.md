@@ -7,7 +7,6 @@ params:
   author: "Eliyahu M. Goldratt"
   date_started: 2025-07-06
   date_finished: 2025-07-22
-  reading_time: "16d"
   fiction: true
 ---
 

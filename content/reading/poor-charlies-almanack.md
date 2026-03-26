@@ -7,7 +7,6 @@ params:
   author: "Charles T. Munger"
   date_started: 2025-09-08
   date_finished: 2025-11-19
-  reading_time: "73d"
   fiction: false
 ---
 

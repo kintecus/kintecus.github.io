@@ -32,10 +32,11 @@
               <td>{{ . | time.Format "January 2, 2006" }}</td>
             </tr>
           {{ end }}
-          {{ with $.Params.reading_time }}
+          {{ if and $.Params.date_started $.Params.date_finished }}
+            {{ $days := math.Round (div (sub (time $.Params.date_finished).Unix (time $.Params.date_started).Unix) 86400) }}
             <tr>
               <td>Reading time</td>
-              <td>{{ . }}</td>
+              <td>{{ if ge $days 30 }}{{ math.Round (div $days 30) }} month{{ if ne (math.Round (div $days 30)) 1.0 }}s{{ end }}{{ else }}{{ $days }} day{{ if ne $days 1.0 }}s{{ end }}{{ end }}</td>
             </tr>
           {{ end }}
         </table>

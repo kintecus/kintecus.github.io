@@ -7,7 +7,6 @@ params:
   author: "Сергій Оксеник"
   date_started: 2025-07-28
   date_finished: 2025-07-28
-  reading_time: "4d"
   fiction: true
 ---
 

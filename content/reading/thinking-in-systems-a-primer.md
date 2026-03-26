@@ -7,7 +7,6 @@ params:
   author: "Donella Meadows"
   date_started: 2025-03-05
   date_finished: 2025-07-06
-  reading_time: "119d"
   fiction: false
 ---
 

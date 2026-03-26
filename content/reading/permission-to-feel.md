@@ -7,7 +7,6 @@ params:
   author: "Marc Brackett"
   date_started: 2024-04-09
   date_finished: 2024-07-26
-  reading_time: "30d"
   fiction: false
 ---
 

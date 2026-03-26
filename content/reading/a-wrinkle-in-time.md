@@ -7,7 +7,6 @@ params:
   author: "Madeleine L'Engle"
   date_started: 2026-01-23
   date_finished: 2026-01-23
-  reading_time: "8d"
   fiction: true
 ---
 

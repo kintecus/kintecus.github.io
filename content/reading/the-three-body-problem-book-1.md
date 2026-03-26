@@ -7,7 +7,6 @@ params:
   author: "Liu Cixin"
   date_started: 2023-12-22
   date_finished: 2023-12-28
-  reading_time: "9d"
   fiction: true
 ---
 
