@@ -1,1 +1,34 @@
-/* About page styles - placeholder for future use */
+/* About page styles */
+
+.about-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 40px 0;
+}
+
+.about-content h2 {
+  font-size: 1.1rem;
+  margin: 2rem 0 0.8rem;
+  letter-spacing: -0.01em;
+}
+
+.about-content p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.about-content a {
+  color: var(--accent-color);
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about-wrapper {
+    padding: 24px 16px 0;
+  }
+}
