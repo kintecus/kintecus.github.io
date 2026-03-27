@@ -4,7 +4,10 @@
 <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Chat with Ostap">
   <div class="chat-header">
     <span class="chat-header-title">Chat with Ostap</span>
-    <button class="chat-close" id="chatClose" aria-label="Close chat">[x]</button>
+    <div class="chat-header-actions">
+      <button class="chat-clear" id="chatClear" aria-label="Clear chat">clear</button>
+      <button class="chat-close" id="chatClose" aria-label="Close chat">[x]</button>
+    </div>
   </div>
   <div class="chat-messages" id="chatMessages"></div>
   <div class="chat-status" id="chatStatus"></div>
@@ -29,6 +32,7 @@
   var toggle = document.getElementById('chatToggle');
   var panel = document.getElementById('chatPanel');
   var closeBtn = document.getElementById('chatClose');
+  var clearBtn = document.getElementById('chatClear');
   var messages = document.getElementById('chatMessages');
   var input = document.getElementById('chatInput');
   var sendBtn = document.getElementById('chatSend');
@@ -121,8 +125,21 @@
     toggle.setAttribute('aria-expanded', 'false');
   }
 
+  function clearChat() {
+    if (streaming) return;
+    history = [];
+    saveHistory();
+    messages.innerHTML = '';
+    hideStatus();
+    sessionId = crypto.randomUUID();
+    sessionStorage.setItem(SESSION_KEY, sessionId);
+    addMessage('assistant', GREETING);
+    input.focus();
+  }
+
   toggle.addEventListener('click', openChat);
   closeBtn.addEventListener('click', closeChat);
+  clearBtn.addEventListener('click', clearChat);
 
   // --- Send message ---
   function sendMessage() {

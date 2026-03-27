@@ -63,6 +63,29 @@
   letter-spacing: 0.05em;
 }
 
+.chat-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-clear {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  font-family: var(--font-family);
+  font-size: 0.7rem;
+  cursor: pointer;
+  padding: 2px 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.chat-clear:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
 .chat-close {
   background: none;
   border: none;
@@ -203,16 +226,19 @@
     width: 48px;
     height: 48px;
     font-size: 1.2rem;
+    background: var(--primary-color);
+    border-color: var(--background-color);
+  }
+
+  .chat-toggle:hover {
+    background: var(--accent-color);
   }
 
   .chat-panel {
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    width: auto;
     height: 75vh;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
   }
 }
