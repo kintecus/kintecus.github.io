@@ -12,11 +12,13 @@
     {{ $about := resources.Get "css/about-styles.css" | fingerprint }}
     {{ $reading := resources.Get "css/reading-styles.css" | fingerprint }}
     {{ $chat := resources.Get "css/chat-styles.css" | fingerprint }}
+    {{ $chatPage := resources.Get "css/chat-page-styles.css" | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $home.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $about.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $reading.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $chat.RelPermalink }}"/>
+    <link rel="stylesheet" href="{{ $chatPage.RelPermalink }}"/>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>

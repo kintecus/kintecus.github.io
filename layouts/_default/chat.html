@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Ostap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    {{ $styles := resources.Get "css/styles.css" | fingerprint }}
+    {{ $chatPage := resources.Get "css/chat-page-styles.css" | fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
+    <link rel="stylesheet" href="{{ $chatPage.RelPermalink }}"/>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  </head>
+  <body>
+    <div class="chat-page" id="chatPage">
+      <div class="chat-header">
+        <span class="chat-header-title">Chat with Ostap</span>
+        <div class="chat-header-actions">
+          <button class="chat-clear" id="chatClear" aria-label="Clear chat">clear</button>
+          <button class="chat-back" id="chatBack" aria-label="Back">back</button>
+        </div>
+      </div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-status" id="chatStatus"></div>
+      <div class="chat-input-area">
+        <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything..." autocomplete="off" maxlength="500">
+        <button class="chat-send" id="chatSend">Send</button>
+      </div>
+    </div>
+
+    <script>
+    (function() {
+      'use strict';
+
+      var API_URL = 'https://chat-with-me.ostap-senyuk.workers.dev';
+      var MAX_HISTORY = 10;
+      var SESSION_KEY = 'ostap_chat_session';
+      var HISTORY_KEY = 'ostap_chat_history';
+
+      var clearBtn = document.getElementById('chatClear');
+      var backBtn = document.getElementById('chatBack');
+      var messages = document.getElementById('chatMessages');
+      var input = document.getElementById('chatInput');
+      var sendBtn = document.getElementById('chatSend');
+      var status = document.getElementById('chatStatus');
+
+      var sessionId = sessionStorage.getItem(SESSION_KEY);
+      if (!sessionId) {
+        sessionId = crypto.randomUUID();
+        sessionStorage.setItem(SESSION_KEY, sessionId);
+      }
+
+      var history = [];
+      try {
+        var saved = sessionStorage.getItem(HISTORY_KEY);
+        if (saved) history = JSON.parse(saved);
+      } catch (e) {}
+
+      var streaming = false;
+      var GREETING = "Hi, I'm Ostap's AI assistant. Ask me anything about his background, experience, or projects.";
+
+      function saveHistory() {
+        try { sessionStorage.setItem(HISTORY_KEY, JSON.stringify(history)); } catch (e) {}
+      }
+
+      function renderMarkdown(text) {
+        return text
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/`([^`]+)`/g, '<code>$1</code>')
+          .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+          .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+          .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+          .replace(/\n/g, '<br>');
+      }
+
+      function addMessage(role, content) {
+        var div = document.createElement('div');
+        div.className = 'chat-message ' + role;
+        div.innerHTML = renderMarkdown(content);
+        messages.appendChild(div);
+        messages.scrollTop = messages.scrollHeight;
+        return div;
+      }
+
+      function setStreaming(val) {
+        streaming = val;
+        sendBtn.disabled = val;
+        input.disabled = val;
+      }
+
+      function showStatus(text) {
+        status.textContent = text;
+        status.classList.add('visible');
+      }
+
+      function hideStatus() {
+        status.classList.remove('visible');
+      }
+
+      // Init
+      if (history.length > 0) {
+        for (var i = 0; i < history.length; i++) {
+          addMessage(history[i].role, history[i].content);
+        }
+      } else {
+        addMessage('assistant', GREETING);
+      }
+      input.focus();
+      if (window.sa_event) window.sa_event('chat_opened');
+
+      // Back
+      backBtn.addEventListener('click', function() {
+        if (window.history.length > 1) {
+          window.history.back();
+        } else {
+          window.location.href = '/';
+        }
+      });
+
+      // Clear
+      clearBtn.addEventListener('click', function() {
+        if (streaming) return;
+        history = [];
+        saveHistory();
+        messages.innerHTML = '';
+        hideStatus();
+        sessionId = crypto.randomUUID();
+        sessionStorage.setItem(SESSION_KEY, sessionId);
+        addMessage('assistant', GREETING);
+        input.focus();
+        if (window.sa_event) window.sa_event('chat_cleared');
+      });
+
+      // Send
+      function sendMessage() {
+        var text = input.value.trim();
+        if (!text || streaming) return;
+
+        hideStatus();
+        if (window.sa_event) window.sa_event('chat_message_sent');
+        addMessage('user', text);
+        history.push({ role: 'user', content: text });
+        input.value = '';
+
+        var apiMessages = history.slice(-MAX_HISTORY * 2);
+
+        setStreaming(true);
+
+        var assistantDiv = document.createElement('div');
+        assistantDiv.className = 'chat-message assistant';
+        var cursor = document.createElement('span');
+        cursor.className = 'chat-cursor';
+        assistantDiv.appendChild(cursor);
+        messages.appendChild(assistantDiv);
+        messages.scrollTop = messages.scrollHeight;
+
+        var fullResponse = '';
+
+        fetch(API_URL + '/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ session_id: sessionId, messages: apiMessages })
+        }).then(function(response) {
+          if (!response.ok) {
+            if (response.status === 429) throw new Error('rate_limit');
+            throw new Error('api_error');
+          }
+
+          var reader = response.body.getReader();
+          var decoder = new TextDecoder();
+
+          function read() {
+            return reader.read().then(function(result) {
+              if (result.done) {
+                if (cursor.parentNode) cursor.parentNode.removeChild(cursor);
+                assistantDiv.innerHTML = renderMarkdown(fullResponse);
+                history.push({ role: 'assistant', content: fullResponse });
+                saveHistory();
+                setStreaming(false);
+                messages.scrollTop = messages.scrollHeight;
+                return;
+              }
+
+              var chunk = decoder.decode(result.value, { stream: true });
+              var lines = chunk.split('\n');
+              for (var j = 0; j < lines.length; j++) {
+                var line = lines[j].trim();
+                if (!line.startsWith('data: ')) continue;
+                var data;
+                try { data = JSON.parse(line.slice(6)); } catch (e) { continue; }
+
+                if (data.type === 'chunk' && data.text) {
+                  fullResponse += data.text;
+                  assistantDiv.innerHTML = renderMarkdown(fullResponse);
+                  assistantDiv.appendChild(cursor);
+                  messages.scrollTop = messages.scrollHeight;
+                } else if (data.type === 'error') {
+                  throw new Error(data.message || 'api_error');
+                }
+              }
+              return read();
+            });
+          }
+
+          return read();
+        }).catch(function(err) {
+          if (cursor.parentNode) cursor.parentNode.removeChild(cursor);
+          setStreaming(false);
+          if (err.message === 'rate_limit') {
+            showStatus("Conversation limit reached. Connect with Ostap on LinkedIn instead.");
+          } else {
+            showStatus("Something went wrong. Try again in a moment.");
+          }
+          if (!fullResponse) messages.removeChild(assistantDiv);
+        });
+      }
+
+      sendBtn.addEventListener('click', sendMessage);
+      input.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+          e.preventDefault();
+          sendMessage();
+        }
+      });
+    })();
+    </script>
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+  </body>
+</html>

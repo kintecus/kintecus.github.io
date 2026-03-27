@@ -110,9 +110,12 @@
 
   // --- Open / Close ---
   function openChat() {
+    if (window.innerWidth <= 600) {
+      window.location.href = '/chat/';
+      return;
+    }
     panel.classList.add('open');
     toggle.setAttribute('aria-expanded', 'true');
-    if (window.innerWidth <= 600) document.body.style.overflow = 'hidden';
     input.focus();
     if (history.length === 0) {
       addMessage('assistant', GREETING);
@@ -124,7 +127,6 @@
   function closeChat() {
     panel.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
   }
 
   function clearChat() {
