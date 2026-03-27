@@ -135,6 +135,7 @@
     sessionStorage.setItem(SESSION_KEY, sessionId);
     addMessage('assistant', GREETING);
     input.focus();
+    if (window.sa_event) window.sa_event('chat_cleared');
   }
 
   toggle.addEventListener('click', openChat);
@@ -147,6 +148,7 @@
     if (!text || streaming) return;
 
     hideStatus();
+    if (window.sa_event) window.sa_event('chat_message_sent');
     addMessage('user', text);
     history.push({ role: 'user', content: text });
     input.value = '';
