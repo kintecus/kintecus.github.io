@@ -61,12 +61,17 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
 }
 
 .chat-header-actions {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .chat-clear {
@@ -235,10 +240,12 @@
   }
 
   .chat-panel {
+    top: 10px;
     bottom: 10px;
     right: 10px;
     left: 10px;
     width: auto;
-    height: 75vh;
+    height: auto;
+    padding-bottom: env(safe-area-inset-bottom, 0);
   }
 }
