@@ -12,7 +12,7 @@ Fifteen years of that across ad tech, e-commerce, and SaaS. Ukrainian, moved to 
 
 Started at a photo [production studio](https://www.behance.net/search/projects/positive%20pictures%20postproduction) in Kyiv. I met the founder at a university party - friend of a friend, already a successful producer at another studio. I was a year into photography and showing my work to anyone who'd look. He looked, gave me brutally honest feedback, and we clicked. When he started his own studio a while later, he invited me to join. Five of us full-time, plus contractors when we needed them. We turned it into a high-end production studio, shooting worldwide ad campaigns and local Ukrainian ones for all the major agencies in Kyiv. I learned the full production process, from pre-production meetings to a billboard going up across the country. The kind of work where you spend fourteen hours shooting a single beer bottle because that's the level of detail it takes. But the bigger thing I took from those five years was the experience of working with a small team that genuinely cares about what they're making. That stuck with me - it's still what I look for. Those people are lifetime friends now.
 
-Then e-commerce at [Kasta](https://kasta.ua) during their 12x growth year. Scaled photo ops, built tracking systems, taught myself SQL by diving into production databases. That's also where I learned the importance of data democratization - I built the company's first BI system, giving every department a full picture from site visits to sales to inventory. Before that, each team was operating with their own slice of reality.
+Then e-commerce at [Kasta](https://kasta.ua) during their 12x growth year. I ran the end-to-end product processing pipeline - collecting samples, prepping them for shoots, photography with and without models, retouching, writing catalog descriptions, publishing to production. We went from processing 200 items a day to a couple of thousand. I came up with and pushed for a tracking system to follow each sample through the whole cycle, taught myself SQL by diving into production databases, and eventually built the company's first BI system. That last one taught me about data democratization - giving every department a full picture from site visits to sales to inventory, instead of each team operating with their own slice of reality.
 
 Nine years in ad tech after that - StrikeAd, Sizmek, then Amazon (which acquired Sizmek in 2019). At StrikeAd and Sizmek I taught myself Python to build a discrepancy monitoring dashboard that reduced detection time from weeks to hours. Delivered 15+ SSP integrations, cut infrastructure costs by 50%, launched private marketplace, video, native, and audio ad formats.
 
@@ -26,7 +26,7 @@ Two years off. Full-time parenting, not a career gap. Recovery from burnout and 
 
 ## Now
 
-Co-founding [Satori Ads](https://satoriads.com) - wallet pass advertising through Apple and Google Wallet. First paying pilot landed, got into WPP's accelerator. I do product strategy, write backend code, and handle the co-founder things - investors, partnerships, company ops.
+Running [Satori Ads](https://satoriads.com) - wallet pass advertising through Apple and Google Wallet. First paying pilot landed, got into WPP's accelerator. I do product strategy, write backend code, and handle the co-founder things - investors, partnerships, company ops.
 
 Claude Code is my operating environment, not an experiment. Two years of daily use changed how I think about the PM role entirely. Less specs, more working code.
 
