@@ -4,36 +4,36 @@ draft: false
 layout: "about"
 ---
 
-I'm a builder who ended up in product management. The title says PM, but the work has always been closer to the thing being made - prototyping, automating, writing code, digging into data, figuring out how systems actually work.
+I build, tinker, and experiment with all kinds of stuff - from coding POCs with Claude Code to creating ambient patches in VCV rack to shooting videos for my friend's flamenco school in Krakow. On paper, I'm a technical product manager.
 
-Fifteen years of that across ad tech, e-commerce, and SaaS. Ukrainian, living in Poland since 2014. Married, three kids.
+Fifteen years of that across ad tech, e-commerce, and SaaS. Ukrainian, moved to Poland in 2014. Married, three kids.
 
 ## The path
 
-Started in advertising production in Kyiv - employee #4 at a photo studio, five years of shoots for Coca-Cola, McDonald's, and other global brands through major agencies. I learned how things get made, not just planned.
+Started at a photo [production studio](https://www.behance.net/search/projects/positive%20pictures%20postproduction) in Kyiv. I met the founder at a university party - friend of a friend, already a successful producer at another studio. I was a year into photography and showing my work to anyone who'd look. He looked, gave me brutally honest feedback, and we clicked. When he started his own studio a while later, he invited me to join. Five of us full-time, plus contractors when we needed them. We turned it into a high-end production studio, shooting worldwide ad campaigns and local Ukrainian ones for all the major agencies in Kyiv. I learned the full production process, from pre-production meetings to a billboard going up across the country. The kind of work where you spend fourteen hours shooting a single beer bottle because that's the level of detail it takes. But the bigger thing I took from those five years was the experience of working with a small team that genuinely cares about what they're making. That stuck with me - it's still what I look for. Those people are lifetime friends now.
 
-Crossed into e-commerce at [Kasta](https://kasta.ua) (now Ukraine's largest fashion platform) during the 12x growth year. Scaled photo production from 1 studio to 8, built a barcode tracking system for thousands of daily product samples, then moved into the business side and built the company's first BI system by reverse-engineering databases and teaching myself SQL.
+Then e-commerce at [Kasta](https://kasta.ua) during their 12x growth year. Scaled photo ops, built tracking systems, taught myself SQL by diving into production databases. That's also where I learned the importance of data democratization - I built the company's first BI system, giving every department a full picture from site visits to sales to inventory. Before that, each team was operating with their own slice of reality.
 
-Spent six years in ad tech at StrikeAd and Sizmek. Taught myself Python to build a discrepancy monitoring dashboard - reduced detection time from weeks to 24 hours. Delivered 15+ SSP integrations, cut infrastructure costs by 50%, launched private marketplace, video, native, and audio ad formats.
+Nine years in ad tech after that - StrikeAd, Sizmek, then Amazon (which acquired Sizmek in 2019). At StrikeAd and Sizmek I taught myself Python to build a discrepancy monitoring dashboard that reduced detection time from weeks to hours. Delivered 15+ SSP integrations, cut infrastructure costs by 50%, launched private marketplace, video, native, and audio ad formats.
 
-At Amazon (post-Sizmek acquisition), I built Visual Analytics from zero - a reporting dashboard that hit 80% adoption within weeks. Led the cross-team delivery of Search Engine Analytics, a migration-critical product. Mentored a support team member into a PM role - they later became Senior PM at Amazon.
+At Amazon, I built Visual Analytics from zero - a reporting dashboard that hit 80% adoption within weeks. Led the cross-team delivery of Search Engine Analytics, a migration-critical product. Mentored someone from support into a PM role - they're a Senior PM at Amazon now. That one matters to me.
 
-At Voicemod, I was Principal Platform PM leading cloud infrastructure and a cross-platform launch. The role turned into 4-5 jobs at once - platform architect, engineering lead, audio content team manager, cross-functional diplomat. I shipped good work, then burned out.
+Voicemod brought me in as Principal PM for cloud infrastructure. The role was good until it became four jobs at once. Shipped good work, burned out.
 
 ## The break
 
-Two years of full-time parenting. Not a gap - recovery from burnout and intentional time with my kids. During this time I found my way into Python, built automation tools, and developed the working style I have now. The builder instinct was always there. The break is when it fully crystallized.
+Two years off. Full-time parenting, not a career gap. Recovery from burnout and intentional time with my kids. During this time I picked up Python seriously, built tools, and figured out how I actually want to work. The tinkering instinct was always there. The break is when it crystallized.
 
 ## Now
 
-Co-founding [Satori Ads](https://satoriads.com) - a wallet pass advertising platform that distributes Apple and Google wallet passes through ads. Landed our first paying pilot with Vision Express (retail chain in Poland) and got accepted into WPP's startup accelerator. I define product strategy, contribute to the codebase (Python/FastAPI backend, React frontend), and handle the co-founder side - company registration, acquisition modeling, investor conversations, partnership negotiations.
+Co-founding [Satori Ads](https://satoriads.com) - wallet pass advertising through Apple and Google Wallet. First paying pilot landed, got into WPP's accelerator. I do product strategy, write backend code, and handle the co-founder things - investors, partnerships, company ops.
 
-Working with AI tools daily - Claude Code is my operating environment, not an experiment. I prototype, build CLI tools, reverse-engineer APIs, contribute to codebases, and manage projects through it. Two years of intensive use fundamentally changed how I see the PM role: less writing specs, more building and validating with working code.
+Claude Code is my operating environment, not an experiment. Two years of daily use changed how I think about the PM role entirely. Less specs, more working code.
 
-Open source contributions to [Tribe Coding](https://github.com/Tribe-Coding/claude-plugins) plugins. Personal projects that scratch real itches: [pidcast](https://github.com/kintecus/pidcast) for podcast transcription and analysis, vulcan-notify for syncing my kids' school data from a reverse-engineered API.
+Open source stuff: [Tribe Coding](https://github.com/Tribe-Coding/claude-plugins) plugins, [pidcast](https://github.com/kintecus/pidcast) for podcast analysis, vulcan-notify for syncing my kids' school data from an API I reverse-engineered because the school's app was terrible.
 
 ## Outside work
 
-Photography - 42 million views and 275,000 downloads on [Unsplash](https://unsplash.com/@kintecus). The photographer's eye carries into everything: I notice composition in dashboards, care about how things look in screenshots, think visually about information.
+Photography - 42 million views on [Unsplash](https://unsplash.com/@kintecus). The photographer's eye carries into everything I make.
 
-Music production - EP-133 sampler, Volca Drum, Kawai piano, Logic Pro. Weird electronic stuff. Not performing, not releasing - just exploring sound. It's a builder thing in a different medium.
+Music - EP-133 sampler, Volca Drum, Kawai piano, Logic Pro. Weird electronic stuff. Not performing, not releasing - just exploring sound.
