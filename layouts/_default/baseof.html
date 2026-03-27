@@ -11,10 +11,12 @@
     {{ $home := resources.Get "css/home-styles.css" | fingerprint }}
     {{ $about := resources.Get "css/about-styles.css" | fingerprint }}
     {{ $reading := resources.Get "css/reading-styles.css" | fingerprint }}
+    {{ $chat := resources.Get "css/chat-styles.css" | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $home.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $about.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $reading.RelPermalink }}"/>
+    <link rel="stylesheet" href="{{ $chat.RelPermalink }}"/>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
@@ -25,6 +27,7 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+    {{ partial "chat-widget.html" . }}
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>

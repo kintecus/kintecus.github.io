@@ -1,0 +1,254 @@
+<!-- Chat Widget -->
+<button class="chat-toggle" id="chatToggle" aria-label="Chat with Ostap" aria-expanded="false">&gt;_</button>
+
+<div class="chat-panel" id="chatPanel" role="dialog" aria-label="Chat with Ostap">
+  <div class="chat-header">
+    <span class="chat-header-title">Chat with Ostap</span>
+    <button class="chat-close" id="chatClose" aria-label="Close chat">[x]</button>
+  </div>
+  <div class="chat-messages" id="chatMessages"></div>
+  <div class="chat-status" id="chatStatus"></div>
+  <div class="chat-input-area">
+    <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything..." autocomplete="off" maxlength="500">
+    <button class="chat-send" id="chatSend">Send</button>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  // --- Configuration ---
+  // Set this to your Cloudflare Worker URL once deployed
+  var API_URL = 'https://chat-with-me.ostap-senyuk.workers.dev';
+  var MAX_HISTORY = 10;
+  var SESSION_KEY = 'ostap_chat_session';
+  var HISTORY_KEY = 'ostap_chat_history';
+
+  // --- DOM ---
+  var toggle = document.getElementById('chatToggle');
+  var panel = document.getElementById('chatPanel');
+  var closeBtn = document.getElementById('chatClose');
+  var messages = document.getElementById('chatMessages');
+  var input = document.getElementById('chatInput');
+  var sendBtn = document.getElementById('chatSend');
+  var status = document.getElementById('chatStatus');
+
+  // --- State ---
+  var sessionId = sessionStorage.getItem(SESSION_KEY);
+  if (!sessionId) {
+    sessionId = crypto.randomUUID();
+    sessionStorage.setItem(SESSION_KEY, sessionId);
+  }
+
+  var history = [];
+  try {
+    var saved = sessionStorage.getItem(HISTORY_KEY);
+    if (saved) history = JSON.parse(saved);
+  } catch (e) { /* ignore */ }
+
+  var streaming = false;
+
+  // --- Helpers ---
+  function saveHistory() {
+    try {
+      sessionStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+    } catch (e) { /* ignore */ }
+  }
+
+  function renderMarkdown(text) {
+    // Minimal markdown: bold, italic, links, code
+    return text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+      .replace(/\n/g, '<br>');
+  }
+
+  function addMessage(role, content) {
+    var div = document.createElement('div');
+    div.className = 'chat-message ' + role;
+    div.innerHTML = renderMarkdown(content);
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+    return div;
+  }
+
+  function setStreaming(val) {
+    streaming = val;
+    sendBtn.disabled = val;
+    input.disabled = val;
+  }
+
+  function showStatus(text) {
+    status.textContent = text;
+    status.classList.add('visible');
+  }
+
+  function hideStatus() {
+    status.classList.remove('visible');
+  }
+
+  // --- Greeting ---
+  var GREETING = "Hi, I'm Ostap's AI assistant. Ask me anything about his background, experience, or projects.";
+
+  function init() {
+    if (history.length === 0) return;
+    // Restore previous messages
+    for (var i = 0; i < history.length; i++) {
+      addMessage(history[i].role, history[i].content);
+    }
+  }
+
+  // --- Open / Close ---
+  function openChat() {
+    panel.classList.add('open');
+    toggle.setAttribute('aria-expanded', 'true');
+    input.focus();
+    if (history.length === 0) {
+      addMessage('assistant', GREETING);
+    }
+    // Simple Analytics event
+    if (window.sa_event) window.sa_event('chat_opened');
+  }
+
+  function closeChat() {
+    panel.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  toggle.addEventListener('click', openChat);
+  closeBtn.addEventListener('click', closeChat);
+
+  // --- Send message ---
+  function sendMessage() {
+    var text = input.value.trim();
+    if (!text || streaming) return;
+
+    hideStatus();
+    addMessage('user', text);
+    history.push({ role: 'user', content: text });
+    input.value = '';
+
+    // Build messages for API (capped)
+    var apiMessages = history.slice(-MAX_HISTORY * 2);
+
+    if (!API_URL) {
+      // No backend configured yet - show placeholder
+      var placeholder = "The chat backend isn't connected yet. Once Ostap deploys the API, I'll be able to answer your questions. In the meantime, check out the [About page](/about/) or connect on [LinkedIn](https://linkedin.com/in/ostapsenyuk/).";
+      addMessage('assistant', placeholder);
+      history.push({ role: 'assistant', content: placeholder });
+      saveHistory();
+      return;
+    }
+
+    setStreaming(true);
+
+    // Create assistant message container with cursor
+    var assistantDiv = document.createElement('div');
+    assistantDiv.className = 'chat-message assistant';
+    var cursor = document.createElement('span');
+    cursor.className = 'chat-cursor';
+    assistantDiv.appendChild(cursor);
+    messages.appendChild(assistantDiv);
+    messages.scrollTop = messages.scrollHeight;
+
+    var fullResponse = '';
+
+    fetch(API_URL + '/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        session_id: sessionId,
+        messages: apiMessages
+      })
+    }).then(function(response) {
+      if (!response.ok) {
+        if (response.status === 429) {
+          throw new Error('rate_limit');
+        }
+        throw new Error('api_error');
+      }
+
+      var reader = response.body.getReader();
+      var decoder = new TextDecoder();
+
+      function read() {
+        return reader.read().then(function(result) {
+          if (result.done) {
+            // Remove cursor, finalize
+            if (cursor.parentNode) cursor.parentNode.removeChild(cursor);
+            assistantDiv.innerHTML = renderMarkdown(fullResponse);
+            history.push({ role: 'assistant', content: fullResponse });
+            saveHistory();
+            setStreaming(false);
+            messages.scrollTop = messages.scrollHeight;
+            return;
+          }
+
+          var chunk = decoder.decode(result.value, { stream: true });
+          var lines = chunk.split('\n');
+          for (var i = 0; i < lines.length; i++) {
+            var line = lines[i].trim();
+            if (!line.startsWith('data: ')) continue;
+            var data;
+            try {
+              data = JSON.parse(line.slice(6));
+            } catch (e) { continue; }
+
+            if (data.type === 'chunk' && data.text) {
+              fullResponse += data.text;
+              // Update display: text + cursor
+              assistantDiv.innerHTML = renderMarkdown(fullResponse);
+              assistantDiv.appendChild(cursor);
+              messages.scrollTop = messages.scrollHeight;
+            } else if (data.type === 'done') {
+              // Stream complete
+            } else if (data.type === 'error') {
+              throw new Error(data.message || 'api_error');
+            }
+          }
+          return read();
+        });
+      }
+
+      return read();
+    }).catch(function(err) {
+      if (cursor.parentNode) cursor.parentNode.removeChild(cursor);
+      setStreaming(false);
+
+      if (err.message === 'rate_limit') {
+        showStatus("Conversation limit reached. Connect with Ostap on LinkedIn instead.");
+      } else {
+        showStatus("Something went wrong. Try again in a moment.");
+      }
+      // Remove empty assistant div if no content
+      if (!fullResponse) {
+        messages.removeChild(assistantDiv);
+      }
+    });
+  }
+
+  sendBtn.addEventListener('click', sendMessage);
+  input.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault();
+      sendMessage();
+    }
+  });
+
+  // --- Escape to close ---
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && panel.classList.contains('open')) {
+      closeChat();
+    }
+  });
+
+  // --- Init ---
+  init();
+})();
+</script>
