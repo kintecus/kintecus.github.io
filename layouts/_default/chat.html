@@ -235,13 +235,16 @@
           sendMessage();
         }
       });
-      // Resize chat to visible viewport when keyboard opens (fallback for older browsers)
+      // Keep chat pinned to visible viewport when keyboard opens
       if (window.visualViewport) {
         var chatPage = document.getElementById('chatPage');
-        window.visualViewport.addEventListener('resize', function() {
+        function syncViewport() {
           chatPage.style.height = window.visualViewport.height + 'px';
+          chatPage.style.top = window.visualViewport.offsetTop + 'px';
           messages.scrollTop = messages.scrollHeight;
-        });
+        }
+        window.visualViewport.addEventListener('resize', syncViewport);
+        window.visualViewport.addEventListener('scroll', syncViewport);
       }
     })();
     </script>
