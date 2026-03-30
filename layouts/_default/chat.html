@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="{{ $chatPage.RelPermalink }}"/>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      })();
+    </script>
   </head>
   <body class="chat-body">
     <div class="chat-page" id="chatPage">

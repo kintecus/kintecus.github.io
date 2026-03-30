@@ -30,9 +30,7 @@
 .chat-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   display: none;
 }
@@ -44,9 +42,8 @@
 /* Chat Panel */
 .chat-panel {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  inset: 0;
+  margin: auto;
   width: clamp(500px, 45vw, 900px);
   height: clamp(600px, 70vh, 850px);
   background: var(--background-color);
@@ -133,7 +130,7 @@
 }
 
 .chat-message {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   line-height: 1.55;
   color: var(--text-color);
   padding: 8px 10px;
@@ -193,9 +190,9 @@
   padding: 10px 12px;
   border: 2px solid var(--primary-color);
   border-right: none;
-  background: #fff;
+  background: var(--input-bg);
   font-family: var(--font-family);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   color: var(--primary-color);
   outline: none;
 }
@@ -211,7 +208,7 @@
   border-left: none;
   padding: 10px 14px;
   font-family: var(--font-family);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
   text-transform: uppercase;

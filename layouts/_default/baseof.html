@@ -22,6 +22,14 @@
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      })();
+    </script>
   </head>
   <body>
     {{ partial "header.html" . }}
@@ -30,6 +38,48 @@
     </main>
     {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
     {{ partial "chat-widget.html" . }}
+    <script>
+      (function() {
+        var btn = document.getElementById('themeToggle');
+        if (!btn) return;
+
+        function getEffective() {
+          var saved = localStorage.getItem('theme');
+          if (saved === 'light' || saved === 'dark') return saved;
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        function getMode() {
+          var saved = localStorage.getItem('theme');
+          return (saved === 'light' || saved === 'dark') ? saved : 'auto';
+        }
+
+        function updateLabel() {
+          var effective = getEffective();
+          btn.textContent = effective === 'dark' ? '[nite]' : '[day]';
+          btn.setAttribute('aria-label', 'Switch to ' + (effective === 'dark' ? 'light' : 'dark') + ' mode');
+        }
+
+        function applyTheme(mode) {
+          if (mode === 'auto') {
+            document.documentElement.removeAttribute('data-theme');
+            localStorage.removeItem('theme');
+          } else {
+            document.documentElement.setAttribute('data-theme', mode);
+            localStorage.setItem('theme', mode);
+          }
+          updateLabel();
+        }
+
+        btn.addEventListener('click', function() {
+          var effective = getEffective();
+          applyTheme(effective === 'dark' ? 'light' : 'dark');
+        });
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateLabel);
+        updateLabel();
+      })();
+    </script>
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
   </body>

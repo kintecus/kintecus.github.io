@@ -6,6 +6,7 @@
   --background-color: #ededed;
   --surface-color: transparent;
   --border-color: #ccc;
+  --input-bg: #fff;
   --max-content-width: 800px;
   --font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
   --link-color: #0037ff;
@@ -21,6 +22,44 @@
   --tag-toread-color: var(--accent-color);
   --highlight-border: var(--accent-color);
   --highlight-bg: #e4e4e4;
+}
+
+/* Dark mode - system preference */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --primary-color: #e8e8e8;
+    --secondary-color: #aaa;
+    --text-color: #d0d0d0;
+    --background-color: #1a1a1a;
+    --border-color: #444;
+    --input-bg: #2a2a2a;
+    --link-color: #5599ff;
+    --link-hover: #7bb3ff;
+    --accent-color: #3366cc;
+    --highlight-bg: #2a2a2a;
+    --tag-fiction-border: #777;
+    --tag-fiction-color: #aaa;
+    --tag-nonfiction-border: #777;
+    --tag-nonfiction-color: #aaa;
+  }
+}
+
+/* Dark mode - manual override */
+:root[data-theme="dark"] {
+  --primary-color: #e8e8e8;
+  --secondary-color: #aaa;
+  --text-color: #d0d0d0;
+  --background-color: #1a1a1a;
+  --border-color: #444;
+  --input-bg: #2a2a2a;
+  --link-color: #5599ff;
+  --link-hover: #7bb3ff;
+  --accent-color: #3366cc;
+  --highlight-bg: #2a2a2a;
+  --tag-fiction-border: #777;
+  --tag-fiction-color: #aaa;
+  --tag-nonfiction-border: #777;
+  --tag-nonfiction-color: #aaa;
 }
 
 /* Reset and Base Styles */
@@ -132,6 +171,24 @@ nav ul li a {
 
 nav ul li a:hover {
   color: var(--link-color);
+}
+
+/* Theme toggle */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0;
+  letter-spacing: 0.02em;
+}
+
+.theme-toggle:hover {
+  color: var(--primary-color);
 }
 
 /* Posts list page */
