@@ -1,4 +1,15 @@
 /* Chat Page (mobile full-page chat) */
+html, body.chat-body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body.chat-body {
+  display: block;
+  align-items: initial;
+  min-height: initial;
+}
+
 .chat-page {
   display: flex;
   flex-direction: column;
@@ -134,10 +145,12 @@
 .chat-page .chat-input-area {
   display: flex;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .chat-page .chat-input {
   flex: 1;
+  min-width: 0;
   padding: 10px 12px;
   border: 2px solid var(--primary-color);
   border-right: none;

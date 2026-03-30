@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content">
     <title>Chat with Ostap</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   </head>
-  <body>
+  <body class="chat-body">
     <div class="chat-page" id="chatPage">
       <div class="chat-header">
         <span class="chat-header-title">Chat with Ostap</span>
@@ -227,6 +227,14 @@
           sendMessage();
         }
       });
+      // Resize chat to visible viewport when keyboard opens (fallback for older browsers)
+      if (window.visualViewport) {
+        var chatPage = document.getElementById('chatPage');
+        window.visualViewport.addEventListener('resize', function() {
+          chatPage.style.height = window.visualViewport.height + 'px';
+          messages.scrollTop = messages.scrollHeight;
+        });
+      }
     })();
     </script>
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>

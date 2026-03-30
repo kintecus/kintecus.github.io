@@ -1,5 +1,6 @@
 <!-- Chat Widget -->
 <button class="chat-toggle" id="chatToggle" aria-label="Chat with Ostap" aria-expanded="false">&gt;_</button>
+<div class="chat-backdrop" id="chatBackdrop"></div>
 
 <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Chat with Ostap">
   <div class="chat-header">
@@ -30,6 +31,7 @@
 
   // --- DOM ---
   var toggle = document.getElementById('chatToggle');
+  var backdrop = document.getElementById('chatBackdrop');
   var panel = document.getElementById('chatPanel');
   var closeBtn = document.getElementById('chatClose');
   var clearBtn = document.getElementById('chatClear');
@@ -114,6 +116,7 @@
       window.location.href = '/chat/';
       return;
     }
+    backdrop.classList.add('open');
     panel.classList.add('open');
     toggle.setAttribute('aria-expanded', 'true');
     input.focus();
@@ -125,6 +128,7 @@
   }
 
   function closeChat() {
+    backdrop.classList.remove('open');
     panel.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
   }
@@ -144,6 +148,7 @@
 
   toggle.addEventListener('click', openChat);
   closeBtn.addEventListener('click', closeChat);
+  backdrop.addEventListener('click', closeChat);
   clearBtn.addEventListener('click', clearChat);
 
   // --- Send message ---

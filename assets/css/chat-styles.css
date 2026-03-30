@@ -26,14 +26,29 @@
   display: none;
 }
 
+/* Backdrop */
+.chat-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 1000;
+  display: none;
+}
+
+.chat-backdrop.open {
+  display: block;
+}
+
 /* Chat Panel */
 .chat-panel {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 600px;
+  width: clamp(500px, 45vw, 900px);
+  height: clamp(600px, 70vh, 850px);
   background: var(--background-color);
   border: 2px solid var(--primary-color);
   display: none;
