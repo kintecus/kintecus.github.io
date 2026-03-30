@@ -1,5 +1,5 @@
 /* Chat Page (mobile full-page chat) */
-html, body.chat-body {
+html:has(.chat-page), body.chat-body {
   height: 100%;
   overflow: hidden;
 }
