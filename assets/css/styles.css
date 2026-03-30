@@ -244,6 +244,40 @@ article li {
   margin-bottom: 0.5rem;
 }
 
+/* Code */
+code {
+  font-family: var(--font-family);
+  font-size: 0.88em;
+  background: var(--highlight-bg);
+  padding: 0.15em 0.35em;
+  border: 1px solid var(--border-color);
+}
+
+pre {
+  background: var(--highlight-bg);
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  overflow-x: auto;
+  line-height: 1.5;
+  margin: 0 0 1rem;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.85rem;
+}
+
+/* Hugo syntax highlighting wrapper */
+.highlight {
+  margin: 0 0 1rem;
+}
+
+.highlight pre {
+  margin: 0;
+}
+
 /* Site footer */
 .site-footer {
   text-align: center;
