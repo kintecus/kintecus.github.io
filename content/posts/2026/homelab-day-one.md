@@ -1,120 +1,67 @@
 ---
-title: "Homelab in an hour (not the 8 it took me)"
+title: "Saturday homelab: an AI pair-programming experiment"
 date: 2026-03-28T18:00:00+01:00
 draft: false
-tags: ['homelab', 'proxmox', 'jellyfin', 'networking']
+tags: ['homelab', 'proxmox', 'jellyfin', 'ai', 'claude']
 ---
 
-I spent a Saturday turning a dusty 2011 MacBook Pro into a home media server with Home Assistant. By evening I had Jellyfin streaming Twin Peaks to the TV, a download client with built-in search, and a bedside lamp I could control from my phone. It took about 8 hours. Most of that was fighting my ISP router.
+I spent a Saturday turning a dusty 2011 MacBook Pro into a home server. By evening I had Jellyfin streaming Twin Peaks to the TV, a download client with built-in search, and a bedside lamp I could control from my phone. It took about 8 hours. Most of that was fighting my ISP router.
 
-Here's how to do it in one.
+Here's the thing though - I didn't write a single line of config. Claude did all of it. I just told it what I wanted and pasted error messages when things broke.
 
-## Skip the ISP router
+## How this actually worked
 
-Single biggest time-saver. I lost half the day discovering that my ZTE F680 (ISP-provided fiber router) isolates everything from everything. Not just WiFi from ethernet - it isolates its own LAN ports from each other. Port 1 can't talk to port 2. The SSID Isolation toggle in settings was already off. Doesn't matter. Baked into the firmware, locked-down ISP build, no advanced bridging options exposed.
+I had the idea and the hardware. A MacBook Pro gathering dust, a vague notion that Proxmox exists, and zero experience with Linux server administration. I knew what I wanted the end result to look like - media streaming, smart home control, remote access - but I didn't know how to get there.
 
-I confirmed this the hard way - moved the Proxmox server between floors, tried every LAN port combination, ran ARP resolution tests. All failed. `ip neigh show` just returns `FAILED` for anything not on the same physical switch. TV on LAN port 3 can't reach the server on LAN port 2. Lamp on WiFi can't see anything on ethernet. Nothing works through the ZTE.
+So I opened Claude Code, described what I had and what I wanted, and let it drive. It wrote the shell commands, I ran them. When something failed, I pasted the output back. When I was curious about why we were doing something a certain way - why LXC containers instead of full VMs for Jellyfin, what Tailscale subnet routing actually does, why inotify doesn't work across bind mounts - I'd ask, and Claude would explain it.
 
-My current setup is duct tape: a D-Link on the second floor as a switch and WiFi AP, a Netgear range extender bridging WiFi between floors, Tailscale port forwards for devices that can't reach the server, and the lamp moved from ZTE's WiFi to D-Link's WiFi just so Home Assistant could see it.
+The dynamic was closer to directing a contractor than to following a tutorial. I made the decisions (what to install, where to put things, how to organize the media library), Claude handled the implementation details (the actual `pct set` flags, systemd service files, mount point permissions).
 
-**What to do instead:** buy a proper router before starting. TP-Link Archer AX55, about 50 EUR. Put the ISP box in bridge mode (it just handles the fiber connection), let the real router handle everything else. One flat network, one SSID, every device talks to every other device.
+## The ISP router rabbit hole
 
-Two floors? Add a second AP connected via ethernet. Same SSID, different channel. Devices roam seamlessly.
+This is where the human-in-the-loop part actually mattered. Half the day went to discovering that my ZTE F680 (ISP-provided fiber router) isolates everything from everything. Not just WiFi from ethernet - it isolates its own LAN ports from each other. Port 1 can't talk to port 2.
 
-Do this first. Everything else becomes trivial.
+No amount of AI assistance helps when the problem is physical. I was the one moving the laptop between floors, swapping ethernet cables, checking which devices could see which. Claude helped me run the diagnostic commands (`ip neigh show`, ARP resolution tests) and interpret the results, but the actual debugging was me walking around the apartment with a laptop under my arm.
 
-## The actual one-hour setup
+We eventually confirmed that the isolation is baked into the ZTE firmware. The SSID Isolation toggle in settings was already off. Doesn't matter. Locked-down ISP build, no advanced bridging options exposed.
 
-Assuming you have a proper network and an old laptop with 8+ GB RAM:
+My current workaround is duct tape: a D-Link on the second floor as a switch and WiFi AP, a Netgear range extender bridging WiFi between floors, and the lamp moved from ZTE's WiFi to D-Link's WiFi just so Home Assistant could see it.
 
-### Proxmox (15 min)
+The fix is simple - buy a proper router (TP-Link Archer AX55, ~50 EUR), put the ISP box in bridge mode, one flat network. Should've done that before starting.
 
-Flash the Proxmox ISO to a USB stick, boot from it, click through the installer. Debian-based hypervisor with a web UI. Not much to configure.
+## What Claude actually set up
 
-If you're using a laptop, disable lid-close suspend before closing the lid:
+Once we got past the networking issues, the rest went fast. I'd describe what I wanted, Claude would give me the commands, I'd run them.
 
-```bash
-sed -i 's/#HandleLidSwitch=suspend/HandleLidSwitch=ignore/' /etc/systemd/logind.conf
-sed -i 's/#HandleLidSwitchExternalPower=suspend/HandleLidSwitchExternalPower=ignore/' /etc/systemd/logind.conf
-systemctl restart systemd-logind
-```
+**Proxmox** - flashed the ISO myself (Claude can't do that), but Claude handled post-install config. Disabling lid-close suspend, setting up Tailscale with subnet routing, creating VMs and containers with the right resource allocations.
 
-Install Tailscale on PVE for remote access. Enable subnet routing so you can reach all your VMs/containers from anywhere:
+**Home Assistant** - Claude walked me through creating the HAOS VM and configuring the passthrough settings. Once it was running, HA's auto-discovery found my Xiaomi lamp immediately (after I moved it to the right network). Using the HomeKit Controller integration - fully local, no cloud, no Xiaomi account. I asked Claude why HomeKit instead of the Xiaomi integration, and the answer (local-only, no cloud dependency, works even if Xiaomi shuts down their servers) made sense.
 
-```bash
-tailscale set --advertise-routes=192.168.1.0/24
-```
+**Jellyfin + qBittorrent** - this is where Claude did the most work. Setting up the LXC container, mounting the storage drive, installing and configuring both services, creating systemd units, setting up media directory structure. I just decided the folder layout (`movies`, `tv`, `concerts`) and which search plugins to install.
 
-Approve the route in the Tailscale admin console.
+**Static IPs and DNS** - Claude caught that containers would lose their IPs on reboot before I even noticed. Also fixed a Tailscale DNS issue where containers inherited the host's DNS config and couldn't resolve anything.
 
-### Home Assistant (10 min)
+## Things I picked up along the way
 
-Download the HAOS (Home Assistant OS) VM image. Create a VM in Proxmox, attach the image, boot it. Setup wizard walks you through everything. Give it 4GB RAM.
+I didn't set out to learn Linux administration, but you absorb things when you're watching every command run and asking "why?" when something isn't obvious.
 
-If your network is flat (see above), HA auto-discovers most devices. My Xiaomi lamp showed up immediately once it was on the same network segment. Using the HomeKit Controller integration - fully local, no cloud, no Xiaomi account needed.
+**LXC vs full VMs.** Containers share the host kernel and use way less RAM. Jellyfin doesn't need its own kernel, so an LXC container is the right call. Home Assistant needs its own OS (HAOS), so that's a full VM.
 
-### Jellyfin + media downloads (20 min)
+**Bind mounts and inotify.** Jellyfin's real-time library scanner doesn't detect new files on bind-mounted volumes. Something about how filesystem event notifications work across mount boundaries. Scheduled scan every 30 minutes instead.
 
-Create an Ubuntu LXC container. Give it 4GB RAM, 4 cores. Mount your storage drive:
+**Codec transcoding economics.** Old .avi files (DivX/MPEG4) need software transcoding, which hammers the CPU on this old hardware. Modern x264 .mkv files play directly on the TV without any server-side work. I asked Claude about hardware transcoding (Intel QuickSync), and it explained that the 2011 HD 3000 only supports H264 decode - which is the one codec that doesn't need transcoding anyway.
 
-```bash
-mkdir -p /mnt/ssd/media/{movies,tv,concerts,downloads}
-chmod 777 /mnt/ssd/media/*
-pct set 100 -mp0 /mnt/ssd/media,mp=/media
-```
+**Container resource sizing.** Started with 2GB RAM for the Jellyfin container. With qBittorrent downloading in the background, it hit 97% CPU and 99% swap. Claude bumped it to 4GB and 4 cores after I pasted the `htop` output.
 
-Install Jellyfin:
+## The meta-experiment
 
-```bash
-# Add Jellyfin repo and install (follow jellyfin.org/docs/general/installation/linux)
-apt install jellyfin
-```
+This was partly about the homelab and partly about testing how far you can get with an AI doing the implementation while you handle the physical world and the decision-making.
 
-Install qBittorrent:
+The answer: pretty far. I went from "I've never administered a Linux server" to a working setup in a day. But the interesting part is what didn't work without me. The physical debugging (network isolation), the taste decisions (what media to organize how), the error recovery when Claude's commands didn't account for my specific hardware - that all required a human in the loop.
 
-```bash
-apt install qbittorrent-nox
-```
+Claude was also wrong sometimes. It initially suggested a resource allocation that was too small. It didn't anticipate the Tailscale DNS conflict until I hit it. It couldn't know that my ISP router was broken in a way that isn't documented anywhere. The AI was a great implementer but a mediocre planner, because planning requires knowing the actual state of the world.
 
-Run qBittorrent as a systemd service so it starts on boot. It has a built-in search plugin system - install a few and you can find and grab media directly from the web UI.
-
-Set the default save path to your media directory, create categories for `tv`, `movies`, `concerts` pointing to the right subdirectories. Bypass auth for the local subnet so you don't have to log in from home.
-
-**Important:** Jellyfin needs media organized as `Show Name/Season XX/episode.mkv` for TV shows. Loose files in a folder won't be detected as shows.
-
-### Static IPs and DNS (5 min)
-
-Set static IPs for your containers in Proxmox. DHCP will change the IP on every reboot and break all your bookmarks.
-
-```bash
-pct set 100 -net0 name=eth0,bridge=vmbr0,ip=192.168.1.99/24,gw=192.168.1.1
-```
-
-If your containers can't resolve DNS (common if PVE uses Tailscale DNS):
-
-```bash
-pct set 100 -nameserver "1.1.1.1 8.8.8.8"
-```
-
-### Streaming (10 min)
-
-Install the Jellyfin app on your TV (Android TV has it in the Play Store), phone, tablet. Point them at `http://<jellyfin-ip>:8096`. Done.
-
-On iOS, Swiftfin is more reliable than the official Jellyfin app.
-
-## Things I learned the hard way
-
-**Container resources matter.** Started the Jellyfin LXC with 2GB RAM. With qBittorrent downloading in the background, it hit 97% CPU and 99% swap. Web UI became unusable. 4GB RAM and 4 cores is the minimum for a combined setup.
-
-**inotify doesn't cross bind mounts.** Jellyfin's real-time library monitoring won't detect new files on a bind-mounted volume. Use a scheduled library scan instead - every 30 minutes works fine.
-
-**Codec compatibility.** Old .avi files (DivX/MPEG4) need software transcoding, which hammers the CPU. Modern x264 .mkv files direct-play on almost every TV without transcoding. When grabbing content, look for `x264` or `H.264`.
-
-**Tailscale DNS breaks containers.** LXC containers inherit the host's `/etc/resolv.conf`, which points to Tailscale's DNS (`100.100.100.100`). Containers don't have Tailscale, so DNS fails and `apt-get update` hangs. Fix: `pct set <vmid> -nameserver "1.1.1.1 8.8.8.8"`.
-
-**Intel QuickSync on old hardware is useless.** The 2011 MacBook's HD 3000 only supports H264 decoding via QSV. Most files that need transcoding are old codecs (not H264), so hardware acceleration doesn't help. Enabled it, reverted to software transcoding.
-
-## My hardware
+## Hardware
 
 For reference:
 
@@ -128,8 +75,8 @@ Total cost: 0 EUR (had the laptop lying around). Should've spent 50 EUR on a rou
 
 ## What's next
 
-- **Replace the ISP router.** A TP-Link Archer AX55 (~50 EUR) as the actual router, ZTE demoted to bridge mode. One flat network, no isolation. This is the single change that would've saved me most of the 8 hours.
-- **Zigbee sensor network.** A USB Zigbee coordinator dongle (Sonoff ZBDongle-E, ~60 PLN) passed through to the HA VM, with Aqara temperature/humidity sensors in each room and IKEA INSPELNING smart plugs as mesh routers. Total cost for the whole setup: around 400 PLN (~100 EUR). No proprietary hubs needed - everything runs locally through HA's ZHA integration.
-- Add Sonos integration to Home Assistant
+- **Replace the ISP router.** TP-Link Archer AX55 (~50 EUR), ZTE demoted to bridge mode. One flat network, no isolation.
+- **Zigbee sensor network.** USB Zigbee coordinator dongle passed through to the HA VM, temperature sensors in each room, IKEA smart plugs as mesh routers. ~100 EUR total, everything local through HA.
+- Sonos integration with Home Assistant - TTS announcements, morning briefings
 - Pi-hole for network-wide ad blocking
-- More storage via USB external drives when the HDD fills up
+- More storage when the HDD fills up
