@@ -16,14 +16,27 @@
     <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything..." autocomplete="off" maxlength="500">
     <button class="chat-send" id="chatSend">Send</button>
   </div>
+  <div id="turnstileWidget" style="display:none;"></div>
 </div>
 
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad&render=explicit" async defer></script>
 <script>
+var turnstileToken = null;
+var turnstileWidgetId = null;
+
+function onTurnstileLoad() {
+  turnstileWidgetId = turnstile.render('#turnstileWidget', {
+    sitekey: '{{ site.Params.turnstile_sitekey | default "1x00000000000000000000AA" }}',
+    callback: function(token) { turnstileToken = token; },
+    'expired-callback': function() { turnstileToken = null; },
+    'error-callback': function() { turnstileToken = null; },
+  });
+}
+
 (function() {
   'use strict';
 
   // --- Configuration ---
-  // Set this to your Cloudflare Worker URL once deployed
   var API_URL = 'https://chat-with-me.ostap-senyuk.workers.dev';
   var MAX_HISTORY = 10;
   var SESSION_KEY = 'ostap_chat_session';
@@ -63,7 +76,6 @@
   }
 
   function renderMarkdown(text) {
-    // Minimal markdown: bold, italic, links, code
     return text
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
@@ -104,7 +116,6 @@
 
   function init() {
     if (history.length === 0) return;
-    // Restore previous messages
     for (var i = 0; i < history.length; i++) {
       addMessage(history[i].role, history[i].content);
     }
@@ -123,7 +134,6 @@
     if (history.length === 0) {
       addMessage('assistant', GREETING);
     }
-    // Simple Analytics event
     if (window.sa_event) window.sa_event('chat_opened');
   }
 
@@ -156,17 +166,20 @@
     var text = input.value.trim();
     if (!text || streaming) return;
 
+    if (!turnstileToken) {
+      showStatus("Verifying you're human... try again in a moment.");
+      return;
+    }
+
     hideStatus();
     if (window.sa_event) window.sa_event('chat_message_sent');
     addMessage('user', text);
     history.push({ role: 'user', content: text });
     input.value = '';
 
-    // Build messages for API (capped)
     var apiMessages = history.slice(-MAX_HISTORY * 2);
 
     if (!API_URL) {
-      // No backend configured yet - show placeholder
       var placeholder = "The chat backend isn't connected yet. Once Ostap deploys the API, I'll be able to answer your questions. In the meantime, check out the [About page](/about/) or connect on [LinkedIn](https://linkedin.com/in/ostapsenyuk/).";
       addMessage('assistant', placeholder);
       history.push({ role: 'assistant', content: placeholder });
@@ -176,7 +189,6 @@
 
     setStreaming(true);
 
-    // Create assistant message container with cursor
     var assistantDiv = document.createElement('div');
     assistantDiv.className = 'chat-message assistant';
     var cursor = document.createElement('span');
@@ -186,18 +198,29 @@
     messages.scrollTop = messages.scrollHeight;
 
     var fullResponse = '';
+    var tokenForRequest = turnstileToken;
+
+    // Reset Turnstile for next request (tokens are single-use)
+    turnstileToken = null;
+    if (turnstileWidgetId !== null && window.turnstile) {
+      turnstile.reset(turnstileWidgetId);
+    }
 
     fetch(API_URL + '/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         session_id: sessionId,
-        messages: apiMessages
+        messages: apiMessages,
+        turnstile_token: tokenForRequest
       })
     }).then(function(response) {
       if (!response.ok) {
         if (response.status === 429) {
           throw new Error('rate_limit');
+        }
+        if (response.status === 403) {
+          throw new Error('forbidden');
         }
         throw new Error('api_error');
       }
@@ -208,7 +231,6 @@
       function read() {
         return reader.read().then(function(result) {
           if (result.done) {
-            // Remove cursor, finalize
             if (cursor.parentNode) cursor.parentNode.removeChild(cursor);
             assistantDiv.innerHTML = renderMarkdown(fullResponse);
             history.push({ role: 'assistant', content: fullResponse });
@@ -230,7 +252,6 @@
 
             if (data.type === 'chunk' && data.text) {
               fullResponse += data.text;
-              // Update display: text + cursor
               assistantDiv.innerHTML = renderMarkdown(fullResponse);
               assistantDiv.appendChild(cursor);
               messages.scrollTop = messages.scrollHeight;
@@ -251,10 +272,11 @@
 
       if (err.message === 'rate_limit') {
         showStatus("Conversation limit reached. Connect with Ostap on LinkedIn instead.");
+      } else if (err.message === 'forbidden') {
+        showStatus("Verification failed. Please refresh and try again.");
       } else {
         showStatus("Something went wrong. Try again in a moment.");
       }
-      // Remove empty assistant div if no content
       if (!fullResponse) {
         messages.removeChild(assistantDiv);
       }

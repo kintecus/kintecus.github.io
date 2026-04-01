@@ -37,9 +37,23 @@
         <input type="text" class="chat-input" id="chatInput" placeholder="Ask me anything..." autocomplete="off" maxlength="500">
         <button class="chat-send" id="chatSend">Send</button>
       </div>
+      <div id="turnstileWidget" style="display:none;"></div>
     </div>
 
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad&render=explicit" async defer></script>
     <script>
+    var turnstileToken = null;
+    var turnstileWidgetId = null;
+
+    function onTurnstileLoad() {
+      turnstileWidgetId = turnstile.render('#turnstileWidget', {
+        sitekey: '{{ site.Params.turnstile_sitekey | default "1x00000000000000000000AA" }}',
+        callback: function(token) { turnstileToken = token; },
+        'expired-callback': function() { turnstileToken = null; },
+        'error-callback': function() { turnstileToken = null; },
+      });
+    }
+
     (function() {
       'use strict';
 
@@ -149,6 +163,11 @@
         var text = input.value.trim();
         if (!text || streaming) return;
 
+        if (!turnstileToken) {
+          showStatus("Verifying you're human... try again in a moment.");
+          return;
+        }
+
         hideStatus();
         if (window.sa_event) window.sa_event('chat_message_sent');
         addMessage('user', text);
@@ -168,14 +187,22 @@
         messages.scrollTop = messages.scrollHeight;
 
         var fullResponse = '';
+        var tokenForRequest = turnstileToken;
+
+        // Reset Turnstile for next request (tokens are single-use)
+        turnstileToken = null;
+        if (turnstileWidgetId !== null && window.turnstile) {
+          turnstile.reset(turnstileWidgetId);
+        }
 
         fetch(API_URL + '/chat', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ session_id: sessionId, messages: apiMessages })
+          body: JSON.stringify({ session_id: sessionId, messages: apiMessages, turnstile_token: tokenForRequest })
         }).then(function(response) {
           if (!response.ok) {
             if (response.status === 429) throw new Error('rate_limit');
+            if (response.status === 403) throw new Error('forbidden');
             throw new Error('api_error');
           }
 
@@ -221,6 +248,8 @@
           setStreaming(false);
           if (err.message === 'rate_limit') {
             showStatus("Conversation limit reached. Connect with Ostap on LinkedIn instead.");
+          } else if (err.message === 'forbidden') {
+            showStatus("Verification failed. Please refresh and try again.");
           } else {
             showStatus("Something went wrong. Try again in a moment.");
           }
