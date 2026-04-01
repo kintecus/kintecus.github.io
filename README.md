@@ -8,50 +8,59 @@ Includes an AI chat widget that lets visitors ask questions about my background 
 
 ```plantuml
 @startuml
-title ostaps.net - architecture
+title ostaps.net - chat architecture
 
 skinparam componentStyle rectangle
-skinparam backgroundColor transparent
+skinparam padding 4
 
-package "GitHub Pages" {
-  [Hugo Static Site] as hugo
-  note right of hugo
-    Custom theme
-    IBM Plex Mono
-    Brutalist aesthetic
-  end note
+package "ostaps.net (Hugo + GitHub Pages)" as frontend #E8F4FD {
+  [chat-widget.html] as widget
+  [chat.html (mobile)] as chatpage
+  [Turnstile Widget] as tswidget #F3E8FD
 }
 
-package "Cloudflare" {
-  [Worker API] as worker
-  database "D1\n(conversations)" as d1
-  [KV\n(rate limits)] as kv
+package "Cloudflare Worker" as worker #E8F5E9 {
+  [Validation + CORS] as handler
+  [Turnstile Verify] as tsverify #F3E8FD
+  [Rate Limiter] as ratelimit
+  [FallbackProvider] as fallback
+  [SSE Stream] as sse
 }
 
-cloud "LLM Provider" as llm {
-  [Groq / Cerebras\n(free tier)] as model
+cloud "LLM APIs" as llm #F3E8FD {
+  [Cerebras (primary)] as cerebras
+  [Groq (fallback)] as groq
 }
 
-[Visitor Browser] as browser
+database "D1 (logs)" as d1 #FFF8E1
+database "KV (rate limits)" as kv #FFF8E1
+cloud "Turnstile API" as tsapi #F3E8FD
 
-browser --> hugo : static pages
-browser --> worker : chat messages\n(SSE stream)
-worker --> model : completions API
-worker --> d1 : log conversations
-worker --> kv : check rate limits
-hugo ..> browser : chat widget JS
+widget --> handler : POST /chat
+chatpage --> handler
+tswidget ..> tsapi
+
+handler --> tsverify
+tsverify --> tsapi
+tsverify --> ratelimit
+ratelimit --> fallback
+ratelimit --> kv
+fallback --> cerebras
+fallback ..> groq : on failure
+sse --> handler : SSE
+handler --> d1 : log
 
 @enduml
 ```
 
-![ostaps.net architecture](https://www.plantuml.com/plantuml/svg/LL9DRzim3BthLn0vDOTao7M7eaiwz6Cj4C10T-Xsa6t65Yo97aKd6uRzzr5o0gGtYU-Hx_59TqaionIy4ISUWVG-fdL4WHLORdedsCZ4Q4mQN1mjsm0DXP4YHgdaZ_QmCcpiF5vHQjiC7TCKsnrvOX2sCIcaJSQC2jeEOV7Wv76gOQ-Nj82_1k3zSUe8Ah7Y6gXK_2VO1BqM5OmagkQwNe0EboB0Raf20QJ7WANmj7s5lSVVy4fnfcnv4kjT4h2ObAZJjOwnBJFDlojFEqzJU_1gzUpeE_6035_sJyNBgLmLQAtOsYPjkT_yY3SDnIDoKkCKqtAHgUqcztzxKvIjMlSkE4dBCcOuPjKcYy7YvKKDCnrTYrmwlG-p-0FJB_W4EsIisIQTT61448SypmdKei-ZtjzSSg9HRvbE2RcWzNmsvdo0rUgs10UV8SqXZpdy3_YyeJAQtWe4J2bJLBgglceNemrBSoPbVh6GwVejF9RzSrhNb7QZkASEFgHqpHYEHH2R0QwoCiNhUdrxsUJYwkJQJl_eSsNCdJwZVk3_)
+![ostaps.net chat architecture](https://www.plantuml.com/plantuml/svg/NLFBRjim4BppAnREHK5X5qPJ8CqXI65RIL4NCQB0FGGvh2LQ9aoHwf9oO1JvzowfH-pUjBD3xkoCUESyacygBRpoMeBbkdOJ8psC8T-X1wHyfxpCVKDI2BTNfaR22d9RrTP8upD_v8F433IbbYUK6ej2cHAkXAWntsCfONGo87beIWkVu5xvXsO3A-wxon6WWorPuwKfu69ndLwbS_Wh05w2dF6RAahf9pjVwTT0RUk-7N58AhjHMbv6Ge1hlZfGdXiopdCBViTZaU1TUmTSf5zut5oydyYTQTiKMut4Hopj9KLzR_4pglkw-DQgMwDM1Nfb3QyqUtpAukKxD8MMT3vyBKbjZztmGoo6uKnyGYzXgIfsdIA96D2X3jqKjTwml1NPWoewnhO30o7B5f1vabZ5bdCoR9I7HM2qNFw2xwiVBgwXTTNFRNUOIP8RuavIawgGZfs57HmezsJ_GDBFQ_ibOs46huyRT6pRV0g9jcKNPp7bCMbwlPYUK7wk8GcBGToiO-uF0xCJ_E4Qonwrbc6j1hz45zvuVDkR3JUmUioUuNE8NlJvdpB4aFbaSjjUA4H_El3wMCIGJui6uXdq4Stm5V4Xa7DuVn1z9zQ3imCQ10K_UGd-axQeT7Xt7E9_6tBAPuhPunjWouMuuuV33_eV)
 
 ## Stack
 
 - **Site**: Hugo 0.134.2 (extended), custom layouts, plain CSS with custom properties
 - **Hosting**: GitHub Pages, deployed via GitHub Actions on push to main
-- **Chat backend**: Cloudflare Worker + D1 (SQLite) + KV (rate limiting)
-- **LLM**: Groq/Cerebras free tier (swappable to Claude API)
+- **Chat backend**: Cloudflare Worker + D1 (SQLite) + KV (rate limiting) + Turnstile (bot protection)
+- **LLM**: Cerebras (primary) + Groq (fallback), both free tier, swappable via LLMProvider interface
 - **Analytics**: Simple Analytics
 - **Fonts**: IBM Plex Mono (homepage), Verdana (content pages)
 
