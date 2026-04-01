@@ -6,6 +6,7 @@ copyright = '2026 Ostap Senyuk'
 [params]
   author = 'Ostap Senyuk'
   description = 'Personal site of Ostap Senyuk'
+  turnstile_sitekey = '0x4AAAAAACzAUqQEvJSmQ4us'
 
 [markup.goldmark.renderer]
   unsafe = true
