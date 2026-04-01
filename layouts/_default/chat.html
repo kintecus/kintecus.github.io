@@ -158,15 +158,24 @@
         if (window.sa_event) window.sa_event('chat_cleared');
       });
 
+      // Turnstile token helper
+      function getTurnstileToken(timeoutMs) {
+        if (turnstileToken) return Promise.resolve(turnstileToken);
+        if (!window.turnstile) return Promise.resolve('');
+        return new Promise(function(resolve) {
+          var elapsed = 0;
+          var interval = setInterval(function() {
+            elapsed += 100;
+            if (turnstileToken) { clearInterval(interval); resolve(turnstileToken); }
+            else if (elapsed >= timeoutMs) { clearInterval(interval); resolve(''); }
+          }, 100);
+        });
+      }
+
       // Send
-      function sendMessage() {
+      async function sendMessage() {
         var text = input.value.trim();
         if (!text || streaming) return;
-
-        if (!turnstileToken) {
-          showStatus("Verifying you're human... try again in a moment.");
-          return;
-        }
 
         hideStatus();
         if (window.sa_event) window.sa_event('chat_message_sent');
@@ -187,7 +196,7 @@
         messages.scrollTop = messages.scrollHeight;
 
         var fullResponse = '';
-        var tokenForRequest = turnstileToken;
+        var tokenForRequest = await getTurnstileToken(3000);
 
         // Reset Turnstile for next request (tokens are single-use)
         turnstileToken = null;
