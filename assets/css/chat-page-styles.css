@@ -119,6 +119,13 @@ body.chat-body {
   text-underline-offset: 2px;
 }
 
+/* Thinking indicator */
+.chat-page .chat-thinking {
+  font-size: 0.75rem;
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
 .chat-page .chat-cursor {
   display: inline-block;
   width: 0.55em;
