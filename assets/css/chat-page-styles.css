@@ -124,6 +124,17 @@ body.chat-body {
   font-size: 0.75rem;
   color: var(--secondary-color);
   font-style: italic;
+  display: inline-block;
+}
+
+.chat-page .chat-thinking span {
+  display: inline-block;
+  animation: think-letter-page 1.8s ease-in-out infinite;
+}
+
+@keyframes think-letter-page {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
 }
 
 .chat-page .chat-cursor {

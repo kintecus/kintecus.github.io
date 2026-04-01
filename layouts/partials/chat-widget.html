@@ -115,15 +115,25 @@ function onTurnstileLoad() {
   var THINKING_VERBS = ['Thinking', 'Reasoning', 'Considering', 'Pondering', 'Reflecting'];
   var thinkingInterval = null;
 
+  function setThinkingText(container, text) {
+    container.innerHTML = '';
+    for (var i = 0; i < text.length; i++) {
+      var s = document.createElement('span');
+      s.textContent = text[i];
+      s.style.animationDelay = (i * 0.06) + 's';
+      container.appendChild(s);
+    }
+  }
+
   function startThinking(el) {
     var idx = 0;
     var span = document.createElement('span');
     span.className = 'chat-thinking';
-    span.textContent = THINKING_VERBS[0] + '...';
+    setThinkingText(span, THINKING_VERBS[0] + '...');
     el.insertBefore(span, el.firstChild);
     thinkingInterval = setInterval(function() {
       idx = (idx + 1) % THINKING_VERBS.length;
-      span.textContent = THINKING_VERBS[idx] + '...';
+      setThinkingText(span, THINKING_VERBS[idx] + '...');
     }, 2000);
   }
 

@@ -203,6 +203,17 @@
   font-size: 0.8rem;
   color: var(--secondary-color);
   font-style: italic;
+  display: inline-block;
+}
+
+.chat-thinking span {
+  display: inline-block;
+  animation: think-letter 1.8s ease-in-out infinite;
+}
+
+@keyframes think-letter {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
 }
 
 /* Streaming cursor */
