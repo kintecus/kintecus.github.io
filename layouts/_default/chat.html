@@ -82,7 +82,12 @@
       } catch (e) {}
 
       var streaming = false;
-      var GREETING = "Hi, I'm Ostap's AI assistant. Ask me anything about his background, experience, or projects.";
+      var GREETING = "Hey - I know about Ostap's career, projects, and tech opinions. Pick a question or type your own.";
+      var SUGGESTED_QUESTIONS = [
+        "What's your tech stack?",
+        "Tell me about your Amazon experience",
+        "What are you working on now?"
+      ];
 
       function saveHistory() {
         try { sessionStorage.setItem(HISTORY_KEY, JSON.stringify(history)); } catch (e) {}
@@ -124,6 +129,33 @@
         status.classList.remove('visible');
       }
 
+      function showSuggestions() {
+        var container = document.createElement('div');
+        container.className = 'chat-suggestions';
+        container.id = 'chatSuggestions';
+        for (var i = 0; i < SUGGESTED_QUESTIONS.length; i++) {
+          var btn = document.createElement('button');
+          btn.className = 'chat-chip';
+          btn.textContent = SUGGESTED_QUESTIONS[i];
+          btn.addEventListener('click', (function(q) {
+            return function() {
+              input.value = q;
+              hideSuggestions();
+              sendMessage();
+              if (window.sa_event) sa_event('chat_chip_tapped');
+            };
+          })(SUGGESTED_QUESTIONS[i]));
+          container.appendChild(btn);
+        }
+        messages.appendChild(container);
+        messages.scrollTop = messages.scrollHeight;
+      }
+
+      function hideSuggestions() {
+        var el = document.getElementById('chatSuggestions');
+        if (el) el.parentNode.removeChild(el);
+      }
+
       // Init
       if (history.length > 0) {
         for (var i = 0; i < history.length; i++) {
@@ -131,6 +163,7 @@
         }
       } else {
         addMessage('assistant', GREETING);
+        showSuggestions();
       }
       input.focus();
       if (window.sa_event) window.sa_event('chat_opened');
@@ -154,6 +187,7 @@
         sessionId = crypto.randomUUID();
         sessionStorage.setItem(SESSION_KEY, sessionId);
         addMessage('assistant', GREETING);
+        showSuggestions();
         input.focus();
         if (window.sa_event) window.sa_event('chat_cleared');
       });
@@ -177,6 +211,7 @@
         var text = input.value.trim();
         if (!text || streaming) return;
 
+        hideSuggestions();
         hideStatus();
         if (window.sa_event) window.sa_event('chat_message_sent');
         addMessage('user', text);

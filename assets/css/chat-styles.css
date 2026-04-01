@@ -3,23 +3,58 @@
   position: fixed;
   bottom: 24px;
   right: 24px;
-  width: 56px;
-  height: 56px;
+  height: 48px;
   background: var(--accent-color);
   color: #fff;
   border: 2px solid var(--primary-color);
   cursor: pointer;
   font-family: var(--font-family);
-  font-size: 1.4rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
+  padding: 0 16px;
   z-index: 1000;
   transition: background 0.15s;
+  white-space: nowrap;
 }
 
 .chat-toggle:hover {
   background: var(--primary-color);
+}
+
+/* Tooltip on hover (desktop) */
+.chat-toggle::after {
+  content: "Talk to Ostap's AI";
+  position: absolute;
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--background-color);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  padding: 4px 8px;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+}
+
+.chat-toggle:hover::after {
+  opacity: 1;
+}
+
+/* One-time pulse animation */
+@keyframes chat-pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 55, 255, 0.4); }
+  50% { transform: scale(1.08); box-shadow: 0 0 0 10px rgba(0, 55, 255, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 55, 255, 0); }
+}
+
+.chat-toggle--pulse {
+  animation: chat-pulse 0.6s ease-out 3s 1;
 }
 
 .chat-toggle[aria-expanded="true"] {
@@ -237,16 +272,45 @@
   display: block;
 }
 
+/* Suggestion chips */
+.chat-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px 0;
+  align-self: flex-start;
+}
+
+.chat-chip {
+  background: none;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.chat-chip:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
+
 /* Mobile */
 @media (max-width: 600px) {
   .chat-toggle {
     bottom: 16px;
     right: 16px;
-    width: 48px;
-    height: 48px;
-    font-size: 1.2rem;
+    height: 42px;
+    font-size: 0.9rem;
+    padding: 0 12px;
     background: var(--accent-color);
     border-color: var(--background-color);
+  }
+
+  .chat-toggle::after {
+    display: none;
   }
 
   .chat-toggle:hover {

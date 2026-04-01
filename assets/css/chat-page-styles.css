@@ -186,3 +186,28 @@ body.chat-body {
   opacity: 0.4;
   cursor: not-allowed;
 }
+
+/* Suggestion chips */
+.chat-page .chat-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px 0;
+  align-self: flex-start;
+}
+
+.chat-page .chat-chip {
+  background: none;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  font-size: 0.75rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.chat-page .chat-chip:hover {
+  background: var(--accent-color);
+  color: #fff;
+}
