@@ -1,0 +1,53 @@
+{{ define "title" }}{{ .Title }} | Krakow | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+  <div class="content-wrapper krakow-single">
+    <article>
+      <p class="back-link"><a href="/krakow/recs/">&larr; Back to Krakow guide</a></p>
+
+      <h1>{{ .Title }}</h1>
+
+      <div class="krakow-detail-meta">
+        <span class="krakow-tag">{{ .Params.category }}</span>
+        {{ if .Params.kid_friendly }}<span class="krakow-tag-kid">kids</span>{{ end }}
+        {{ with .Params.address }}
+          <span class="krakow-address">
+            {{ with $.Params.map_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
+            {{ $.Params.address }}
+            {{ with $.Params.map_url }}</a>{{ end }}
+          </span>
+        {{ end }}
+      </div>
+
+      {{ with .Params.tagline }}
+        <p class="krakow-detail-tagline">{{ . }}</p>
+      {{ end }}
+
+      {{ if .Params.photo }}
+        <div class="krakow-detail-photo">
+          <img src="/images/krakow/{{ .Params.photo }}" alt="{{ .Title }}">
+        </div>
+      {{ else }}
+        <div class="krakow-detail-photo--placeholder" {{ with .Params.category }}data-cat="{{ . }}"{{ end }}>
+          {{ .Params.category }}
+        </div>
+      {{ end }}
+
+      <div class="krakow-detail-links">
+        {{ with .Params.map_url }}
+          <a href="{{ . }}" target="_blank" rel="noopener">View on map &rarr;</a>
+        {{ end }}
+        {{ with .Params.url }}
+          <a href="{{ . }}" target="_blank" rel="noopener">Website &rarr;</a>
+        {{ end }}
+      </div>
+
+      {{ with .Content }}
+        <div class="krakow-detail-content">
+          {{ . }}
+        </div>
+      {{ end }}
+
+      <p class="back-link"><a href="/krakow/recs/">&larr; Back to Krakow guide</a></p>
+    </article>
+  </div>
+{{ end }}

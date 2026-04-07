@@ -1,0 +1,428 @@
+/* Krakow recommendations page */
+
+.krakow-page {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 20px auto 0;
+  padding: 20px;
+}
+
+.krakow-page--cards {
+  max-width: 960px;
+}
+
+.krakow-subtitle {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  margin: 0 0 1.5rem;
+}
+
+/* Controls bar */
+.krakow-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.krakow-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.4rem;
+  align-items: center;
+}
+
+.krakow-right-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.krakow-filter,
+.krakow-view,
+.krakow-kids-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  text-decoration: none;
+  padding: 0.15rem 0;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.krakow-filter:hover,
+.krakow-view:hover,
+.krakow-kids-toggle:hover {
+  color: var(--primary-color);
+}
+
+.krakow-filter.active,
+.krakow-view.active {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.krakow-kids-toggle.active {
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.krakow-controls-sep {
+  color: var(--border-color);
+  font-size: 0.82rem;
+  user-select: none;
+}
+
+/* Tags */
+.krakow-tag {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.4rem;
+  border: 1px solid;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+  background: transparent;
+  letter-spacing: 0.03em;
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.krakow-tag-kid {
+  font-size: 0.65rem;
+  padding: 0.1rem 0.3rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  white-space: nowrap;
+  background: transparent;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* List view */
+.krakow-list {
+  margin: 0;
+}
+
+.krakow-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.krakow-entry:last-child {
+  border-bottom: none;
+}
+
+.krakow-entry.hidden {
+  display: none;
+}
+
+.krakow-entry-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.krakow-entry-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.krakow-entry-tagline {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+}
+
+.krakow-entry-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+/* Card view */
+.krakow-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.krakow-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s;
+}
+
+.krakow-card:hover {
+  border-color: var(--accent-color);
+  color: inherit;
+}
+
+.krakow-card.hidden {
+  display: none;
+}
+
+.krakow-card-photo {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+
+.krakow-card-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Placeholder photo when no image provided */
+.krakow-card-photo--placeholder {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+}
+
+.krakow-card-photo--placeholder[data-cat="food"] {
+  background-color: #c45d3e;
+}
+
+.krakow-card-photo--placeholder[data-cat="museum"] {
+  background-color: var(--accent-color);
+}
+
+.krakow-card-photo--placeholder[data-cat="nature"] {
+  background-color: #3a7d44;
+}
+
+.krakow-card-photo--placeholder[data-cat="coffee"] {
+  background-color: #8b6f47;
+}
+
+.krakow-card-photo--placeholder[data-cat="bars"] {
+  background-color: #6b4c8a;
+}
+
+.krakow-card-photo--placeholder[data-cat="shops"] {
+  background-color: #555;
+}
+
+html[data-theme="dark"] .krakow-card-photo--placeholder[data-cat="food"] {
+  background-color: #a04030;
+}
+
+html[data-theme="dark"] .krakow-card-photo--placeholder[data-cat="museum"] {
+  background-color: var(--accent-color);
+}
+
+html[data-theme="dark"] .krakow-card-photo--placeholder[data-cat="nature"] {
+  background-color: #2d6435;
+}
+
+html[data-theme="dark"] .krakow-card-photo--placeholder[data-cat="coffee"] {
+  background-color: #6e5838;
+}
+
+html[data-theme="dark"] .krakow-card-photo--placeholder[data-cat="bars"] {
+  background-color: #553d6e;
+}
+
+html[data-theme="dark"] .krakow-card-photo--placeholder[data-cat="shops"] {
+  background-color: #444;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .krakow-card-photo--placeholder[data-cat="food"] {
+    background-color: #a04030;
+  }
+  html:not([data-theme="light"]) .krakow-card-photo--placeholder[data-cat="museum"] {
+    background-color: var(--accent-color);
+  }
+  html:not([data-theme="light"]) .krakow-card-photo--placeholder[data-cat="nature"] {
+    background-color: #2d6435;
+  }
+  html:not([data-theme="light"]) .krakow-card-photo--placeholder[data-cat="coffee"] {
+    background-color: #6e5838;
+  }
+  html:not([data-theme="light"]) .krakow-card-photo--placeholder[data-cat="bars"] {
+    background-color: #553d6e;
+  }
+  html:not([data-theme="light"]) .krakow-card-photo--placeholder[data-cat="shops"] {
+    background-color: #444;
+  }
+}
+
+.krakow-card-body {
+  padding: 0.8rem;
+  flex: 1;
+}
+
+.krakow-card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0.4rem 0 0.2rem;
+  color: var(--primary-color);
+}
+
+.krakow-card-tagline {
+  font-size: 0.82rem;
+  color: var(--secondary-color);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Empty state */
+.krakow-empty {
+  display: none;
+  padding: 2rem 0;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.krakow-empty.visible {
+  display: block;
+}
+
+/* Detail page */
+.krakow-single .back-link {
+  margin: 0 0 1.5rem;
+}
+
+.krakow-single .back-link:last-child {
+  margin: 2rem 0 0;
+}
+
+.krakow-single .back-link a {
+  color: var(--secondary-color);
+}
+
+.krakow-detail-meta {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.krakow-address {
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+}
+
+.krakow-address a {
+  color: var(--link-color);
+}
+
+.krakow-detail-photo {
+  margin-bottom: 1.5rem;
+}
+
+.krakow-detail-photo img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border: 1px solid var(--border-color);
+}
+
+.krakow-detail-photo--placeholder {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--background-color);
+  background-color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+}
+
+.krakow-detail-links {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+}
+
+.krakow-detail-content {
+  margin-top: 1rem;
+}
+
+.krakow-detail-content p {
+  line-height: 1.6;
+}
+
+.krakow-detail-tagline {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .krakow-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .krakow-page {
+    padding: 12px;
+  }
+
+  .krakow-controls {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .krakow-right-controls {
+    align-self: flex-end;
+  }
+
+  .krakow-entry {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .krakow-entry-meta {
+    margin-left: 0;
+  }
+
+  .krakow-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .krakow-card-photo,
+  .krakow-card-photo--placeholder {
+    height: 160px;
+  }
+}

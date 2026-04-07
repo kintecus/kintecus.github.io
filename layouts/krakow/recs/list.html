@@ -1,0 +1,162 @@
+{{ define "title" }}Krakow | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+  <div class="krakow-page" id="krakowPage">
+    <h1>Krakow</h1>
+    <p class="krakow-subtitle">A local's guide. Places I'd send friends to.</p>
+
+    {{ $allPages := .Pages }}
+
+    {{/* Extract unique categories */}}
+    {{ $categories := slice }}
+    {{ range $allPages }}
+      {{ with .Params.category }}
+        {{ $categories = $categories | append . }}
+      {{ end }}
+    {{ end }}
+    {{ $categories = $categories | uniq | sort }}
+
+    <div class="krakow-controls">
+      <div class="krakow-filters">
+        <button class="krakow-filter active" data-category="all">[all]</button>
+        {{ range $categories }}
+          <button class="krakow-filter" data-category="{{ . }}">[{{ . }}]</button>
+        {{ end }}
+        <span class="krakow-controls-sep">|</span>
+        <button class="krakow-kids-toggle" data-filter="kids">[with kids]</button>
+      </div>
+      <div class="krakow-right-controls">
+        <button class="krakow-view active" data-view="list">[list]</button>
+        <button class="krakow-view" data-view="cards">[cards]</button>
+      </div>
+    </div>
+
+    {{/* List view */}}
+    <div class="krakow-list" id="krakowList">
+      {{ range $allPages.ByTitle }}
+        <div class="krakow-entry" data-category="{{ .Params.category }}" data-kid="{{ if .Params.kid_friendly }}true{{ else }}false{{ end }}">
+          <div class="krakow-entry-info">
+            <a class="krakow-entry-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{ with .Params.tagline }}
+              <span class="krakow-entry-tagline">{{ . }}</span>
+            {{ end }}
+          </div>
+          <div class="krakow-entry-meta">
+            {{ if .Params.kid_friendly }}<span class="krakow-tag-kid">kids</span>{{ end }}
+            <span class="krakow-tag">{{ .Params.category }}</span>
+          </div>
+        </div>
+      {{ end }}
+      <p class="krakow-empty" id="listEmpty">No places match this filter.</p>
+    </div>
+
+    {{/* Card view */}}
+    <div class="krakow-cards" id="krakowCards" style="display:none;">
+      {{ range $allPages.ByTitle }}
+        <a class="krakow-card" href="{{ .RelPermalink }}" data-category="{{ .Params.category }}" data-kid="{{ if .Params.kid_friendly }}true{{ else }}false{{ end }}">
+          {{ if .Params.photo }}
+            <div class="krakow-card-photo">
+              <img src="/images/krakow/{{ .Params.photo }}" alt="{{ .Title }}" loading="lazy">
+            </div>
+          {{ else }}
+            <div class="krakow-card-photo--placeholder" data-cat="{{ .Params.category }}">{{ .Params.category }}</div>
+          {{ end }}
+          <div class="krakow-card-body">
+            <span class="krakow-tag">{{ .Params.category }}</span>
+            {{ if .Params.kid_friendly }}<span class="krakow-tag-kid">kids</span>{{ end }}
+            <h3 class="krakow-card-title">{{ .Title }}</h3>
+            {{ with .Params.tagline }}
+              <p class="krakow-card-tagline">{{ . }}</p>
+            {{ end }}
+          </div>
+        </a>
+      {{ end }}
+      <p class="krakow-empty" id="cardsEmpty">No places match this filter.</p>
+    </div>
+  </div>
+
+  <script>
+  (function() {
+    var page = document.getElementById('krakowPage');
+    var listEl = document.getElementById('krakowList');
+    var cardsEl = document.getElementById('krakowCards');
+    var listEmpty = document.getElementById('listEmpty');
+    var cardsEmpty = document.getElementById('cardsEmpty');
+    var viewBtns = document.querySelectorAll('.krakow-view');
+    var filterBtns = document.querySelectorAll('.krakow-filter');
+    var kidsBtn = document.querySelector('.krakow-kids-toggle');
+    var entries = document.querySelectorAll('.krakow-entry');
+    var cards = document.querySelectorAll('.krakow-card');
+
+    var currentCategory = 'all';
+    var kidsOnly = false;
+
+    function applyFilters() {
+      var listVisible = 0;
+      var cardVisible = 0;
+
+      entries.forEach(function(el) {
+        var catMatch = currentCategory === 'all' || el.getAttribute('data-category') === currentCategory;
+        var kidMatch = !kidsOnly || el.getAttribute('data-kid') === 'true';
+        var show = catMatch && kidMatch;
+        el.classList.toggle('hidden', !show);
+        if (show) listVisible++;
+      });
+
+      cards.forEach(function(el) {
+        var catMatch = currentCategory === 'all' || el.getAttribute('data-category') === currentCategory;
+        var kidMatch = !kidsOnly || el.getAttribute('data-kid') === 'true';
+        var show = catMatch && kidMatch;
+        el.classList.toggle('hidden', !show);
+        if (show) cardVisible++;
+      });
+
+      listEmpty.classList.toggle('visible', listVisible === 0);
+      cardsEmpty.classList.toggle('visible', cardVisible === 0);
+    }
+
+    // View toggle
+    viewBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var view = this.getAttribute('data-view');
+        viewBtns.forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+
+        if (view === 'cards') {
+          listEl.style.display = 'none';
+          cardsEl.style.display = '';
+          page.classList.add('krakow-page--cards');
+        } else {
+          listEl.style.display = '';
+          cardsEl.style.display = 'none';
+          page.classList.remove('krakow-page--cards');
+        }
+
+        localStorage.setItem('krakow-view', view);
+      });
+    });
+
+    // Restore saved view
+    var savedView = localStorage.getItem('krakow-view');
+    if (savedView === 'cards') {
+      document.querySelector('.krakow-view[data-view="cards"]').click();
+    }
+
+    // Category filter
+    filterBtns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        currentCategory = this.getAttribute('data-category');
+        filterBtns.forEach(function(b) { b.classList.remove('active'); });
+        this.classList.add('active');
+        applyFilters();
+      });
+    });
+
+    // Kids toggle
+    kidsBtn.addEventListener('click', function() {
+      kidsOnly = !kidsOnly;
+      this.classList.toggle('active', kidsOnly);
+      applyFilters();
+    });
+  })();
+  </script>
+{{ end }}

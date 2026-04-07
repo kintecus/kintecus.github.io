@@ -13,12 +13,14 @@
     {{ $reading := resources.Get "css/reading-styles.css" | fingerprint }}
     {{ $chat := resources.Get "css/chat-styles.css" | fingerprint }}
     {{ $chatPage := resources.Get "css/chat-page-styles.css" | fingerprint }}
+    {{ $krakow := resources.Get "css/krakow-styles.css" | fingerprint }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $home.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $about.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $reading.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $chat.RelPermalink }}"/>
     <link rel="stylesheet" href="{{ $chatPage.RelPermalink }}"/>
+    <link rel="stylesheet" href="{{ $krakow.RelPermalink }}"/>
     {{- $title := .Title | default .Site.Title -}}
     {{- $description := .Params.description | default .Site.Params.description -}}
     {{- $url := .Permalink -}}
