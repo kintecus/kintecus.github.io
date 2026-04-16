@@ -6,54 +6,54 @@ Includes an AI chat widget that lets visitors ask questions about my background 
 
 ## Architecture
 
-```plantuml
-@startuml
-title ostaps.net - chat architecture
+```mermaid
+%%{init: {'theme':'base','flowchart':{'curve':'basis','nodeSpacing':70,'rankSpacing':100}}}%%
+flowchart TD
+    accTitle: ostaps.net chat architecture
+    accDescr: Hugo frontend on GitHub Pages posts chat requests to a Cloudflare Worker that validates via Turnstile, rate-limits via KV, streams completions from Cerebras with a Groq fallback, and logs to D1.
 
-skinparam componentStyle rectangle
-skinparam padding 4
+    subgraph Frontend["ostaps.net (Hugo + GitHub Pages)"]
+        widget[chat-widget.html]
+        chatpage["chat.html (mobile)"]
+        tswidget[Turnstile Widget]
+    end
 
-package "ostaps.net (Hugo + GitHub Pages)" as frontend #E8F4FD {
-  [chat-widget.html] as widget
-  [chat.html (mobile)] as chatpage
-  [Turnstile Widget] as tswidget #F3E8FD
-}
+    subgraph Worker["Cloudflare Worker"]
+        handler[Validation + CORS]
+        tsverify[Turnstile Verify]
+        ratelimit[Rate Limiter]
+        fallback{{FallbackProvider}}
+        sse[SSE Stream]
+    end
 
-package "Cloudflare Worker" as worker #E8F5E9 {
-  [Validation + CORS] as handler
-  [Turnstile Verify] as tsverify #F3E8FD
-  [Rate Limiter] as ratelimit
-  [FallbackProvider] as fallback
-  [SSE Stream] as sse
-}
+    subgraph LLM["LLM APIs"]
+        cerebras[Cerebras primary]
+        groq[Groq fallback]
+    end
 
-cloud "LLM APIs" as llm #F3E8FD {
-  [Cerebras (primary)] as cerebras
-  [Groq (fallback)] as groq
-}
+    d1[(D1 logs)]
+    kv[(KV rate limits)]
+    tsapi[Turnstile API]
 
-database "D1 (logs)" as d1 #FFF8E1
-database "KV (rate limits)" as kv #FFF8E1
-cloud "Turnstile API" as tsapi #F3E8FD
+    widget -->|POST /chat| handler
+    chatpage --> handler
+    tswidget -.-> tsapi
 
-widget --> handler : POST /chat
-chatpage --> handler
-tswidget ..> tsapi
+    handler --> tsverify
+    tsverify --> tsapi
+    tsverify --> ratelimit
+    ratelimit --> fallback
+    ratelimit --> kv
+    fallback --> cerebras
+    fallback -.->|on failure| groq
+    sse --> handler
+    handler --> d1
 
-handler --> tsverify
-tsverify --> tsapi
-tsverify --> ratelimit
-ratelimit --> fallback
-ratelimit --> kv
-fallback --> cerebras
-fallback ..> groq : on failure
-sse --> handler : SSE
-handler --> d1 : log
-
-@enduml
+    classDef storage fill:#ecfdf5,stroke:#16a34a,color:#064e3b;
+    classDef external fill:#fef3c7,stroke:#d97706,color:#78350f;
+    class d1,kv storage;
+    class tsapi,cerebras,groq external;
 ```
-
-![ostaps.net chat architecture](https://www.plantuml.com/plantuml/svg/NLFBRjim4BppAnREHK5X5qPJ8CqXI65RIL4NCQB0FGGvh2LQ9aoHwf9oO1JvzowfH-pUjBD3xkoCUESyacygBRpoMeBbkdOJ8psC8T-X1wHyfxpCVKDI2BTNfaR22d9RrTP8upD_v8F433IbbYUK6ej2cHAkXAWntsCfONGo87beIWkVu5xvXsO3A-wxon6WWorPuwKfu69ndLwbS_Wh05w2dF6RAahf9pjVwTT0RUk-7N58AhjHMbv6Ge1hlZfGdXiopdCBViTZaU1TUmTSf5zut5oydyYTQTiKMut4Hopj9KLzR_4pglkw-DQgMwDM1Nfb3QyqUtpAukKxD8MMT3vyBKbjZztmGoo6uKnyGYzXgIfsdIA96D2X3jqKjTwml1NPWoewnhO30o7B5f1vabZ5bdCoR9I7HM2qNFw2xwiVBgwXTTNFRNUOIP8RuavIawgGZfs57HmezsJ_GDBFQ_ibOs46huyRT6pRV0g9jcKNPp7bCMbwlPYUK7wk8GcBGToiO-uF0xCJ_E4Qonwrbc6j1hz45zvuVDkR3JUmUioUuNE8NlJvdpB4aFbaSjjUA4H_El3wMCIGJui6uXdq4Stm5V4Xa7DuVn1z9zQ3imCQ10K_UGd-axQeT7Xt7E9_6tBAPuhPunjWouMuuuV33_eV)
 
 ## Stack
 

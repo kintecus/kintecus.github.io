@@ -30,5 +30,5 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Git
 
-- Pre-commit hooks via pre-commit framework: markdownlint with --fix, PlantUML URL sync check
+- Pre-commit hooks via pre-commit framework: markdownlint with --fix, Mermaid syntax validation
 - Git LFS enabled
