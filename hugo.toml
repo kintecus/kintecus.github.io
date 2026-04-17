@@ -7,6 +7,9 @@ copyright = '2026 Ostap Senyuk'
   author = 'Ostap Senyuk'
   description = 'Personal site of Ostap Senyuk'
   turnstile_sitekey = '0x4AAAAAACzAUqQEvJSmQ4us'
+  # PostHog EU project key. Create project at https://eu.posthog.com and paste key below.
+  # Only loaded when Hugo builds in production (hugo.IsProduction).
+  posthog_key = 'phc_oWzMLqfw62cSpGKxWJeuxbduomjbXDPKNisDEZMjCEoa'
 
 [markup.goldmark.renderer]
   unsafe = true
