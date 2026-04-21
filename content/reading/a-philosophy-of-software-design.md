@@ -6,6 +6,7 @@ draft: false
 params:
   author: "John K. Ousterhout"
   date_started: 2026-03-02
+  date_finished: 2026-04-20
   fiction: false
 ---
 
