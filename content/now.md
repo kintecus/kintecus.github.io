@@ -13,7 +13,7 @@ Running [Satori Ads](https://satoriads.com) - a wallet pass advertising platform
 
 Consulting in ad tech through [Xenoss](https://xenoss.io/).
 
-Exploring what's next. Open to senior/principal PM roles in AI, data, platforms, or ad tech. Krakow-based, open to remote. [LinkedIn](https://linkedin.com/in/ostapsenyuk/).
+Exploring what's next. Open to senior/principal PM roles in AI, data, platforms, or ad tech. Krakow-based, open to remote. [LinkedIn](https://www.linkedin.com/in/ostapsenyuk/).
 
 ## Building
 

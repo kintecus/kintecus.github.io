@@ -3,7 +3,16 @@
 
 <div class="chat-panel" id="chatPanel" role="dialog" aria-label="Chat with Ostap">
   <div class="chat-header">
-    <span class="chat-header-title">Chat with Ostap</span>
+    <div class="chat-header-titlegroup">
+      <span class="chat-header-title">Chat with Ostap</span>
+      <span class="chat-beta-badge" tabindex="0" aria-label="Experimental beta - this AI bot may get things wrong; for anything that matters, reach out via LinkedIn or email">
+        <span class="chat-beta-badge-dot" aria-hidden="true"></span>v0<span class="chat-beta-badge-sep" aria-hidden="true">·</span>BETA
+        <span class="chat-beta-tooltip" role="tooltip">
+          Experimental personal-site bot. May get things wrong.<br>
+          For things that matter: <a href="https://www.linkedin.com/in/ostapsenyuk/" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:ostap.senyuk@gmail.com">email</a>
+        </span>
+      </span>
+    </div>
     <div class="chat-header-actions">
       <button class="chat-clear" id="chatClear" aria-label="Clear chat">clear</button>
       <button class="chat-close" id="chatClose" aria-label="Close chat">[x]</button>
@@ -132,11 +141,30 @@ function onTurnstileLoad() {
     var span = el.querySelector('.chat-thinking');
     if (span) span.parentNode.removeChild(span);
   }
-  var SUGGESTED_QUESTIONS = [
-    "What's your tech stack?",
-    "Tell me about your Amazon experience",
-    "What are you working on now?"
+  var SUGGESTED_QUESTIONS_POOL = [
+    "What kind of role is he actually looking for?",
+    "Is he available, and where is he based?",
+    "Why did he take two years off?",
+    "What happened at Xenoss with the DSP rescue?",
+    "What's Satori Ads, and what's his real role there?",
+    "How does he work with Claude Code day-to-day?",
+    "What's the one Amazon project he's most proud of?",
+    "What's an AI-PM workflow that actually works for him?",
+    "He reverse-engineered a school API - what's that about?",
+    "Photography, music, ad tech - how does it all connect?",
+    "What does he think makes a good 0-to-1 PM?",
+    "Anything he'd do differently in his career?"
   ];
+  var SUGGESTIONS_COUNT = 3;
+
+  function pickSuggestions() {
+    var pool = SUGGESTED_QUESTIONS_POOL.slice();
+    for (var k = pool.length - 1; k > 0; k--) {
+      var j = Math.floor(Math.random() * (k + 1));
+      var tmp = pool[k]; pool[k] = pool[j]; pool[j] = tmp;
+    }
+    return pool.slice(0, SUGGESTIONS_COUNT);
+  }
 
   function init() {
     if (history.length === 0) return;
@@ -149,10 +177,11 @@ function onTurnstileLoad() {
     var container = document.createElement('div');
     container.className = 'chat-suggestions';
     container.id = 'chatSuggestions';
-    for (var i = 0; i < SUGGESTED_QUESTIONS.length; i++) {
+    var picks = pickSuggestions();
+    for (var i = 0; i < picks.length; i++) {
       var btn = document.createElement('button');
       btn.className = 'chat-chip';
-      btn.textContent = SUGGESTED_QUESTIONS[i];
+      btn.textContent = picks[i];
       btn.addEventListener('click', (function(q) {
         return function() {
           input.value = q;
@@ -160,7 +189,7 @@ function onTurnstileLoad() {
           sendMessage();
           if (window.sa_event) sa_event('chat_chip_tapped');
         };
-      })(SUGGESTED_QUESTIONS[i]));
+      })(picks[i]));
       container.appendChild(btn);
     }
     messages.appendChild(container);
@@ -243,7 +272,7 @@ function onTurnstileLoad() {
     var apiMessages = history.slice(-MAX_HISTORY * 2);
 
     if (!API_URL) {
-      var placeholder = "The chat backend isn't connected yet. Once Ostap deploys the API, I'll be able to answer your questions. In the meantime, check out the [About page](/about/) or connect on [LinkedIn](https://linkedin.com/in/ostapsenyuk/).";
+      var placeholder = "The chat backend isn't connected yet. Once Ostap deploys the API, I'll be able to answer your questions. In the meantime, check out the [About page](/about/) or connect on [LinkedIn](https://www.linkedin.com/in/ostapsenyuk/).";
       addMessage('assistant', placeholder);
       history.push({ role: 'assistant', content: placeholder });
       saveHistory();

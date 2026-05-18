@@ -35,11 +35,124 @@ body.chat-body {
   flex-shrink: 0;
 }
 
+.chat-page .chat-header-titlegroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex: 1;
+}
+
 .chat-page .chat-header-title {
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+}
+
+/* Beta badge - amber #f5a524, sole use of this color across the site.
+   Slight rotation gives a 'sticker slapped on' WIP feel; straightens on hover. */
+.chat-page .chat-beta-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #f5a524;
+  color: #1a1a1a;
+  font-family: var(--font-family);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 7px 3px 6px;
+  border: 1px solid #b8770f;
+  cursor: help;
+  user-select: none;
+  flex-shrink: 0;
+  outline-offset: 2px;
+  transform: rotate(-3.5deg);
+  transform-origin: center center;
+  transition: transform 0.15s ease-out;
+  box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.25);
+}
+
+.chat-page .chat-beta-badge:hover,
+.chat-page .chat-beta-badge:focus,
+.chat-page .chat-beta-badge:focus-within {
+  transform: rotate(0deg);
+}
+
+.chat-page .chat-beta-badge-dot {
+  width: 6px;
+  height: 6px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  animation: chat-beta-pulse 2s ease-in-out infinite;
+}
+
+.chat-page .chat-beta-badge-sep {
+  opacity: 0.55;
+  padding: 0 1px;
+}
+
+@keyframes chat-beta-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.chat-page .chat-beta-tooltip {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  background: var(--background-color);
+  color: var(--primary-color);
+  border: 1px solid #f5a524;
+  border-left: 3px solid #f5a524;
+  padding: 8px 10px;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.45;
+  white-space: normal;
+  width: max-content;
+  max-width: 280px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4px);
+  transition: opacity 0.15s, transform 0.15s, visibility 0s linear 0.15s;
+  z-index: 1002;
+}
+
+/* Transparent bridge - cursor travels from badge to tooltip without
+   losing hover. Mirror of the rule in chat-styles.css. */
+.chat-page .chat-beta-tooltip::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -12px;
+  height: 12px;
+  background: transparent;
+}
+
+.chat-page .chat-beta-tooltip a {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.chat-page .chat-beta-tooltip a:hover {
+  color: var(--link-hover);
+}
+
+.chat-page .chat-beta-badge:hover .chat-beta-tooltip,
+.chat-page .chat-beta-badge:focus .chat-beta-tooltip,
+.chat-page .chat-beta-badge:focus-within .chat-beta-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.15s, transform 0.15s, visibility 0s linear 0s;
 }
 
 .chat-page .chat-header-actions {
