@@ -331,3 +331,97 @@ body.chat-body {
   background: var(--accent-color);
   color: #fff;
 }
+
+/* Wordmark is mobile-hidden; it only appears in the desktop card layout. */
+.chat-wordmark {
+  display: none;
+}
+
+/* ---- Desktop: centered brutalist console card ----
+   Mobile is fullscreen (intentional - mobile users are routed here).
+   On desktop the /chat/ direct link becomes a contained card framed
+   against the page background, in the site's brutalist vocabulary, with
+   a wordmark above it so the page stays tied to ostaps.net. */
+@media (min-width: 768px) {
+  /* Stack wordmark above the card and center the whole group. */
+  body.chat-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    height: auto;
+    overflow: auto;
+    padding: 32px 16px;
+  }
+
+  html:has(.chat-page) {
+    height: auto;
+    overflow: auto;
+  }
+
+  /* Wordmark: small mono link back to the site, aligned to the card edge. */
+  .chat-wordmark {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    font-family: var(--font-family);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+
+  .chat-wordmark:hover {
+    color: var(--accent-color);
+  }
+
+  /* Card, not fullscreen. Overrides the mobile fixed/100dvh rules.
+     Sizes to content with a modest floor so the empty initial state
+     stays compact and balanced, then grows with the conversation up
+     to the cap (messages scroll internally past that). */
+  .chat-page {
+    position: static;
+    inset: auto;
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    min-height: 360px;
+    max-height: 80vh;
+    border: 2px solid var(--primary-color);
+    box-shadow: 6px 6px 0 0 var(--accent-color);
+  }
+
+  /* Breathing room so first messages aren't flush to the header
+     and the input isn't glued to the card's bottom edge. */
+  .chat-page .chat-messages {
+    padding: 22px 24px;
+    gap: 12px;
+  }
+
+  /* Input flush to the card's inner edges: a single 2px top rule divides
+     it from the messages, and the input/send shed their own outer borders
+     so there's no doubled-border seam against the card. */
+  .chat-page .chat-input-area {
+    border-top: 2px solid var(--primary-color);
+  }
+
+  .chat-page .chat-input {
+    border: none;
+    padding: 14px 18px;
+  }
+
+  .chat-page .chat-send {
+    border: none;
+    border-left: 2px solid var(--primary-color);
+    padding: 14px 20px;
+  }
+
+  .chat-page .chat-header {
+    padding: 12px 18px;
+  }
+}

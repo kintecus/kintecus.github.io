@@ -23,6 +23,7 @@
     </script>
   </head>
   <body class="chat-body">
+    <a class="chat-wordmark" href="/">ostaps.net</a>
     <div class="chat-page" id="chatPage">
       <div class="chat-header">
         <div class="chat-header-titlegroup">
@@ -361,8 +362,11 @@
           sendMessage();
         }
       });
-      // Keep chat pinned to visible viewport when keyboard opens
-      if (window.visualViewport) {
+      // Keep chat pinned to visible viewport when keyboard opens (mobile only).
+      // On desktop the chat is a static centered card; inline top/height writes
+      // would override the stylesheet and break that layout, so guard them out.
+      var isMobileChat = window.matchMedia('(max-width: 767px)');
+      if (window.visualViewport && isMobileChat.matches) {
         var chatPage = document.getElementById('chatPage');
         function syncViewport() {
           chatPage.style.height = window.visualViewport.height + 'px';
