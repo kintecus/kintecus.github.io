@@ -28,6 +28,6 @@ Some of the projects
 - [puch](https://puch.ostaps.net) - a math-practice web app I built for my daughter
 - This site, including the [AI chat widget](/chat/) you can try - a Cloudflare Worker I built
 - [pidcast](https://github.com/kintecus/pidcast) - podcast transcription and analysis tool
-- [Tribe Coding](https://github.com/Tribe-Coding/claude-plugins) plugins for Claude Code
+- [Tribe Coding](https://github.com/artem-from-ua/claude-plugins) plugins for Claude Code
 - Homelabbing on a 2011 MacBook Pro
 

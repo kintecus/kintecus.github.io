@@ -30,7 +30,7 @@ Running [Satori Ads](https://satoriads.com) - wallet pass advertising through Ap
 
 Claude Code is my operating environment, not an experiment. Daily since late 2025, and it changed how I think about the PM role entirely. Less specs, more working code.
 
-Open source stuff: [Tribe Coding](https://github.com/Tribe-Coding/claude-plugins) plugins, [pidcast](https://github.com/kintecus/pidcast) for podcast analysis, vulcan-notify for syncing my kids' school data from an API I reverse-engineered because the school's app was terrible.
+Open source stuff: [Tribe Coding](https://github.com/artem-from-ua/claude-plugins) plugins, [pidcast](https://github.com/kintecus/pidcast) for podcast analysis, vulcan-notify for syncing my kids' school data from an API I reverse-engineered because the school's app was terrible.
 
 ## Outside work
 
