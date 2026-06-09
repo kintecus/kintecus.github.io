@@ -28,7 +28,7 @@ Two years off. Full-time parenting, not a career gap. Recovery from burnout and 
 
 Running [Satori Ads](https://satoriads.com) - wallet pass advertising through Apple and Google Wallet. First paying pilot landed, got into WPP's accelerator. I do product strategy, write backend code, and handle the co-founder things - investors, partnerships, company ops.
 
-Claude Code is my operating environment, not an experiment. Two years of daily use changed how I think about the PM role entirely. Less specs, more working code.
+Claude Code is my operating environment, not an experiment. Daily since late 2025, and it changed how I think about the PM role entirely. Less specs, more working code.
 
 Open source stuff: [Tribe Coding](https://github.com/Tribe-Coding/claude-plugins) plugins, [pidcast](https://github.com/kintecus/pidcast) for podcast analysis, vulcan-notify for syncing my kids' school data from an API I reverse-engineered because the school's app was terrible.
 
