@@ -1,0 +1,250 @@
+/* Work page layout */
+
+.work {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 40px 0;
+}
+
+/* Intro */
+.work-intro {
+  margin-bottom: 2rem;
+}
+
+.work-intro h1 {
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+}
+
+.work-intro p {
+  max-width: 720px;
+  font-size: 0.95rem;
+}
+
+/* Availability: blueprint backdrop, same recipe as .home-building */
+.work-availability {
+  margin-bottom: 2.5rem;
+  padding: 1.4rem;
+  background-color: var(--accent-color);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.13) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.work-availability h2 {
+  font-size: 1rem;
+  margin: 0 0 0.8rem;
+  color: #fff;
+}
+
+.work-availability-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Inverted cards: light fill, dark text - readable on the blueprint */
+.work-availability-item {
+  background-color: var(--background-color);
+  border: 1px solid transparent;
+  padding: 0.9rem 1rem;
+  transition: border-color 0.15s ease;
+}
+
+.work-availability-item:hover {
+  border-color: var(--accent-color);
+}
+
+.work-availability-item h3 {
+  font-size: 0.95rem;
+  margin: 0 0 0.4rem;
+  color: var(--primary-color);
+}
+
+.work-availability-item p {
+  font-size: 0.88rem;
+  color: var(--text-color);
+  margin: 0 0 0.5rem;
+}
+
+.work-availability-item p:last-child {
+  margin-bottom: 0;
+}
+
+.work-availability-hook {
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+.work-availability-cta {
+  margin-top: 1rem;
+  font-size: 0.92rem;
+  color: #fff;
+}
+
+.work-availability-cta a {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Case studies: numbered spec-sheet entries */
+.work-cases {
+  margin-bottom: 2.5rem;
+}
+
+.work-cases > h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.work-case {
+  border-top: 1px solid var(--border-color);
+  padding: 1.4rem 0;
+}
+
+.work-case-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.work-case-num {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--accent-color);
+}
+
+.work-case-head h2 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.work-case-meta {
+  font-style: italic;
+  font-size: 0.82rem;
+  color: var(--secondary-color);
+  margin: 0.25rem 0 0.75rem;
+}
+
+.work-case p {
+  max-width: 720px;
+  font-size: 0.92rem;
+  margin: 0 0 0.75rem;
+}
+
+.work-case p:last-of-type {
+  margin-bottom: 0.9rem;
+}
+
+.work-case-note {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+/* Metric chips */
+.work-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.work-chip {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 0.1em 0.5em;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  white-space: nowrap;
+}
+
+/* Compact grid of smaller projects */
+.work-more {
+  margin-bottom: 2.5rem;
+}
+
+.work-more h2 {
+  font-size: 1rem;
+  margin: 0 0 0.8rem;
+}
+
+.work-more-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.work-more-item {
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+  padding: 0.9rem 1rem;
+  transition: border-color 0.15s ease;
+}
+
+.work-more-item:hover {
+  border-color: var(--accent-color);
+}
+
+.work-more-item .name {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.work-more-item .desc {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  margin-top: 0.35rem;
+}
+
+/* Closing CTA */
+.work-cta {
+  border-top: 1px solid var(--border-color);
+  padding: 1.4rem 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.work-cta p {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .work-more-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .work {
+    padding: 30px 16px 24px;
+  }
+
+  .work-intro h1 {
+    font-size: 1.6rem;
+  }
+
+  .work-availability {
+    padding: 1rem;
+  }
+
+  .work-availability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-more-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .work-chips {
+    gap: 0.3rem;
+  }
+
+  .work-chip {
+    white-space: normal;
+  }
+}

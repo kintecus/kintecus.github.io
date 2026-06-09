@@ -1,0 +1,204 @@
+{{ define "title" }}{{ .Title }} | {{ .Site.Title }}{{ end }}
+{{ define "main" }}
+  <div class="work">
+    <div class="work-intro">
+      <h1>WORK</h1>
+      <p>
+        I take products from zero to production - product decisions, working code,
+        and delivery in one person. Fifteen years of product management across ad tech,
+        e-commerce, and SaaS, now with AI leverage: I ship the things I used to write
+        specs for. FastAPI, Rails, React, Cloudflare Workers.
+      </p>
+    </div>
+
+    <div class="work-availability">
+      <h2>Available for</h2>
+      <div class="work-availability-grid">
+        <div class="work-availability-item">
+          <h3>0-to-1 builds</h3>
+          <p>
+            You have a product idea and no team. I run fixed-scope discovery, then ship
+            weekly increments to production - handover or ongoing. Product, code, and
+            delivery in one contract.
+          </p>
+        </div>
+        <div class="work-availability-item">
+          <h3>AI enablement</h3>
+          <p>
+            Claude Code and agent workflows for your team: setup, plugins, guardrails,
+            and the working habits that make it stick.
+          </p>
+          <p class="work-availability-hook">
+            Show me the thing you'd say "I bet AI can't do that" about - and I'll prove you wrong.
+          </p>
+        </div>
+      </div>
+      <div class="work-availability-cta">
+        <a href="mailto:ostap.senyuk@gmail.com">ostap.senyuk@gmail.com</a> - tell me what you're building.
+      </div>
+    </div>
+
+    <div class="work-cases">
+      <section class="work-case">
+        <div class="work-case-head">
+          <span class="work-case-num">01</span>
+          <h2><a href="https://satoriads.com" target="_blank">Satori Ads</a></h2>
+        </div>
+        <div class="work-case-meta">co-founder / product · 2025-now · FastAPI, React, PWA</div>
+        <p>
+          Wallet pass advertising and loyalty through Apple and Google Wallet. Three
+          founders, no outside funding. I own product and write production code: the
+          FastAPI backend alongside the lead engineer (~27% of commits) and the merchant
+          frontend end-to-end - magic-link auth, observability, CI. First paying pilot
+          live with a retail chain in Poland; accepted into WPP's startup accelerator,
+          which puts Satori in front of three major agency networks.
+        </p>
+        <div class="work-chips">
+          <span class="work-chip">paying pilot live</span>
+          <span class="work-chip">WPP accelerator</span>
+          <span class="work-chip">~27% of backend commits</span>
+          <span class="work-chip">merchant frontend: primary author</span>
+        </div>
+      </section>
+
+      <section class="work-case">
+        <div class="work-case-head">
+          <span class="work-case-num">02</span>
+          <h2>Ad tech consulting</h2>
+        </div>
+        <div class="work-case-meta">consulting PM / delivery lead, via a software services firm · 2025-2026</div>
+        <p>
+          Forecasting tool for a European ad tech platform: an 11-week fixed-scope pilot
+          where I managed delivery of four ML prediction models into the production
+          forecasting API, ZIP-level geo filtering, and an embeddings-based audience
+          segment recommender. 13 production releases, every deliverable accepted.
+        </p>
+        <p>
+          DSP rescue for an APAC client: took over an at-risk build with broken client
+          communication, restored trust with a structured cadence - daily async updates,
+          weekly reports - and managed delivery of 12+ features: exchange integrations,
+          pacing, dynamic CPM, multi-region infrastructure. Closed it with a
+          retrospective across 681 tracked issues that gave leadership the real cost
+          picture.
+        </p>
+        <div class="work-chips">
+          <span class="work-chip">4 ML models in production</span>
+          <span class="work-chip">13 releases in 11 weeks</span>
+          <span class="work-chip">100% deliverables accepted</span>
+          <span class="work-chip">12+ features shipped</span>
+        </div>
+        <div class="work-case-note">Client names withheld - happy to walk through details on a call.</div>
+      </section>
+
+      <section class="work-case">
+        <div class="work-case-head">
+          <span class="work-case-num">03</span>
+          <h2><a href="https://opencall.ostaps.net" target="_blank">Open Call</a></h2>
+        </div>
+        <div class="work-case-meta">solo build with user-zero · 2026 · Rails 8, SQLite, Docker</div>
+        <p>
+          A film director friend was tracking funding deadlines in spreadsheets and
+          missing them. We built Open Call together - she's user-zero, I'm the team.
+          108 manually verified film and art programs, saved-filter email subscriptions,
+          two-stage deadline reminders. Self-hosted with Docker and a Cloudflare Tunnel.
+          From idea to a live product her peers use, a few evenings at a time.
+        </p>
+        <div class="work-chips">
+          <span class="work-chip">live in production</span>
+          <span class="work-chip">108 verified programs</span>
+          <span class="work-chip">idea to launch, solo</span>
+        </div>
+      </section>
+
+      <section class="work-case">
+        <div class="work-case-head">
+          <span class="work-case-num">04</span>
+          <h2><a href="https://github.com/kintecus/build" target="_blank">build</a></h2>
+        </div>
+        <div class="work-case-meta">open source · 2026 · Claude Code, markdown</div>
+        <p>
+          The PM operating system I run my own work on: Claude Code plus structured
+          markdown - briefs, status files, decision logs, skills that generate
+          stakeholder updates. Dogfooded across founder work and client consulting at
+          the same time, then extracted into a public framework. If you hire me, this
+          is how your project gets run.
+        </p>
+        <div class="work-chips">
+          <span class="work-chip">open source</span>
+          <span class="work-chip">dogfooded daily</span>
+        </div>
+      </section>
+
+      <section class="work-case">
+        <div class="work-case-head">
+          <span class="work-case-num">05</span>
+          <h2>Your Own Coach</h2>
+        </div>
+        <div class="work-case-meta">engagement in progress · 2026 · Astro, Cloudflare Pages + Workers</div>
+        <p>
+          Current freelance engagement: rebuilding a solo coach's website and adding an
+          AI assistant. Discovery and competitor research done, stack decided, build
+          underway.
+        </p>
+        <div class="work-chips">
+          <span class="work-chip">in progress</span>
+        </div>
+      </section>
+
+      <section class="work-case">
+        <div class="work-case-head">
+          <span class="work-case-num">06</span>
+          <h2><a href="/chat/">This site's chat widget</a></h2>
+        </div>
+        <div class="work-case-meta">you're looking at it · 2025-now · Cloudflare Worker, D1, KV</div>
+        <p>
+          The chat bubble on this page is a real product, not an embed: a Cloudflare
+          Worker with SSE streaming, D1 for conversations, KV rate limiting, and
+          Turnstile against abuse. Ask it about my work - it knows.
+        </p>
+        <div class="work-chips">
+          <span class="work-chip">live on this page</span>
+          <span class="work-chip">built and operated solo</span>
+        </div>
+      </section>
+    </div>
+
+    <div class="work-more">
+      <h2>Also shipped</h2>
+      <div class="work-more-grid">
+        <div class="work-more-item">
+          <a href="https://puch.ostaps.net" target="_blank">puch</a>
+          <span class="desc">math-practice web app for my daughter. Rails, pedagogy-first, no shame mechanics.</span>
+        </div>
+        <div class="work-more-item">
+          <a href="https://github.com/kintecus/vulcan-notify" target="_blank">vulcan-notify</a>
+          <span class="desc">reverse-engineered my kids' school's undocumented API into a CLI feeding our home automation.</span>
+        </div>
+        <div class="work-more-item">
+          <a href="https://github.com/kintecus/cc-tools" target="_blank">cc-tools</a>
+          <span class="desc">my personal Claude Code plugin - writing voice, daily notes, plan review. The daily driver.</span>
+        </div>
+        <div class="work-more-item">
+          <a href="https://github.com/kintecus/pidcast" target="_blank">pidcast</a>
+          <span class="desc">privacy-first local podcast transcription and LLM analysis.</span>
+        </div>
+        <div class="work-more-item">
+          <span class="name">homelab</span>
+          <span class="desc">Proxmox on a 2011 MacBook Pro - media, home automation, and app hosting. 18 months in production.</span>
+        </div>
+        <div class="work-more-item">
+          <span class="name">retroscope</span>
+          <span class="desc">retrospective reports for Claude Code sessions - what shipped, what stalled.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="work-cta">
+      <p>
+        Building something from zero?
+        <a href="mailto:ostap.senyuk@gmail.com">ostap.senyuk@gmail.com</a> ·
+        <a href="https://www.linkedin.com/in/ostapsenyuk/" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </div>
+{{ end }}
