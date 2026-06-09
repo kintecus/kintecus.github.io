@@ -38,6 +38,57 @@
   font-size: 0.9rem;
 }
 
+/* Building: featured projects on a blueprint backdrop */
+.home-building {
+  margin-bottom: 2rem;
+  padding: 1.4rem;
+  background-color: var(--accent-color);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.13) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.home-building h2 {
+  font-size: 1rem;
+  margin: 0 0 0.8rem;
+  color: #fff;
+}
+
+.home-building-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Inverted cards: light fill, dark text — readable on the blueprint */
+.home-building-item {
+  font-size: 0.9rem;
+  background-color: var(--background-color);
+  border: 1px solid transparent;
+  padding: 0.9rem 1rem;
+  transition: border-color 0.15s ease;
+}
+
+.home-building-item:hover {
+  border-color: var(--accent-color);
+}
+
+.home-building-item a {
+  color: var(--link-color);
+}
+
+.home-building-item a:hover {
+  color: var(--link-hover);
+}
+
+.home-building-item .desc {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  margin-top: 0.35rem;
+}
+
 /* Bottom section: Latest + Links side by side */
 .home-bottom {
   display: grid;
@@ -46,17 +97,11 @@
   margin-bottom: 1.5rem;
 }
 
-/* Latest section - blue inverted block */
-.home-latest {
-  background-color: var(--accent-color);
-  color: #fff;
-  padding: 1.2rem 1.4rem;
-}
-
+/* Latest section */
 .home-latest h2 {
   font-size: 1rem;
   margin: 0 0 0.8rem;
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .home-latest-item {
@@ -68,20 +113,20 @@
 }
 
 .home-latest-item a {
-  color: #fff;
+  color: var(--link-color);
   font-weight: 700;
   font-size: 0.92rem;
 }
 
 .home-latest-item a:hover {
-  color: #ccdaff;
+  color: var(--link-hover);
 }
 
 .home-latest-meta {
   padding-left: 0.75rem;
   font-style: italic;
   font-size: 0.82rem;
-  color: #b8caff;
+  color: var(--secondary-color);
   margin-top: 0.15rem;
 }
 
@@ -103,6 +148,12 @@
 }
 
 /* Responsive */
+@media (max-width: 900px) {
+  .home-building-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 600px) {
   .home {
     padding: 30px 16px 24px;
@@ -116,6 +167,14 @@
   .home-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .home-building {
+    padding: 1rem;
+  }
+
+  .home-building-grid {
+    grid-template-columns: 1fr;
   }
 
   .home-bottom {
