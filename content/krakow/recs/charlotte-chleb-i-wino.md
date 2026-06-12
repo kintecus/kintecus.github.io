@@ -5,6 +5,8 @@ params:
   category: "food"
   address: ""
   map_url: "https://goo.gl/maps/cdFhUYkJj7n97afj7"
+  lat: 50.063454
+  lon: 19.9350829
   tagline: "French-inspired bakery with excellent bread, breakfast, and wine."
   url: "https://bistrocharlotte.com/en/locations/cracow/#nasz-lokal"
   tags: "Bread, Breakfast, French, Wine"

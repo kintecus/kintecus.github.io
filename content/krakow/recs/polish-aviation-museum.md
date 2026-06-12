@@ -5,6 +5,8 @@ params:
   category: "museum"
   address: ""
   map_url: "https://www.google.com/maps/place/Polish+Aviation+Museum/..."
+  lat: 50.0788411
+  lon: 19.9916582
   tagline: "380+ aircraft, helicopters, and gliders. Kids love this one."
   kid_friendly: true
 ---

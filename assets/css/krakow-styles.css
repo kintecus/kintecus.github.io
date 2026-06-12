@@ -426,3 +426,52 @@ html[data-theme="dark"] .krakow-card-photo--placeholder[data-cat="shops"] {
     height: 160px;
   }
 }
+
+/* OSM map card (detail page) */
+.krakow-map-card {
+  margin-bottom: 1.5rem;
+}
+
+.krakow-map-frame {
+  display: block;
+  width: 100%;
+  height: 320px;
+  border: 1px solid var(--border-color);
+}
+
+.krakow-map-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.krakow-map-cta:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* OSM tiles are always light; soften the glare in dark mode. Match the
+   file's existing dark selectors (html[...], not :root). */
+html[data-theme="dark"] .krakow-map-frame {
+  filter: brightness(0.85) contrast(1.05);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .krakow-map-frame {
+    filter: brightness(0.85) contrast(1.05);
+  }
+}
+
+@media (max-width: 600px) {
+  .krakow-map-frame {
+    height: 240px;
+  }
+}
