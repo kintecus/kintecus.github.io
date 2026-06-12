@@ -5,5 +5,7 @@ params:
   category: "museum"
   address: ""
   map_url: "https://www.google.com/maps/place/Muzeum+Inzynierii+i+Techniki/..."
+  lat: 50.0495064
+  lon: 19.9472921
   tagline: "Polish engineering heritage. Great street food square nearby - get the Belgian fries."
 ---

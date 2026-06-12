@@ -10,11 +10,7 @@
         <span class="krakow-tag">{{ .Params.category }}</span>
         {{ if .Params.kid_friendly }}<span class="krakow-tag-kid">kids</span>{{ end }}
         {{ with .Params.address }}
-          <span class="krakow-address">
-            {{ with $.Params.map_url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}
-            {{ $.Params.address }}
-            {{ with $.Params.map_url }}</a>{{ end }}
-          </span>
+          <span class="krakow-address">{{ . }}</span>
         {{ end }}
       </div>
 
@@ -32,14 +28,13 @@
         </div>
       {{ end }}
 
-      <div class="krakow-detail-links">
-        {{ with .Params.map_url }}
-          <a href="{{ . }}" target="_blank" rel="noopener">View on map &rarr;</a>
-        {{ end }}
-        {{ with .Params.url }}
+      {{ with .Params.url }}
+        <div class="krakow-detail-links">
           <a href="{{ . }}" target="_blank" rel="noopener">Website &rarr;</a>
-        {{ end }}
-      </div>
+        </div>
+      {{ end }}
+
+      {{ partial "osm-card.html" (dict "lat" .Params.lat "lon" .Params.lon "title" .Title "address" .Params.address) }}
 
       {{ with .Content }}
         <div class="krakow-detail-content">

@@ -1,0 +1,30 @@
+{{- /*
+  osm-card.html - renders an OpenStreetMap embed for a place, with an
+  "Open in Apple Maps" CTA below it. Expects a dict: { lat, lon, title, address }.
+  Renders nothing if lat/lon are absent, so places without coordinates fall back
+  to their category placeholder. The iframe is zero-JS, zero-cookie, no API key.
+*/ -}}
+{{- $lat := .lat -}}
+{{- $lon := .lon -}}
+{{- if and (ne $lat nil) (ne $lon nil) -}}
+  {{- /* Wider lon span than lat to suit the landscape iframe (keeps marker centered). */ -}}
+  {{- $dLon := 0.006 -}}
+  {{- $dLat := 0.0025 -}}
+  {{- $bbox := printf "%v,%v,%v,%v" (sub $lon $dLon) (sub $lat $dLat) (add $lon $dLon) (add $lat $dLat) -}}
+  {{- $embed := printf "https://www.openstreetmap.org/export/embed.html?bbox=%s&layer=mapnik&marker=%v,%v" $bbox $lat $lon -}}
+  {{- /* Apple Maps query: name + address so Apple resolves it to its own POI card. */ -}}
+  {{- $q := .title -}}
+  {{- with .address }}{{ if ne . $.title }}{{ $q = printf "%s, %s" $.title . }}{{ end }}{{ end -}}
+  {{- if not (in $q "Kraków") }}{{ $q = printf "%s, Kraków" $q }}{{ end -}}
+  {{- $apple := printf "https://maps.apple.com/?%s" (querify "q" $q "ll" (printf "%v,%v" $lat $lon)) -}}
+  <div class="krakow-map-card">
+    <iframe class="krakow-map-frame"
+      title="Map of {{ .title }}"
+      src="{{ $embed }}"
+      width="100%" height="320"
+      loading="lazy"
+      referrerpolicy="no-referrer"
+      style="border:0"></iframe>
+    <a class="krakow-map-cta" href="{{ $apple }}" target="_blank" rel="noopener noreferrer">Open in Maps &rarr;</a>
+  </div>
+{{- end -}}

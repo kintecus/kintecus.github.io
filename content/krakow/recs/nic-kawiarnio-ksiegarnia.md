@@ -5,5 +5,7 @@ params:
   category: "coffee"
   address: ""
   map_url: "https://maps.app.goo.gl/kUuXyd9kFX7fTy5f7"
+  lat: 50.0650519
+  lon: 19.938232
   tagline: "Ukrainian cafe-bookshop."
 ---
