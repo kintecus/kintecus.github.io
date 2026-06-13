@@ -4,25 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    {{ $styles := resources.Get "css/styles.css" | fingerprint }}
-    {{ $home := resources.Get "css/home-styles.css" | fingerprint }}
-    {{ $about := resources.Get "css/about-styles.css" | fingerprint }}
-    {{ $reading := resources.Get "css/reading-styles.css" | fingerprint }}
-    {{ $chat := resources.Get "css/chat-styles.css" | fingerprint }}
-    {{ $chatPage := resources.Get "css/chat-page-styles.css" | fingerprint }}
-    {{ $krakow := resources.Get "css/krakow-styles.css" | fingerprint }}
-    {{ $work := resources.Get "css/work-styles.css" | fingerprint }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
-    <link rel="stylesheet" href="{{ $home.RelPermalink }}"/>
-    <link rel="stylesheet" href="{{ $work.RelPermalink }}"/>
-    <link rel="stylesheet" href="{{ $about.RelPermalink }}"/>
-    <link rel="stylesheet" href="{{ $reading.RelPermalink }}"/>
-    <link rel="stylesheet" href="{{ $chat.RelPermalink }}"/>
-    <link rel="stylesheet" href="{{ $chatPage.RelPermalink }}"/>
-    <link rel="stylesheet" href="{{ $krakow.RelPermalink }}"/>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/ibm-plex-mono-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/ibm-plex-mono-400.woff2" crossorigin>
+    {{/* Global stylesheets: base styles + the floating chat widget (rendered on every baseof page). */}}
+    {{ partial "css.html" "css/styles.css" }}
+    {{ partial "css.html" "css/chat-styles.css" }}
+    {{/* Page-specific stylesheets: each layout defines a "css" block listing only its own sheets. */}}
+    {{ block "css" . }}{{ end }}
     {{- $title := .Title | default .Site.Title -}}
     {{- $ogtitle := .Params.og_title | default $title -}}
     {{- $description := .Params.description | default .Site.Params.description -}}
@@ -44,7 +32,6 @@
     <meta name="twitter:image" content="{{ $image | absURL }}">
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
     <script>
       (function() {
         var saved = localStorage.getItem('theme');
