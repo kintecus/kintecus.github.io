@@ -1,0 +1,3 @@
+{{- /* Emits a fingerprinted, minified stylesheet link. Context is a path relative to assets/, e.g. "css/home-styles.css". */ -}}
+{{- $r := resources.Get . | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $r.RelPermalink }}">

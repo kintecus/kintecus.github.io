@@ -4,13 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, interactive-widget=resizes-content">
     <title>Chat with Ostap</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    {{ $styles := resources.Get "css/styles.css" | fingerprint }}
-    {{ $chatPage := resources.Get "css/chat-page-styles.css" | fingerprint }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}"/>
-    <link rel="stylesheet" href="{{ $chatPage.RelPermalink }}"/>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/ibm-plex-mono-700.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/ibm-plex-mono-400.woff2" crossorigin>
+    {{ partial "css.html" "css/styles.css" }}
+    {{ partial "css.html" "css/chat-page-styles.css" }}
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <script>
