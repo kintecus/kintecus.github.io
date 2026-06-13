@@ -6,6 +6,8 @@
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
     <link rel="preload" as="font" type="font/woff2" href="/fonts/ibm-plex-mono-700.woff2" crossorigin>
     <link rel="preload" as="font" type="font/woff2" href="/fonts/ibm-plex-mono-400.woff2" crossorigin>
+    {{/* Critical above-the-fold CSS inlined to unblock first paint (fonts + theme vars + base). */}}
+    {{ partial "inline-css.html" "css/critical-base.css" }}
     {{/* Global stylesheets: base styles + the floating chat widget (rendered on every baseof page). */}}
     {{ partial "css.html" "css/styles.css" }}
     {{ partial "css.html" "css/chat-styles.css" }}

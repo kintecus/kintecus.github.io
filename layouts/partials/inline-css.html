@@ -1,0 +1,3 @@
+{{- /* Inlines a stylesheet as a <style> block. Context is a path relative to assets/, e.g. "css/critical-base.css". Used for critical above-the-fold CSS to avoid a render-blocking round trip. */ -}}
+{{- $r := resources.Get . | minify -}}
+<style>{{ $r.Content | safeCSS }}</style>

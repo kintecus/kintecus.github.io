@@ -1,0 +1,58 @@
+/*
+ * Critical above-the-fold CSS for the homepage, inlined in <head>.
+ * Covers the greeting (LCP element) and the 3-column info grid only.
+ * Below-the-fold rules (.home-building, .home-bottom, etc.) stay in
+ * home-styles.css. Duplicated here with home-styles.css -- keep in sync.
+ */
+
+.home {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 40px 0;
+}
+
+.home-greeting {
+  text-align: center;
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 2rem;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.home-col h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.home-col ul {
+  list-style: none;
+  padding: 0 0 0 0.75rem;
+  margin: 0;
+}
+
+.home-col ul li {
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .home {
+    padding: 30px 16px 24px;
+  }
+
+  .home-greeting {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
