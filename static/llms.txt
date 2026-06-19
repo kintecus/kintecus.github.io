@@ -1,0 +1,24 @@
+# Ostap Senyuk
+
+> Full-cycle product manager and builder. Fifteen years across ad tech, e-commerce, and SaaS (StrikeAd, Sizmek, Amazon, Voicemod). Co-founding Satori Ads, a wallet-pass advertising platform. Does product strategy and writes the backend code himself, with Claude Code as a daily operating environment. Ukrainian, Krakow-based.
+
+This is the personal site of Ostap Senyuk: writing on product management and AI-augmented building, case studies, a reading list, and a Krakow city guide. Open to senior/principal PM roles in AI, data, platforms, or ad tech.
+
+## Core pages
+- [About](https://ostaps.net/about/): Background and career path, from a photo production studio in Kyiv through ad tech to co-founding Satori Ads
+- [Work](https://ostaps.net/work/): Case studies - 0-to-1 builds, ML delivery, and the full product cycle handled by one person
+- [Now](https://ostaps.net/now/): Current focus - Satori Ads, what he is building, and what is next
+- [Chat](https://ostaps.net/chat/): An AI chat widget (a Cloudflare Worker he built) for asking questions about Ostap and his work
+
+## Writing
+- [Blog](https://ostaps.net/posts/): Essays on product management, AI tooling, and building
+- [Saturday homelab: an AI pair-programming experiment](https://ostaps.net/posts/2026/homelab-day-one/): Setting up a homelab on a 2011 MacBook Pro with an AI pair
+- [Podcasts + NotebookLM](https://ostaps.net/posts/2024/podcast-hack-notebooklm/): Using NotebookLM to analyse podcasts
+
+## Krakow guide
+- [Krakow recommendations](https://ostaps.net/krakow/recs/): Personal recommendations for places, cafes, and museums in Krakow
+
+## Optional
+- [Reading list](https://ostaps.net/reading/): Books Ostap has read, with notes
+- [Hello World](https://ostaps.net/posts/2024/hello-world/): Why this site exists
+- [Colophon](https://ostaps.net/colophon/): How the site is built

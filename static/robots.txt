@@ -1,0 +1,53 @@
+# robots.txt for https://ostaps.net
+#
+# Policy: classic search engines get full access. AI crawlers are split by
+# purpose (2026 convention) - search/retrieval bots are allowed so the site
+# stays citable in AI answers; model-training crawlers are blocked.
+#
+# Note: each crawler obeys only its single most-specific User-agent group
+# (RFC 9309). The "User-agent: *" group below does NOT override the per-bot
+# rules - do not merge the groups.
+
+# Classic search engines (Googlebot, Bingbot, etc.): full access.
+User-agent: *
+Allow: /
+
+# --- AI crawlers ---
+
+# Allowed: search-index and user-initiated retrieval bots. Keeps the site
+# citable in ChatGPT, Claude, and Perplexity answers.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Blocked: model-training crawlers (opt out of training corpora).
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Google-Extended and Applebot-Extended are AI-training opt-out tokens, not
+# crawlers. Disallowing them blocks training use only - it has no effect on
+# Googlebot / Applebot search indexing.
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+Sitemap: https://ostaps.net/sitemap.xml
