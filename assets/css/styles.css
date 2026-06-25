@@ -88,6 +88,18 @@ header {
   margin-bottom: 0;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+/* The link strip flexes to fill; the theme toggle sits pinned beside it. */
+.nav-strip-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -128,6 +140,7 @@ nav ul li a:hover {
   text-decoration: none;
   padding: 0;
   letter-spacing: 0.02em;
+  flex: 0 0 auto;
 }
 
 .theme-toggle:hover {
@@ -243,14 +256,44 @@ main {
   h1 { font-size: 1.6rem; }
   h2 { font-size: 1.1rem; }
 
+  /* One-line horizontal scroll strip: nothing wraps, nothing is hidden. */
+  .nav-strip-wrap {
+    position: relative;
+  }
+
+  .nav-strip-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    pointer-events: none;
+    background: linear-gradient(to right, transparent, var(--background-color));
+  }
+
   nav ul {
-    gap: 0;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
+    gap: 1.2rem;
+    overflow-x: auto;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  nav ul::-webkit-scrollbar {
+    display: none;
   }
 
   nav ul li {
-    margin: 0.25rem 0.5rem;
+    margin: 0;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    white-space: nowrap;
+  }
+
+  nav ul li.nav-home {
+    margin-right: 0;
   }
 
   header {
