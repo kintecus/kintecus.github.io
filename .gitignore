@@ -131,3 +131,17 @@ Desktop.ini
 
 # Docker files
 Dockerfile*
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
+
+# Claude Code local overrides
+.claude/settings.local.json
+
+# Local source material (not published)
+data/my-clippings.txt
+data/ostaps-mock.png
