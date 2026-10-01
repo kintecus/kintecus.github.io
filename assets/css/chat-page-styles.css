@@ -266,6 +266,28 @@ body.chat-body {
   display: block;
 }
 
+.chat-page .chat-retry {
+  background: none;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  font-family: var(--font-family);
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  margin-left: 4px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.chat-page .chat-retry:hover:not(:disabled) {
+  background: var(--accent-color);
+  color: #fff;
+}
+
+.chat-page .chat-retry:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .chat-page .chat-input-area {
   display: flex;
   flex-shrink: 0;
