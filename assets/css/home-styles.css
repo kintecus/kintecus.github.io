@@ -158,6 +158,37 @@
   font-size: 0.9rem;
 }
 
+/* Phosphor icons (regular, v2.1.1), masked so they inherit link color */
+.link-icon {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 0.45em;
+  vertical-align: -0.2em;
+  background-color: currentColor;
+  opacity: 0.75;
+  -webkit-mask: var(--icon) no-repeat center / contain;
+  mask: var(--icon) no-repeat center / contain;
+}
+
+/* Thin strokes read dimmer light-on-dark; drop the fade */
+html[data-theme="dark"] .link-icon {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) .link-icon {
+    opacity: 1;
+  }
+}
+
+.link-icon--linkedin { --icon: url("/images/icons/linkedin-logo.svg"); }
+.link-icon--github { --icon: url("/images/icons/github-logo.svg"); }
+.link-icon--unsplash { --icon: url("/images/icons/camera.svg"); }
+.link-icon--soundcloud { --icon: url("/images/icons/soundcloud-logo.svg"); }
+.link-icon--instagram { --icon: url("/images/icons/instagram-logo.svg"); }
+.link-icon--youtube { --icon: url("/images/icons/youtube-logo.svg"); }
+
 /* Responsive */
 @media (max-width: 900px) {
   .home-building-grid {

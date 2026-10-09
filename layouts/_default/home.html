@@ -65,33 +65,43 @@
     <div class="home-bottom">
       <div class="home-latest">
         <h2>Latest:</h2>
+        {{ $items := slice }}
         {{ $posts := where .Site.RegularPages "Type" "posts" }}
         {{ range first 2 $posts.ByDate.Reverse }}
-          <div class="home-latest-item">
-            <a href="{{ .RelPermalink }}">{{ .Date.Format "2006-01-02" }} - {{ .Title }}</a>
-            <div class="home-latest-meta">#blog {{ with .Params.tags }}{{ range . }}#{{ . }} {{ end }}{{ end }}({{ .ReadingTime }} min. read)</div>
-          </div>
+          {{ $items = $items | append (dict "ts" .Date.Unix "date" .Date "page" . "kind" "post") }}
         {{ end }}
         {{ $books := where (where .Site.RegularPages "Type" "reading") ".Params.date_finished" "ne" nil }}
-        {{ with (first 1 $books.ByDate.Reverse) }}
-          {{ range . }}
-            <div class="home-latest-item">
-              <a href="{{ .RelPermalink }}">{{ .Params.date_finished | time.Format "2006-01-02" }} - {{ .Title }}{{ with .Params.author }} by {{ . }}{{ end }}</a>
-              <div class="home-latest-meta">#book {{ if .Params.fiction }}#fiction{{ else }}#nonfiction{{ end }}</div>
-            </div>
-          {{ end }}
+        {{ $booksByFinish := slice }}
+        {{ range $books }}
+          {{ $finished := time.AsTime .Params.date_finished }}
+          {{ $booksByFinish = $booksByFinish | append (dict "ts" $finished.Unix "date" $finished "page" . "kind" "book") }}
+        {{ end }}
+        {{ range first 1 (sort $booksByFinish "ts" "desc") }}
+          {{ $items = $items | append . }}
+        {{ end }}
+        {{ range sort $items "ts" "desc" }}
+          {{ $p := .page }}
+          <div class="home-latest-item">
+            {{ if eq .kind "post" }}
+              <a href="{{ $p.RelPermalink }}">{{ .date.Format "2006-01-02" }} - {{ $p.Title }}</a>
+              <div class="home-latest-meta">#blog {{ with $p.Params.tags }}{{ range . }}#{{ . }} {{ end }}{{ end }}({{ $p.ReadingTime }} min. read)</div>
+            {{ else }}
+              <a href="{{ $p.RelPermalink }}">{{ .date.Format "2006-01-02" }} - {{ $p.Title }}{{ with $p.Params.author }} by {{ . }}{{ end }}</a>
+              <div class="home-latest-meta">#book {{ if $p.Params.fiction }}#fiction{{ else }}#nonfiction{{ end }}</div>
+            {{ end }}
+          </div>
         {{ end }}
       </div>
 
       <div class="home-links">
         <h2>Links</h2>
         <ul>
-          <li><a href="https://www.linkedin.com/in/ostapsenyuk/" target="_blank">LinkedIn</a></li>
-          <li><a href="https://unsplash.com/@kintecus" target="_blank">Unsplash</a></li>
-          <li><a href="https://soundcloud.com/kintecus" target="_blank">Soundcloud</a></li>
-          <li><a href="https://www.instagram.com/kintecus/" target="_blank">Instagram</a></li>
-          <li><a href="https://github.com/kintecus" target="_blank">GitHub</a></li>
-          <li><a href="https://www.youtube.com/@OstapSenyuk" target="_blank">YouTube</a></li>
+          <li><a href="https://github.com/kintecus" target="_blank"><span class="link-icon link-icon--github" aria-hidden="true"></span>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ostapsenyuk/" target="_blank"><span class="link-icon link-icon--linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/kintecus/" target="_blank"><span class="link-icon link-icon--instagram" aria-hidden="true"></span>Instagram</a></li>
+          <li><a href="https://unsplash.com/@kintecus" target="_blank"><span class="link-icon link-icon--unsplash" aria-hidden="true"></span>Unsplash</a></li>
+          <li><a href="https://soundcloud.com/kintecus" target="_blank"><span class="link-icon link-icon--soundcloud" aria-hidden="true"></span>Soundcloud</a></li>
+          <li><a href="https://www.youtube.com/@OstapSenyuk" target="_blank"><span class="link-icon link-icon--youtube" aria-hidden="true"></span>YouTube</a></li>
         </ul>
       </div>
     </div>
