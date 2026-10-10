@@ -53,7 +53,7 @@
   mask: var(--icon) no-repeat center / contain;
 }
 
-.book-icon--quotes { --icon: url("/images/icons/quotes.svg"); }
+.book-icon--highlighter { --icon: url("/images/icons/highlighter.svg"); }
 
 .book-author {
   display: block;
