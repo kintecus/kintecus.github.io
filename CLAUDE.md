@@ -16,6 +16,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Standalone pages (about, colophon) use `layout: "page"` routing to `layouts/_default/page.html`
 - Blog posts organized by year: `content/posts/YYYY/`
 - Reading list: individual markdown files in `content/reading/` with book metadata in front matter params
+- Kindle highlights: `python3 scripts/kindle_highlights.py [--dry-run]` with the Kindle plugged in syncs `My Clippings.txt` into opted-in books (`params.kindle_title`), between `kindle-highlights` marker comments. Highlights only; Kindle notes are deliberately not published. Running it lists un-opted books with the line to paste
 - Static assets (CSS, images, favicon) in `static/`
 - Base URL: https://ostaps.net
 

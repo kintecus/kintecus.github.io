@@ -4,19 +4,20 @@ date: 2023-07-25
 draft: false
 
 params:
+  kindle_title: "The Fall of Hyperion (Hyperion Cantos, Book 2)"
   author: "Dan Simmons"
   date_started: 2023-07-25
   date_finished: 2023-09-03
   fiction: true
 ---
 
+<!-- kindle-highlights:start -->
+
 > He was a molar grinder and a cheek-muscle flexer.
 
-> “But this is fucking ridiculous. All dressed up with nowhere to die.”
+> hundred and thirty billion people
 
 > All dressed up with nowhere to die.”
-
-> hundred and thirty billion people
 
 > man catapulted into events too large for his talents.
 
@@ -30,7 +31,7 @@ params:
 
 > It was rumored that the original farcaster prototypes had offered no sensation during transition and that the AI and human designers had altered the machinery to add that vague prickling, ozone-charged feeling to give the traveler a sense of having traveled.
 
-> Somewhere the datasphere had crept in, perhaps unknown to the FORCE machines and their operators and allies. The
+> Somewhere the datasphere had crept in, perhaps unknown to the FORCE machines and their operators and allies. The Core AIs knew everything happening here in Hyperion system.
 
 > I could see Hunt counting those who remained sitting, some with arms folded, many with visible frowns.
 
@@ -38,19 +39,11 @@ params:
 
 > —You came from the future with it? —No. I was taken from my time to travel back in time with him.
 
-> Dolphins  where else in sci-fi this happen
-
-> It had been Brawne Lamia’s father who had made
-
-> Byron Lamia had been obsessed with the TechnoCore, consumed with the mission of moving humankind out from under the bondage the AIs had imposed over five centuries and a thousand light-years. It had been Brawne Lamia’s father who had made
+> Byron Lamia had been obsessed with the TechnoCore, consumed with the mission of moving humankind out from under the bondage the AIs had imposed over five centuries and a thousand light-years. It had been Brawne Lamia’s father who had made Gladstone aware of the danger, had led her to the commitment which would result in the most terrible betrayal in the history of man.
 
 > Senator Lamia’s last senate act had been to co-propose Protectorate status for Hyperion, a move that would have brought the world into the Web twenty standard years earlier than the events now unfolding. After his death, the surviving co-sponsor—the newly influential Meina Gladstone—had withdrawn the bill.
 
-> She walked the corridors, thinking of the weeks and months to come, the terrible price the worlds would pay for her decisions, her obsessions. Five youths, tailored
-
-> She walked the corridors, thinking of the weeks and months to come, the terrible price the worlds
-
-> She walked the corridors, thinking of the weeks and months to come, the terrible price the
+> She walked the corridors, thinking of the weeks and months to come, the terrible price the worlds would pay for her decisions, her obsessions.
 
 > All she had to do to save a hundred billion lives was return to the Senate floor, reveal three decades of deception and duplicity, reveal her fears and uncertainties
 
@@ -70,8 +63,6 @@ params:
 
 > Say yes, Daddy. Sol remembered the dream, remembered his daughter’s hug, and realized that in the end—when all else is dust—loyalty to those we love is all we can carry with us to the grave. Faith—true faith—was trusting in that love. Sol lifted his newborn and dying child, seconds old, shrieking now with her first and last breath, and handed her to the Shrike.
 
-> There were no signs of panic. People were taking to the datasphere and All Thing rather than the
-
 > There were no signs of panic. People were taking to the datasphere and All Thing rather than the streets.
 
 > to relieve the great weight of his body which adds so immeasurably to the unmeasurable pain.
@@ -83,13 +74,9 @@ params:
 
 > Nothing could be done about it—every human above the lowest Dregs’ Hive poverty class had a comlog with biomonitor, many had implants, and each of these was tuned to the music of the datasphere, monitored by elements of the datasphere, dependent upon functions of the datasphere—so humans accepted their lack of privacy.
 
-> How familiar
-
 > This living hand, now warm and capable Of earnest grasping, would, if it were cold And in the icy silence of the tomb, So haunt thy days and chill thy dreaming nights That thou wouldst wish thine own heart dry of blood So in my veins red life might stream again, And thou be consciencc-calm’d—sec here it is— I hold it towards you.
 
 > … Who alive can say, “Thou art no Poet; mayst not tell thy dreams”? Since every man whose soul is not a clod Hath visions, and would speak, if he had loved, And been well nurtured in his mother tongue. Whether the dream now purposed to rehearse Be Poet’s or Fanatic’s will be known When this warm scribe my hand is in the grave.
-
-> Keats Hyperion poem
 
 > John Keats, the consumptive poet who had asked only that his tomb be nameless except for the inscription: Here lies One
 > Whose Name was writ in Water.
@@ -98,9 +85,7 @@ params:
 
 > The Kiev Team’s runaway black hole
 
-> Kyiv, not kiev
-
-> so we constructed your civilization carefully so that/ like hamsters in a cage/ like Buddhist prayer wheels/ each time you turn your little wheels of thought our purposes are served]
+> so we constructed your civilization carefully so that/ like hamsters in a cage/ like Buddhist prayer wheels/ each time you turn your little wheels of thought our purposes are served\]
 
 > Our UI sees everything that is and was and will be and tells us selected bits so that we may tell you and in so doing look a bit like UIs ourselves
 
@@ -120,19 +105,15 @@ params:
 
 > Or, rather, John Keats did nine centuries earlier in his first attempt to portray the fall of the Titans and their replacement by the Olympian gods.
 
-> Titans vs Olympian
-
 > Moneta glanced at the valley. “The winner determines whether the Shrike already entombed there goes alone to pave the way for others …” She nodded toward the army of Shrikes. “Or whether humankind has a say in our past and future.”
 
 > All Sol wanted, he realized now, was the same possibility once again to worry about those future years which every parent fears and dreads.
 
 > A wondrous lesson in thy silent face: Knowledge enormous makes a god of me. Names, deeds, gray legends, dire events, rebellions, Majesties, sovran voices, agonies, Creations and destroyings, all at once Pour into the wide hollows of my brain, And deify me, as if some blithe wine Or bright elixir peerless I had drunk, And so become immortal. Keats lived for three more painful hours, a swimmer rising occasionally from his sea of agony to take a breath or whisper some urgent nonsense.
 
-> “So these Ouster bodies self-destruct the same way cybrid corpses have been known
-
 > “So these Ouster bodies self-destruct the same way cybrid corpses have been known to,” he said. “So what? Do you think the Senate or All Thing will accept this as proof that it’s the Core that’s behind the invasion?”
 
-> “The Core offered unity in unwitting subservience,” she said softly. “Safety in stagnation. Where are the revolutions in human thought and culture and action since the Hegira?” “Terraformed into pale clones of Old Earth,” answered Coredwell Minmun. “Our new age of human expansion will terraform nothing. We will revel in hardships and welcome strangeness.
+> “The Core offered unity in unwitting subservience,” she said softly. “Safety in stagnation. Where are the revolutions in human thought and culture and action since the Hegira?” “Terraformed into pale clones of Old Earth,” answered Coredwell Minmun. “Our new age of human expansion will terraform nothing. We will revel in hardships and welcome strangeness. We will not make the universe adapt … we shall adapt.”
 
 > Meina Gladstone sighed and shook her head. “The Core has devised a parasitic, organic device called the cruciform,” she said. “It … brings back … the dead. After a few generations, the humans will be retarded, listless, and without a future, but their neurons will still serve Core purposes.”
 
@@ -146,6 +127,8 @@ params:
 
 > “Girls are such a chore,” he said, disentangling Rachel’s fingers from his beard and Brawne’s curls. “Trade yours in for a boy the first chance you get.” “OK,” said Brawne and stepped back.
 
-> she had always hated in pregnant women but one she now found impossible to avoid—and walked clumsily to a deck chair on the observation deck.
+> she had always hated in pregnant women but one she now found impossible to avoid—and walked clumsily to a deck chair on the observation deck. If she was this huge at seven months, what would she be like at full term?
 
-> “Everyone saw him but me,” said Brawne, frowning at her brandy and realizing that she had to take more prenatal antialcohol pills
+> “Everyone saw him but me,” said Brawne, frowning at her brandy and realizing that she had to take more prenatal antialcohol pills before turning in. She realized that she was a little drunk: the stuff couldn’t harm the baby if she took the pills, but it had definitely gotten to her.
+
+<!-- kindle-highlights:end -->

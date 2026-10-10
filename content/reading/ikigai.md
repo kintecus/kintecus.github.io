@@ -5,9 +5,14 @@ draft: false
 
 params:
   author: "Hector Garcia & Francesc Miralles"
+  kindle_title: "Ikigai - the Japanese Secret to a Long and Happy Life"
   date_started: 2025-11-19
   date_finished: 2025-11-19
   fiction: false
 ---
 
-> Dealing with new situations, learning something new every day, playing games, and interacting with other people seem to be essential antiaging
+<!-- kindle-highlights:start -->
+
+> Dealing with new situations, learning something new every day, playing games, and interacting with other people seem to be essential antiaging strategies for the mind.
+
+<!-- kindle-highlights:end -->

@@ -4,17 +4,16 @@ date: 2024-09-02
 draft: false
 
 params:
+  kindle_title: "the plague"
   author: "Albert Camus"
   date_started: 2024-09-02
   date_finished: 2024-09-20
   fiction: true
 ---
 
-> by seeming restful and, after a while, you go complacently to sleep there.
+<!-- kindle-highlights:start -->
 
 > Treeless, glamourless, soulless, the town of Oran ends by seeming restful and, after a while, you go complacently to sleep there.
-
-> But perhaps the time has come to drop preliminaries and cautionary remarks and to launch into the narrative proper. The account of the first days needs giving in some detail.
 
 > He proposes to draw on these records whenever this seems desirable, and to employ them as he thinks best. He also proposes... But perhaps the time has come to drop preliminaries and cautionary remarks and to launch into the narrative proper. The account of the first days needs giving in some detail.
 
@@ -30,25 +29,23 @@ params:
 
 > "Please answer me quite frankly. Are you absolutely convinced it's plague?" "You're stating the problem wrongly. It's not a question of the term I use; it's a question of time."
 
-> public. The instructions began with a bald statement that a few cases of a malignant fever had been reported in Oran; it was not possible as yet to say if this fever was contagious. The symptoms were not so marked as to be really perturbing and the authorities felt sure they could rely on the townspeople to treat the situation with composure.
-
 > The measures enjoined were far from Draconian and one had the feeling that many concessions had been made to a desire not to alarm the public. The instructions began with a bald statement that a few cases of a malignant fever had been reported in Oran; it was not possible as yet to say if this fever was contagious.
 
-> The notice outlined the general program that the authorities had drawn up. It included a systematic extermination of the rat population by injecting poison gas into the sewers, and a strict supervision of the water-supply. The townspeople were advised to practice extreme cleanliness, and any who found fleas on their persons were directed to call at the municipal dispensaries.
+> public. The instructions began with a bald statement that a few cases of a malignant fever had been reported in Oran; it was not possible as yet to say if this fever was contagious. The symptoms were not so marked as to be really perturbing and the authorities felt sure they could rely on the townspeople to treat the situation with composure.
+
+> The notice outlined the general program that the authorities had drawn up. It included a systematic extermination of the rat population by injecting poison gas into the sewers, and a strict supervision of the water-supply. The townspeople were advised to practice extreme cleanliness, and any who found fleas on their persons were directed to call at the municipal dispensaries. Also heads of households were ordered promptly to report any fever case diagnosed by their doctors and to permit the isolation of sick members of their families in special wards at the hospital. These wards, it was explained, were equipped to provide patients with immediate treatment and ensure the maximum prospect of recovery. Some supplementary regulations enjoined compulsory disinfection of the sickroom and of the vehicle in which the patient traveled.
 
 > An animated conversation was in progress and the woman behind the counter started airing her views about a murder case that had created some stir in Algiers. A young commercial employee had killed an Algerian on a beach.
 
 > For most of them it would mean going to the hospital, and he knew how poor people feel about hospitals. "I don't want them trying their experiments on him," had said the wife one of his patients.
 
-> "Those rats died of plague," was his conclusion, "or of something extremely like it. And they've loosed on
+> "Those rats died of plague," was his conclusion, "or of something extremely like it. And they've loosed on the town tens of thousands of fleas, which will spread the infection in geometrical progression unless it's checked in time."
 
 > And yet within four days the fever had made four startling strides: sixteen deaths, twenty-four, twenty-eight, and thirty-two. On
 
 > In reply to his telegram Rieux was informed that the emergency reserve stock was exhausted, but that a new supply was in preparation.
 
 > Mothers and children, lovers, husbands and wives, who had a few days previously taken it for granted that their parting would be a short one, who had kissed one another good-by on the platform and exchanged a few trivial remarks, sure as they were of seeing one another again after a few days or, at most, a few weeks, duped by our blind human faith
-
-> authorities replied affirmatively. They pointed out, however, that in no case would persons who returned be allowed to leave the town again; once here, they would have to stay, whatever happened.
 
 > After some days' consideration of the matter the authorities replied affirmatively. They pointed out, however, that in no case would persons who returned be allowed to leave the town again; once here, they would have to stay, whatever happened.
 
@@ -60,17 +57,11 @@ params:
 
 > For at the precise moment when the residents of the town began to panic, their thoughts were wholly fixed on the person whom they longed to meet again. The egoism of love made them immune to the general distress and, if they thought of the plague, it was only in so far as it might threaten to make their separation eternal.
 
-> They were worried and irritated, but these are not feelings with which to confront plague. Their first reaction, for instance, was to abuse the authorities.
-
 > Most people were chiefly aware of what ruffled the normal tenor of their lives or affected their interests. They were worried and irritated, but these are not feelings with which to confront plague. Their first reaction, for instance, was to abuse the authorities.
 
-> Thus the bare statement that three hundred and two deaths had taken place in the third week of plague failed to strike their imagination. For one thing, all the three hundred and two deaths might not have been due to plague.
+> Thus the bare statement that three hundred and two deaths had taken place in the third week of plague failed to strike their imagination. For one thing, all the three hundred and two deaths might not have been due to plague. Also, no one in the town had any idea of the average weekly death-rate in ordinary times.
 
 > These figures, anyhow, spoke for themselves. Yet they were still not sensational enough to prevent our townsfolk, perturbed though they were, from persisting in the idea that what was happening was a sort of accident, disagreeable enough, but certainly of a temporary order. So they went on strolling about the town as usual and sitting at the tables on cafe terraces.
-
-> One of the cafes had the brilliant idea of putting up a slogan: "The best protection against infection is a bottle of good wine," which confirmed an already prevalent opinion that alcohol is a safeguard against infectious disease. Every night, toward two a.m., quite a number of drunken
-
-> slogan: "The best protection against infection is a bottle of good wine," which confirmed an already prevalent opinion that alcohol is a safeguard against infectious disease.
 
 > And, to tell the truth, there was much heavy drinking. One of the cafes had the brilliant idea of putting up a slogan: "The best protection against infection is a bottle of good wine," which confirmed an already prevalent opinion that alcohol is a safeguard against infectious disease.
 
@@ -87,8 +78,6 @@ params:
 > In any case the Cathedral was practically always full of worshippers throughout the Week of Prayer.
 
 > To some the sermon simply brought home the fact that they had been sentenced, for an unknown crime, to an indeterminate period of punishment.
-
-> "Evenings, whole weeks, spent on one word, just think! Sometimes on a mere conjunction!" Grand stopped abruptly and seized the doctor
 
 > "Evenings, whole weeks, spent on one word, just think! Sometimes on a mere conjunction!"
 
@@ -110,9 +99,7 @@ params:
 
 > A queer thing is how the passengers all try to keep their backs turned to their neighbors, twisting themselves into grotesque attitudes in the attempt, the idea being, of course, to avoid contagion.
 
-> Not long ago some restaurants put up notices: Our plates, knives, and forks guaranteed sterilized.
-
-> Not long ago some restaurants put up notices: Our plates, knives, and forks guaranteed sterilized. But gradually they discontinued
+> Not long ago some restaurants put up notices: Our plates, knives, and forks guaranteed sterilized. But gradually they discontinued publicity of this order, since their customers came in any case.
 
 > "In the early days, when they thought this epidemic was much like other epidemics, religion held its ground. But once these people realized their instant peril, they gave their thoughts to pleasure. And all the hideous fears that stamp their faces in the daytime are transformed in the fiery, dusty nightfall into a sort of hectic exaltation, an unkempt freedom fevering their blood.
 
@@ -132,8 +119,6 @@ params:
 
 > though the chief source of distress, the deepest as well as the most widespread, was separation, and
 
-> Naturally they retained the attitudes of sadness and suffering, but they had ceased to feel their sting. Indeed, to some, Dr. Rieux among them, this precisely was the most disheartening thing: that the habit of despair is worse than despair itself.
-
 > Our fellow citizens had fallen into line, adapted themselves, as people say, to the situation, because there was no way of doing otherwise. Naturally they retained the attitudes of sadness and suffering, but they had ceased to feel their sting. Indeed, to some, Dr. Rieux among them, this precisely was the most disheartening thing: that the habit of despair is worse than despair itself.
 
 > So completely were they dominated by the plague that sometimes the one thing they aspired to was the long sleep it brought, and they caught themselves thinking: "A good thing if I get plague and have done with it!"
@@ -150,9 +135,9 @@ params:
 
 > evening dress was a sure charm against plague.
 
-> Rambert said he'd thought it over very carefully, and his views hadn't changed, but if he went away, he would feel ashamed of himself, and that would embarrass his relations with the woman he loved. Showing more animation, Rieux told him that was sheer nonsense; there was nothing shameful in preferring happiness.
+> Rambert said he'd thought it over very carefully, and his views hadn't changed, but if he went away, he would feel ashamed of himself, and that would embarrass his relations with the woman he loved. Showing more animation, Rieux told him that was sheer nonsense; there was nothing shameful in preferring happiness. "Certainly," Rambert replied. "But it may be shameful to be happy by oneself."
 
-> "For nothing in the world is it worth turning one's back on what one loves. Yet that is what I'm doing, though why I do not
+> "For nothing in the world is it worth turning one's back on what one loves. Yet that is what I'm doing, though why I do not know."
 
 > As a result copies of predictions attributed to soothsayers or saints of the Catholic Church circulated freely from hand to hand. The local printing firms were quick to realize the profit to be made by pandering to this new craze and printed large numbers of the prophecies that had been going round in manuscript.
 
@@ -162,17 +147,17 @@ params:
 
 > But religion in a time of plague could not be the religion of every day.
 
-> We must accept the dilemma and choose either to hate God or to love God. And who would dare to choose to hate Him? "My brothers", the preacher's tone showed he was nearing the conclusion of his sermon, "the love of God is a hard love. It demands total self-surrender, disdain of our human personality. And yet it alone can reconcile us to suffering and the deaths of children, it alone can justify them, since we cannot understand them, and we can only make God's will ours. That is the hard lesson I would share with you today. That is the faith, cruel in men's eyes, and crucial in God's, which we must ever strive to compass.
+> We must accept the dilemma and choose either to hate God or to love God. And who would dare to choose to hate Him? "My brothers", the preacher's tone showed he was nearing the conclusion of his sermon, "the love of God is a hard love. It demands total self-surrender, disdain of our human personality. And yet it alone can reconcile us to suffering and the deaths of children, it alone can justify them, since we cannot understand them, and we can only make God's will ours. That is the hard lesson I would share with you today. That is the faith, cruel in men's eyes, and crucial in God's, which we must ever strive to compass. We must aspire beyond ourselves toward that high and fearful vision.
 
 > The only available account of what followed comes from the lips of the old lady.
 
 > By this time no public place or building had escaped conversion into a hospital or quarantine camp with the exception of the Prefect's offices, which were needed for administrative purposes and committee meetings.
 
-> Profiteers were taking a hand and purveying at enormous prices essential foodstuffs not available in the shops. The result was that poor families were in great straits, while the rich went short of practically nothing. Thus,
-
 > Meanwhile the authorities had another cause for anxiety in the difficulty of maintaining the food-supply. Profiteers were taking a hand and purveying at enormous prices essential foodstuffs not available in the shops. The result was that poor families were in great straits, while the rich went short of practically nothing.
 
-> To form a correct idea about the courage and composure talked about by our journalists you had only to visit one of the quarantine depots or isolation camps established by our authorities. As it so happens, the narrator, being fully occupied elsewhere, had no occasion to visit any of them, and must fall back on Tarrou's diary
+> Profiteers were taking a hand and purveying at enormous prices essential foodstuffs not available in the shops. The result was that poor families were in great straits, while the rich went short of practically nothing. Thus,
+
+> To form a correct idea about the courage and composure talked about by our journalists you had only to visit one of the quarantine depots or isolation camps established by our authorities. As it so happens, the narrator, being fully occupied elsewhere, had no occasion to visit any of them, and must fall back on Tarrou's diary for a description of the conditions in these places.
 
 > or bottled lemonade that titillated parched throats with a thousand refreshing pin-pricks.
 
@@ -180,25 +165,19 @@ params:
 
 > "The only picture I carried away with me of that day's proceedings was a picture of the criminal.
 
-> Nevertheless, it fell to him, in the course of his duties, to be present at what's politely termed the prisoner's last moments, but what would be better called murder in its most despicable form.
-
 > I realized he was clamoring for the prisoner's death, telling the jury that they owed it to society to find him guilty; he went so far as to demand that the man should have his head cut off. Not exactly in those words, I admit. 'He must pay the supreme penalty,' was the formula. But the difference, really, was slight, and the result the same. He had the head he asked for.
 
-> Do you know that, at this short range, the soldiers concentrate their fire on the region of the heart and their big bullets make a hole into which you could thrust your fist? No,
+> Nevertheless, it fell to him, in the course of his duties, to be present at what's politely termed the prisoner's last moments, but what would be better called murder in its most despicable form.
 
-> on ourselves lest in a careless moment we breathe in somebody's face and fasten the infection on him. What's natural is the microbe.
+> Do you know that, at this short range, the soldiers concentrate their fire on the region of the heart and their big bullets make a hole into which you could thrust your fist?
 
-> And I know, too, that we must keep endless watch on ourselves lest in a careless moment we breathe in somebody's face and fasten the infection on him. What's natural is the microbe.
-
-> The good man, the man who infects hardly anyone, is the man who has the fewest lapses of attention.
+> And I know, too, that we must keep endless watch on ourselves lest in a careless moment we breathe in somebody's face and fasten the infection on him. What's natural is the microbe. All the rest, health, integrity, purity (if you like), is a product of the human will, of a vigilance that must never falter. The good man, the man who infects hardly anyone, is the man who has the fewest lapses of attention. And it needs tremendous will- power, a never ending tension of the mind, to avoid such lapses. Yes, Rieux, it's a wearying business, being plague-stricken. But it's still more wearying to refuse to be it. That's why everybody in the world today looks so tired; everyone is more or less sick of plague.
 
 > You see, I'd heard such quantities of arguments, which very nearly turned my head, and turned other people's heads enough to make them approve of murder; and I'd come to realize that all our troubles spring from our failure to use plain, clean-cut language.
 
 > That's why I decided to take, in every predicament, the victims' side, so as to reduce the damage done. Among them I can at least try to discover how one attains to the third category; in other words, to peace."
 
 > After a short silence the doctor raised himself a little in his chair and asked if Tarrou had an idea of the path to follow for attaining peace.
-
-> "Yes," he replied. "The path of sympathy." Two ambulances were clanging in the distance.
 
 > replied. "The path of sympathy." Two
 
@@ -220,25 +199,21 @@ params:
 
 > I don't want to die, and I shall put up a fight. But if I lose the match, I want to make a good end of it." Bending forward, Rieux pressed his shoulder. "No. To become a saint, you need to live. So fight away!"
 
-> This human form, his friend's, lacerated by the spear-thrusts of the plague, consumed by searing, superhuman fires, buffeted by all the raging winds of heaven, was foundering under his eyes in the dark flood of the pestilence, and he could do nothing to avert the wreck.
-
-> And now Rieux had before him only a masklike face, inert, from which the smile had gone forever. This human form, his friend's, lacerated by the spear-thrusts of the plague, consumed by searing, superhuman fires, buffeted by all the raging winds of heaven, was foundering under his eyes in the dark flood of the pestilence, and he could do nothing to avert the wreck.
+> And now Rieux had before him only a masklike face, inert, from which the smile had gone forever. This human form, his friend's, lacerated by the spear-thrusts of the plague, consumed by searing, superhuman fires, buffeted by all the raging winds of heaven, was foundering under his eyes in the dark flood of the pestilence, and he could do nothing to avert the wreck. He could only stand, unavailing, on the shore, empty-handed and sick at heart, unarmed and helpless yet again under the onset of calamity. And thus, when the end came, the tears that blinded Rieux's eyes were tears of impotence; and he did not see Tarrou roll over, face to the wall, and die with a short, hollow groan as if somewhere within him an essential chord had snapped.
 
 > any more than there can be an armistice for a mother bereaved of her son or for a man who buries his friend.
 
-> But he knew, too, that to love someone means relatively little; or, rather, that love is never strong enough to find the words befitting
-
 > "Bernard?" "Yes?" "Not too tired?" "No." At that moment he knew what his mother was thinking, and that she loved him. But he knew, too, that to love someone means relatively little; or, rather, that love is never strong enough to find the words befitting it. Thus he and his mother would always love each other silently. And one day she, or he, would die, without ever, all their lives long, having gone farther than this by way of making their affection known.
 
-> Tarrou had "lost the match," as he put it. But what had he, Rieux, won? No more than the experience of having known plague and remembering it, of having known friendship and remembering it, of knowing affection and being destined one day to remember it.
+> Tarrou had "lost the match," as he put it. But what had he, Rieux, won? No more than the experience of having known plague and remembering it, of having known friendship and remembering it, of knowing affection and being destined one day to remember it. So all a man could win in the conflict between plague and life was knowledge and memories.
 
 > The only picture of Tarrou he would always have would be the picture of a man who firmly gripped the steering-wheel of his car when driving, or else the picture of that stalwart body, now lying motionless. Knowing meant that: a living warmth, and a picture of death. That, no doubt, explains Dr. Rieux's composure on receiving next morning the news of his wife's death. He was in the surgery.
 
 > "Yes," he said, "that's it. A week ago." Mme Rieux turned her face toward the window. Rieux kept silent for a while. Then he told his mother not to cry, he'd been expecting it, but it was hard all the same. And he knew, in saying this, that this suffering was nothing new. For many months, and for the last two days, it was the selfsame suffering going on and on.
 
-> For even Rambert felt a nervous tremor at the thought that soon he would have to confront a love and a devotion that the plague months had slowly refined to a pale abstraction, with the flesh-and-blood woman who had given rise to them.
+> For even Rambert felt a nervous tremor at the thought that soon he would have to confront a love and a devotion that the plague months had slowly refined to a pale abstraction, with the flesh-and-blood woman who had given rise to them. If only he could put the clock back and be once more the man who, at the outbreak of the epidemic, had had only one thought and one desire: to escape and return to the woman he loved! But that, he knew, was out of the question now; he had changed too greatly. The plague had forced on him a detachment which, try as he might, he couldn't think away, and which like a formless fear haunted his mind.
 
-> But the moment they saw the smoke of the approaching engine, the feeling of exile vanished before an uprush of overpowering, bewildering joy. And when the train stopped, all those interminable-seeming separations which often had begun on this same platform came to an end in one ecstatic moment, when arms closed with hungry possessiveness on bodies whose living shape they had forgotten.
+> But the moment they saw the smoke of the approaching engine, the feeling of exile vanished before an uprush of overpowering, bewildering joy. And when the train stopped, all those interminable-seeming separations which often had begun on this same platform came to an end in one ecstatic moment, when arms closed with hungry possessiveness on bodies whose living shape they had forgotten. As for Rambert, he hadn't time to see that form running toward him; already she had flung herself upon his breast. And with his arms locked around her, pressing to his shoulder the head of which he saw only the familiar hair, he let his tears flow freely, unknowing if they rose from present joy or from sorrow too long repressed; aware only that they would prevent his making sure if the face buried in the hollow of his shoulder were the face of which he had dreamed so often or, instead, a stranger's face.
 
 > and the plight of those who had come by the same train and found no one awaiting them, and were bracing themselves to hear in their homes a confirmation of the fear that the long silence had already implanted in their hearts. For these last, who had now for company only their new-born grief, for those who at this moment were dedicating themselves to a lifelong memory of bereavement, for these unhappy people matters were very different, the pangs of separation had touched their climax.
 
@@ -250,7 +225,7 @@ params:
 
 > They knew now that if there is one thing one can always yearn for and sometimes attain, it is human love. But for those others who aspired beyond and above the human individual toward something they could not even imagine, there had been no answer.
 
-> And as he turned the corner of the street where Grand and Cottard lived, Rieux was thinking it was only right that those whose desires
+> And as he turned the corner of the street where Grand and Cottard lived, Rieux was thinking it was only right that those whose desires are limited to man and his humble yet formidable love should enter, if only now and then, into their reward.
 
 > THIS chronicle is drawing to an end, and this seems to be the moment for Dr. Bernard Rieux to confess that he is the narrator.
 
@@ -258,6 +233,6 @@ params:
 
 > It could be only the record of what had had to be done, and what assuredly would have to be done again in the never ending fight against terror and its relentless onslaughts, despite their personal afflictions, by all who, while unable to be saints but refusing to bow down to pestilences, strive their utmost to be healers.
 
-> but could have learned from books: that the plague bacillus never dies or disappears for good; that it can lie dormant for years and years in furniture and linen- chests; that it bides its time in bedrooms, cellars, trunks, and bookshelves; and that perhaps the day would come when, for the bane and the enlightening of men, it would rouse up its rats again and send them forth to die in a happy city.
-
 > He knew what those jubilant crowds did not know but could have learned from books: that the plague bacillus never dies or disappears for good; that it can lie dormant for years and years in furniture and linen- chests; that it bides its time in bedrooms, cellars, trunks, and bookshelves; and that perhaps the day would come when, for the bane and the enlightening of men, it would rouse up its rats again and send them forth to die in a happy city.
+
+<!-- kindle-highlights:end -->

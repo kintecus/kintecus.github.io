@@ -5,10 +5,13 @@ draft: false
 
 params:
   author: "Eliyahu M. Goldratt"
+  kindle_title: "The Goal: A Process of Ongoing Improvement"
   date_started: 2025-07-06
   date_finished: 2025-07-22
   fiction: true
 ---
+
+<!-- kindle-highlights:start -->
 
 > I dared to interweave into the book a family life struggle, which I assume is quite familiar to any manager who is to some extent obsessed with his work. This was not done just to make the book more popular, but to highlight the fact that we tend to disqualify many phenomena of nature as irrelevent as far as science is concerned.
 
@@ -25,8 +28,6 @@ params:
 > So we made it through today’s crisis. We won. Just barely. And now that Donovan is gone and the effects of the alcohol are wearing off, I can’t see what there was to celebrate. We managed to ship one very late order today. Whoopee.
 
 > and that’s why we’ll be just another fine company in the Who-Knows-What Corporation after the big boys at headquarters put together some merger with some other loser. That seems to be the essence of the company’s strategic plan these days.
-
-> Something is wrong. I don’t know what it is, but something
 
 > Something is wrong. I don’t know what it is, but something basic is very wrong. I must be missing something.
 
@@ -62,11 +63,7 @@ params:
 
 > I would want to see increases in net profit and return on investment and cash flow—all three of them. And I would want to see all three of them increase all the time.
 
-> Net profit, ROI, cash flow—that’s just headquarters talk to Eddie.
-
-> that Eddie hasn’t heard of those terms. It’s just that those concerns are not part of his world. His world is one measured in terms of parts per hour, man-hours worked, numbers of orders filled. He knows labor standards, he knows scrap factors, he knows run times, he knows shipping dates. Net profit, ROI, cash flow—that’s just headquarters talk to Eddie.
-
-> It’s not that Eddie hasn’t heard of those terms. It’s just that those concerns are not part of his world. His world is one measured in terms of parts per hour, man-hours worked, numbers of orders filled. He knows labor standards, he knows scrap factors, he knows run times, he knows shipping dates. Net profit, ROI, cash flow—that’s just headquarters talk to Eddie.
+> It’s not that Eddie hasn’t heard of those terms. It’s just that those concerns are not part of his world. His world is one measured in terms of parts per hour, man-hours worked, numbers of orders filled. He knows labor standards, he knows scrap factors, he knows run times, he knows shipping dates. Net profit, ROI, cash flow—that’s just headquarters talk to Eddie. It’s absurd to think I could measure Eddie’s world by those three. For Eddie, there is only a vague association between what happens on his shift and how much money the company makes.
 
 > "There are three of them. Their names are throughput, inventory and operational expense.’’
 
@@ -92,13 +89,7 @@ params:
 
 > She looks up at the sky and says, "Your job has always been on the line. Always. So if you’re such a marginal employee, why do they keep giving you promotions and more money?’’ I pinch the bridge of my nose.
 
-> could volunteer you to go along and help the troopmaster.’’
-
 > He says, "Dad, it’s seven o’clock!’’ "Seven o’clock? I’m trying to sleep. Aren’t you supposed to be watching television or something?’’ "We’ll be late,’’ he says. "We will be late? For what?’’ "For the overnight hike!’’ he says. "Remember? You promised me I could volunteer you to go along and help the troopmaster.’’
-
-> And I see this fat kid. He already looks a little winded. Behind him is the rest
-
-> And I see this fat kid. He already looks a little winded. Behind him is the rest of the troop. "What’s your name?’’ I ask as the fat kid draws closer.
 
 > And I see this fat kid. He already looks a little winded. Behind him is the rest of the troop.
 
@@ -122,8 +113,6 @@ params:
 
 > "we can form a simple rule which will be true in every case: the level of utilization of a non-bottleneck is not determined by its own potential, but by some other constraint in the system.’’
 
-> "Yes, and that’s a very close approximation of the second rule we can logically derive from the four combinations of X and Y we talked about,’’ says Jonah. "Putting it precisely, activating a resource and utilizing a resource are not synonymous.’’
-
 > "Putting it precisely, activating a resource and utilizing a resource are not synonymous.’’
 
 > "A system of local optimums is not an optimum system at all; it is a very inefficient system.’’
@@ -132,9 +121,7 @@ params:
 
 > "Whether they’re dumb or smart, I’m asking them because we’ve been living together for fifteen years and we have no clear understanding of what our marriage is supposed to do...or become...or anything!’’ I sputter. "We’re just coasting along, doing ‘what everyone else does.’ And it turns out the two of us have some very different assumptions of what our lives are supposed to be like.’’
 
-> One of them is setup, the time the part spends
-
-> One of them is setup, the time the part spends waiting for a resource, while the resource is preparing itself to work on the part.
+> One of them is setup, the time the part spends waiting for a resource, while the resource is preparing itself to work on the part. Another is process time, which is the amount of time the part spends being modified into a new, more valuable form. A third element is queue time, which is the time the part spends in line for a resource while the resource is busy working on something else ahead of it. The fourth element is wait time, which is the time the part waits, not for a resource, but for another part so they can be assembled together.
 
 > "No, I don’t want to do that,’’ I tell him, thinking about us screwing up relations with a dozen customers just to please one. "Let’s try something else.’’
 
@@ -142,7 +129,7 @@ params:
 
 > "Al, I don’t know exactly what our goal is, or ought to be, but I think we know there must be some kind of need between us,’’ she says. "I know I want Sharon and Dave to grow up to be good people. And I want us to give each other what we need.’’
 
-> "You remember a long time ago, after we got married and we both had jobs, how we’d come home and just talk to each other for a couple of hours, and sympathize with each other about the trials and tribulations we’d suffered during the day?’’ I ask. "That was nice.’’
+> "You remember a long time ago, after we got married and we both had jobs, how we’d come home and just talk to each other for a couple of hours, and sympathize with each other about the trials and tribulations we’d suffered during the day?’’ I ask. "That was nice.’’ "But then there were babies,’’ says Julie. "And, later, you started putting in extra hours at work.’’
 
 > "But I’ll try to make it up to you,’’ she says. Then she smiles briefly and adds, "Since we’re walking down memory lane, maybe you remember the first fight we had, how we promised afterwards we’d always try to look at a situation from the other’s point of view as well as our own. Well, I think for the past couple of years we haven’t been doing that very often. I’m willing to try it again if you are.’’
 
@@ -156,13 +143,7 @@ params:
 
 > But, come on, Julie, the fact that he elected to present them in the form of very pointed questions doesn’t change a thing.’’
 
-> What was the nature of the answers, the solutions, that Jonah caused us to develop? They all had one thing in common. They all made common sense, and at the same time, they flew directly in the face of everything I’d ever learned.
-
-> sharpened boomerang.’’ Then it dawns on me. Here’s the answer. This is the technique that I should ask Jonah to teach me: how to persuade other people, how to peel away the layers of common practice, how to overcome the resistance to change.
-
-> that I should ask Jonah to teach me: how to persuade other people, how to peel away the layers of common
-
-> it dawns on me. Here’s the answer. This is the technique that I should ask Jonah to teach me: how to persuade other people, how to peel away the layers of common practice, how to overcome the resistance to change.
+> What was the nature of the answers, the solutions, that Jonah caused us to develop? They all had one thing in common. They all made common sense, and at the same time, they flew directly in the face of everything I’d ever learned. Would we have had the courage to try to implement them if it weren’t for the fact that we’d had to sweat to construct them? Most probably not. If it weren’t for the conviction that we gained in the struggle—for the ownership that we developed in the process—I don’t think we’d actually have had the guts to put our solutions into practice.
 
 > Then it dawns on me. Here’s the answer. This is the technique that I should ask Jonah to teach me: how to persuade other people, how to peel away the layers of common practice, how to overcome the resistance to change.
 
@@ -174,13 +155,13 @@ params:
 
 > And then we took the time and reexamined it from basic principles.
 
-> "I do think that meeting the people is important,’’ Stacey interrupts the laughter. "Financial numbers only reveal a small fraction of the picture. You have to find out what the people think is going on. What do they see as
+> "I do think that meeting the people is important,’’ Stacey interrupts the laughter. "Financial numbers only reveal a small fraction of the picture. You have to find out what the people think is going on. What do they see as problems? Where do we stand vis-a-vis the clients?’’
 
 > Now, someone else reveals to us that some rectangles exist. We check, and yes, he’s right. Here there is one and here and here and here. We’re making progress, the picture starts to unfold.’’
 
 > Almost every big company is oscillating, every five to ten years from centralization to decentralization, and then back again.’’ "Yeah,’’ says Bob. "As a president of a company, when you don’t know what to do, when things are not going well, you can always shuffle the cards—reorganize.’’ Mockingly he continues, "That will do it! This reorganization will solve all our problems!’’
 
-> "O.K. fellows,’’ I say firmly. "Bob’s last suggestion has really clarified what we’re dealing with here. We’re dealing with the fact that we haven’t got any idea of what we’re doing.
+> "O.K. fellows,’’ I say firmly. "Bob’s last suggestion has really clarified what we’re dealing with here. We’re dealing with the fact that we haven’t got any idea of what we’re doing. If we’re just looking for some arbitrary order, and we can choose among so many possibilities, then what’s the point in putting so much effort in collecting so much data? What do we gain from it, except the ability to impress people with some thick reports or to throw the company into another reorganization in order to hide from the fact that we don’t really understand what we’re doing? This avenue of first collecting data, getting familiar with the facts, seems to lead us nowhere. It’s nothing more than an exercise in futility.
 
 > What type of order are we seeking? An arbitrary order that we superimpose externally on the facts, or are we trying to reveal an intrinsic order, an order that already exists there?’’
 
@@ -188,7 +169,7 @@ params:
 
 > "I’m sick and tired of these big words. Everywhere I go, I hear the same thing.’’ He stands up, goes to the board, and mimicking a first grade teacher he intones "A process ...of... on-going... improvement.’’
 
-> "That’s precisely what it is,’’ Lou says. "In the past, cost was the most important, throughput was second, and inventory was a remote third.’’ Smiling at me he adds, "To the extent that we regarded it as assets. Our new scale is different. Throughput is most important, then inventory—due to its impact on throughput and only then, at the tail, comes operating expenses. And our numbers certainly confirm it,’’ Lou provides the evidence. "Throughput and inventory had changed by several tens of percent while operating
+> "That’s precisely what it is,’’ Lou says. "In the past, cost was the most important, throughput was second, and inventory was a remote third.’’ Smiling at me he adds, "To the extent that we regarded it as assets. Our new scale is different. Throughput is most important, then inventory—due to its impact on throughput and only then, at the tail, comes operating expenses. And our numbers certainly confirm it,’’ Lou provides the evidence. "Throughput and inventory had changed by several tens of percent while operating expenses went down by less than two percent.’’
 
 > STEP 1. Identify the system’s bottlenecks. (After all it wasn’t too difficult to identify the oven and the NCX10 as the bottlenecks of the plant.) STEP 2. Decide how to exploit the bottlenecks. (That was fun. Realizing that those machines should not take a lunch break, etc.) STEP 3. Subordinate everything else to the above decision. (Making sure that everything marches to the tune of the constraints. The red and green tags.) STEP 4. Elevate the system’s bottlenecks. (Bringing back the old Zmegma, switching back to old, less "effective’’ routings. . . .) STEP 5. If, in a previous step, a bottleneck has been broken go back to step 1.
 
@@ -204,8 +185,6 @@ params:
 
 > "No,’’ he grins. "As a matter of fact everything that I’ve seen of long term planning should be more appropriately categorized under ‘long term bullshitting.’’’
 
-> What about the mentality that is so prevalent in headquarters, the mentality of covering your ass.
-
 > What about the mentality that is so prevalent in headquarters, the mentality of covering your ass. Haven’t you noticed that whenever we asked about something that doesn’t go so well, everyone almost automatically started to blame everybody else?’’
 
 > The lack of sensible long-term strategy, the measurement issues, the lag in product design, the long lead times in production, the general attitude of passing the ball, of apathy, are all connected. We must put our finger on the core problem, on the root that causes them all. That is what actually is meant by identify the constraint. It’s not prioritizing the bad effects, it’s identifying what causes them all.’’
@@ -216,12 +195,14 @@ params:
 
 > "Here it is,’’ I announce, "here is the answer to Jonah’s question. I’m going to call him right now. You can imagine my first sentence: Jonah, I want you to teach me how to identify the core problem.’’
 
-> "But triggering breakthrough ideas by itself is not enough. An even bigger obstacle is to verify that this idea really solves all the resulting bad effects.’’
+> "But triggering breakthrough ideas by itself is not enough. An even bigger obstacle is to verify that this idea really solves all the resulting bad effects.’’ "Without creating new ones,’’ I add.
 
-> I stop and look at him. "What are we asking for? For the ability to answer three simple questions: ‘what to change?’, ‘what to change to?’, and ‘how to cause the change?’
+> I stop and look at him. "What are we asking for? For the ability to answer three simple questions: ‘what to change?’, ‘what to change to?’, and ‘how to cause the change?’ Basically what we are asking for is the most fundamental abilities one would expect from a manager.
 
-> "At the same time,’’ I continue, "can you imagine what the meaning is to being able to hone in on the core problem even in a very complex environment?
+> "At the same time,’’ I continue, "can you imagine what the meaning is to being able to hone in on the core problem even in a very complex environment? To be able to construct and check solutions that really solve all negative effects without creating new ones? And above all to cause such a major change smoothly, without creating resistance but the opposite, enthusiasm? Can you imagine having such abilities?’’
+
+> "Yes and no,’’ I answer. "Yes, that’s what we have done. No Lou, without Jonah’s guidance all of us would be looking for new jobs today. Now I understand why he refused to continue advising us. Jonah said it to me in the clearest way. We should learn to be able to do it without any external help. I must learn these thinking processes, only then will I know that I’m doing my job.’’
 
 > "We should and can be our own Jonahs,’’ Lou says and stands up. Then this reserved person surprises me. He puts his arm around my shoulder and says, "I’m proud to work for you.’’
 
-> "Yes and no,’’ I answer. "Yes, that’s what we have done. No Lou, without Jonah’s guidance all of us would be looking for new jobs today. Now I understand why he refused to continue advising us. Jonah said it to me in the clearest way. We should learn to be able to do it without any external help. I must learn these thinking processes, only then will I know that I’m doing my job.’’
+<!-- kindle-highlights:end -->

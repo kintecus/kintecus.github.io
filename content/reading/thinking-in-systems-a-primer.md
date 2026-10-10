@@ -4,11 +4,14 @@ date: 2025-03-05
 draft: false
 
 params:
+  kindle_title: "Thinking in Systems"
   author: "Donella Meadows"
   date_started: 2025-03-05
   date_finished: 2025-07-06
   fiction: false
 ---
+
+<!-- kindle-highlights:start -->
 
 > Strange bedfellows, but systems thinking transcends disciplines and cultures and, when it is done right, it overarches history as well.
 
@@ -20,11 +23,11 @@ params:
 
 > I have yet to see any problem, however complicated, which, when looked at in the right way, did not become still more complicated. —POUL ANDERSON
 
-> A system* is an interconnected set of elements that is coherently organized in a way that achieves something. If you look at that definition closely for a minute, you can see that a system must consist of three kinds of things: elements, interconnections, and a function or purpose.
-
-> No one understands all the relationships that allow a tree to do what it does. That lack of knowledge is not surprising. It’s easier to learn about a system’s elements than about its interconnections.
+> A system\* is an interconnected set of elements that is coherently organized in a way that achieves something. If you look at that definition closely for a minute, you can see that a system must consist of three kinds of things: elements, interconnections, and a function or purpose.
 
 > As the days get shorter in the temperate zones, a deciduous tree puts forth chemical messages that cause nutrients to migrate out of the leaves into the trunk and roots and that weaken the stems, allowing the leaves to fall.
+
+> No one understands all the relationships that allow a tree to do what it does. That lack of knowledge is not surprising. It’s easier to learn about a system’s elements than about its interconnections.
 
 > Many of the interconnections in systems operate through the flow of information. Information holds systems together and plays a great role in determining how they operate.
 
@@ -38,7 +41,7 @@ params:
 
 > Systems can be nested within systems. Therefore, there can be purposes within purposes.
 
-> Keeping sub-purposes and overall system purposes in harmony is an essential function of successful systems. I’ll
+> Keeping sub-purposes and overall system purposes in harmony is an essential function of successful systems.
 
 > Changing elements usually has the least effect on the system. If you change all the players on a football team, it is still recognizably a football team.
 
@@ -64,11 +67,9 @@ params:
 
 > A stock can be increased by decreasing its outflow rate as well as by increasing its inflow rate. There’s more than one way to fill a bathtub!
 
-> The tub can’t fill up immediately, even with the inflow faucet on full blast. A stock takes time to change, because flows take time to flow. That’s a vital point, a key to understanding why systems behave as they do. Stocks usually change slowly.
+> A stock takes time to change, because flows take time to flow.
 
 > Stocks generally change slowly, even when the flows into or out of them change suddenly. Therefore, stocks act as delays or buffers or shock absorbers in systems.
-
-> A stock takes time to change, because flows take time to flow.
 
 > Once an economy has a lot of oil-burning furnaces and automobile engines, it cannot change quickly to furnaces and engines that burn a different fuel, even if the price of oil suddenly changes. It has taken decades to accumulate the stratospheric pollutants that destroy the earth’s ozone layer; it will take decades for those pollutants to be removed.
 
@@ -78,7 +79,7 @@ params:
 
 > Stocks allow inflows and outflows to be decoupled and to be independent and temporarily out of balance with each other.
 
-> It would be hard to run an oil company if gasoline had to be produced at the refinery at exactly the rate the cars were burning
+> It would be hard to run an oil company if gasoline had to be produced at the refinery at exactly the rate the cars were burning it.
 
 > Most individual and institutional decisions are designed to regulate the levels in stocks.
 
@@ -88,11 +89,11 @@ params:
 
 > Not all systems have feedback loops. Some systems are relatively simple open-ended chains of stocks and flows.
 
-> Remember—all system diagrams are simplifications of the real world. We each choose how much complexity to look
+> Remember—all system diagrams are simplifications of the real world. We each choose how much complexity to look at.
 
 > This kind of stabilizing, goal-seeking, regulating loop is called a balancing feedback loop, so I put a B inside the loop in the diagram. Balancing feedback loops are goal-seeking or stability-seeking.
 
-> The second kind of feedback loop is amplifying, reinforcing, self-multiplying, snowballing—a vicious or virtuous circle that can cause healthy growth or runaway destruction. It is called a reinforcing feedback loop, and will be noted with an R in the diagrams.
+> The second kind of feedback loop is amplifying, reinforcing, self-multiplying, snowballing—a vicious or virtuous circle that can cause healthy growth or runaway destruction. It is called a reinforcing feedback loop, and will be noted with an R in the diagrams. It generates more input to a stock the more that is already there (and less input the less that is already there). A reinforcing feedback loop enhances whatever direction of change is imposed on it.
 
 > The more prices go up, the more wages have to go up if people are to maintain their standards of living. The more wages go up, the more prices have to go up to maintain profits. This means that wages have to go up again, so prices go up again.
 
@@ -108,7 +109,7 @@ params:
 
 > The information delivered by a feedback loop—even nonphysical feedback—can only affect future behavior; it can’t deliver a signal fast enough to correct behavior that drove the current feedback. Even nonphysical information takes time to feedback into the system.
 
-> The specific principle you can deduce from this simple system is that you must remember in thermostat-like systems to take into account whatever draining or filling processes are going on. If you don’t, you won’t achieve the target level of your stock.
+> The specific principle you can deduce from this simple system is that you must remember in thermostat-like systems to take into account whatever draining or filling processes are going on. If you don’t, you won’t achieve the target level of your stock. If you want your room temperature to be at 18°C (65°F), you have to set the thermostat a little above the desired temperature. If you want to pay off your credit card (or the national debt), you have to raise your repayment rate high enough to cover the charges you incur while you’re paying (including interest).
 
 > A stock-maintaining balancing feedback loop must have its goal set appropriately to compensate for draining or inflowing processes that affect that stock. Otherwise, the feedback process will fall short of or exceed the target for the stock.
 
@@ -118,7 +119,7 @@ params:
 
 > System dynamics models explore possible futures and ask “what if” questions.
 
-> Model utility depends not on whether its driving scenarios are realistic (since no one can know that for sure), but on whether it responds with a
+> Model utility depends not on whether its driving scenarios are realistic (since no one can know that for sure), but on whether it responds with a realistic pattern of behavior.
 
 > One important piece of the larger system that affects population is the economy. At the heart of the economy is another reinforcing-loop-plus-balancing-loop system—the same kind of structure, with the same kinds of behavior, as the population (see Figure 27). The greater the stock of physical capital (machines and factories) in the economy and the efficiency of production (output per unit of capital), the more output (goods and services) can be produced each year.
 
@@ -136,13 +137,11 @@ params:
 
 > Something has to change and, since this system has a learning person within it, something will change. “High leverage, wrong direction,” the system-thinking car dealer says to herself as she watches this failure of a policy intended to stabilize the oscillations. This perverse kind of result can be seen all the time—someone trying to fix a system is attracted intuitively to a policy lever that in fact does have a strong effect on the system. And then the well-intentioned fixer pulls the lever in the wrong direction! This is just one example of how we can be surprised by the counterintuitive behavior of systems when we start trying to change them.
 
+> Part of the problem here is that the car dealer has been reacting not too slowly, but too quickly. Given the configuration of this system, she has been overreacting. Things would go better if, instead of decreasing her response delay from three days to two, she would increase the delay from three days to six, as illustrated in Figure 36.
+
 > Delays are pervasive in systems, and they are strong determinants of behavior. Changing the length of a delay may (or may not, depending on the type of delay and the relative lengths of other delays) make a large change in the behavior of a system.
 
-> Part of the problem here is that the car dealer has been reacting not too slowly, but too quickly. Given the configuration of this system, she has been overreacting. Things would go better if, instead of decreasing her response delay from three days to two, she would increase the delay from three days to six, as illustrated in Figure 36. As Figure 36 shows, the oscillations are
-
 > That very large system, with interconnected industries responding to each other through delays, entraining each other in their oscillations, and being amplified by multipliers and speculators, is the primary cause of business cycles. Those cycles don’t come from presidents, although presidents can do much to ease or intensify the optimism of the upturns and the pain of the downturns. Economies are extremely complex systems; they are full of balancing feedback loops with delays, and they are inherently oscillatory.
-
-> Therefore, any physical, growing system is going to run into some kind of constraint, sooner or later. That constraint will take the form of a balancing loop that in some way shifts the dominance of the reinforcing loop driving the growth behavior, either by strengthening the outflow or by weakening the inflow.
 
 > But any real physical entity is always surrounded by and exchanging things with its environment. A corporation needs a constant supply of energy and materials and workers and managers and customers. A growing corn crop needs water and nutrients and protection from pests. A population needs food and water and living space, and if it’s a human population, it needs jobs and education and health care and a multitude of other things. Any entity that is using energy and processing materials needs a place to put its wastes, or a process to carry its wastes away. Therefore, any physical, growing system is going to run into some kind of constraint, sooner or later. That constraint will take the form of a balancing loop that in some way shifts the dominance of the reinforcing loop driving the growth behavior, either by strengthening the outflow or by weakening the inflow.
 
@@ -154,15 +153,15 @@ params:
 
 > I will just point out that, according to the dynamics of depletion, the larger the stock of initial resources, the more new discoveries, the longer the growth loops elude the control loops, and the higher the capital stock and its extraction rate grow, and the earlier, faster, and farther will be the economic fall on the back side of the production peak.
 
+> Nonrenewable resources are stock-limited. The entire stock is available at once, and can be extracted at any rate (limited mainly by extraction capital). But since the stock is not renewed, the faster the extraction rate, the shorter the lifetime of the resource.
+
+> Very long-term renewable-resource cycles like these have been observed, for example, in the logging industry in New England, now in its third cycle of growth, overcutting, collapse, and eventual regeneration of the resource. But this is not true for all resource populations. More and more, increases in technology and harvest efficiency have the ability to drive resource populations to extinction.
+
 > Renewable resources are flow-limited. They can support extraction or harvest indefinitely, but only at a finite flow rate equal to their regeneration rate. If they are extracted faster than they regenerate, they may eventually be driven below a critical threshold and become, for all practical purposes, nonrenewable.
-
-> Nonrenewable resources are stock-limited. The entire stock is available at once, and can be extracted at any rate (limited mainly by extraction capital). But since the stock is not renewed, the faster the extraction rate, the shorter the lifetime of the resource. In many real economies based on real renewable
-
-> Very long-term renewable-resource cycles like these have been observed, for example, in the logging industry in New England, now in its third cycle of growth, overcutting, collapse, and eventual regeneration of the resource. But this is not true for all resource populations.
 
 > Neither renewable nor nonrenewable limits to growth allow a physical stock to grow forever, but the constraints they impose are dynamically quite different. The difference comes because of the difference between stocks and flows. The trick, as with all the behavioral possibilities of complex systems, is to recognize what structures contain which latent behaviors, and what conditions release those behaviors—and, where possible, to arrange the structures and conditions to reduce the probability of destructive behaviors and to encourage the possibility of beneficial ones.
 
-> If the land mechanism as a whole is good, then every part is good, whether we understand it or not. If the biota, in the course of aeons, has built something we like but do not understand, then who but a fool would discard seemingly useless parts? To keep every cog and wheel is the first precaution of intelligent tinkering. —Aldo
+> If the land mechanism as a whole is good, then every part is good, whether we understand it or not. If the biota, in the course of aeons, has built something we like but do not understand, then who but a fool would discard seemingly useless parts? To keep every cog and wheel is the first precaution of intelligent tinkering. —Aldo Leopold,1 forester
 
 > Why do systems work so well? Consider the properties of highly functional systems—machines or human communities or ecosystems—which are familiar to you. Chances are good that you may have observed one of three characteristics: resilience, self-organization, or hierarchy.
 
@@ -170,13 +169,13 @@ params:
 
 > There are always limits to resilience.
 
-> Resilience is not the same thing as being static or constant over time. Resilient systems can be very dynamic. Short-term oscillations, or periodic outbreaks, or long cycles of succession, climax, and collapse may in fact be the normal condition, which resilience acts to restore!
+> Resilience is not the same thing as being static or constant over time. Resilient systems can be very dynamic. Short-term oscillations, or periodic outbreaks, or long cycles of succession, climax, and collapse may in fact be the normal condition, which resilience acts to restore! And, conversely, systems that are constant over time can be unresilient.
 
 > Hundreds of years of intensive management of the forests of Europe gradually have replaced native ecosystems with single-age, single-species plantations, often of nonnative trees. These forests are designed to yield wood and pulp at a high rate indefinitely. However, without multiple species interacting with each other and drawing and returning varying combinations of nutrients from the soil, these forests have lost their resilience. They seem to be especially vulnerable to a new form of insult: industrial air pollution.
 
-> Systems need to be managed not only for productivity or stability, they also need to be managed for resilience—the ability to recover from perturbation, the ability to restore or repair themselves.
-
 > Loss of resilience can come as a surprise, because the system usually is paying much more attention to its play than to its playing space. One day it does something it has done a hundred times before and crashes.
+
+> Systems need to be managed not only for productivity or stability, they also need to be managed for resilience—the ability to recover from perturbation, the ability to restore or repair themselves.
 
 > This capacity of a system to make its own structure more complex is called self-organization. You see self-organization in a small, mechanistic way whenever you see a snowflake, or ice feathers on a poorly insulated window, or a supersaturated solution suddenly forming a garden of crystals. You see self-organization in a more profound way whenever a seed sprouts, or a baby learns to speak, or a neighborhood decides to come together to oppose a toxic waste dump.
 
@@ -188,8 +187,6 @@ params:
 
 > In the process of creating new structures and increasing complexity, one thing that a self-organizing system often generates is hierarchy.
 
-> Hora’s watches were no less complex than those of Tempus, but he put together stable subassemblies of about ten elements each. Then he put ten of these subassemblies together into a larger assembly; and ten of those assemblies constituted the whole watch. Whenever Hora had to put down a partly completed watch to answer the phone, he lost only a small part of his work. So he made his watches much faster and more efficiently than did Tempus.
-
 > The watches made by both Hora and Tempus consisted of about one thousand parts each. Tempus put his together in such a way that if he had one partly assembled and had to put it down—to answer the phone, say—it fell to pieces. When he came back to it, Tempus would have to start all over again. The more his customers phoned him, the harder it became for him to find enough uninterrupted time to finish a watch. Hora’s watches were no less complex than those of Tempus, but he put together stable subassemblies of about ten elements each. Then he put ten of these subassemblies together into a larger assembly; and ten of those assemblies constituted the whole watch. Whenever Hora had to put down a partly completed watch to answer the phone, he lost only a small part of his work. So he made his watches much faster and more efficiently than did Tempus.
 
 > Hierarchies evolve from the lowest level up—from the pieces to the whole, from cell to organ to organism, from individual to team, from actual production to management of production.
@@ -198,13 +195,13 @@ params:
 
 > To be a highly functional system, hierarchy must balance the welfare, freedoms, and responsibilities of the subsystems and total system—there must be enough central control to achieve coordination toward the large-system goal, and enough autonomy to keep all subsystems flourishing, functioning, and self-organizing. Hierarchical systems evolve from the bottom up. The purpose of the upper layers of the hierarchy is to serve the purposes of the lower layers. Resilience, self-organization, and hierarchy are three of the reasons dynamic systems can work so well. Promoting or managing for these properties of a system can improve its ability to function well over the long term—to be sustainable. But watching how systems behave also can be full of surprises.
 
-> So are the ways I picture the world in my head—my mental models. None of these is or ever will be the real world. Our models usually have a strong congruence
+> So are the ways I picture the world in my head—my mental models. None of these is or ever will be the real world.
 
 > Everything we think we know about the world is a model. Our models do have a strong congruence with the world. Our models fall far short of representing the real world fully.
 
 > You can’t navigate well in an interconnected, feedback-dominated world unless you take your eyes off short-term events and look for long-term behavior and structure; unless you are aware of false boundaries and bounded rationality; unless you take into account limiting factors, nonlinearities and delays. You are likely to mistreat, misdesign, or misread systems if you don’t respect their properties of resilience, self-organization, and hierarchy.
 
-> The behavior of a system is its performance over time—its growth, stagnation, decline, oscillation, randomness, or evolution. If the news did a better job of putting events into historical context, we would have better behavior-level understanding, which is deeper than event-level understanding.
+> The behavior of a system is its performance over time—its growth, stagnation, decline, oscillation, randomness, or evolution. If the news did a better job of putting events into historical context, we would have better behavior-level understanding, which is deeper than event-level understanding. When a systems thinker encounters a problem, the first thing he or she does is look for data, time graphs, the history of the system. That’s because long-term behavior provides clues to the underlying system structure. And structure is the key to understanding not just what is happening, but why.
 
 > Flows go up and down, on and off, in all sorts of combinations, in response to stocks, not to other flows.
 
@@ -221,8 +218,6 @@ params:
 > This “my model is bigger than your model” game results in enormously complicated analyses, which produce piles of information that may only serve to obscure the answers to the questions at hand. For example, modeling the earth’s climate in full detail is interesting for many reasons, but may not be necessary for figuring out how to reduce a country’s CO2 emissions to reduce climate change.
 
 > It’s a great art to remember that boundaries are of our own making, and that they can and should be reconsidered for each new discussion, problem, or purpose.
-
-> This concept of a limiting factor is simple and widely misunderstood. Agronomists assume, for example, that they know what to put in artificial fertilizer, because they have identified many of the major and minor nutrients in good soil. Are there any essential nutrients they have not identified? How do artificial fertilizers affect soil microbe communities? Do they interfere with, and therefore limit, any other functions of good soil? And what limits the production of artificial fertilizers? At any given time, the input that is most important to a system is the one that is most limiting.
 
 > At any given time, the input that is most important to a system is the one that is most limiting.
 
@@ -242,13 +237,13 @@ params:
 
 > Delays are often sensitive leverage points for policy, if they can be made shorter or longer.
 
-> When there are long delays in feedback loops, some sort of foresight is essential. To act only when a problem becomes obvious is to miss an important opportunity to solve the problem.
-
 > Delays determine how fast systems can react, how accurately they hit their targets, and how timely is the information passed around a system. Overshoots, oscillations, and collapses are always caused by delays.
 
-> Because of decades-long delays as the earth’s oceans respond to warmer temperatures, human fossil-fuel emissions have already induced changes in climate that will not be fully revealed for a generation or two.
+> When there are long delays in feedback loops, some sort of foresight is essential. To act only when a problem becomes obvious is to miss an important opportunity to solve the problem.
 
 > Because of long delays in building new power plants, the electricity industry is plagued with cycles of overcapacity and then undercapacity leading to brownouts.
+
+> Because of decades-long delays as the earth’s oceans respond to warmer temperatures, human fossil-fuel emissions have already induced changes in climate that will not be fully revealed for a generation or two.
 
 > Bounded rationality means that people make quite reasonable decisions based on the information they have. But they don’t have perfect information, especially about more distant parts of the system. Fishermen don’t know how many fish there are, much less how many fish will be caught by other fishermen that same day.
 
@@ -266,8 +261,6 @@ params:
 
 > So, they resisted the government’s pull toward larger family size, at great cost to themselves and to the generation of children who grew up in orphanages.
 
-> This is what happened with the formulator of the Romanian population policy, dictator Nicolae Ceausescu, who tried long and hard to overpower the resistance to his policy. When his government was overturned, he was executed, along with his family. The first law the new government repealed was the ban on abortion and contraception.
-
 > One way to deal with policy resistance is to try to overpower it. If you wield enough power and can keep wielding it, the power approach can work, at the cost of monumental resentment and the possibility of explosive consequences if the power is ever let up. This is what happened with the formulator of the Romanian population policy, dictator Nicolae Ceausescu, who tried long and hard to overpower the resistance to his policy. When his government was overturned, he was executed, along with his family. The first law the new government repealed was the ban on abortion and contraception.
 
 > The alternative to overpowering policy resistance is so counterintuitive that it’s usually unthinkable. Let go. Give up ineffective policies. Let the resources and energy spent on both enforcing and resisting be used for more constructive purposes. You won’t get your way with the system, but it won’t go as far in a bad direction as you think, because much of the action you were trying to correct was in response to your own action. If you calm down, those who are pulling against you will calm down too.
@@ -275,6 +268,8 @@ params:
 > The most effective way of dealing with policy resistance is to find a way of aligning the various goals of the subsystems, usually by providing an overarching goal that allows all actors to break out of their bounded rationality.
 
 > The most familiar examples of this harmonization of goals are mobilizations of economies during wartime, or recovery after war or natural disaster.
+
+> Leaders of Chancellor Helmut Kohl’s coalition, led by the Christian Democratic Union, agreed last week with the opposition Social Democrats, after months of bickering, to turn back a flood of economic migrants by tightening conditions for claiming asylum. —International Herald Tribune, 19925
 
 > The trap called the tragedy of the commons comes about when there is escalation, or just simple growth, in a commonly shared, erodable environment.
 
@@ -290,21 +285,17 @@ params:
 
 > There are three ways to avoid the tragedy of the commons. Educate and exhort. Help people to see the consequences of unrestrained use of the commons. Appeal to their morality. Persuade them to be temperate. Threaten transgressors with social disapproval or eternal hellfire. Privatize the commons. Divide it up, so that each person reaps the consequences of his or her own actions. If some people lack the self-control to stay below the carrying capacity of their own private resource, those people will harm only themselves and not others. Regulate the commons. Garrett Hardin calls this option, bluntly, “mutual coercion, mutually agreed upon.” Regulation can take many forms, from outright bans on certain behaviors to quotas, permits, taxes, incentives. To be effective, regulation must be enforced by policing and penalties.
 
-> Most people comply with regulatory systems most of the time, as long as they are mutually agreed upon and their purpose is understood. But all regulatory systems must use police power and penalties for the occasional noncooperator.
-
 > Notice from these examples how many different forms “mutual coercion, mutually agreed upon” can take. The traffic light doles out access to the commons on a “take your turn” basis. The meters charge for use of the parking commons. The bank uses physical barriers and strong penalties. Permits to use broadcasting frequencies are issued to applicants by a government agency. And garbage fees directly restore the missing feedback, letting each household feel the economic impact of its own use of the commons.
 
-> Another name for this system trap is “eroding goals.” It is also called the “boiled frog syndrome,” from the old story (I don’t know whether it is true) that a frog put suddenly in hot water will jump right out, but if it is put into cold water that is gradually heated up, the frog will stay there happily until it boils.
+> Most people comply with regulatory systems most of the time, as long as they are mutually agreed upon and their purpose is understood. But all regulatory systems must use police power and penalties for the occasional noncooperator.
+
+> Another name for this system trap is “eroding goals.” It is also called the “boiled frog syndrome,” from the old story (I don’t know whether it is true) that a frog put suddenly in hot water will jump right out, but if it is put into cold water that is gradually heated up, the frog will stay there happily until it boils. “Seems to be getting a little warm in here. Well, but then it’s not so much warmer than it was a while ago.” Drift to low performance is a gradual process. If the system state plunged quickly, there would be an agitated corrective process. But if it drifts down slowly enough to erase the memory of (or belief in) how much better things used to be, everyone is lulled into lower and lower expectations, lower effort, lower performance.
 
 > There are two antidotes to eroding goals. One is to keep standards absolute, regardless of performance. Another is to make goals sensitive to the best performances of the past, instead of the worst.
 
 > THE TRAP: DRIFT TO LOW PERFORMANCE Allowing performance standards to be influenced by past performance, especially if there is a negative bias in perceiving past performance, sets up a reinforcing feedback loop of eroding goals that sets a system drifting toward low performance. THE WAY OUT Keep performance standards absolute. Even better, let standards be enhanced by the best actual performances instead of being discouraged by the worst. Use the same structure to set up a drift toward high performance!
 
-> Leaders of Chancellor Helmut Kohl’s coalition, led by the Christian Democratic Union, agreed last week with the opposition Social Democrats, after months of bickering, to turn back a flood of economic migrants by tightening conditions for claiming asylum. —International Herald Tribune, 19925
-
 > Islamic militants kidnapped an Israeli soldier Sunday and threatened to kill him unless the army quickly releases the imprisoned founder of a dominant Muslim group in the Gaza Strip.… The kidnapping … came in a wave of intense violence, … with the shooting of three Palestinians and an Israeli soldier who … was gunned down from a passing vehicle while he was on patrol in a jeep. In addition Gaza was buffeted by repeated clashes between stone-throwing demonstrators and Israeli troops, who opened fire with live ammunition and rubber bullets, wounding at least 120 people. —Clyde Haberman, International Herald Tribune, 1992
-
-> “I’ll raise you one” is the decision rule that leads to escalation. Escalation comes from a reinforcing loop set up by competing actors trying to get ahead of each other. The
 
 > You hit me, so I hit you back a little harder, so you hit me back a little harder, and pretty soon we have a real fight going. “I’ll raise you one” is the decision rule that leads to escalation. Escalation comes from a reinforcing loop set up by competing actors trying to get ahead of each other.
 
@@ -314,7 +305,7 @@ params:
 
 > Escalation in morality can lead to holier-than-thou sanctimoniousness. Escalation in art can lead from baroque to rococo to kitsch. Escalation in environmentally responsible lifestyles can lead to rigid and unnecessary puritanism.
 
-> One way out of the escalation trap is unilateral disarmament—deliberately reducing your own system state to induce reductions in your competitor’s state. Within the logic of the system, this option is almost unthinkable. But it actually can work, if one does it with determination, and if one can survive the short-term advantage of the competitor.
+> One way out of the escalation trap is unilateral disarmament—deliberately reducing your own system state to induce reductions in your competitor’s state. Within the logic of the system, this option is almost unthinkable. But it actually can work, if one does it with determination, and if one can survive the short-term advantage of the competitor. The only other graceful way out of the escalation system is to negotiate a disarmament. That’s a structural change, an exercise in system design.
 
 > THE TRAP: ESCALATION When the state of one stock is determined by trying to surpass the state of another stock—and vice versa—then there is a reinforcing feedback loop carrying the system into an arms race, a wealth race, a smear campaign, escalating loudness, escalating violence. The escalation is exponential and can lead to extremes surprisingly quickly. If nothing is done, the spiral will be stopped by someone’s collapse—because exponential growth cannot go on forever. THE WAY OUT The best way out of this trap is to avoid getting in it. If caught in an escalating system, one can refuse to compete (unilaterally disarm), thereby interrupting the reinforcing loop. Or one can negotiate a new system with balancing loops to control the escalation.
 
@@ -322,13 +313,13 @@ params:
 
 > Some people think the fall of the communist Soviet Union has disproved the theories of Karl Marx, but this particular analysis of his—that market competition systematically eliminates market competition—is demonstrated wherever there is, or used to be, a competitive market.
 
-> Diversification is not guaranteed, however, especially if the monopolizing firm (or species) has the power to crush all offshoots, or buy them up, or deprive them of the resources they need to stay alive. Diversification
+> Diversification is not guaranteed, however, especially if the monopolizing firm (or species) has the power to crush all offshoots, or buy them up, or deprive them of the resources they need to stay alive. Diversification doesn’t work as a strategy for the poor.
 
 > THE TRAP: SUCCESS TO THE SUCCESSFUL If the winners of a competition are systematically rewarded with the means to win again, a reinforcing feedback loop is created by which, if it is allowed to proceed uninhibited, the winners eventually take all, while the losers are eliminated. THE WAY OUT Diversification, which allows those who are losing the competition to get out of that game and start another one; strict limitation on the fraction of the pie any one winner may win (antitrust laws); policies that level the playing field, removing some of the advantage of the strongest players or increasing the advantage of the weakest; policies that devise rewards for success that do not bias the next round of competition.
 
-> One definition of addiction used in Alcoholics Anonymous is repeating the same stupid behavior over and over and over, and somehow expecting different results.
+> One definition of addiction used in Alcoholics Anonymous is repeating the same stupid behavior over and over and over, and somehow expecting different results. Addiction is finding a quick and dirty solution to the symptom of the problem, which prevents or distracts one from the harder and longer-term task of solving the real problem. Addictive policies are insidious, because they are so easy to sell, so simple to fall for.
 
-> Is the price of oil going up? Rather than acknowledge the inevitable depletion of a nonrenewable resource and increase fuel efficiency or switch to other fuels, we can fix the price. (Both the Soviet Union and the United States did this as their first response to the oil-price shocks of the 1970s.) That way we can pretend that nothing is happening and go on burning oil—making the depletion problem worse.
+> Is the price of oil going up? Rather than acknowledge the inevitable depletion of a nonrenewable resource and increase fuel efficiency or switch to other fuels, we can fix the price. (Both the Soviet Union and the United States did this as their first response to the oil-price shocks of the 1970s.) That way we can pretend that nothing is happening and go on burning oil—making the depletion problem worse. When that policy breaks down, we can go to war for oil. Or find more oil. Like a drunk ransacking the house in hopes of unearthing just one more bottle, we can pollute the beaches and invade the last wilderness areas, searching for just one more big deposit of oil.
 
 > Breaking an addiction is painful. It may be the physical pain of heroin withdrawal, or the economic pain of a price increase to reduce oil consumption, or the consequences of a pest invasion while natural predator populations are restoring themselves.
 
@@ -342,21 +333,15 @@ params:
 
 > The U.S. Endangered Species Act restricts development wherever an endangered species has its habitat. Some landowners, on discovering that their property harbors an endangered species, purposely hunt or poison it, so the land can be developed.
 
-> Notice that rule beating produces the appearance of rules being followed.
-
 > Notice that rule beating produces the appearance of rules being followed. Drivers obey the speed limits, when they’re in the vicinity of a police car.
 
 > THE TRAP: RULE BEATING Rules to govern a system can lead to rule beating—perverse behavior that gives the appearance of obeying the rules or achieving the goals, but that actually distorts the system. THE WAY OUT Design, or redesign, rules to release creativity not in the direction of beating the rules, but in the direction of achieving the purpose of the rules.
-
-> Now that the forecast … has been lowered sharply, pressure from politicians and business is likely to grow on the Finance Ministry to take stimulative measures.
-
-> a year ago.… GNP grew in 1991 by 3.5 percent and in 1990 by 5.5 percent. Since the beginning of this fiscal year … the economy has been stagnant or contracting.… Now that the forecast … has been lowered sharply, pressure from politicians and business is likely to grow on the Finance Ministry to take stimulative measures.
 
 > GNP grew in 1991 by 3.5 percent and in 1990 by 5.5 percent. Since the beginning of this fiscal year … the economy has been stagnant or contracting.… Now that the forecast … has been lowered sharply, pressure from politicians and business is likely to grow on the Finance Ministry to take stimulative measures.
 
 > If the desired system state is good education, measuring that goal by the amount of money spent per student will ensure money spent per student. If the quality of education is measured by performance on standardized tests, the system will produce performance on standardized tests. Whether either of these measures is correlated with good education is at least worth thinking about.
 
-> These examples confuse effort with result, one of the most common mistakes in designing systems around the wrong goal.
+> These examples confuse effort with result, one of the most common mistakes in designing systems around the wrong goal. Maybe the worst mistake of this kind has been the adoption of the GNP as the measure of national economic success.
 
 > New light bulbs that give the same light with one-eighth the electricity and that last ten times as long make the GNP go down.
 
@@ -368,13 +353,13 @@ params:
 
 > Soon boats were being designed not for normal sailing, but for winning races within the categories defined by the rules. They squeezed the last possible burst of speed out of a square inch of sail, or the lightest possible load out of a standard-sized rudder. These boats were strange-looking and strange-handling, not at all the sort of boat you would want to take out fishing or for a Sunday sail. As the races became more serious, the rules became stricter and the boat designs more bizarre.
 
-> So, how do we change the structure of systems to produce more of what we want and less of that which is undesirable?
+> So, how do we change the structure of systems to produce more of what we want and less of that which is undesirable? After years of working with corporations on their systems problems, MIT’s Jay Forrester likes to say that the average manager can define the current problem very cogently, identify the system structure that leads to the problem, and guess with great accuracy where to look for leverage points—places in the system where a small change could lead to a large shift in behavior.
 
-> It was in just such a moment of frustration that I proposed a list of places to intervene in a system during a meeting on the implications of global-trade regimes. I offer this list to you with much humility and wanting to leave room for its evolution. What bubbled up in me that day was distilled from decades of rigorous analysis of many different kinds of systems done by many smart people.
+> It was in just such a moment of frustration that I proposed a list of places to intervene in a system during a meeting on the implications of global-trade regimes. I offer this list to you with much humility and wanting to leave room for its evolution. What bubbled up in me that day was distilled from decades of rigorous analysis of many different kinds of systems done by many smart people. But complex systems are, well, complex. It’s dangerous to generalize about them. What you read here is still a work in progress; it’s not a recipe for finding leverage points. Rather, it’s an invitation to think more broadly about system change.
 
 > But, despite all the fireworks, and no matter which party is in charge, the money hole has been deepening for years now, just at different rates.
 
-> Whatever cap we put on campaign contributions, it doesn’t clean up politics. The Fed’s fiddling with the interest rate hasn’t made business cycles go away.
+> Whatever cap we put on campaign contributions, it doesn’t clean up politics. The Fed’s fiddling with the interest rate hasn’t made business cycles go away. (We always forget that during upturns, and are shocked, shocked by the downturns.) After decades of the strictest air pollution standards in the world, Los Angeles air is less dirty, but it isn’t clean. Spending more on police doesn’t make crime go away.
 
 > You can often stabilize a system by increasing the capacity of a buffer.5 But if a buffer is too big, the system gets inflexible. It reacts too slowly. And big buffers of some sorts, such as water reservoirs or inventories, cost a lot to build or maintain.
 
@@ -384,13 +369,13 @@ params:
 
 > Physical structure is crucial in a system, but is rarely a leverage point, because changing it is rarely quick or simple. The leverage point is in proper design in the first place. After the structure is built, the leverage is in understanding its limitations and bottlenecks, using it with maximum efficiency, and refraining from fluctuations or expansions that strain its capacity.
 
-> A complex system usually has numerous balancing feedback loops it can bring into play, so it can self-correct under different conditions and impacts. Some of those loops may be inactive much of the time—like the emergency cooling system in a nuclear power plant, or your ability to sweat or shiver to maintain your body temperature—but their presence is critical to the long-term welfare of the system. One of the big mistakes we make is to strip away these “emergency” response mechanisms because they aren’t often used and they appear to be
+> A complex system usually has numerous balancing feedback loops it can bring into play, so it can self-correct under different conditions and impacts. Some of those loops may be inactive much of the time—like the emergency cooling system in a nuclear power plant, or your ability to sweat or shiver to maintain your body temperature—but their presence is critical to the long-term welfare of the system. One of the big mistakes we make is to strip away these “emergency” response mechanisms because they aren’t often used and they appear to be costly. In the short term, we see no effect from doing this. In the long term, we drastically narrow the range of conditions over which the system can survive. One of the most heartbreaking ways we do this is in encroaching on the habitats of endangered species. Another is in encroaching on our own time for personal rest, recreation, socialization, and meditation.
 
 > Strengthening and clarifying market signals, such as full-cost accounting, don’t get far these days, because of the weakening of another set of balancing feedback loops—those of democracy. This great system was invented to put self-correcting feedback between the people and their government. The people, informed about what their elected representatives do, respond by voting those representatives in or out of office. The process depends on the free, full, unbiased flow of information back and forth between electorate and leaders. Billions of dollars are spent to limit and bias and dominate that flow of clear information. Give the people who want to distort market-price signals the power to influence government leaders, allow the distributors of information to be self-interested partners, and none of the necessary balancing feedbacks work well. Both market and democracy erode.
 
 > A thermostat system may work fine on a cold winter day—but open all the windows and its corrective power is no match for the temperature change imposed on the system. Democracy works better without the brainwashing power of centralized mass communications.
 
-> Reinforcing feedback loops are sources of growth, explosion, erosion, and collapse in systems. A system with an unchecked reinforcing loop ultimately will destroy itself.
+> Reinforcing feedback loops are sources of growth, explosion, erosion, and collapse in systems. A system with an unchecked reinforcing loop ultimately will destroy itself. That’s why there are so few of them.
 
 > The death rate will rise to equal the birth rate—or people will see the consequences of unchecked population growth and have fewer babies.
 
@@ -399,10 +384,6 @@ params:
 > Rich people collect interest; poor people pay it. Rich people pay accountants and lean on politicians to reduce their taxes; poor people can’t. Rich people give their kids inheritances and good educations. Antipoverty programs are weak balancing loops that try to counter these strong reinforcing ones. It would be much more effective to weaken the reinforcing loops. That’s what progressive income tax, inheritance tax, and universal high-quality public education programs are meant to do. If the wealthy can influence government to weaken, rather than strengthen, those measures, then the government itself shifts from a balancing structure to one that reinforces success to the successful!
 
 > Contrary to economic opinion, the price of fish doesn’t provide that feedback. As the fish get more scarce they become more expensive, and it becomes all the more profitable to go out and catch the last few. That’s a perverse feedback, a reinforcing loop that leads to collapse. It is not price information but population information that is needed.
-
-> such a creation. Further investigation of self-organizing systems reveals that the divine creator, if there is one, does not have to produce evolutionary miracles. He, she, or it just has to write marvelously clever rules for self-organization.
-
-> A system that can evolve can survive almost any change,
 
 > A system that can evolve can survive almost any change, by changing itself.
 
@@ -416,7 +397,7 @@ params:
 
 > There is yet one leverage point that is even higher than changing a paradigm. That is to keep oneself unattached in the arena of paradigms, to stay flexible, to realize that no paradigm is “true,” that every one, including the one that sweetly shapes your own worldview, is a tremendously limited understanding of an immense and amazing universe that is far beyond human comprehension. It is to “get” at a gut level the paradigm that there are paradigms, and to see that that itself is a paradigm, and to regard that whole realization as devastatingly funny. It is to let go into not-knowing, into what the Buddhists call enlightenment.
 
-> Surely there is no power, no control, no understanding, not even a reason for being, much less acting, embodied in the notion that there is no certainty in any worldview. But, in fact, everyone who has managed to entertain that idea, for a moment or for a lifetime, has found it to be the basis for radical empowerment.
+> Surely there is no power, no control, no understanding, not even a reason for being, much less acting, embodied in the notion that there is no certainty in any worldview. But, in fact, everyone who has managed to entertain that idea, for a moment or for a lifetime, has found it to be the basis for radical empowerment. If no paradigm is right, you can choose whatever one will help to achieve your purpose. If you have no idea where to get a purpose, you can listen to the universe.
 
 > The higher the leverage point, the more the system will resist changing it—that’s why societies often rub out truly enlightened beings.
 
@@ -436,19 +417,15 @@ params:
 
 > We can’t surge forward with certainty into a world of no surprises, but we can expect surprises and learn from them and even profit from them.
 
-> We can’t control systems or figure them out. But we can dance with them!
-
-> All those endeavors require one to stay wide awake, pay close attention, participate flat out, and respond
-
 > We can’t control systems or figure them out. But we can dance with them! I already knew that, in a way. I had learned about dancing with great powers from whitewater kayaking, from gardening, from playing music, from skiing. All those endeavors require one to stay wide awake, pay close attention, participate flat out, and respond to feedback. It had never occurred to me that those same requirements might apply to intellectual work, to management, to government, to getting along with people.
-
-> Before you disturb the system in any way, watch how it behaves. If it’s a piece of music or a whitewater rapid or a fluctuation in a commodity price, study its beat. If it’s a social system, watch it work. Learn its history. Ask people who’ve been around a long time to tell you what has happened. If possible, find or make a time graph of actual data from the system—peoples’ memories are not always reliable when it comes to timing.
 
 > These are the take-home lessons, the concepts and practices that penetrate the discipline of systems so deeply that one begins, however imperfectly, to practice them not just in one’s profession, but in all of life.
 
+> Before you disturb the system in any way, watch how it behaves. If it’s a piece of music or a whitewater rapid or a fluctuation in a commodity price, study its beat. If it’s a social system, watch it work. Learn its history. Ask people who’ve been around a long time to tell you what has happened. If possible, find or make a time graph of actual data from the system—peoples’ memories are not always reliable when it comes to timing.
+
 > Listen to any discussion, in your family or a committee meeting at work or among the pundits in the media, and watch people leap to solutions, usually solutions in “predict, control, or impose your will” mode, without having paid any attention to what the system is doing and why it’s doing it.
 
-> Expose Your Mental Models to the Light of Day When we draw structural diagrams and then write equations, we are forced to make our assumptions visible and to express them with rigor. We have to put every one of our assumptions about the system out where others (and we ourselves) can see them. Our models have to be complete, and they have to add up, and they have to be consistent. Our assumptions can no longer slide around (mental models are very slippery), assuming one thing for purposes of one discussion and something else contradictory for purposes of the next discussion. You don’t have to put forth your mental model with diagrams and equations, although doing so is a good practice. You can do it with words or lists or pictures or arrows showing what you think is connected to what. The more you do that, in any form, the clearer your thinking will become,
+> Expose Your Mental Models to the Light of Day When we draw structural diagrams and then write equations, we are forced to make our assumptions visible and to express them with rigor. We have to put every one of our assumptions about the system out where others (and we ourselves) can see them. Our models have to be complete, and they have to add up, and they have to be consistent. Our assumptions can no longer slide around (mental models are very slippery), assuming one thing for purposes of one discussion and something else contradictory for purposes of the next discussion. You don’t have to put forth your mental model with diagrams and equations, although doing so is a good practice. You can do it with words or lists or pictures or arrows showing what you think is connected to what. The more you do that, in any form, the clearer your thinking will become, the faster you will admit your uncertainties and correct your mistakes, and the more flexible you will learn to be.
 
 > Remember, always, that everything you know, and everything everyone knows, is only a model.
 
@@ -462,10 +439,12 @@ params:
 
 > Carter also was trying to deal with a flood of illegal immigrants from Mexico. He suggested that nothing could be done about that immigration as long as there was a great gap in opportunity and living standards between the United States and Mexico. Rather than spending money on border guards and barriers, he said, we should spend money helping to build the Mexican economy, and we should continue to do so until the immigration stopped.
 
-> The thing to do, when you don’t know, is not to bluff and not to freeze, but to learn. The way you learn is by experiment—or, as Buckminster Fuller put it, by trial and error, error, error. In a world of complex systems, it is not appropriate to charge forward with rigid, undeviating directives.
+> The thing to do, when you don’t know, is not to bluff and not to freeze, but to learn. The way you learn is by experiment—or, as Buckminster Fuller put it, by trial and error, error, error. In a world of complex systems, it is not appropriate to charge forward with rigid, undeviating directives. “Stay the course” is only a good idea if you’re sure you’re on course. Pretending you’re in control even when you aren’t is a recipe not only for mistakes, but for not learning from mistakes. What’s appropriate when you’re learning is small steps, constant monitoring, and a willingness to change course as you find out more about where it’s leading.
 
 > Aldo Leopold did with his land ethic: “A thing is right when it tends to preserve the integrity, stability, and beauty of the biotic community. It is wrong when it tends otherwise.”10
 
 > When you’re walking along a tricky, curving, unknown, surprising, obstacle-strewn path, you’d be a fool to keep your head down and look just at the next step in front of you. You’d be equally a fool just to peer far ahead and never notice what’s immediately under your feet. You need to be watching both the short and the long term—the whole system.
 
 > Don’t Erode the Goal of Goodness The most damaging example of the systems archetype called “drift to low performance” is the process by which modern industrial culture has eroded the goal of morality. The workings of the trap have been classic, and awful to behold. Examples of bad human behavior are held up, magnified by the media, affirmed by the culture, as typical. This is just what you would expect. After all, we’re only human. The far more numerous examples of human goodness are barely noticed. They are “not news.” They are exceptions. Must have been a saint. Can’t expect everyone to behave like that. And so expectations are lowered. The gap between desired behavior and actual behavior narrows. Fewer actions are taken to affirm and instill ideals. The public discourse is full of cynicism. Public leaders are visibly, unrepentantly amoral or immoral and are not held to account. Idealism is ridiculed. Statements of moral belief are suspect. It is much easier to talk about hate in public than to talk about love. The literary critic and naturalist Joseph Wood Krutch put it this way: Thus though man has never before been so complacent about what he has, or so confident of his ability to do whatever he sets his mind upon, it is at the same time true that he never before accepted so low an estimate of what he is. That same scientific method which enabled him to create his wealth and to unleash the power he wields has, he believes, enabled biology and psychology to explain him away—or at least to explain away whatever used to seem unique or even in any way mysterious.… Truly he is, for all his wealth and power, poor in spirit.12 We know what to do about drift to low performance. Don’t weigh the bad news more heavily than the good. And keep standards absolute. Systems thinking can only tell us to do that. It can’t do it. We’re back to the gap between understanding and implementation. Systems thinking by itself cannot bridge that gap, but it can lead us to the edge of what analysis can do and then point beyond—to what can and must be done by the human spirit.
+
+<!-- kindle-highlights:end -->

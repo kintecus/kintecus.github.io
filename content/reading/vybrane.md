@@ -4,10 +4,15 @@ date: 2024-11-12
 draft: false
 
 params:
+  kindle_title: "vibranie_-_stus_vasil_ (2)"
   author: "Василь Стус"
   date_started: 2024-11-12
   date_finished: 2024-11-12
   fiction: true
 ---
 
+<!-- kindle-highlights:start -->
+
 > селі Рахнівка 6 січня 1938 р. Тридцяті роки минулого століття стали одними з найтрагічніших як для села, так і для батьків хлопця: розкуркулення та голод примусили батька Семена Дем’яновича завербуватися на один із хімзаводів
+
+<!-- kindle-highlights:end -->

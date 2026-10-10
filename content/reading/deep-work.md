@@ -4,9 +4,12 @@ draft: false
 
 params:
   author: "Cal Newport"
+  kindle_title: "Deep Work"
   fiction: false
   status: "to-read"
 ---
+
+<!-- kindle-highlights:start -->
 
 > Deep Work: Professional activities performed in a state of distraction-free concentration that push your cognitive capabilities to their limit. These efforts create new value, improve your skill, and are hard to replicate.
 
@@ -21,8 +24,6 @@ params:
 > The Deep Work Hypothesis: The ability to perform deep work is becoming increasingly rare at exactly the same time it is becoming increasingly valuable in our economy. As a consequence, the few who cultivate this skill, and then make it the core of their working life, will thrive.
 
 > To understand the origins of this interest, it helps to know that I’m a theoretical computer scientist who performed my doctoral training in MIT’s famed Theory of Computation group—a professional setting where the ability to focus is considered a crucial occupational skill.
-
-> build my days around a core of carefully chosen deep work, with the shallow activities I absolutely cannot avoid batched into smaller bursts at the peripheries of my schedule. Three to four hours a day, five days a week, of uninterrupted and carefully directed concentration, it turns out, can produce a lot of valuable output.
 
 > I build my days around a core of carefully chosen deep work, with the shallow activities I absolutely cannot avoid batched into smaller bursts at the peripheries of my schedule. Three to four hours a day, five days a week, of uninterrupted and carefully directed concentration, it turns out, can produce a lot of valuable output.
 
@@ -52,8 +53,6 @@ params:
 
 > That quick check introduces a new target for your attention. Even worse, by seeing messages that you cannot deal with at the moment (which is almost always the case), you’ll be forced to turn back to the primary task with a secondary task left unfinished. The attention residue left by such unresolved switches dampens your performance.
 
-> company. Just how much time were employees of Atlantic Media spending moving around information instead of focusing on the specialized tasks they were hired to perform?
-
 > Just how much time were employees of Atlantic Media spending moving around information instead of focusing on the specialized tasks they were hired to perform?
 
 > The result: He discovered that Atlantic Media was spending well over a million dollars a year to pay people to process e-mails, with every message sent or received tapping the company for around ninety-five cents of labor costs.
@@ -65,3 +64,5 @@ params:
 > Harvard Business School professor Leslie Perlow found that the professionals she surveyed spent around twenty to twenty-five hours a week outside the office monitoring e-mail—believing it important to answer any e-mail (internal or external) within an hour of its arrival.
 
 > The Principle of Least Resistance: In a business setting, without clear feedback on the impact of various behaviors to the bottom line, we will tend toward behaviors that are easiest in the moment.
+
+<!-- kindle-highlights:end -->

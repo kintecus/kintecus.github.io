@@ -4,15 +4,18 @@ date: 2023-11-18
 draft: false
 
 params:
+  kindle_title: "Neuromancer (Sprawl Trilogy)"
   author: "William Gibson"
   date_started: 2023-11-18
   date_finished: 2023-12-15
   fiction: true
 ---
 
-> He wondered briefly what it would be like, working all your life for one zaibatsu. Company housing, company hymn, company funeral.
+<!-- kindle-highlights:start -->
 
 > “You’re biochemically incapable of getting off on amphetamine or cocaine.” “Shit,” he said. He looked at the octagon, then at her. “Eat it. Eat a dozen. Nothing’ll happen.” He did. Nothing did.
+
+> He wondered briefly what it would be like, working all your life for one zaibatsu. Company housing, company hymn, company funeral.
 
 > Seven days and he’d jack in. If he closed his eyes now, he’d see the matrix.
 
@@ -38,6 +41,6 @@ params:
 
 > “Five minute, maybe. Too long. I wan’ pull th’ jack, Mute seh no. Screen goin’ funny, then Mute seh put th’ phones on you.”
 
-> He wore clean, frayed khaki workpants and soft dark shoes that fit his feet like gloves, split at the toes like tabi socks.
-
 > soft dark shoes that fit his feet like gloves, split at the toes like tabi socks.
+
+<!-- kindle-highlights:end -->

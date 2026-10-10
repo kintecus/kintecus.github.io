@@ -4,13 +4,16 @@ date: 2023-05-28
 draft: false
 
 params:
+  kindle_title: "The 12 Week Year: Get More Done in 12 Weeks than Others Do in 12 Months"
   author: "Brian P. Moran"
   date_started: 2023-05-28
   date_finished: 2023-06-12
   fiction: false
 ---
 
-> The fact is every week counts! Every day counts! Every moment counts! We need to be conscious of the reality that execution happens daily and weekly, not monthly or quarterly. Annualized thinking and planning
+<!-- kindle-highlights:start -->
+
+> The fact is every week counts! Every day counts! Every moment counts! We need to be conscious of the reality that execution happens daily and weekly, not monthly or quarterly.
 
 > The annual execution cycle blinds people to the reality that life is lived in the moment and that ultimately success is created in the moment. It lulls people into believing that they can put things off—critical activity—and still accomplish what they desire, still achieve their goals.
 
@@ -25,8 +28,6 @@ params:
 > Working from a plan has three distinct benefits: 1. It reduces mistakes. 2. It saves time. 3. It provides focus.
 
 > The reality is that planning is some of the most productive time you can have.
-
-> They create a strong connection between the actions you take today and the results you want to achieve.
 
 > Twelve week plans are both numbers- and activity-based. They create a strong connection between the actions you take today and the results you want to achieve.
 
@@ -46,12 +47,12 @@ params:
 
 > We all have a tendency from time to time to rationalize lackluster results, but with effective scorekeeping we are forced to confront the reality of our situation, even when it’s uncomfortable. While this can be difficult, the sooner we confront reality, the sooner we can shift our actions toward producing more desirable results.
 
-> Effective measurement captures both lead and lag indicators that provide comprehensive feedback necessary for informed decision making.
-
-> Leading lagging indicators
+> Effective measurement captures both lead and lag indicators that provide comprehensive feedback necessary for informed decision making. Lag indicators—things like income, sales, commission dollars, pounds lost, body fat percentage, overall cholesterol levels—represent the end results that you are striving to achieve. Lead indicators are the activities that produce the end results—for instance the number of sales calls, or referrals are lead indicators in the sales process.
 
 > As a general rule, you should rarely change the plan unless you’ve been effectively completing your plan tactics and it is still not producing.
 
 > Physics tells us that for every action there is a reaction, so the good news is that every time you execute, you produce something—it may not be what you expected, but something will happen.
 
 > We urge you to strive for excellence, not perfection. We have found that if you successfully complete 85 percent of the activities in your weekly plan, then you will most likely achieve your objectives. Remember that your plan contains the top priorities that will add the most value and have the greatest impact. In other words, you only need to be 85 percent effective on the top priorities to achieve excellence!
+
+<!-- kindle-highlights:end -->

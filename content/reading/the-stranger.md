@@ -4,11 +4,14 @@ date: 2024-08-27
 draft: false
 
 params:
+  kindle_title: "The Stranger: The Original Unabridged and Complete Edition (Albert Camus Classics)"
   author: "Albert Camus"
   date_started: 2024-08-27
   date_finished: 2024-09-01
   fiction: true
 ---
+
+<!-- kindle-highlights:start -->
 
 > Every time there’s a death here, they’re in a nervous state for two or three days. Which means, of course, extra work and worry for our staff.”
 
@@ -24,10 +27,12 @@ params:
 
 > As I usually do when I want to get rid of someone whose conversation bores me, I pretended to agree. At which, rather to my surprise, his face lit up.
 
-> He decided to give them a surprise and, leaving his wife and child in another inn, he went to stay at his mother’s place, booking a room under an assumed name. His mother and sister completely failed to recognize him. At dinner that evening he showed them a large sum of money he had on him, and in the course of the night they slaughtered him with a hammer. After taking the money they flung the body into the river. Next morning his wife came and, without thinking, betrayed the guest’s identity. His mother hanged herself. His sister threw herself into a well.
+> He decided to give them a surprise and, leaving his wife and child in another inn, he went to stay at his mother’s place, booking a room under an assumed name. His mother and sister completely failed to recognize him. At dinner that evening he showed them a large sum of money he had on him, and in the course of the night they slaughtered him with a hammer. After taking the money they flung the body into the river. Next morning his wife came and, without thinking, betrayed the guest’s identity. His mother hanged herself. His sister threw herself into a well. I must have read that story thousands of times. In one way it sounded most unlikely; in another, it was plausible enough.
 
 > The two policemen led me into a small room that smelled of darkness.
 
 > Still, to my mind he overdid it, and I’d have liked to have a chance of explaining to him, in a quite friendly, almost affectionate way, that I have never been able really to regret anything in all my life. I’ve always been far too much absorbed in the present moment, or the immediate future, to think back.
 
 > I fairly bawled out at him: “A life in which I can remember this life on earth. That’s all I want of it.” And in the same breath I told him I’d had enough of his company.
+
+<!-- kindle-highlights:end -->

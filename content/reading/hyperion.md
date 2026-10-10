@@ -5,14 +5,15 @@ draft: false
 
 params:
   author: "Dan Simmons"
+  kindle_title: "Hyperion (Hyperion Cantos, Book 1)"
   date_started: 2023-06-14
   date_finished: 2023-07-24
   fiction: true
 ---
 
-> The Consul thought about the sharp pleasure of the hunt and the equally sharp solace of solitude: solitude he had earned through the pain and nightmare he had already suffered on Hyperion.
+<!-- kindle-highlights:start -->
 
-> Bound by obedience and schooled
+> The Consul thought about the sharp pleasure of the hunt and the equally sharp solace of solitude: solitude he had earned through the pain and nightmare he had already suffered on Hyperion.
 
 > Bound by obedience and schooled in discipline, Lenar Hoyt accepted without question.
 
@@ -20,15 +21,11 @@ params:
 
 > Preventive health measures have spread the vitality of early middle age well into the late sixties—my age—but except for clonal transplants, bioengineering, and other perqs for the very rich, no one in the Worldweb can expect to begin planning a family when they are seventy or expect to dance at their hundred-and-tenth birthday party.
 
-> What about Martin?
-
 > Someone or something had used this path long before the Bikura colonists crashed here. Someone or something had used this path for millennia.
 
 > intricately carved portals with elaborate stone casements
 
 > The labyrinths were dug…tunneled…created more than three quarters of a million standard years ago. The details were inevitably the same, their origins inevitably unsolved.
-
-> It was vaguely man-shaped but in no way human. It stood at least three meters tall.
 
 > It was vaguely man-shaped but in no way human. It stood at least three meters tall. Even when it was at rest, the silvered surface of the thing seemed to shift and flow like mercury suspended in midair.
 
@@ -40,27 +37,19 @@ params:
 
 > random ticks and creaks of the cooling spaceship.
 
-> “They want out,” said Kassad.
-
-> deathbeam zone, or both. “What do they want?” repeated Lamia. “They want out,” said Kassad.
-
 > “What do they want?” repeated Lamia. “They want out,” said Kassad.
 
 > Trusting in Theo—quiet, efficient Theo—to get him through the morning. Trusting in luck to get him through the day. Trusting in the drinking at Cicero’s to get him through the night. Trusting in the unimportance of his posting to get him through life.
 
-> “The HTN stuff doesn’t simulate,” whined Cadet Radinski, the best AI expert Kassad could find and bribe to explain, “it dreams, dreams
+> “The HTN stuff doesn’t simulate,” whined Cadet Radinski, the best AI expert Kassad could find and bribe to explain, “it dreams, dreams with the best
 
 > historical accuracy in the Web—way beyond the sum of its parts ’cause it plugs in holistic insight as well as facts—and when it dreams, it lets us dream with it.”
-
-> Generative AI in 1989
-
-> After the obscenities of the late twentieth and early twenty-first centuries on Old Earth, when military leaders had committed their nations to strategies wherein entire civilian populations were legitimate targets while their uniformed executioners sat safe in self-contained bunkers fifty meters under the earth, the repugnance of the surviving civilians was so great that for more than a century the word “military” was an invitation to a lynching.
 
 > The New Bushido Code which governed Colonel Kassad’s life had evolved out of the necessity for the military class to survive. After the obscenities of the late twentieth and early twenty-first centuries on Old Earth, when military leaders had committed their nations to strategies wherein entire civilian populations were legitimate targets while their uniformed executioners sat safe in self-contained bunkers fifty meters under the earth, the repugnance of the surviving civilians was so great that for more than a century the word “military” was an invitation to a lynching.
 
 > As the New Bushido evolved it combined the age-old concepts of honor and individual courage with the need to spare civilians whenever possible.
 
-> it demanded a return to Old Earth medieval concepts of set battles between small, professional forces at a mutually agreed-upon time in a place where destruction of public and private property would be kept to a minimum. This Code worked well for the first
+> it demanded a return to Old Earth medieval concepts of set battles between small, professional forces at a mutually agreed-upon time in a place where destruction of public and private property would be kept to a minimum.
 
 > South Bressia received no bombardment except for the lancing of specific military targets, airports, and the large harbor at Solno.
 
@@ -70,15 +59,11 @@ params:
 
 > The Consul wiped sweat from his upper lip. “If the tree is traveling backward in time with the Time Tombs, then the victims are from our future.”
 
-> had been drinking steadily since before midday and now he felt the pleasant displacement—from reality, from the pain of memory—which allowed him to get through each day and night. Now
-
-> The Consul had been drinking steadily since before midday and now he felt the pleasant displacement—from reality, from the pain of memory—which allowed him to get through each day and night. Now
+> The Consul had been drinking steadily since before midday and now he felt the pleasant displacement—from reality, from the pain of memory—which allowed him to get through each day and night. Now he asked, his voice as careful and unslurred as only a true alcoholic’s can be, whose turn it was to tell a tale.
 
 > We had our Grendel, to be sure. We even had our Hrothgar if one squints a bit at Sad King Billy’s poor slouched profile. We lacked only our Geats; our great, broad-shouldered, small-brained Beowulf with
 
 > planet-wide spasms as the Kiev Team’s goddamn little black hole digested bits of the Earth’s center and waited for its next feast.
-
-> For the record, here is my entire vocabulary of manageable words: fuck, shit,
 
 > For the record, here is my entire vocabulary of manageable words: fuck, shit, piss, cunt, goddamn, motherfucker, asshole, peepee, and poopoo.
 
@@ -88,13 +73,11 @@ params:
 
 > My shack was oddly comfortable: a table for eating, a cot for sleeping and fucking, a hole for pissing and shitting, and a window for silent staring.
 
-> Thus, on Heaven’s Gate, as I dredged bottom scum from the slop canals under the red gaze of Vega Primo or crawled on hands and knees through stalactites and stalagmites of rebreather bacteria in the station’s labyrinthine lungpipes, I became a poet.
+> Thus, on Heaven’s Gate, as I dredged bottom scum from the slop canals under the red gaze of Vega Primo or crawled on hands and knees through stalactites and stalagmites of rebreather bacteria in the station’s labyrinthine lungpipes, I became a poet. All I lacked were the words.
 
 > But where has the universe hidden a word under its outer layer of biology, geometry, or insensate rock?) Even the traces of other intelligent life we have found—the blimps on Jove II, the Labyrinth Builders, the Seneschai empaths on Hebron, the Stick People of Durulis, the architects of the Time Tombs, the Shrike itself—have left us mysteries and obscure artifacts but no language. No words.
 
 > The poet John Keats once wrote to a friend of his named Bailey: “I am certain of nothing but the holiness of the Heart’s affection and the truth of Imagination—What the imagination seizes as Beauty must be truth—whether it existed before or not.”
-
-> About art for kids
 
 > To be a true poet is to become God. — I TRIED TO explain this to my friends on Heaven’s Gate. “Piss, shit,” I said. “Asshole motherfucker, goddamn shit goddamn. Cunt. Pee-pee cunt. Goddamn!”
 
@@ -102,7 +85,7 @@ params:
 
 > “Who was Hitler?” I said. Tyrena smiled slightly. “An Old Earth politician who did some writing. Mein Kampf is still in print…Transline renews the copyright every hundred and thirty-eight years.”
 
-> “The AI loved it,” said Tyrena. “That’s when we knew for sure that people were going to hate it.” I sat up. “Couldn’t we have sold copies to the TechnoCore?” “We did,” said Tyrena. “One. The millions of AIs there probably real-time-shared it the minute it came in over fatline. Interstellar copyright doesn’t mean shit when you’re
+> “The AI loved it,” said Tyrena. “That’s when we knew for sure that people were going to hate it.” I sat up. “Couldn’t we have sold copies to the TechnoCore?” “We did,” said Tyrena. “One. The millions of AIs there probably real-time-shared it the minute it came in over fatline. Interstellar copyright doesn’t mean shit when you’re dealing with silicon.”
 
 > IT ISN’T HARD being a hack writer. Between Dying Earth II and Dying Earth IX, six standard years had passed relatively painlessly.
 
@@ -110,19 +93,13 @@ params:
 
 > It was fucking wonderful. It was fucking hell. And then on the night I had set aside to blow my brains out, Grendel appeared.
 
-> The machines arrived sans passengers. It
-
 > The machines arrived sans passengers.
-
-> I waited then. I wait still. The poem must be finished. It will be finished. In the beginning was
 
 > I waited then. I wait still. The poem must be finished. It will be finished. In the beginning was the Word. In the end…past honor, past life, past caring… In the end will be the Word.
 
-> a young person: structured curiosity, empathy for others, compassion, and a fierce sense of fair play. One day in his office, studying ancient files from
+> a young person: structured curiosity, empathy for others, compassion, and a fierce sense of fair play.
 
-> a young person: structured curiosity, empathy for
-
-> It was almost five years after Rachel left on her expedition that Sol had a dream which would change his
+> It was almost five years after Rachel left on her expedition that Sol had a dream which would change his life.
 
 > The physicists were fascinated with the anti-entropic fields and spent much of their time setting small flags of different colors to mark the limits of the so-called time tides.
 
@@ -134,21 +111,13 @@ params:
 
 > Isaac. A mere show of obedience without inner commitment would not have appeased the God of Genesis. What would have happened if Abraham had loved his son more than he loved God?”
 
-> What a stupid story
-
 > Every time she cleaned and folded and put away a set of Rachel’s outgrown baby clothes, she had shed secret tears that Sol somehow knew about.
 
-> Nice ffamily life
+> any allegiance to a deity or concept or universal principle which put obedience above decent behavior toward an innocent human being was evil.
 
-> any allegiance to a deity or concept or universal principle which put obedience above decent behavior toward an innocent human being was evil. —So define “innocent”?
-
-> Ten thousand times in the past twenty years he had wished that he could take Rachel’s illness; that if anyone had to suffer it should be the father, not the child. Any parent would feel that way—did feel that way every time his child lay injured or racked with fever. Surely it could
+> Ten thousand times in the past twenty years he had wished that he could take Rachel’s illness; that if anyone had to suffer it should be the father, not the child. Any parent would feel that way—did feel that way every time his child lay injured or racked with fever.
 
 > News traveled almost instantaneously through the megadatasphere of a hundred and sixty Web worlds.
-
-> Megadatasphere
-
-> It’s a wonder that this family can stand one another, we’ve been
 
 > It’s a wonder that this family can stand one another, we’ve been cooped up together so long.”
 
@@ -156,7 +125,7 @@ params:
 
 > He let the pain come. It filled him with the sharp-edged agony of resolve. Sol stood on the ridge line and wept as darkness fell.
 
-> On the day she could no longer walk, Sol put her down in her crib early and then went into his study to get thoroughly and quietly drunk. Language was the hardest for him. Her vocabulary
+> On the day she could no longer walk, Sol put her down in her crib early and then went into his study to get thoroughly and quietly drunk.
 
 > Language was the hardest for him. Her vocabulary loss was like the burning of a bridge between them, the severing of a final line of hope.
 
@@ -178,17 +147,11 @@ params:
 
 > card privacy but laws had a bad habit of being ignored or abrogated when societal push came to totalitarian shove.
 
-> Keats had asked that unopened letters from Fanny
-
 > Keats had asked that unopened letters from Fanny and a lock of her hair be buried with him.
 
 > “It’s called Hyperion. It’s difficult to describe what it’s…about. Artistic failure, I suppose. Keats never finished it.”
 
 > The hawking mats were illegal on most Web worlds but still a tradition on Maui-Covenant because of the Siri legend; less than two meters long and a meter wide, the ancient playthings lay waiting to carry tourists out over the sea and back again to the wandering isle.
-
-> Siri Rebellion had killed off most of the aquatic mammals
-
-> Siri Rebellion had killed off most of the aquatic mammals and
 
 > Siri Rebellion
 
@@ -208,9 +171,7 @@ params:
 
 > It was immediately obvious that the so-called Time Tombs were artifacts launched backward in time from a point at least ten thousand years in the galaxy’s future.
 
-> Time tombs. 10k years in future
-
-> The day is gone, and all its sweets are gone! Sweet voice, sweet lips, soft hand, and softer breast,
+> The day is gone, and all its sweets are gone! Sweet voice, sweet lips, soft hand, and softer breast, Warm breath, light whisper, tender semi-tone, Bright eyes, accomplished shape, and languorous waist! Faded the flower and all its budded charms, Faded the sight of beauty from my eyes, Faded the shape of beauty from my arms, Faded the voice, warmth, whiteness, paradise— Vanished unseasonably at shut of eve, When the dusk holiday—or holinight— Of fragrant-curtained love begins to weave The woof of darkness thick, for hid delight; But, as I’ve read love’s missal through today, He’ll let me sleep, seeing I fast and pray.
 
 > “St. Peter’s in the New Vatican is nothing like this.” Martin Silenus laughed. Thick light outlined his cheekbones and satyr’s brows. “This was built for a living deity,” he said.
 
@@ -224,15 +185,11 @@ params:
 
 > Hegemony skimmers lighting the sea with their depth charges. In the morning, the waves were gray with the bodies of the dead dolphins.
 
-> Suffice it to say that I believe the Ousters have done what Web humanity has not in the past millennia: evolved.
+> Suffice it to say that I believe the Ousters have done what Web humanity has not in the past millennia: evolved. While we live in our derivative cultures, pale reflections of Old Earth life, the Ousters have explored new dimensions of aesthetics and ethics and biosciences and art and all the things that must change and grow to reflect the human soul.
 
 > The Big Mistake of ’38 had been no mistake. The death of Old Earth had been deliberate, planned by elements of the TechnoCore and their human counterparts in the fledgling government of the Hegemony.
 
-> And the Ousters, the only other tribe of humanity
-
 > And the Ousters, the only other tribe of humanity free to wander between the stars and the only group not dominated by the TechnoCore, was next on our list of extinction.
-
-> did not tell her that they had promised to give me a device which would open the Time Tombs and allow the Shrike free rein.
 
 > I did not tell her that they had promised to give me a device which would open the Time Tombs and allow the Shrike free rein.
 
@@ -240,6 +197,8 @@ params:
 
 > But when the time comes to judge, to understand a betrayal which will spread like flame across the Web, which will end worlds, I ask you not to think of me—my name was not even writ on water as your lost poet’s soul said—but to think of Old Earth dying for no reason, to think of the dolphins, their gray flesh drying and rotting in the sun, to see—as I have seen—the motile isles with no place to wander, their feeding grounds destroyed, the Equatorial Shallows scabbed with drilling platforms, the islands themselves burdened with shouting, trammeling tourists smelling of UV lotion and cannabis.
 
-> “That may be correct,” said Colonel Fedmahn Kassad, “but however they may try to use all of us as pawns,
+> “That may be correct,” said Colonel Fedmahn Kassad, “but however they may try to use all of us as pawns, we must attempt to choose our own actions.”
 
 > “And what is Oz?” asked Lamia. “And just who is off to see this wizard?”
+
+<!-- kindle-highlights:end -->

@@ -5,10 +5,13 @@ draft: false
 
 params:
   author: "Nick Bilton"
+  kindle_title: "Hatching Twitter: A True Story of Money, Power, Friendship, and Betrayal"
   date_started: 2025-04-22
   date_finished: 2025-06-01
   fiction: false
 ---
+
+<!-- kindle-highlights:start -->
 
 > Jack had been the first CEO of Twitter and another cofounder. He had been pushed out of the company by Ev in a similar power struggle in 2008.
 
@@ -60,11 +63,9 @@ params:
 
 > At the time, Jack had been using a blogging service called LiveJournal, which was a competitor to Blogger.
 
-> When teens started using the “away” feature, they took a different approach, often typing in their mood or the music that was currently playing on their computer. Soon nerds like Jack, Crystal, and Noah were copying teenagers and also making their away messages
+> When teens started using the “away” feature, they took a different approach, often typing in their mood or the music that was currently playing on their computer. Soon nerds like Jack, Crystal, and Noah were copying teenagers and also making their away messages reflect the music they were listening to.
 
 > This status thing could help connect people to those who weren’t there. It wasn’t just about sharing what kind of music you were listening to or where you were at that moment; it was about connecting people and making them feel less alone. It could be a technology that would erase a feeling that an entire generation felt while staring into their computer screens. An emotion that Noah and Jack and Biz and Ev had grown up feeling, finding solace in a monitor. An emotion that Noah felt night after night as his marriage and company fell apart: loneliness.
-
-> His vibrating phone led him to think of the brain impulses that cause a muscle to twitch.
 
 > His vibrating phone led him to think of the brain impulses that cause a muscle to twitch. “Twitch!” No, that would never work, he thought.
 
@@ -82,9 +83,7 @@ params:
 
 > Jack rushed back and forth to a liquor store around the corner to buy cheap bottles of vodka and plastic cups.
 
-> The plan was to give out free drinks, along with the Twitter flyers, to get people to sign up for the service.
-
-> Goldman was immediately caught up in the Lord of the Flies–like power vacuum. Technically he reported to Jack while on Twitter, but he was also reporting to Ev on Obvious and was possibly Jack’s superior, as Obvious technically owned Twitter.
+> The plan was to give out free drinks, along with the Twitter flyers, to get people to sign up for the service. Their first tweets would be proclamations that Massive Attack, Junkie XL, and DJ Shadow were currently playing music at the Love Parade. Exactly what Twitter was originally designed for. But the idea soon turned into a disaster.
 
 > Technically he reported to Jack while on Twitter, but he was also reporting to Ev on Obvious and was possibly Jack’s superior, as Obvious technically owned Twitter.
 
@@ -92,7 +91,7 @@ params:
 
 > Jack had continued to see Twitter as a way to talk about what was happening to him. Ev was starting to see it as a view into what was happening in the world.
 
-> The Apple iPhone would not go on sale for another three months, so the act of peering down at a cell
+> The Apple iPhone would not go on sale for another three months, so the act of peering down at a cell phone for hours on end wasn’t part of the social vernacular yet—even at a technology conference.
 
 > Since Twitter worked via text message, people with all types of cell phones could use the service and it started to spread quickly among the conference attendees.
 
@@ -108,7 +107,7 @@ params:
 
 > “So it’s a social network?” Bradley asked. Silence filled the room. Almost a year into the service, there was no consistent answer to the question.
 
-> Major news outlets—including the New York Times, Dow Jones, and the Defamer blog—had set up on the streets of Twitter, all sharing breaking, local, and gossipy news.
+> Major news outlets—including the New York Times, Dow Jones, and the Defamer blog—had set up on the streets of Twitter, all sharing breaking, local, and gossipy news. There were now a fake Bill Clinton, Homer Simpson, and Darth Vader who posted jokey fake statuses. A few “real” celebrities had also joined. Janina Gavankar, an actress from The L Word, had been the first celebrity to start tweeting—although Biz had spent a few hours trying to figure out if she was real or an impostor.
 
 > Some in the media had taken to calling it “hipster narcissism,” “self-absorption,” “self-obsession,” “egotistical,” and more than a few people who had tried Twitter called it a “complete and utter fucking waste of time.”
 
@@ -116,7 +115,7 @@ params:
 
 > “The question everyone asks is ‘What is the business model?’ To be completely and totally honest, we don’t yet know,” Fred wrote on Union Square’s Web site. “The capital we are investing will go to making Twitter a better, more reliable and robust service. That’s what the focus needs to be right now.” Revenue would have to come later.
 
-> Because of the way the site had been built—hacked together over two weeks—the influx of people on Twitter was making it fall apart. It wasn’t just one aspect of the service that was breaking; it was every aspect of
+> Because of the way the site had been built—hacked together over two weeks—the influx of people on Twitter was making it fall apart. It wasn’t just one aspect of the service that was breaking; it was every aspect of it.
 
 > Although the site’s problems should have slowed the flood of people signing up, they were only making it worse, adding bad press that would pique more curiosity about this Twitter thing—“If everyone else is signing up and breaking it, then surely I should see what this thing is about”—a pile-on of hundreds of thousands of people on one tiny little company.
 
@@ -134,7 +133,7 @@ params:
 
 > Jack had always seen Twitter as a status updater, a way to say where he was and what he was doing. A place to display yourself, your ego. Ev, who was shy and had been shaped by his days building Blogger, saw it as a way to share where other people were and what other people were doing.
 
-> The company was now made up of fifteen employees. There were 1,273,220 registered users on the service. Those people were sending almost fifteen million status updates a month. The outline noted that updates were global, coming from all over the planet.
+> The company was now made up of fifteen employees. There were 1,273,220 registered users on the service. Those people were sending almost fifteen million status updates a month. The outline noted that updates were global, coming from all over the planet. But while the document showed rising numbers everywhere, there was one digit that hadn’t changed since day one: Revenue = $0, the presentation said.
 
 > It didn’t matter that Twitter still had no business model or even the faintest sign of one. Or that the site was broken. Everyone still wanted a piece of the fledgling company because it was gaining so much attention. Investors wanted their names associated with the Next Big Thing, and they believed they could help fix its problems.
 
@@ -148,11 +147,9 @@ params:
 
 > It was the “enough’s enough” moment for Ev. But also for Fred and Bijan. And in several secret calls and meetings, they decided it was time to figure out what was going on inside Twitter.
 
-> Jack, who had been managing expenses on his laptop, had been doing the math incorrectly.
-
 > Jack, who had been managing expenses on his laptop, had been doing the math incorrectly. When Ev learned about this, he asked a friend and seasoned entrepreneur, Bryan Mason, to meet with Jack and show him how to manage the company’s books, but Bryan spent the entire meeting at a whiteboard with a marker explaining the basics of accounting.
 
-> Although most employees would have helped pull Ev’s side of the tug-of-war rope given the choice, and although Jack was completely out of his league as CEO, some Twitter employees, including Biz,
+> Although most employees would have helped pull Ev’s side of the tug-of-war rope given the choice, and although Jack was completely out of his league as CEO, some Twitter employees, including Biz, still loved him. “I’m serious. If you fire Jack, I’ll quit.”
 
 > While Jack listened, he paused for a moment as he heard Radiohead lyrics floating in the background in the tiny conference room, his iPhone pressed up to his ear trying to block out the faint music. He looked in the direction of the speaker, briefly registering the irony of the song “Karma Police” playing while he was embroiled in this confusing power battle with Ev.
 
@@ -164,13 +161,11 @@ params:
 
 > Barack Obama was using Twitter to try to disrupt politics and grassroots campaigning and, he hoped, win the election. And the media, including the Huffington Post, had set up Twitter accounts to update live snippets from the 2008 conventions.
 
-> The reality was, Twitter didn’t need to do anything to ensure that it kept growing.
-
-> The reality was, Twitter didn’t need to do anything to ensure that it kept growing. It was already on its way
+> The reality was, Twitter didn’t need to do anything to ensure that it kept growing. It was already on its way to becoming a “personal newswire,” as Biz explained it.
 
 > Twitter continued to compress time, often reporting news more quickly than news outlets that had been in the business for more than a century. As more people joined the service, it moved even faster. During the 2008 conventions, the 1.4 million people who were actively using Twitter sent more than 365,000 tweets from both the Republican and Democratic conventions. Such numbers showed that the elections were important, Ev agreed, but they weren’t more important than growing the tiny team of twenty-two employees and getting the site working properly.
 
-> “We have a bit of a problem,” Greg began. While he had been running tests on the site, he had discovered that there was no backup of Twitter. “If the database goes down right now, we would lose everything,” Greg said awkwardly. Every tweet, every user,
+> “We have a bit of a problem,” Greg began. While he had been running tests on the site, he had discovered that there was no backup of Twitter. “If the database goes down right now, we would lose everything,” Greg said awkwardly. Every tweet, every user, everything. Gone. “You’re fucking kidding me,” Fred said with almost comical disbelief. “Well, what the fuck are you doing in here?” As Greg rushed out of the room to figure out how to back up Twitter, everyone looked in Jack’s direction. And although he didn’t know it at that moment, they all did: Successful election site or not, Jack Dorsey’s days as Twitter’s CEO were numbered.
 
 > “He’s not gonna go to fucking Facebook.” Fred laughed, rolling his eyes in Bijan’s direction, his hand in its usual resting spot, his chin. “Look, I get that he’s all starry-eyed by Zuck, but he’s not gonna go work there.”
 
@@ -178,17 +173,15 @@ params:
 
 > “So I’m supposed to just lie to my girlfriend?” Goldman said with anger and sarcasm in his voice. “Yes. You need to learn to separate business and relationships,” Ev responded.
 
-> Still, Kidd had taken him in and let him stay in the guesthouse in the backyard. He also gave him a job as a nanny for his newborn baby. A blue-haired, dreadlocked
+> Still, Kidd had taken him in and let him stay in the guesthouse in the backyard. He also gave him a job as a nanny for his newborn baby. A blue-haired, dreadlocked nanny with a nose ring in Berkeley. He fit right in.
 
 > Ev tried again to explain the vesting time frame, but Jack interrupted. “This is my company!” Jack slammed. “I’ve put so much more into it than you have.” After Jack railed for a while, Ev calmly responded: “This isn’t your company. It’s done.”
 
 > The company was still small, with just under thirty employees and freelancers.
 
-> And for the first time he told a story he would repeat for years, that he would still be around, as the “executive chairman,” involved in a larger role at Twitter. He didn’t explain that his chairman title was a sham and meant nothing. That he was completely out of a job at the company he had cofounded. That he had been fired. When he was done, he walked away,
+> And for the first time he told a story he would repeat for years, that he would still be around, as the “executive chairman,” involved in a larger role at Twitter. He didn’t explain that his chairman title was a sham and meant nothing. That he was completely out of a job at the company he had cofounded. That he had been fired.
 
 > They all hugged, and Jack could feel tears welling up in his eyes, but he held them back. He couldn’t cry in front of his employees. That is not what ex-CEOs do. — When Ev and Biz wrapped up their speeches, they told everyone a blog post would be going up on the site to announce the changes and instructed them not to speak to the press or tweet about it.
-
-> Although some employees had been sad to see Jack go
 
 > Although some employees had been sad to see Jack go as a friend, they were relieved they no longer had to report to him as a boss. In the months leading up to Jack’s departure, employees had complained to senior staffers that Jack had acted like a “cowboy” when he was CEO, sometimes ordering people around and rarely trusting those who worked below him. When Ev stepped up to take charge of the company, he took a completely different approach to management, always trusting employees from the get-go, which gave them a sense of pride and, in turn, a loyalty to Ev and Twitter.
 
@@ -200,17 +193,15 @@ params:
 
 > Then, as Mark often did when he was trying to buy companies, he had noted that if the founders chose not to sell, Facebook would continue “to build products that moved further in their direction.”
 
-> “It seems to me, there are three reasons to sell a company,” Ev wrote in an e-mail to the board outlining why they should decline Facebook’s offer. 1. The price is good enough or a value that the company will be in the future. (“We’ve often said Twitter is a billion dollar company. I think it’s many, many times that,” Ev wrote.) 2. There’s an imminent and very real threat from a competitor. (Nothing is going to “pose a credible threat of taking Twitter to zero.”) 3. You have a choice to go and work for someone great. (“I don’t use [Facebook]. And I have many concerns about their people and how they do business.”)
-
-> They started to discuss a product that would allow people to make such a purchase using a cell phone and a credit card and got to work on an idea they would first call Squirrel, then rename Square.
+> “It seems to me, there are three reasons to sell a company,” Ev wrote in an e-mail to the board outlining why they should decline Facebook’s offer. 1. The price is good enough or a value that the company will be in the future. (“We’ve often said Twitter is a billion dollar company. I think it’s many, many times that,” Ev wrote.) 2. There’s an imminent and very real threat from a competitor. (Nothing is going to “pose a credible threat of taking Twitter to zero.”) 3. You have a choice to go and work for someone great. (“I don’t use \[Facebook\]. And I have many concerns about their people and how they do business.”)
 
 > He told Jack that one afternoon he had missed out on the sale of a large glass sculpture because his customer didn’t have enough cash. They started to discuss a product that would allow people to make such a purchase using a cell phone and a credit card and got to work on an idea they would first call Squirrel, then rename Square.
 
 > As was the case for most venture capitalists in the Valley, it wasn’t about the money for him; it was about winning. Fenton had to be the best at everything he did: marathons, venture capital, learning to fly helicopters.
 
-> “We had to hold some metaphorical guns to some metaphorical heads,” Gore said with a chuckle. Then Joel, his business partner, chimed in. “Al, the heads were real!” Followed by a roar of laughter.
-
 > Like most high-level politicians, Gore had more charisma and charm than a Hollywood star.
+
+> “We had to hold some metaphorical guns to some metaphorical heads,” Gore said with a chuckle. Then Joel, his business partner, chimed in. “Al, the heads were real!” Followed by a roar of laughter.
 
 > “We gotta stop doing these meetings with famous people,” Ev said. “They keep trying to buy us!”
 
@@ -218,9 +209,7 @@ params:
 
 > Wednesday quickly turned into a series of internal meetings about how to make sure Twitter didn’t collapse under the weight of Oprah’s stardom.
 
-> To ensure she couldn’t mess
-
-> To ensure she couldn’t mess up her first tweet, the staff had set up a laptop with colored stickers that Oprah was instructed to press after typing her first 140-character missive.
+> To ensure she couldn’t mess up her first tweet, the staff had set up a laptop with colored stickers that Oprah was instructed to press after typing her first 140-character missive. It was paint by numbers for a clumsy computer user.
 
 > But instead Oprah pressed the caps-lock button first, then began typing: “HI TWITTERS. THANK YOU FOR A WARM WELCOME. FEELING REALLY 21ST CENTURY.”
 
@@ -262,7 +251,7 @@ params:
 
 > In 2007 people had been sending 5,000 tweets a day. By 2008 the company had been processing 300,000 tweets each day. As 2009 rolled on, that number grew by 1,400 percent to 35 million tweets sent each day.
 
-> He knew the company hadn’t failed because it didn’t have enough work. Quite the opposite. It had cracked because each week Ev would come in and announce to his friends and employees that he had a new idea, a new project, a new focus.
+> He knew the company hadn’t failed because it didn’t have enough work. Quite the opposite. It had cracked because each week Ev would come in and announce to his friends and employees that he had a new idea, a new project, a new focus. When Plexus had finally focused on a single project, Ev couldn’t make a final decision about when to release it.
 
 > In that moment, looking at the list, he made two promises to himself: First, he would repay his father. Second, if he ever had an opportunity to run another company, he would never lose focus like that again; he would always make a firm decision and stick to it.
 
@@ -290,15 +279,13 @@ params:
 
 > The site was also finally on the mend. The engineering team had come up with an extensive long-term plan to rebuild the entire back end of Twitter, fixing the legacy problems that had plagued the company since its inception.
 
-> “We will need a map of all of the exits and elevators,” one of them said
-
 > “We will need a map of all of the exits and elevators,” one of them said in his thick Russian accent to a Twitter employee.
 
-> But June 23, 2010, was different. Dmitry Medvedev, the president of Russia, would be arriving at Twitter’s headquarters to take a tour of the office and, as he put it, to “see with his own eyes” the hottest start-up
+> But June 23, 2010, was different. Dmitry Medvedev, the president of Russia, would be arriving at Twitter’s headquarters to take a tour of the office and, as he put it, to “see with his own eyes” the hottest start-up in Silicon Valley. He also planned to send his first tweet.
 
 > It was a stark example of how the world’s stage was changing. On previous visits to the United States, leaders of other nations would meet with newspaper and magazine editors. Now, rather than fly into New York City and make the rounds at Esquire, Time, or Newsweek, officials were dropping in to Silicon Valley to see the companies that were changing the way the world communicated.
 
-> Twitter would be the first part of a three-day trip to the United States by President Medvedev to bolster relations between America and Russia.
+> Twitter would be the first part of a three-day trip to the United States by President Medvedev to bolster relations between America and Russia. He planned to stop by the Valley for a few meetings, including one with Steve Jobs. (Medvedev’s hope was that he could explore how to build a Silicon Valley equivalent in Russia.) Then, after meeting with the nerds, he would be off to Washington to meet the suits: first President Barack Obama, then Secretary of State Hillary Clinton, Vice President Joe Biden, and other high-level U.S. generals and economic advisers, to discuss national-security issues, counterterrorism efforts, nuclear treaties, and the global economic crisis.
 
 > Rather, Johnson noted, “as millions of devotees have discovered, Twitter turns out to have unsuspected depth.”
 
@@ -318,9 +305,9 @@ params:
 
 > Then, after Ev left the room, proud that his mentor thought he was doing such a great job, Campbell would shout at the group: “You gotta get rid of this fucking guy! He doesn’t know what the fuck he’s doing!”
 
-> Although Twitter was now making more money with its advertising products, Ev wasn’t as concerned with the revenue side of the operation, which was more fuel for the board’s desire to oust him as CEO. Dick, on the other hand, had been leading the charge to make Twitter profitable, which contributed to the board’s decision to ask him to be the interim CEO when they thrust Ev out of the company.
-
 > and millions of new accounts were being created each week.
+
+> Although Twitter was now making more money with its advertising products, Ev wasn’t as concerned with the revenue side of the operation, which was more fuel for the board’s desire to oust him as CEO. Dick, on the other hand, had been leading the charge to make Twitter profitable, which contributed to the board’s decision to ask him to be the interim CEO when they thrust Ev out of the company.
 
 > Ev had continued to try and help the people close to him, giving money away in undisclosed ways. At a friend’s art opening, he anonymously purchased the artist’s work. He had also started to give vast sums away to charities, secretly donating hundreds of thousands of dollars. And taking care of his friends and family by paying off debts for those closest to him.
 
@@ -352,9 +339,9 @@ params:
 
 > whenever you tweet about weed, you get a huge spike from your followers,” he said. At this Snoop sat up, staring inquisitively at a graph on the screen.
 
-> Then, like a magician pulling a rabbit out of thin air, Snoop Dogg had something else in his hand: a large blunt the size of a Sharpie pen. Then a lighter. And a few seconds later he was smoking weed, ferociously.
+> Then, like a magician pulling a rabbit out of thin air, Snoop Dogg had something else in his hand: a large blunt the size of a Sharpie pen. Then a lighter. And a few seconds later he was smoking weed, ferociously. Seeing this, his entourage assumed it was okay to light up in the Twitter offices, so naturally they pulled out joints that had been in their pockets or tucked behind their ears.
 
-> “I’ve been doing some serious soul searching,” Ev wrote about his past two months away. “Obviously, Twitter is the biggest thing I’ve ever played a significant part in or likely ever will.
+> “I’ve been doing some serious soul searching,” Ev wrote about his past two months away. “Obviously, Twitter is the biggest thing I’ve ever played a significant part in or likely ever will. And, though I couldn’t be more proud of what we’ve accomplished together, it is clearly not finished. If it reaches its potential, Twitter will be around for many, many more years, and we’ll look back at 2011 as one of the quaint early years. “I’ve decided, though, that my role in Twitter from here on out will not be day-to-day,” he wrote. “I’ll be doing what I can to help, as a co-founder, board member, shareholder and friend of the company (and so many people in it).” He concluded, “I’m by no means disappearing,” and signed the letter, “Continue changing the world. Your friend, Ev.”
 
 > “I might be able to do something about that,” Dick said, understanding the man’s plight. “I’m the CEO of Twitter.” The cabbie turned around with an excited look on his face and said, “Whoa! You’re Jack Dorsey?” Dick just sighed.
 
@@ -362,8 +349,10 @@ params:
 
 > On April 6, 2013, Noah tweeted for the first time in more than two years: “Cheeks stained with glorious tears of joy and absolute humility I celebrate the birth of my daughter Oceane Donnie Marie-Louise Poncin Glass.”
 
-> In 2012, a year after Ev officially left Twitter, thinking of what had taken place behind his back, he sat down with Sara and they asked each other the following questions: How can we raise our children to never act this way? How can we raise them to be honest and caring? How can we make a road map for the kinds of parents we want
+> In 2012, a year after Ev officially left Twitter, thinking of what had taken place behind his back, he sat down with Sara and they asked each other the following questions: How can we raise our children to never act this way? How can we raise them to be honest and caring? How can we make a road map for the kinds of parents we want to be and the type of family we want to raise?
 
 > Second, they would develop a weekly schedule to adhere to, ensuring that family comes before anything else.
 
 > Ev and Sara noticed early on that, like Ev, Miles is shy and sometimes socially awkward. As much as they want to change that in him, they know they can’t. But they also know that technology won’t change that either, so the kids are strictly forbidden to use iPads, iPhones, or televisions.
+
+<!-- kindle-highlights:end -->

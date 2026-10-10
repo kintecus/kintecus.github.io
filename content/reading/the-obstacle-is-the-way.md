@@ -4,11 +4,32 @@ date: 2024-03-02
 draft: false
 
 params:
+  kindle_title: ["The Obstacle Is the Way", "The Obstacle Is the Way: The Timeless Art of Turning Trials into Triumph"]
   author: "Ryan Holiday"
   date_started: 2024-03-02
   date_finished: 2024-03-22
   fiction: false
 ---
+
+<!-- kindle-highlights:start -->
+
+> Our actions may be impeded . . . but there can be no impeding our intentions or dispositions. Because we can accommodate and adapt. The mind adapts and converts to its own purposes the obstacle to our acting.
+
+> The impediment to action advances action. What stands in the way becomes the way.
+
+> patience, courage, humility, resourcefulness, reason, justice, and creativity.
+
+> It’s not just: How can I think this is not so bad? No, it is how to will yourself to see that this must be good—an opportunity to gain a new foothold, move forward, or go in a better direction. Not “be positive” but learn to be ceaselessly creative and opportunistic. Not: This is not so bad. But: I can make this good.
+
+> What holds you back? The Physical? Size. Race. Distance. Disability. Money. The Mental? Fear. Uncertainty. Inexperience. Prejudice.
+
+> They practiced harder. Looked for shortcuts and weak spots.
+
+> Instead of opposing enemies, we have internal tension. We have professional frustration. We have unmet expectations. We have learned helplessness. And we still have the same overwhelming emotions humans have always had: grief, pain, loss.
+
+> Abundance can be its own obstacle, as many people can attest.
+
+> Objective judgment, now at this very moment. Unselfish action, now at this very moment. Willing acceptance—now at this very moment—of all external events. That’s all you need. —MARCUS AURELIUS
 
 > This insight lives on today in Warren Buffet’s famous adage to “be fearful when others are greedy and greedy when others are fearful.”
 
@@ -28,35 +49,31 @@ params:
 
 > There is no good or bad without us, there is only perception. There is the event itself and the story we tell ourselves about what it means.
 
-> Do we try to medicate these “bad” feelings away? And that’s just the stuff that happens unintentionally
-
 > Do we try to medicate these “bad” feelings away?
 
 > When we aim high, pressure and stress obligingly come along for the ride. Stuff is going to happen that catches us off guard, threatens or scares us. Surprises (unpleasant ones, mostly) are almost guaranteed. The risk of being overwhelmed is always there.
 
 > Defiance and acceptance come together well in the following principle: There is always a countermove, always an escape or a way through, so there is no reason to get worked up. No one said it would be easy and, of course, the stakes are high, but the path is there for those ready to take it.
 
-> Because, as you now realize, it’s true. If your nerve holds, then nothing really did “happen”—our perception made sure it was nothing of consequence.
-
 > Shaking off the bad stuff as it happens and soldiering on—staring straight ahead as though nothing has happened.
+
+> Because, as you now realize, it’s true. If your nerve holds, then nothing really did “happen”—our perception made sure it was nothing of consequence.
 
 > Uncertainty and fear are relieved by authority. Training is authority. It’s a release valve. With enough exposure, you can adapt out those perfectly ordinary, even innate, fears that are bred mostly from unfamiliarity. Fortunately, unfamiliarity is simple to fix (again, not easy), which makes it possible to increase our tolerance for stress and uncertainty.
 
 > Can you fight the urge to panic and instead focus only on what you can change? On the task at hand?
 
-> As Gavin de Becker writes in The Gift of Fear, “When you worry, ask yourself, ‘What am I choosing to not see right now?’ What important things are you missing
-
-> This is the skill that must be cultivated—freedom from disturbance and perturbation—so you can focus your energy exclusively on solving problems, rather than reacting to them.
-
 > Don’t let the negativity in, don’t let those emotions even get started. Just say: No, thank you. I can’t afford to panic. This is the skill that must be cultivated—freedom from disturbance and perturbation—so you can focus your energy exclusively on solving problems, rather than reacting to them.
+
+> As Gavin de Becker writes in The Gift of Fear, “When you worry, ask yourself, ‘What am I choosing to not see right now?’ What important things are you missing because you chose worry over introspection, alertness or wisdom?”
 
 > If an emotion can’t change the condition or the situation you’re dealing with, it is likely an unhelpful emotion. Or, quite possibly, a destructive one.
 
-> Epictetus told his students, when they’d quote some great thinker, to picture themselves observing the person having sex. It’s funny, you should try it the next time someone intimidates you or makes you feel
+> Epictetus told his students, when they’d quote some great thinker, to picture themselves observing the person having sex. It’s funny, you should try it the next time someone intimidates you or makes you feel insecure. See them in your mind, grunting, groaning, and awkward in their private life—just like the rest of us.
 
 > Objectivity means removing “you”—the subjective part—from the equation.
 
-> Take your situation and pretend it is not happening to you. Pretend it is not important, that it doesn’t matter. How much easier would it be for you to know what to do? How much more quickly and dispassionately could you size up the scenario and its options? You could write it off, greet it calmly.
+> Take your situation and pretend it is not happening to you. Pretend it is not important, that it doesn’t matter. How much easier would it be for you to know what to do? How much more quickly and dispassionately could you size up the scenario and its options? You could write it off, greet it calmly. Think of all the ways that someone could solve a specific problem. No, really think. Give yourself clarity, not sympathy—there’ll be plenty of time for that later. It’s an exercise, which means it takes repetition. The more you try it, the better you get at it. The more skilled you become seeing things for what they are, the more perception will work for you rather than against you.
 
 > The Greeks were clever. But beneath this particular quip is the fundamental notion that girds not just Stoic philosophy but cognitive psychology: Perspective is everything.
 
@@ -64,17 +81,11 @@ params:
 
 > Perspective has two definitions. Context: a sense of the larger picture of the world, not just what is immediately in front of us Framing: an individual’s unique way of looking at the world, a way that interprets its events
 
-> And what is up to us? Our emotions Our judgments Our creativity Our attitude Our perspective Our desires Our decisions Our determination
-
-> That’s where you can make a difference. Behind the Serenity Prayer is a two-thousand-year-old Stoic phrase: “ta eph’hemin, ta ouk eph’hemin.” What is up to us, what is not up to us. And what is up to us? Our emotions Our judgments Our creativity Our attitude Our perspective Our desires Our decisions Our determination
-
 > Behind the Serenity Prayer is a two-thousand-year-old Stoic phrase: “ta eph’hemin, ta ouk eph’hemin.” What is up to us, what is not up to us. And what is up to us? Our emotions Our judgments Our creativity Our attitude Our perspective Our desires Our decisions Our determination
 
-> Disagree Re desires in this list
+> To argue, to complain, or worse, to just give up, these are choices. Choices that more often than not, do nothing to get us across the finish line.
 
-> To argue, to complain, or worse, to just give up, these are choices. Choices that more often than not, do nothing to get us across the finish
-
-> Yet in our own lives, we aren’t content to deal with things as they happen. We have to dive endlessly into what everything “means,” whether something is “fair” or not, what’s “behind” this or that, and what everyone else is doing.
+> Yet in our own lives, we aren’t content to deal with things as they happen. We have to dive endlessly into what everything “means,” whether something is “fair” or not, what’s “behind” this or that, and what everyone else is doing. Then we wonder why we don’t have the energy to actually deal with our problems. Or we get ourselves so worked up and intimidated because of the overthinking, that if we’d just gotten to work we’d probably be done already.
 
 > The point is that most people start from disadvantage (often with no idea they are doing so) and do just fine. It’s not unfair, it’s universal. Those who survive it, survive because they took things day by day—that’s the real secret.
 
@@ -110,19 +121,17 @@ params:
 
 > But boldness is acting anyway, even though you understand the negative and the reality of your obstacle. Decide to tackle what stands in your way—not because you’re a gambler defying the odds but because you’ve calculated them and boldly embraced the risk.
 
-> sure to act with deliberation, boldness, and persistence. Those are the attributes of right and effective action. Nothing else—not thinking or evasion or aid from others. Action is the solution and the cure to our predicaments.
-
 > Our movements and decisions define us: We must be sure to act with deliberation, boldness, and persistence. Those are the attributes of right and effective action. Nothing else—not thinking or evasion or aid from others. Action is the solution and the cure to our predicaments.
 
-> But in our lives, when our worst instincts are in control, we dally. We don’t act like Demosthenes, we act frail and are powerless to make ourselves better. We may be able to articulate a problem, even potential solutions, but then weeks, months, or sometimes years later, the problem is still there.
+> But in our lives, when our worst instincts are in control, we dally. We don’t act like Demosthenes, we act frail and are powerless to make ourselves better. We may be able to articulate a problem, even potential solutions, but then weeks, months, or sometimes years later, the problem is still there. Or it’s gotten worse.
 
-> We’ve all done it. Said: “I am so [overwhelmed, tired, stressed, busy, blocked, outmatched].” And then what do we do about it? Go out and party. Or treat ourselves. Or sleep in. Or wait.
+> We’ve all done it. Said: “I am so \[overwhelmed, tired, stressed, busy, blocked, outmatched\].” And then what do we do about it? Go out and party. Or treat ourselves. Or sleep in. Or wait.
 
 > We must all either wear out or rust out, every one of us. My choice is to wear out. —THEODORE ROOSEVELT
 
 > Life can be frustrating. Oftentimes we know what our problems are. We may even know what to do about them. But we fear that taking action is too risky, that we don’t have the experience or that it’s not how we pictured it or because it’s too expensive, because it’s too soon, because we think something better might come along, because it might not work. And you know what happens as a result? Nothing. We do nothing.
 
-> So when you’re frustrated in pursuit of your own goals, don’t sit there and complain that you don’t have what you want or that this obstacle won’t budge. If you haven’t even tried yet, then of course you will still be in the exact same place. You haven’t actually pursued anything. We talk a lot
+> So when you’re frustrated in pursuit of your own goals, don’t sit there and complain that you don’t have what you want or that this obstacle won’t budge. If you haven’t even tried yet, then of course you will still be in the exact same place. You haven’t actually pursued anything.
 
 > Just because the conditions aren’t exactly to your liking, or you don’t feel ready yet, doesn’t mean you get a pass. If you want momentum, you’ll have to create it yourself, right now, by getting up and getting started.
 
@@ -130,25 +139,21 @@ params:
 
 > Remember and remind yourself of a phrase favored by Epictetus: “persist and resist.” Persist in your efforts. Resist giving in to distraction, discouragement, or disorder.
 
-> In other words: It’s supposed to be hard. Your first attempts aren’t going to work. It’s going to take a lot out of you—but energy is an asset we can always find more of. It’s a renewable resource. Stop looking for an epiphany, and start looking for weak points. Stop looking for angels, and start looking for angles. There are options. Settle in for the long haul and then try each and every possibility, and you’ll get there. When people ask where we are, what we’re doing, how that “situation” is coming along, the answer should be clear: We’re working on it.
+> In other words: It’s supposed to be hard. Your first attempts aren’t going to work. It’s going to take a lot out of you—but energy is an asset we can always find more of. It’s a renewable resource. Stop looking for an epiphany, and start looking for weak points. Stop looking for angels, and start looking for angles. There are options. Settle in for the long haul and then try each and every possibility, and you’ll get there.
 
 > When failure does come, ask: What went wrong here? What can be improved? What am I missing?
 
-> The one way to guarantee we don’t benefit from failure—to ensure it is a bad thing—is to not learn
-
-> The one way to guarantee we don’t benefit from failure—to ensure it is a bad thing—is to not learn from it.
+> The one way to guarantee we don’t benefit from failure—to ensure it is a bad thing—is to not learn from it. To continue to try the same thing over and over (which is the definition of insanity for a reason). People fail in small ways all the time. But they don’t learn. They don’t listen. They don’t see the problems that failure exposes. It doesn’t make them better.
 
 > Failure shows us the way—by showing us what isn’t the way.
 
-> The process is about finishing. Finishing games. Finishing workouts. Finishing film sessions. Finishing drives. Finishing reps. Finishing plays. Finishing blocks. Finishing the smallest task you have right in front of you and finishing it well. Whether it’s pursuing the pinnacle of success in your field or simply surviving some awful or trying ordeal, the same approach works. Don’t think about the
+> It says: Okay, you’ve got to do something very difficult. Don’t focus on that. Instead break it down into pieces. Simply do what you need to do right now. And do it well. And then move on to the next thing. Follow the process and not the prize.
 
-> Whether it’s pursuing the pinnacle of success in your field or simply surviving some awful or trying ordeal, the same approach works. Don’t think about the
+> The process is about finishing. Finishing games. Finishing workouts. Finishing film sessions. Finishing drives. Finishing reps. Finishing plays. Finishing blocks. Finishing the smallest task you have right in front of you and finishing it well.
+
+> Whether it’s pursuing the pinnacle of success in your field or simply surviving some awful or trying ordeal, the same approach works. Don’t think about the end—think about surviving.
 
 > When it comes to our actions, disorder and distraction are death. The unordered mind loses track of what’s in front of it—what matters—and gets distracted by thoughts of the future. The process is order, it keeps our perceptions in check and our actions in sync.
-
-> says: Okay, you’ve got to do something very difficult. Don’t focus on that. Instead break it down into pieces. Simply do what you need to do right now. And do it well. And then move on to the next thing. Follow the process and not the prize.
-
-> It says: Okay, you’ve got to do something very difficult. Don’t focus on that. Instead break it down into pieces. Simply do what you need to do right now. And do it well. And then move on to the next thing. Follow the process and not the prize.
 
 > Being trapped is just a position, not a fate. You get out of it by addressing and eliminating each part of that position through small, deliberate actions—not by trying (and failing) to push it away with superhuman strength.
 
@@ -160,7 +165,7 @@ params:
 
 > These men went from humble poverty to power by always doing what they were asked to do—and doing it right and with real pride. And doing it better than anyone else. In fact, doing it well because no one else wanted to do it.
 
-> But you, you’re so busy thinking about the future, you don’t take any pride in the tasks you’re given right now. You just phone it all in, cash your paycheck, and dream of some higher station in life. Or you think, This is just a job, it isn’t who I am, it doesn’t matter.
+> But you, you’re so busy thinking about the future, you don’t take any pride in the tasks you’re given right now. You just phone it all in, cash your paycheck, and dream of some higher station in life. Or you think, This is just a job, it isn’t who I am, it doesn’t matter. Foolishness. Everything we do matters—whether it’s making smoothies while you save up money or studying for the bar—even after you already achieved the success you sought. Everything is a chance to do and be your best. Only self-absorbed assholes think they are too good for whatever their current station requires.
 
 > To whatever we face, our job is to respond with: hard work honesty helping others as best we can
 
@@ -176,16 +181,10 @@ params:
 
 > Maybe you’ll need to be a little more cunning or conniving than feels comfortable. Sometimes that requires ignoring some outdated regulations or asking for forgiveness from management later rather than for permission (which would be denied) right now. But if you’ve got an important mission, all that matters is that you accomplish it.
 
-> Pragmatism is not so much realism as flexibility. There are a lot of ways to get from point A to point B. It doesn’t have to be a straight
+> Pragmatism is not so much realism as flexibility. There are a lot of ways to get from point A to point B. It doesn’t have to be a straight line.
 
-> Start thinking like a radical pragmatist: still ambitious, aggressive, and rooted in ideals, but also imminently practical and guided by the possible. Not on everything you would like to have, not on changing
+> Start thinking like a radical pragmatist: still ambitious, aggressive, and rooted in ideals, but also imminently practical and guided by the possible. Not on everything you would like to have, not on changing the world right at this moment, but ambitious enough to get everything you need. Don’t think small, but make the distinction between the critical and the extra. Think progress, not perfection.
 
-> battle with the British. Instead, Washington, nearly at the end of his rope, crossed the Delaware at dawn on Christmas Day to attack a group of sleeping German mercenaries who may or may not <You have reached the clipping limit for this item>
+> battle with the British. Instead, Washington, nearly at the end of his rope, crossed the Delaware at dawn on Christmas Day to attack a group of sleeping German mercenaries who may or may not
 
-> <You have reached the clipping limit for this item>
-
-> Interesting
-
-> A bit lunatic , no?
-
-> Book summary
+<!-- kindle-highlights:end -->

@@ -5,10 +5,13 @@ draft: false
 
 params:
   author: "Basecamp"
+  kindle_title: "Getting Real - Basecamp"
   date_started: 2024-12-08
   date_finished: 2025-01-04
   fiction: false
 ---
+
+<!-- kindle-highlights:start -->
 
 > There’s plenty of time to be a perfectionist. Just do it later.
 
@@ -20,14 +23,10 @@ params:
 
 > Unfortunately, the customer decides if an application is worthy at this blank slate stage — the stage when there’s the least amount of information, design, and content on which to judge the overall usefulness of the application. When you fail to design an adequate blank slate, people don’t know what they are missing because everything is missing.
 
-> Useless Specs A “spec” is close to useless. I have never seen a spec that was both big enough to be useful and accurate. And I have seen lots of total crap work that was based on specs. It’s the single worst way to write software, because it by definition means that the software was written to match theory, not reality. —Linus Torvalds, creator of Linux (from: Linux: Linus On Specifications) Fight the blockers I found the people insisting on extensive requirements documents before starting any design were really ‘blockers’ just trying to slow the process down (and usually people with nothing to contribute on design or innovative thinking).
+> Useless Specs A “spec” is close to useless. I have never seen a spec that was both big enough to be useful and accurate. And I have seen lots of total crap work that was based on specs. It’s the single worst way to write software, because it by definition means that the software was written to match theory, not reality. —Linus Torvalds, creator of Linux (from: Linux: Linus On Specifications)
 
 > Also, consider a grandfather period that exempts existing customers for a certain period of time. These folks are your bread and butter and you want to make them feel valued, not gouged.
 
-> involved. People who sweat the details even if 95% of folks don’t know the difference.
+> People who care about their craft — and actually think of it as a craft. People who take pride in their work, regardless of the monetary reward involved. People who sweat the details even if 95% of folks don’t know the difference.
 
-> People who take pride in their work, regardless of the monetary reward involved. People who sweat the details even if 95% of folks don’t know the difference.
-
-> People who care about their craft — and actually think of it as a craft.
-
-> People who care about their craft — and actually think of it as a craft. People who take pride in their work, regardless of the monetary reward involved. People who sweat the details even if 95% of folks don’t know the difference. People who want to build something great and won’t
+<!-- kindle-highlights:end -->

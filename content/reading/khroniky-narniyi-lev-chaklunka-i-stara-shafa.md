@@ -5,9 +5,14 @@ draft: false
 
 params:
   author: "Клайв Степлз Льюїс"
+  kindle_title: "liuis-klayv-steplz-khroniky-narnii-2-lev-chaklunka-i-stara-shafa8474"
   date_started: 2024-09-23
   date_finished: 2024-09-23
   fiction: true
 ---
 
+<!-- kindle-highlights:start -->
+
 > Напій обпік горло — діти аж закашлялися, — але по жилах розлилося приємне тепло і вся компанія поринула у
+
+<!-- kindle-highlights:end -->

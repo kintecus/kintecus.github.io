@@ -4,13 +4,16 @@ date: 2025-10-10
 draft: false
 
 params:
+  kindle_title: "Useful Not True"
   author: "Derek Sivers"
   date_started: 2025-10-10
   date_finished: 2025-10-21
   fiction: false
 ---
 
-> Every statement everyone says could be prefaced with a disclaimer: “From my limited point of view, based only on what I’ve experienced…” But they don’t need to say that.
+<!-- kindle-highlights:start -->
+
+> Every statement everyone says could be prefaced with a disclaimer: “From my limited point of view, based only on what I’ve experienced…” But they don’t need to say that. Instead, we need to know that, and hear it that way. No matter how much authority or conviction they have, no matter how respected or famous they are, their statements are just one biased point of view.
 
 > Rules can be ignored. Breaking a rule can be rational and moral, if you understand the rule’s purpose, and no one is harmed.
 
@@ -33,3 +36,5 @@ params:
 > How do you know what’s the best choice? Trick question! No choice is the best in itself. A choice becomes the best when you choose it. That’s when you make your decision congruent. You find plenty of proof to support it. Evidence against it is useless. You align yourself with your choice.
 
 > Best of all, you take action. By letting go of other options, you concentrate your energy and time. You make it part of your identity, and act accordingly. You become effective. You do the work that makes it a great choice.
+
+<!-- kindle-highlights:end -->

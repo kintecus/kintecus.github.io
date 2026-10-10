@@ -4,11 +4,14 @@ date: 2024-10-03
 draft: false
 
 params:
+  kindle_title: "How to Stop Worrying and Start Living"
   author: "Dale Carnegie"
   date_started: 2024-10-03
   date_finished: 2024-11-05
   fiction: false
 ---
+
+<!-- kindle-highlights:start -->
 
 > The load of tomorrow, added to that of yesterday, carried today, makes the strongest falter. Shut off the future as tightly as the past.
 
@@ -24,19 +27,17 @@ params:
 
 > famous Indian dramatist, Kalidasa: Salutation to the Dawn Look to this day! For it is life, the very life of life. In its brief course Lie all the verities and realities of your existence: The bliss of growth The glory of action The splendour of achievement. For yesterday is but a dream And tomorrow is only a vision, But today well lived makes yesterday a dream of happiness And every tomorrow a vision of hope. Look well, therefore, to this day! Such is the salutation to the dawn.
 
-> Why not ask yourself these questions, and write down the answers? Do I tend
-
 > Shut the iron doors on the past and the future. Live in Day-tight Compartments Why not ask yourself these questions, and write down the answers? Do I tend to put off living in the present in order to worry about the future, or to yearn for some “magical rose garden over the horizon”? Do I sometimes embitter the present by regretting things that happened in the past—that are over and done with? Do I get up in the morning determined to “Seize the day”—to get the utmost out of these twenty-four hours? Can I get more out of life by “living in day-tight compartments”? When shall I start to do this? Next week?... Tomorrow?... Today?
 
-> “Step I. I analysed the situation fearlessly and honestly and figured out what was the worst that could possibly happen as a result of this failure. No
-
 > It is simple. Anyone can use it. It consists of three steps: “Step I. I analysed the situation fearlessly and honestly and figured out what was the worst that could possibly happen as a result of this failure.
+
+> “Step I. I analysed the situation fearlessly and honestly and figured out what was the worst that could possibly happen as a result of this failure. No
 
 > “Step II. After figuring out what was the worst that could possibly happen, I reconciled myself to accepting it, if necessary.
 
 > “Step III. From that time on, I calmly devoted my time and energy to trying to improve upon the worst which I had already accepted mentally.
 
-> “I probably would never have been able to do this if I had kept on worrying, because one of the worst features about worrying is that it destroys our ability to concentrate.
+> “I probably would never have been able to do this if I had kept on worrying, because one of the worst features about worrying is that it destroys our ability to concentrate. When we worry, our minds jump here and there and everywhere, and we lose all power of decision. However, when we force ourselves to face the worst and accept it mentally, we then eliminate all those vague imaginings and put ourselves in a position in which we are able to concentrate on our problem.
 
 > So, Rule 2 is: If you have a worry problem, apply the magic formula of Willis H. Carrier by doing these three things— Ask yourself, “What is the worst that can possibly happen?” Prepare to accept it if you have to. Then calmly proceed to improve on the worst.
 
@@ -44,7 +45,7 @@ params:
 
 > Their “nervous troubles” are caused not by a physical deterioration of the nerves, but by emotions of futility, frustration, anxiety, worry, fear, defeat, despair.
 
-> Dr. Russell L. Cecil, of the Cornell University Medical School, is a world-recognised authority on arthritis; and he has listed four of the commonest conditions that bring on arthritis: Marital shipwreck. Financial disaster and grief. Loneliness and worry. Long-cherished resentments.
+> Dr. Russell L. Cecil, of the Cornell University Medical School, is a world-recognised authority on arthritis; and he has listed four of the commonest conditions that bring on arthritis: Marital shipwreck. Financial disaster and grief. Loneliness and worry. Long-cherished resentments. Naturally, these four emotional situations are far from being the only causes of arthritis. There are many different kinds of arthritis due to various causes.
 
 > As Charles Kettering puts it: “A problem well stated is a problem half solved.”
 
@@ -64,15 +65,15 @@ params:
 
 > Disraeli said: “Life is too short to be little.” “Those words,” said Andre Maurois in This Week magazine, “have helped me through many a painful experience: often we allow ourselves to be upset by small things we should despise and forget. … Here we are on this earth, with only a few more decades to live, and we lose many irreplaceable hours brooding over grievances that, in a year’s time, will be forgotten by us and by everybody. No, let us devote our life to worthwhile actions and feelings, to great thoughts, real affections and enduring undertakings. For life is too short to be little.”
 
-> Rule 2: Let’s not allow ourselves to be upset by small things we should despise and forget. Remember “Life is too short to be
+> Rule 2: Let’s not allow ourselves to be upset by small things we should despise and forget. Remember “Life is too short to be little.”
 
 > “By the law of averages, it won’t happen.’ That phrase has destroyed ninety per cent of my worries; and it has made the past twenty years of my life beautiful and peaceful beyond my highest expectations.”
 
-> Then I asked myself: ‘How many of those cars were ever wrecked?’ The answer was: ‘Oh—maybe five.’ Then I said to myself: ‘Only five-out of twenty-five thousand? Do you know what that means? A ratio of five thousand to one! In other words, by the law of averages, based on experience, the chances are five thousand to one against one of your cars ever being wrecked.
+> Then I asked myself: ‘How many of those cars were ever wrecked?’ The answer was: ‘Oh—maybe five.’ Then I said to myself: ‘Only five-out of twenty-five thousand? Do you know what that means? A ratio of five thousand to one! In other words, by the law of averages, based on experience, the chances are five thousand to one against one of your cars ever being wrecked. So what are you worried about?’
 
 > To break the worry habit before it breaks you—here is Rule 3: “Let’s examine the record.” Let’s ask ourselves: “What are the chances, according to the law of averages, that this event I am worrying about will ever occur?”
 
-> It is astonishing how quickly we can accept almost any situation—if we have to—and adjust ourselves to it and forget about
+> It is astonishing how quickly we can accept almost any situation—if we have to—and adjust ourselves to it and forget about it.
 
 > This priceless prayer was written by Dr. Reinhold Niebuhr, Professor of Applied Christianity, Union Theological Seminary, Broadway and 120th Street, New York. God grant me the serenity
 > To accept the things I cannot change;
@@ -82,8 +83,6 @@ params:
 > To break the worry habit before it breaks you, Rule 4 is: Co-operate with the inevitable.
 
 > She even rolled on the floor with an opium bottle held to her lips, and threatened to commit suicide, while the children huddled in a corner of the room and screamed with terror. And what did Tolstoy do? Well, I don’t blame the man for up and smashing the furniture—he had good provocation.
-
-> greatest secrets to true peace of mind—a decent sense of values.
 
 > Yes, I honestly believe that this is one of the greatest secrets to true peace of mind—a decent sense of values.
 
@@ -105,23 +104,23 @@ params:
 
 > Norman Vincent Peale, “you are not what you think you are; but what you think, you are.”
 
-> Allenby’s conquest of the Holy Land. His illustrated talks entitled
-
 > Thomas do just that. I once had the privilege of being
 
-> even when Lowell Thomas was facing huge debts and severe disappointments, he was concerned, but not worried. He knew that if he let his reverses get him down, he would be worthless to everyone, including his creditors. So each morning before he started out, he bought a flower, put it in his buttonhole, and went swinging down Oxford Street with his head high and his step spirited.
+> Allenby’s conquest of the Holy Land. His illustrated talks entitled
+
+> even when Lowell Thomas was facing huge debts and severe disappointments, he was concerned, but not worried. He knew that if he let his reverses get him down, he would be worthless to everyone, including his creditors. So each morning before he started out, he bought a flower, put it in his buttonhole, and went swinging down Oxford Street with his head high and his step spirited. He thought positive, courageous thoughts and refused to let defeat defeat him.
 
 > Thinketh by James Lane Allen, and here’s what it said: “A man will find that as he alters his thoughts towards things and other people, things and other people will alter towards him. . . . Let a man radically alter his thoughts, and he will be astonished at the rapid transformation it will effect in the material conditions of his life. Men do not attract that which they want, but that which they are. … The divinity that shapes our ends is in ourselves. It is our very self. .. . All that a man achieves is the direct result of his own thoughts. … A man can only rise, conquer and achieve by lifting up his thoughts. He can only remain weak and abject and miserable by refusing to lift up his thoughts.”
 
-> Just For Today Just for today I will be happy. This assumes that what Abraham Lincoln said is true, that “most folks are about as happy as they make up their minds to be.” Happiness is from within; it is not a matter of externals. Just for today I will try to adjust myself to what is, and not try to adjust everything to my own desires. I will take my family, my business, and my luck as they come and fit myself to them. Just for today I will take care of my body. I will exercise it, care for it, nourish it, not abuse it
+> Just For Today Just for today I will be happy. This assumes that what Abraham Lincoln said is true, that “most folks are about as happy as they make up their minds to be.” Happiness is from within; it is not a matter of externals. Just for today I will try to adjust myself to what is, and not try to adjust everything to my own desires. I will take my family, my business, and my luck as they come and fit myself to them. Just for today I will take care of my body. I will exercise it, care for it, nourish it, not abuse it nor neglect it, so that it will be a perfect machine for my bidding. Just for today I will try to strengthen my mind. I will learn something useful. I will not be a mental loafer. I will read something that requires effort, thought and concentration. Just for today I will exercise my soul in three ways: I will do somebody a good turn and not get found out. I will do at least two things I don’t want to do, as William James suggests, just for exercise. Just for today I will be agreeable. I will look as well as I can, dress as becomingly as possible, talk low, act courteously, be liberal with praise, criticise not at all, nor find fault with anything and not try to regulate nor improve anyone. Just for today I will try to live through this day only, not to tackle my whole life problem at once. I can do things for twelve hours that would appall me if I had to keep them up for a lifetime. Just for today I will have a programme. I will write down what I expect to do every hour. I may not follow it exactly, but I will have it. It will eliminate two pests, hurry and indecision. Just for today I will have a quiet half-hour all by myself and relax. In this half-hour sometimes I will think of God, so as to get a little more perspective into my life. Just for today I will be unafraid, especially I will not be afraid to be happy, to enjoy what is beautiful, to love, and to believe that those I love, love me. If we want to develop a mental attitude that will bring us peace and happiness, here is Rule 1: Think and act cheerfully, and you will feel cheerful.
 
 > When we hate our enemies, we are giving them power over us: power over our sleep, our appetites, our blood pressure, our health, and our happiness. Our enemies would dance with joy if only they knew how they were worrying us, lacerating us and getting even with us! Our hate is not hurting them, but our hate is turning our own days and nights into a hellish turmoil.
 
 > Edith Cavell uttered two sentences that have been preserved in bronze and granite: “I realise that patriotism is not enough. I must have no hatred or bitterness toward anyone.”
 
-> Laurence Jones, the man who was about to be lynched, was, as I have already said, a Negro himself and was accused of helping to arouse his race to insurrection.
-
 > Laurence Jones, a coloured teacher and preacher, was about to be lynched.
+
+> Laurence Jones, the man who was about to be lynched, was, as I have already said, a Negro himself and was accused of helping to arouse his race to insurrection.
 
 > So instead of hating our enemies, let’s pity them and thank God that life has not made us what they are. Instead of heaping condemnation and revenge upon our enemies, let’s give them our understanding, our sympathy, our help, our forgiveness, and our prayers.”
 
@@ -130,16 +129,13 @@ params:
 > them. Let’s do as General Eisenhower does: let’s never
 > waste a minute thinking about people we don’t like.
 
-> “I am going to meet people today who talk too much—people who are selfish, egotistical, ungrateful. But I won’t be surprised or disturbed, for I couldn’t imagine a world without such people.” That makes sense, doesn’t it? If you and I go around
+> “I am going to meet people today who talk too much—people who are selfish, egotistical, ungrateful. But I won’t be surprised or disturbed, for I couldn’t imagine a world without such people.”
 
 > Here is the first point I am trying to make in this chapter: It is natural for people to forget to be grateful; so, if we go around expecting gratitude, we are headed straight for a lot of heartaches.
 
 > Here is the second point I am trying to make in this chapter: If we want to find happiness, let’s stop thinking about gratitude or ingratitude and give for the inner joy of giving.
 
 > To avoid resentment and worry over ingratitude, here is Rule 3: A. Instead of worrying about ingratitude, let’s expect it. Let’s remember that Jesus healed ten lepers in one day and only one thanked Him. Why should we expect more gratitude than Jesus got? B. Let’s remember that the only way to find happiness is not to expect gratitude, but to give for the joy of giving. C. Let’s remember that gratitude is a “cultivated” trait; so if we want our children to be grateful, we must train them to be grateful.
-
-> I had the blues because I had no shoes,
-> Until upon the street, I met a man who had no feet. I once asked Eddie Rickenbacker what was the
 
 > I had the blues because I had no shoes,
 > Until upon the street, I met a man who had no feet.
@@ -170,9 +166,9 @@ params:
 
 > Two thousand, one hundred and seventeen officers and enlisted men in the Navy and Marine Corps were killed and 960 were reported missing.
 
-> But the astounding thing to me was this: since I was a good listener and encouraged the boys to talk about themselves, I gave them happiness and I gradually became the most popular girl in our social group and three of these men proposed marriage to me.” (There you are, girls: that is the way it is done.)
-
 > If you are a man, skip this paragraph. It won’t interest you. It tells how a worried, unhappy girl got several men to propose to her.
+
+> But the astounding thing to me was this: since I was a good listener and encouraged the boys to talk about themselves, I gave them happiness and I gradually became the most popular girl in our social group and three of these men proposed marriage to me.” (There you are, girls: that is the way it is done.)
 
 > Then I went away to college; and gradually, as the years passed, a change came over me. I studied biology, science, philosophy, and comparative religions. I read books on how the Bible was written. I began to question many of its assertions. I began to doubt many of the narrow doctrines taught by the country preachers of that day. I was bewildered.
 
@@ -180,15 +176,13 @@ params:
 
 > “No. I believe God is managing affairs and that He doesn’t need any advice from me. With God in charge, I believe that everything will work out for the best in the end. So what is there to worry about?”
 
-> Genry Ford lol
-
-> Today, even psychiatrists are becoming modern evangelists. They are not urging us to lead religious lives to avoid hell-fires in the next world, but they are urging us to lead religious lives to avoid the hell-fires of this world—the hell-fires of stomach ulcer, angina pectoris, nervous breakdowns, and insanity.
+> Today, even psychiatrists are becoming modern evangelists. They are not urging us to lead religious lives to avoid hell-fires in the next world, but they are urging us to lead religious lives to avoid the hell-fires of this world—the hell-fires of stomach ulcer, angina pectoris, nervous breakdowns, and insanity. As an example of what our psychologists and psychiatrists are teaching, read The Return to Religion, by Dr. Henry C. Link. You will probably find a copy in your public library.
 
 > Jesus declared that there were only two important things about religion: loving God with all our heart, and our neighbour as ourselves. Any man who does that is religious, regardless of whether he knows it.
 
 > One of the most distinguished psychiatrists living, Dr. Carl Jung, says in his book Modern Man in Search of a Soul, “During the past thirty years, people from all the civilised countries of the earth have consulted me. I have treated many hundreds of patients. Among all my patients in the second half of life—that is to say, over thirty-five—there has not been one whose problem in the last resort was not that of finding a religious outlook on life. It is safe to say that every one of them fell ill because he had lost that which the living religions of every age have given to their followers, and none of them has been really healed who did not regain his religious outlook.”
 
-> Jesus gave to His disciples about how to keep from worrying: Take no thought for your life, what ye shall eat, or what ye shall drink; not yet for your body, what ye shall put on. Is not the life more than meat, and the body
+> Jesus gave to His disciples about how to keep from worrying: Take no thought for your life, what ye shall eat, or what ye shall drink; not yet for your body, what ye shall put on. Is not the life more than meat, and the body than raiment? Behold the fowls of the air: for they sow not, neither do they reap, nor gather into barns; yet your heavenly Father feedeth them. Are ye not much better than they? … But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.
 
 > ‘Berts, I can’t give that little guy up.’ Have you ever seen a man cry? It isn’t a pleasant experience.
 
@@ -197,3 +191,5 @@ params:
 > If we are tempted to be worried about unjust criticism here is Rule 1: Remember that unjust criticism is often a
 > disguised compliment.
 > Remember that no one ever kicks a dead dog.
+
+<!-- kindle-highlights:end -->
