@@ -42,6 +42,19 @@
   font-size: 1rem;
 }
 
+/* Phosphor icons (regular, v2.1.1), masked so they take a theme color */
+.book-icon {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  vertical-align: -0.1em;
+  background-color: var(--secondary-color);
+  -webkit-mask: var(--icon) no-repeat center / contain;
+  mask: var(--icon) no-repeat center / contain;
+}
+
+.book-icon--quotes { --icon: url("/images/icons/quotes.svg"); }
+
 .book-author {
   display: block;
   font-size: 0.85rem;

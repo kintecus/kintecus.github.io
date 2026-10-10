@@ -11,7 +11,7 @@
         {{ range (.ByDate.Reverse) }}
           <div class="book-entry book-entry--current">
             <div class="book-info">
-              <a class="book-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              <a class="book-title" href="{{ .RelPermalink }}">{{ .Title }}{{ if strings.TrimSpace .Plain }} <span class="book-icon book-icon--quotes" role="img" aria-label="Has highlights" title="Has highlights"></span>{{ end }}</a>
               {{ with .Params.author }}
                 <span class="book-author">{{ . }}</span>
               {{ end }}
@@ -35,7 +35,7 @@
         {{ range .Pages }}
           <div class="book-entry">
             <div class="book-info">
-              <a class="book-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              <a class="book-title" href="{{ .RelPermalink }}">{{ .Title }}{{ if strings.TrimSpace .Plain }} <span class="book-icon book-icon--quotes" role="img" aria-label="Has highlights" title="Has highlights"></span>{{ end }}</a>
               {{ with .Params.author }}
                 <span class="book-author">{{ . }}</span>
               {{ end }}
@@ -62,7 +62,7 @@
         {{ range . }}
           <div class="book-entry">
             <div class="book-info">
-              <a class="book-title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              <a class="book-title" href="{{ .RelPermalink }}">{{ .Title }}{{ if strings.TrimSpace .Plain }} <span class="book-icon book-icon--quotes" role="img" aria-label="Has highlights" title="Has highlights"></span>{{ end }}</a>
               {{ with .Params.author }}
                 <span class="book-author">{{ . }}</span>
               {{ end }}
