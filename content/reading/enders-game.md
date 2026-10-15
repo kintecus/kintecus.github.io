@@ -6,6 +6,7 @@ params:
   kindle_title: "Ender’s Game"
   author: "Orson Scott Card"
   date_started: 2026-10-05
+  date_finished: 2026-10-14
   fiction: true
 ---
 
@@ -36,5 +37,15 @@ params:
 > Ender stepped under the water and rinsed himself, took the sweat of combat and let it run down the drain. All gone, except they recycled it and we’ll be drinking Bonzo’s bloodwater in the morning. All the life gone out of it, but his blood just the same, his blood and my sweat, washed down in their stupidity or cruelty or whatever it was that made them let it happen.
 
 > “But they might blame Graff. After all this is over, the civilians can rake over our files and decide what was right and what was not. Give us medals where they think we were right, take away our pensions and put us in jail where they decide we were wrong. At least they had the good sense not to tell Ender that the boy died.” “It’s the second time, too.” “They didn’t tell him about Stilson, either.” “The kid is scary.” “Ender Wiggin isn’t a killer. He just wins—thoroughly. If
+
+> why we don’t respond.” “So the whole war is because we can’t talk to each other.” “If the other fellow can’t tell you his story, you can never be sure he isn’t trying to kill you.”
+
+> “So the whole war is because we can’t talk to each other.” “If the other fellow can’t tell you his story, you can never be sure he isn’t trying to kill you.” “What if we just left them alone?”
+
+> “That was his breakthrough. He proposed it through his friends from the public policy nets, and then Demosthenes got behind it, too. It was the moment he had been waiting for, to use Demosthenes’ influence with the mob and Locke’s influence with the intelligentsia to accomplish something noteworthy. It forestalled a really vicious war that could have lasted for decades.”
+
+> “I know what you’re thinking, Ender. You’re thinking that I’m trying to control you just as much as Peter or Graff or any of the others.” “It crossed my mind.” “Welcome to the human race. Nobody controls his own life, Ender. The best you can do is choose to fill the roles given you by good people, by people who love you. I didn’t come here because I wanted to be a colonist. I came because I’ve spent my whole life in the company of the brother that I hated. Now I want a chance to know the brother that I love, before it’s too late, before we’re not children anymore.”
+
+> We thought we were the only thinking beings in the universe, until we met you, but never did we dream that thought could arise from the lonely animals who cannot dream each other’s dreams. How were we to know? We could live with you in peace. Believe us, believe us, believe us.
 
 <!-- kindle-highlights:end -->

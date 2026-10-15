@@ -312,6 +312,10 @@ params:
 
 > I am convinced that we could do without this continuing flood of never-less-than-worrisome and too-often-quite-frightening predictions. How helpful is it to be told every day that the world is coming to an end in 2050 or even 2030?
 
+> What will happen? An imminent near-infernal perdition, or speed-of-light godlike omnipotence? Based on the revealed delusions of past prophecies, neither.
+
+> Just to drive this conclusion home, annual applications of fertilizers average about 160 kilograms per hectare of agricultural land in the EU and less than 20 kilograms in Ethiopia, an order-of-magnitude difference illustrating the huge development gap that is so often ignored in appraisals of global needs.
+
 > Annual per capita meat consumption (carcass weight) is a good indicator of these differences: the recent averages have been about 120 kg in the US, 60 kg in China and just 4 kg in India:
 
 <!-- kindle-highlights:end -->
