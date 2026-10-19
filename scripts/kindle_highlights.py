@@ -24,6 +24,7 @@ Notes and bookmarks are skipped.
 Usage
   python3 scripts/kindle_highlights.py --dry-run   # report changes, write nothing
   python3 scripts/kindle_highlights.py             # write highlights
+  python3 scripts/kindle_highlights.py -v          # also list unchanged books
   python3 scripts/kindle_highlights.py --clippings ~/Downloads/My\\ Clippings.txt
 """
 
@@ -220,6 +221,10 @@ def write_highlights(rf: ReadingFile, highlights: list[Highlight], dry_run: bool
     return action
 
 
+def plural(n: int, noun: str) -> str:
+    return f"{n} {noun}{'' if n == 1 else 's'}"
+
+
 def suggest_file(kindle_title: str, reading_files: list[ReadingFile]) -> ReadingFile | None:
     key = normalize_title(kindle_title)
     exact = [rf for rf in reading_files if normalize_title(rf.title) == key]
@@ -233,6 +238,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     parser.add_argument("--clippings", type=Path, default=DEFAULT_CLIPPINGS)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("-v", "--verbose", action="store_true", help="also list unchanged books")
     args = parser.parse_args()
 
     clippings_path = args.clippings.expanduser()
@@ -248,22 +254,36 @@ def main() -> int:
     reading_files = load_reading_files()
     claimed: set[str] = set()
 
-    print("Opted-in books:")
     opted_in = [rf for rf in reading_files if rf.kindle_titles]
-    if not opted_in:
-        print("  (none)")
+    report: list[str] = []
+    changed = unchanged = 0
     for rf in opted_in:
         missing = [t for t in rf.kindle_titles if t not in by_title]
         for title in missing:
-            print(f"  WARNING {rf.path.name}: kindle_title not in clippings: {title!r}")
+            print(f"WARNING {rf.path.name}: kindle_title not in clippings: {title!r}")
         raw = [h for t in rf.kindle_titles for h in by_title.get(t, [])]
         claimed.update(rf.kindle_titles)
         if not raw:
             continue
         kept = dedupe(raw)
         action = write_highlights(rf, kept, args.dry_run)
-        status = action or "unchanged"
-        print(f"  {rf.path.name}: {len(kept)} highlights ({len(raw) - len(kept)} superseded), {status}")
+        if action:
+            changed += 1
+        else:
+            unchanged += 1
+        if action or args.verbose:
+            superseded = len(raw) - len(kept)
+            report.append(f"  {rf.path.name}: {plural(len(kept), 'highlight')} ({superseded} superseded), {action or 'unchanged'}")
+
+    if not opted_in:
+        print("No opted-in books.")
+    elif changed:
+        verb = "Would update" if args.dry_run else "Updated"
+        print(f"{verb} {plural(changed, 'book')}, {unchanged} unchanged:")
+    else:
+        print(f"No changes, {plural(unchanged, 'book')} unchanged.")
+    if report:
+        print("\n".join(report))
 
     unclaimed = sorted(
         ((t, hs) for t, hs in by_title.items() if t not in claimed),
