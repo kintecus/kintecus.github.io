@@ -7,6 +7,7 @@ params:
   kindle_title: "How the World Really Works"
   author: "Vaclav Smil"
   date_started: 2026-08-20
+  date_finished: 2026-10-18
   fiction: false
 ---
 
@@ -315,6 +316,12 @@ params:
 > What will happen? An imminent near-infernal perdition, or speed-of-light godlike omnipotence? Based on the revealed delusions of past prophecies, neither.
 
 > Just to drive this conclusion home, annual applications of fertilizers average about 160 kilograms per hectare of agricultural land in the EU and less than 20 kilograms in Ethiopia, an order-of-magnitude difference illustrating the huge development gap that is so often ignored in appraisals of global needs.
+
+> Or is it simply the fact that forgetting is an essential complement of remembering, be it on a personal or collective level, and that this, too, will not change as we will be, again and again, surprised by what should have been expected? Persistence is as important as forgetting: despite the promises of new beginnings and bold departures, old patterns and old approaches soon resurface to set the stage for another round of failures.
+
+> economic, social, and environmental trajectories. And as the first and second drafts of this book were written during the first and second waves of COVID-19,
+
+> And as the first and second drafts of this book were written during the first and second waves of COVID-19, it is quite realistic to ask if the new pandemics we will face throughout the remainder of the 21st century (given their post-1900 frequency—1918, 1957, 1968, 2009, 2020—we can expect at least two or three such events before 2100) will be similar, much weaker, or far more virulent than the 2020 event. Living with these fundamental uncertainties remains the essence of the human condition—and it limits our ability to act with foresight.
 
 > Annual per capita meat consumption (carcass weight) is a good indicator of these differences: the recent averages have been about 120 kg in the US, 60 kg in China and just 4 kg in India:
 
